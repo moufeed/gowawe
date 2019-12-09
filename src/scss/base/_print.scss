@@ -1,0 +1,55 @@
+@media print {
+  body {
+    font-size: 12pt;
+  }
+  .row,
+  .d-flex {
+    display: block !important;
+  }
+  .mt-20 {
+    margin-top: 0.5rem !important;
+  }
+  ul {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  img {
+    position: relative;
+    display: block;
+    page-break-before: auto;
+    page-break-after: auto;
+    page-break-inside: avoid;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .image {
+    break-before: auto;
+    page-break-before: auto;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    position: relative;
+    display: block;
+    &:before {
+      content: "";
+      clear: both;
+    }
+  }
+  .no-break {
+    display: block;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    position: relative;
+    margin-top: 0 !important;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    position: relative;
+  }
+}
