@@ -8,3 +8,13 @@
 
 
     @include makeSpacing($lengths);
+
+
+
+
+    .dropdown-menu{
+      &.fromleft{
+          #{$left}: auto;
+          #{$right}: 0;
+      }
+    }

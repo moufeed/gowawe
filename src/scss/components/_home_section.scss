@@ -1,0 +1,64 @@
+
+.home-section{
+
+}
+
+
+.section-header{
+  background-size: cover ;
+  padding: 25px;
+  min-height: 100px;
+   @include var('color', 'white');
+   position: relative;
+   &:after{
+    @include absolute(top left , 0 0);
+    content: '';
+    @include size(100%,100%);
+    background: rgba(0,0,0,.5);
+    z-index: 0;
+   }
+    > * {
+      z-index: 1;
+    }
+  h2{
+    font-weight: 700;
+    @include var('color', 'white');
+  }
+  .section-title p {
+    font-size: 18px;
+  }
+  .section-brief{
+
+    padding-#{$left}: 20px ;
+  }
+
+}
+.section-links {
+    a {
+      @include var('color', 'white');
+      &:hover{
+        @include var('color', 'white');
+        @include var('background', 'red');
+        border-radius: 5px;
+        transition: all .2s ;
+      }
+    }
+}
+
+/**
+<div class="row no-gutters  row-cols-1 row-cols-sm-2 "
+          style="background-image: url('assets/img/{{background}}')">
+
+          <div class="col">
+            <nav class="section-links">
+               {{#if subLinks}}
+                      {{#each subLinks}}
+                            <a href="{{this.link}}">{{this.text}}</a>
+                      {{/each}}
+               {{/if}}
+            </nav>
+            <p class="section-brief">{{brief}}</p>
+          </div>
+        </div>
+
+*/

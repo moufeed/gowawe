@@ -8,7 +8,7 @@ var gulp = require("gulp"),
   (handlebars = require("gulp-compile-handlebars")),
   (sourcemaps = require("gulp-sourcemaps")),
   (autoprefixer = require("gulp-autoprefixer")),
-  (uglify = require("gulp-uglify"));
+  (uglify = require("gulp-uglify-es").default);
 
 var config = {
   header:
@@ -28,6 +28,8 @@ var config = {
     src: [
       "./node_modules/jquery/dist/jquery.min.js",
       "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+      "./node_modules/owl.carousel/dist/owl.carousel.min.js",
+      "./src/js/carousel.js",
       "./src/js/scripts.js"
     ],
     dist: "./dist/assets/js",
@@ -51,7 +53,7 @@ var config = {
   },
   images: {
     src: "./src/images/*",
-    dist: "./dist/assets/images/"
+    dist: "./dist/assets/img/"
   }
 };
 
@@ -202,7 +204,7 @@ gulp.task("default", ["script", "style", "hbs", "watch"]);
   return result;
 }); */
 
-handlebars.Handlebars.registerHelper("isequal", function(v1, v2, options) {
+handlebars.Handlebars.registerHelper("is", function(v1, v2, options) {
   if (v1 === v2) {
     return options.fn(this);
   }

@@ -1,3 +1,123 @@
- <header>
+<header>
+<div class="container-fluid">
+  <div class="row main-header">
+      <div class="logo col">
+        <a class="navbar-brand" href="#">
+          <img src="{{logo}}" alt="{{site}}">
+        </a>
+      </div>
+  <div class="col search-wrap flex-grow-1">
+    <div class="search-box">
+      <select name="search_type" id="search_type">
+        <option value="">Products</option>
+        <option value="">Suppliers</option>
+      </select>
+      <input type="text" placeholder="What are you looking for ...">
+      <button type="subimt" class="btn btn-search">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </div>
 
- </header>
+<div class="col-auto profile-btns">
+  <ul>
+    <li>
+      <a href="#">
+        <i class="fa fa-user"></i>
+        My Gowawe
+        <span class="badge">23</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fa fa-envelope"></i>
+        Messages
+        <span class="badge">23</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fa fa-suitcase"></i>
+        Orders
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fa fa-shopping-cart"></i>
+        Cart
+      </a>
+    </li>
+  </ul>
+</div>
+  </div>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light  ">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown " id="categories-dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-list"></i> All Categories
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="separator mr-4"></li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Ready To Ship <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Trade Shows</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Sell On Gowawe</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Help </a>
+        </li>
+      </ul>
+      <ul class=" navbar-nav my-2 my-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Get The App</a>
+        </li>
+        <li class="separator"></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            English - USD
+          </a>
+          <div class="dropdown-menu fromleft" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+</header>

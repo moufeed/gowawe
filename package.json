@@ -5,7 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start" : "gulp",
+    "start": "gulp",
     "watch": "gulp watch",
     "img": "gulp copy:img",
     "js": "gulp script",
@@ -26,6 +26,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^3.0.0",
+    "gulp-uglify-es": "^2.0.0",
     "gulp-watch": "^4.3.11"
   },
   "dependencies": {

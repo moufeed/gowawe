@@ -1,4 +1,7 @@
-@import './vendors/bootstrap.config';
+@import
+'./vendors/bootstrap.config',
+'./vendors/owl.carousel'
+;
 
 
 @import
@@ -11,6 +14,11 @@
 @import
 './base/typography',
 './base/defaults'
+;
+
+@import
+
+'./components/home_section'
 ;
 
 @import
