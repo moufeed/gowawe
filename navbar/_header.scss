@@ -1,0 +1,118 @@
+header {
+    box-shadow: -2px 5px 8px 3px #c7c7c7;
+    border-bottom: 1px solid #d1d1d1;
+
+    .main-header {
+        display: flex;
+        padding: 20px;
+
+        .logo {
+            max-width: 300px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .search-wrap {
+            display: flex;
+            width: 100%;
+            align-content: center;
+            align-items: center;
+            padding: 0 68px;
+
+            .search-box {
+                border: 2px solid $color-red;
+                max-height: 43px;
+                border-radius: 20px;
+                flex: 1;
+                overflow: hidden;
+                display: flex;
+
+                select {
+                    height: 39px;
+                    padding: 0 30px;
+                    border: none;
+                }
+
+                input {
+                    height: 38px;
+                    border: none;
+                    width: 100%;
+                    border-left: 1px solid #dfdfdf;
+                    padding-left: 25px;
+                    font-size: 17px;
+                }
+
+                button {
+                    background: $color-red;
+                    width: 100px;
+                    color: white;
+                    border-radius: 0;
+                }
+            }
+        }
+
+        .profile-btns {
+            ul {
+                list-style: none;
+                display: flex;
+                margin: 0;
+            }
+
+            a {
+                color: black;
+                display: block;
+                width: 70px;
+                padding: 0;
+                margin: 0 2px;
+                font-size: 12px;
+                text-align: center;
+                position: relative;
+
+                &:hover {
+                    text-decoration: none;
+                }
+
+                i.fa {
+                    font-size: 40px;
+                    display: block;
+                    line-height: 40px;
+                }
+
+                .badge {
+                    background-color: $color-red;
+                    color: white;
+                    border-radius: 12px;
+                    padding: 2px 8px;
+                    position: absolute;
+                    top: 0;
+                    right: 5px;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+    }
+
+    nav.navbar {
+        border-top: 1px solid lightgrey;
+
+        #categories-dropdown .dropdown-toggle {
+            padding: 0.5rem 24px;
+        }
+
+        li.nav-item + li.nav-item {
+            margin-left: 9px;
+        }
+
+        li.separator {
+            width: 2px;
+            background: #eeeeee;
+        }
+    }
+}
+
+
+
