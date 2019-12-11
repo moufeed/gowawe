@@ -132,7 +132,15 @@ var suppliers = {
   list: [supplier, supplier, supplier, supplier]
 };
 
-var sections = [printing, recently, suppliers];
+var regions = {
+  type: "regions",
+  title: "Choose your suppliers by regions",
+  background: "",
+  published: true,
+  list: ["sudan.png", "usa.png", "eg.png", "canada.png", "France.png"]
+};
+
+var sections = [printing, regions, recently, suppliers];
 
 var footer = {
   logo: "logo.png",
