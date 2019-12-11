@@ -18,3 +18,13 @@
           #{$right}: 0;
       }
     }
+
+
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    @include var('color' , 'desaturated-blue');
+    margin-bottom: 25px;
+}

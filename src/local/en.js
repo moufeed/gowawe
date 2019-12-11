@@ -3,7 +3,11 @@ var local = {
   pieces: "pieces",
   min_order: "min order",
   colors: "colors",
-  shopping: "shopping now"
+  shopping: "shopping now",
+  location: "Location",
+  view_details: "View Details",
+  mainProducts: "Main Products",
+  targetMarket: "Target Market"
 };
 
 var product = {
@@ -103,7 +107,32 @@ var printing = {
   ]
 };
 
-var sections = [printing];
+var supplier = {
+  name: "CKS Stationery Corporator",
+  image: "supplier.png",
+  products:
+    "High Quality T-Shirt High Quality T-Shirt Very Good Quality order now and get your discount…",
+  target:
+    "High Quality T-Shirt High Quality T-Shirt Very Good Quality order now and get your discount…",
+  location: "Taiwan"
+};
+
+var recently = {
+  title: "My Recently Viewed Items",
+  type: "recently",
+  published: true,
+  products: [product, product, product, product]
+};
+
+var suppliers = {
+  type: "suppliers",
+  title: "Selected Suppliers",
+  background: "",
+  published: true,
+  list: [supplier, supplier, supplier, supplier]
+};
+
+var sections = [printing, recently, suppliers];
 
 var footer = {
   logo: "logo.png",

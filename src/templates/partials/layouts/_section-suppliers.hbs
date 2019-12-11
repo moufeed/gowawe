@@ -1,0 +1,35 @@
+
+<section class="suppliers-section container-fluid my-3">
+  <div class="bg-white py-5 px-3 shadow-sm">
+    <h2 class="mx-3 section-title"><span>{{title}}</span></h2>
+    <div class="row">
+        {{#each list}}
+           <div class="col-md-12 col-lg-6">
+             <div class="suppliers-card p-3 border border-secondary m-3 d-flex align-items-center">
+                <img src="assets/img/{{image}}" class="s-image" alt="..."  >
+                <div>
+                <h3 class="card-title text-danger"><a href="#">{{name}}</a></h5>
+                  <ul class="list-unstyled">
+                    <li>
+                      <strong>{{../local.location}}: </strong>
+                      <span>{{location}}</span>
+                    </li>
+                    <li>
+                      <strong>{{../local.mainProducts}}</strong>
+                      <span>{{products}}</span>
+                    </li>
+                    <li>
+                      <strong>{{../local.targetMarket}}</strong>
+                      <span>{{target}}</span>
+                    </li>
+                  </ul>
+                  <a href="#" class="btn btn-warning">
+                    {{../local.view_details}}
+                  </a>
+                </div>
+             </div>
+           </div>
+        {{/each}}
+    </div>
+  </div>
+</section>

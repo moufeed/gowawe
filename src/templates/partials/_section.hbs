@@ -3,4 +3,13 @@
     {{> layouts/_section-normal }}
     {{/is}}
 
+    {{#is section.type 'suppliers'}}
+    {{> layouts/_section-suppliers }}
+    {{/is}}
+
+
+    {{#is section.type 'recently'}}
+    {{> layouts/_section-recently }}
+    {{/is}}
+
 {{/if}}

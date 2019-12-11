@@ -1,0 +1,46 @@
+
+
+.suppliers-card{
+
+  .s-image{
+    width: 35%;
+    margin-#{$right}: 15px;
+  }
+  .card-title{
+    a{
+      @include var('color', 'red');
+    }
+  }
+  strong{
+    font-weight: bolder;
+    display: inline-block;
+    margin-#{$right}:10px;
+  }
+  ul {
+    padding: 0;
+    li {
+    margin: 10px 0;
+  }
+  }
+
+  @include  media-breakpoint-down(sm){
+     flex-direction: column;
+    &.p-5{
+      padding: 25px !important;
+    }
+    .s-image{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  }
+  @include  media-breakpoint-only(lg){
+   flex-direction: column;
+    &.p-5{
+      padding: 25px !important;
+    }
+    .s-image{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+}

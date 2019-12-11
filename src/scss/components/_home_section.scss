@@ -1,8 +1,5 @@
 .home-section {
-  box-shadow: 0 2px 0 rgba(#000000, 0.2);
-  > [class*="container"] {
-    @include var("background", "white");
-  }
+
 
   .shopping-btn {
     z-index: 12;
@@ -84,7 +81,8 @@
 .h-prod-item {
   margin: 15px 0;
   padding: 2px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
+  border :0;
   border-radius: 4px;
   .owl-stage {
     display: flex;
@@ -107,6 +105,13 @@
         grid-column-end: span 2;
       }
     }
+    @include media-breakpoint-down(sm) {
+      > span {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+      }
+    }
+
   }
 }
 .h-prod-colors {

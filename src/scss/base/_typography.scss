@@ -1,7 +1,7 @@
 $fonts: "../fonts";
 
 @include if-ltr {
-  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+ @import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
 }
 @include if-rtl {
   @font-face {
@@ -15,8 +15,8 @@ $fonts: "../fonts";
   }
 }
 
-$font-regular: if-rtl(frutigerRegular, "Open Sans"), $font-family-base;
-$font-bold: if-rtl(frutigerBold, "Open Sans"), $font-family-base;
+$font-regular: if-rtl(frutigerRegular, "Poppins"), $font-family-base;
+$font-bold: if-rtl(frutigerBold, "Poppins"), $font-family-base;
 
 h1,
 h2,

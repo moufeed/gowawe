@@ -1,0 +1,83 @@
+<section class="recently-section container-fluid my-3">
+  <div class="bg-white py-5 px-3 shadow-sm">
+    <h2 class="mx-3 section-title"><span>{{title}}</span></h2>
+    <div class="row">
+      {{#each products}}
+      {{!-- start product --}}
+      <div class="col-lg-6  col-xl-3">
+        <div class="h-prod-item card">
+          <div class="h-prod-header">
+            <span>
+
+              {{#if this.img.length}}
+              <img src="./assets/img/{{this.img}}" alt="" class="pro-img">
+              {{/if}}
+              {{#if this.images.length}}
+              <ul class="list-unstyled prod-imgs owl-carousel" data-singleitem="true" data-dots="true"
+                data-rtl="{{isRtl ../dir}}"  >
+                {{#each this.images}}
+                <li class="item">
+                  <img src="./assets/img/{{this}}" alt="">
+                </li>
+                {{/each}}
+              </ul>
+              {{/if}}
+            </span>
+
+            <span class="pt-25 h-info">
+              <h5>{{../local.price}}</h5>
+              <p class="h-prod-price">
+                <b class="text-danger">{{min_price}}</b> /{{../local.pieces}} <br>
+                <small><s>{{price}}</s></small>
+                <span class="badge badge-danger">{{discount}}</span>
+              </p>
+              <p class="h-prod-order">
+                <strong>{{../local.min_order}}</strong>: {{min}}
+              </p>
+
+              {{#if colors.length}}
+
+              <div class="h-prod-colors">
+                <strong class="d-block mb-2">{{../local.colors}} :</strong>
+                {{#each colors}}
+                <span style="background-color: {{this}};"></span>
+                {{/each}}
+              </div>
+              {{/if}}
+            </span>
+          </div>
+          <h4 class="h-prod-title card-title"><a href="#">
+              {{title}}
+            </a></h4>
+          <footer class="h-prod-footer">
+            <div class="factory d-flex align-items-center px-3 my-2">
+              <img src="assets/img/{{factory.avatar}}" alt="" width="55" class="rounded no-owl">
+              <span class="mx-2">
+                <strong class="d-block">{{factory.name}}</strong>
+                <img src="assets/img/{{factory.flag}}" alt="{{factory.country}}" width="25" class="no-owl">
+                <small>{{factory.country}} | {{factory.age}}</small>
+              </span>
+            </div>
+            <div class="actions-bar p-3">
+              {{#each actions}}
+              <a href="{{link}}" class="btn btn-outline-dark" {{#if tooltip}} data-toggle="tooltip" data-placement="top"
+                title="{{tooltip}}" {{/if}}>
+                {{#if ico}}
+                <i class="{{ico}}"></i>
+                {{/if}}
+
+                {{#if txt}}
+                <span>{{txt}}</span>
+                {{/if}}
+              </a>
+              {{/each}}
+            </div>
+          </footer>
+        </div>
+      </div>
+
+      {{!-- end product --}}
+      {{/each}}
+    </div>
+  </div>
+</section>
