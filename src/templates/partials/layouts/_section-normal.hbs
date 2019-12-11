@@ -20,9 +20,9 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4">
+      <div class="col-lg-3 col-md-4 d-sm-none d-none d-lg-block">
         <button type="button" class="btn btn-danger position-absolute shopping-btn">{{local.shopping}}</button>
-        <div class="featured-slider owl-carousel" data-rtl="{{isRtl dir}}" data-singleitem="true" data-nav="true">
+        <div class="featured-slider owl-carousel " data-rtl="{{isRtl dir}}" data-singleitem="true" data-nav="true">
           {{#each featured_slider.slides}}
           {{!--
           style="background-image:url(assets/img/{{img}});"
@@ -36,13 +36,13 @@
           {{/each}}
         </div>
       </div>
-      <div class="col-lg-9 col-md-8 py-4">
+      <div class="col-lg-9 col-md-12 py-4">
         <div class="main-carousel owl-carousel" data-singleitem="true" data-nav="true"  data-rtl="{{isRtl dir}}">
           {{#each products_slider}}
           <div class="row">
             {{#each this.products}}
             {{!-- start product --}}
-            <div class="col-lg-6  col-xl-4">
+            <div class="col-md-6  col-xl-4">
               <div class="h-prod-item card">
                 <div class="h-prod-header">
                   <span>

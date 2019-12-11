@@ -99,7 +99,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
 
-    @include media-breakpoint-only(lg) {
+    @include media-breakpoint-between(md,lg) {
       > span {
         grid-column-start: 1;
         grid-column-end: span 2;
