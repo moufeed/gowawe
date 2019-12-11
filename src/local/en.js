@@ -105,6 +105,71 @@ var printing = {
 
 var sections = [printing];
 
+var footer = {
+  logo: "logo.png",
+  social: [
+    {
+      txt: "twitter",
+      ico: "fa fa-twitter"
+    },
+    {
+      txt: "facebook",
+      ico: "fa fa-facebook"
+    },
+    {
+      txt: "instagram",
+      ico: "fa fa-instagram"
+    }
+  ],
+  lists: [
+    {
+      title: "Information",
+      list: ["Services", "Advertise with Us", "Business Identity"]
+    },
+    {
+      title: "Customer Service",
+      list: [
+        "Success Stories",
+        "Press Section",
+        "Jobs & Careers",
+        "Feedback",
+        "Help",
+        "Secure Payment",
+        "Inspection Services",
+        "Learning Center",
+        "I am new user"
+      ]
+    },
+    {
+      title: "Buy Trade Lead",
+      list: [
+        "Send Buy Requirement",
+        "Post Sell Offer",
+        "Create Your Free Website",
+        "View Buy Leads",
+        "How to Buy",
+        "e-Credit Line",
+        "Submit a Dispute",
+        "I am buyer"
+      ]
+    },
+    {
+      title: "Sell Trade Lead",
+      list: [
+        "How to Sell",
+        "Premium Membership",
+        "Verified Membership",
+        "Display Products",
+        "Manage Products",
+        "Supplier Memberships",
+        "Gold Suppliers",
+        "I am seller",
+        "Trade Assurance"
+      ]
+    }
+  ]
+};
+
 module.exports = {
   dir: "ltr",
   lang: "en",
@@ -115,5 +180,6 @@ module.exports = {
   page_title: "",
   subtitle: "",
   local: local,
-  sections: sections
+  sections: sections,
+  footer: footer
 };

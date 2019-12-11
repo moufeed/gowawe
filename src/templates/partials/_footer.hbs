@@ -1,4 +1,39 @@
-<footer>
+<footer class="main-footer pt-50">
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 col-lg-3  col-xl-2">
+          <div class="figure-wrapper">
+              <figure >
+                <img src="assets/img/{{footer.logo}}" alt="" class="f-logo" >
+              </figure>
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-9 col-xl-10">
+          <div class="row justify-content-around">
+              {{#each footer.lists}}
+                <div class="col-md-6 col-lg-3">
+                  <h5>{{title}}</h5>
+                  <ul class="nav flex-column">
+                    {{#each list}}
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">{{this}}</a>
+                    </li>
+                     {{/each}}
+                  </ul>
+                </div>
+              {{/each}}
+          </div>
+        </div>
+    </div>
 
-
+    <div class="bottom-footer">
+        <nav class="nav">
+            {{#each footer.social}}
+          <a class="nav-link" href="#" title="{{txt}}">
+             <i class="{{ico}}"></i>
+          </a>
+            {{/each}}
+        </nav>
+    </div>
+  </div>
 </footer>

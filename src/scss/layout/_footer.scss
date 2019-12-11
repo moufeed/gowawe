@@ -1,0 +1,65 @@
+.main-footer{
+background: rgb(71,15,49);
+background: linear-gradient(0deg, rgba(71,15,49,1) 0%, rgba(100,24,52,1) 14%, rgba(255,70,70,1) 100%);
+
+  h5{
+     @include var('color','white');
+     font-weight: bold;
+     margin: 15px 0;
+  }
+
+a{
+    @include var('color','white');
+    padding: 3px 6px ;
+    &:hover{
+      text-decoration: underline ;
+    }
+  }
+  ul{
+    padding:0;
+  }
+}
+
+.figure-wrapper{
+  @include absolute(top $left , -50px -15px);
+  width: 100%;
+  background: url(if-ltr('#{$img}footer-bg.png' , '#{$img}footer-bg-ar.png')) 0 0/100% 100% no-repeat;
+  padding-top:75px ;
+  padding-#{$left}:35px ;
+  padding-bottom: 100px;
+  @include media-breakpoint-down(sm){
+      position: relative;
+      height: auto;
+
+
+  }
+}
+.f-logo {
+      width: 200px;
+      @include media-breakpoint-down(lg){
+        width: 180px;
+      }
+   }
+.bottom-footer{
+  padding: 35px 0;
+  a i {
+    font-size: 26px;
+  }
+
+}
+/*
+
+
+    <div class="">
+        <nav class="nav">
+            {{#each footer.social}}
+          <a class="nav-link" href="#" title="{{txt}}">
+             <i class="{{ico}}"></i>
+          </a>
+            {{/each}}
+        </nav>
+    </div>
+  </div>
+</footer>
+
+*/
