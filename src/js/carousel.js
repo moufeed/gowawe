@@ -3,7 +3,7 @@ if ($().owlCarousel) {
     $(".owl-carousel").each((index, _carousel) => {
       var $carousel = $(_carousel);
       var data = $carousel.data();
-      console.log(data)
+
       let loop = data.loop ? data.loop : false,
         margin = data.margin ? data.margin : 10,
         nav = data.nav ? data.nav : false,

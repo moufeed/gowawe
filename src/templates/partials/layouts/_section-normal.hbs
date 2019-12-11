@@ -22,7 +22,7 @@
       </div>
       <div class="col-lg-3 col-md-4">
         <button type="button" class="btn btn-danger position-absolute shopping-btn">{{local.shopping}}</button>
-        <div class="featured-slider owl-carousel" data-singleitem="true" data-nav="true">
+        <div class="featured-slider owl-carousel" data-rtl="{{isRtl dir}}" data-singleitem="true" data-nav="true">
           {{#each featured_slider.slides}}
           {{!--
           style="background-image:url(assets/img/{{img}});"
@@ -37,7 +37,7 @@
         </div>
       </div>
       <div class="col-lg-9 col-md-8 py-4">
-        <div class="main-carousel owl-carousel" data-singleitem="true" data-nav="true" >
+        <div class="main-carousel owl-carousel" data-singleitem="true" data-nav="true"  data-rtl="{{isRtl dir}}">
           {{#each products_slider}}
           <div class="row">
             {{#each this.products}}
@@ -46,11 +46,12 @@
               <div class="h-prod-item card">
                 <div class="h-prod-header">
                   <span>
+
                     {{#if this.img.length}}
                     <img src="./assets/img/{{this.img}}" alt="" class="pro-img">
                     {{/if}}
                     {{#if this.images.length}}
-                    <ul class="list-unstyled prod-imgs owl-carousel" data-singleitem="true" data-dots="true"
+                    <ul class="list-unstyled prod-imgs owl-carousel" data-singleitem="true" data-dots="true" data-rtl="{{isRtl ../../dir}}"
                       data-mousedrag="false" data-touchdrag="false">
                       {{#each this.images}}
                       <li class="item">

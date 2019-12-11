@@ -11,6 +11,7 @@ function fixSliderHeight() {
 }
 
 $(function() {
+  $('[data-toggle="tooltip"]').tooltip();
   fixSliderHeight();
   $(window).on("resize", function() {
     setTimeout(function() {

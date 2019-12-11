@@ -8,7 +8,22 @@ var gulp = require("gulp"),
   (handlebars = require("gulp-compile-handlebars")),
   (sourcemaps = require("gulp-sourcemaps")),
   (autoprefixer = require("gulp-autoprefixer")),
-  (uglify = require("gulp-uglify-es").default);
+  (uglify = require("gulp-uglify-es").default),
+  (babel = require("gulp-babel")),
+  (mergeStream = require("merge-stream"));
+
+function getBundles(regexPattern, files) {
+  return files.filter(function(bundle) {
+    return regexPattern.test(bundle.output);
+  });
+}
+
+const regex = {
+  css: /\.css$/,
+  html: /\.(html|htm)$/,
+  js: /\.js$/,
+  po: /\.po$/
+};
 
 var config = {
   header:
@@ -25,15 +40,31 @@ var config = {
     }
   },
   js: {
-    src: [
-      "./node_modules/jquery/dist/jquery.min.js",
-      "./node_modules/bootstrap/dist/js/bootstrap.min.js",
-      "./node_modules/owl.carousel/dist/owl.carousel.min.js",
-      "./src/js/carousel.js",
-      "./src/js/scripts.js"
+    src: "./src/js/**/*.js",
+    files: [
+      {
+        output: "lib.js",
+        es6: false,
+        inputs: [
+          "./node_modules/jquery/dist/jquery.min.js",
+          "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+        ]
+      },
+      {
+        output: "scripts.js",
+        es6: true,
+        inputs: ["./src/js/scripts.js"]
+      },
+      {
+        output: "carousel.js",
+        es6: false,
+        inputs: [
+          "./node_modules/owl.carousel/dist/owl.carousel.min.js",
+          "./src/js/carousel.js"
+        ]
+      }
     ],
-    dist: "./dist/assets/js",
-    file: "script.js"
+    dist: "./dist/assets/js"
   },
 
   html: {
@@ -50,6 +81,9 @@ var config = {
         },
         toJSON: function(object) {
           return JSON.stringify(object);
+        },
+        isRtl: function(dir) {
+          return dir == "rtl";
         }
       }
     }
@@ -57,6 +91,12 @@ var config = {
   images: {
     src: "./src/images/*",
     dist: "./dist/assets/img/"
+  },
+  copy: {
+    js: {
+      src: [],
+      dist: "./dist/assets/js"
+    }
   }
 };
 
@@ -118,25 +158,29 @@ gulp.task("style", function() {
 // -----------------   javascript/js  -----------------
 // ----------------------------------------------------
 gulp.task("script", function() {
-  return gulp
-    .src(config.js.src)
-    .pipe(concat(config.js.file))
-    .pipe(
-      uglify({
-        mangle: true
-      })
-    )
-    .pipe(
-      rename({
-        suffix: ".min"
-      })
-    )
-    .pipe(
-      header(config.header, {
-        pkg: pkg
-      })
-    )
-    .pipe(gulp.dest(config.js.dist));
+  let bundles = getBundles(regex.js, config.js.files);
+  mergeStream(
+    bundles.map(file => {
+      let _file;
+      if (file.es6) {
+        _file = gulp
+          .src(file.inputs, { base: ".", allowEmpty: true })
+          .pipe(concat(file.output))
+          .pipe(babel());
+      } else {
+        _file = gulp
+          .src(file.inputs, { base: ".", allowEmpty: true })
+          .pipe(concat(file.output));
+      }
+
+      _file
+        .pipe(uglify({ mangle: false }))
+        .pipe(rename({ suffix: ".min" }))
+        .pipe(header(config.header, { pkg: pkg }))
+        .pipe(gulp.dest(config.js.dist));
+      return _file;
+    })
+  );
 });
 
 // ----------------------------------------------------
@@ -145,6 +189,10 @@ gulp.task("script", function() {
 
 gulp.task("copy:img", function() {
   return gulp.src(config.images.src).pipe(gulp.dest(config.images.dist));
+});
+
+gulp.task("copy:js", function() {
+  return gulp.src(config.copy.js.src).pipe(gulp.dest(config.copy.js.dist));
 });
 
 // ----------------------------------------------------

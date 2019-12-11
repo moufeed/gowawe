@@ -17,8 +17,11 @@
   "author": "moufeed jobakji <m.jobakji@hotmail.com> (moufeed.me)",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-concat": "^2.6.1",
     "gulp-header": "^1.8.9",
@@ -27,7 +30,8 @@
     "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^3.0.0",
     "gulp-uglify-es": "^2.0.0",
-    "gulp-watch": "^4.3.11"
+    "gulp-watch": "^4.3.11",
+    "merge-stream": "^2.0.0"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",

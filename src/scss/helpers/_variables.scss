@@ -3,10 +3,6 @@ $img: "../images/";
 $font: "../fonts";
 $lengths: 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 90 100;
 
-
-
-
-
 // bootstrap  Variables
 //
 // Variables should follow the `$component-state-property-size` formula for
@@ -53,9 +49,13 @@ $yellow: #ffc107 !default;
 $green: #28a745 !default;
 $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
+$light-red: #ff4646;
+$dark-pink: #470f31;
 
 $colors: (
-  'light-gray' : $gray-100
+  "light-gray": $gray-100,
+  "light-red": $light-red,
+  "dark-pink": $dark-pink
 ) !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge(
