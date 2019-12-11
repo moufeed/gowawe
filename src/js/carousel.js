@@ -3,18 +3,17 @@ if ($().owlCarousel) {
     $(".owl-carousel").each((index, _carousel) => {
       var $carousel = $(_carousel);
       var data = $carousel.data();
-
+      console.log(data)
       let loop = data.loop ? data.loop : false,
         margin = data.margin ? data.margin : 10,
         nav = data.nav ? data.nav : false,
-        prev = data.prev ? data.prev : '<i class="fas fa-chevron-left"></i>',
-        next = data.next ? data.next : '<i class="fas fa-chevron-right"></i>',
+        prev = data.prev ? data.prev : '<i class="fa fa-chevron-left"></i>',
+        next = data.next ? data.next : '<i class="fa fa-chevron-right"></i>',
         dots = data.dots ? data.dots : false,
         center = data.center ? data.center : false,
         items = data.items ? data.items : 6,
         autoplay = data.autoplay ? data.autoplay : false,
         timeout = data.timeout ? data.timeout : 5000,
-        hoverPause = data.pause ? data.pause : true,
         xsItems = data.xsItems ? data.xsItems : 1,
         smItems = data.smItems ? data.smItems : 2,
         mdItems = data.mdItems ? data.mdItems : 3,
@@ -23,7 +22,13 @@ if ($().owlCarousel) {
         rtl = data.rtl ? data.rtl : false,
         owlOptions = data.owlOptions ? data.owlOptions : false,
         slideBy = data.slideby ? data.slideby : 1,
-        singleItem = data.singleitem ? data.singleitem : false;
+        singleItem = data.singleitem ? data.singleitem : false,
+        freeDrag = data.freedrag ? data.freedrag : false,
+        autoHeight = data.autoheight ? data.autoheight : false,
+        hoverPause = data.hasOwnProperty("pause") ? data.pause : true,
+        mouseDrag = data.hasOwnProperty("mousedrag") ? data.mousedrag : true,
+        pullDrag = data.hasOwnProperty("pulldrag") ? data.pulldrag : true,
+        touchDrag = data.hasOwnProperty("touchDrag") ? data.touchdrag : true;
 
       let options = {
         autoplay: autoplay,
@@ -36,7 +41,12 @@ if ($().owlCarousel) {
         center: center,
         navText: [prev, next],
         rtl: rtl,
-        slideBy: slideBy
+        slideBy: slideBy,
+        mouseDrag: mouseDrag,
+        pullDrag: pullDrag,
+        freeDrag: freeDrag,
+        touchDrag: touchDrag,
+        autoHeight: autoHeight
       };
 
       if (singleItem) {

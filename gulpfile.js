@@ -47,6 +47,9 @@ var config = {
       helpers: {
         capitals: function(str) {
           return str.toUpperCase();
+        },
+        toJSON: function(object) {
+          return JSON.stringify(object);
         }
       }
     }

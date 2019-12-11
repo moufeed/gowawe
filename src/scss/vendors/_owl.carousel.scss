@@ -1,6 +1,30 @@
-@import '../../../node_modules/owl.carousel/src/scss/core';
+
+
+@import './owl/core';
+// @import '../../../node_modules/owl.carousel/src/scss/core';
 @import '../../../node_modules/owl.carousel/src/scss/animate';
 @import '../../../node_modules/owl.carousel/src/scss/autoheight';
 @import '../../../node_modules/owl.carousel/src/scss/lazyload';
 @import '../../../node_modules/owl.carousel/src/scss/video';
 @import "../../../node_modules/owl.carousel/src/scss/theme.default";
+
+
+
+.owl-dots{
+  .owl-dot{
+    span{
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background : rgba(0,0,0,.5);
+      display: block;
+      margin: 3px;
+    }
+    &.active{
+      span{
+        background : rgba(0,0,0,.9);
+        transform: scale(1.1);
+      }
+    }
+  }
+}

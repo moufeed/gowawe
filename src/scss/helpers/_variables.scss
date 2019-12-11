@@ -55,7 +55,7 @@ $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
 
 $colors: (
-
+  'light-gray' : $gray-100
 ) !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge(

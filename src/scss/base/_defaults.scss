@@ -3,7 +3,7 @@
         direction: $dir;
         text-align: $left;
         font-family: $font-regular, $font-family-base;
-         @include var('background','white');
+         @include var('background','light-gray');
     }
 
 
