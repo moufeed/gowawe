@@ -1,0 +1,12 @@
+<section class="recently-section container-fluid my-3">
+  <div class="bg-white py-5 px-3 shadow-sm">
+    <h2 class="mx-3 section-title"><span>{{title}}</span></h2>
+    <div class="d-flex justify-content-center mt-3">
+      {{#each list}}
+        <a href="#" class="flag-link mx-3">
+          <img src="assets/img/{{this}}" alt="">
+        </a>
+      {{/each}}
+    </div>
+  </div>
+</section>

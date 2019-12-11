@@ -3,71 +3,13 @@ var local = {
   pieces: "قطع",
   min_order: " الحد الأدنى",
   colors: "الألوان",
-  shopping: "تسوق الآن"
+  shopping: "تسوق الآن",
+  location: "الموقع",
+  view_details: "التفاصيل",
+  mainProducts: "المنتجات",
+  targetMarket: "السوق"
 };
-var footer = {
-  logo: "logo.png",
-  social: [
-    {
-      txt: "twitter",
-      ico: "fa fa-twitter"
-    },
-    {
-      txt: "facebook",
-      ico: "fa fa-facebook"
-    },
-    {
-      txt: "instagram",
-      ico: "fa fa-instagram"
-    }
-  ],
-  lists: [
-    {
-      title: "معلومات",
-      list: ["الخدمات", "الإعلان معنا", "الهوية التجارية"]
-    },
-    {
-      title: "خدمة الزبائن",
-      list: [
-        "قصص النجاح",
-        "قسم الصحافة",
-        "وظائف ومهن",
-        "ردود الفعل",
-        "مساعدة",
-        "دفع امن",
-        "خدمات التفتيش",
-        "مركز التعلم",
-        "أنا مستخدم جديد"
-      ]
-    },
-    {
-      title: "شراء التجارة  ",
-      list: [
-        "إرسال متطلبات الشراء",
-        "عرض ما بعد البيع",
-        "إنشاء موقع الويب الخاص بك مجانا",
-        "عرض العملاء المتوقعين",
-        "كيف اشترى",
-        "حد الائتمان الإلكتروني",
-        "إرسال نزاع",
-        "أنا المشتري"
-      ]
-    },
-    {
-      title: "شراء التجارة  ",
-      list: [
-        "إرسال متطلبات الشراء",
-        "عرض ما بعد البيع",
-        "إنشاء موقع الويب الخاص بك مجانا",
-        "عرض العملاء المتوقعين",
-        "كيف اشترى",
-        "حد الائتمان الإلكتروني",
-        "إرسال نزاع",
-        "أنا المشتري"
-      ]
-    }
-  ]
-};
+
 var product = {
   min_price: "10.00$ - 20.00$",
   discount: "10%",
@@ -164,8 +106,104 @@ var printing = {
   ]
 };
 
-var sections = [printing];
+var supplier = {
+  name: "CKS قرطاسية Corporator",
+  image: "supplier.png",
+  products:
+    "تي شيرت بجودة عالية تي شيرت بجودة عالية جودة جيدة جدا اطلب الآن واحصل على خصم ...",
+  target:
+    "تي شيرت بجودة عالية تي شيرت بجودة عالية جودة جيدة جدا اطلب الآن واحصل على خصم ...",
+  location: "تايوان"
+};
 
+var recently = {
+  type: "recently",
+  title: "  البنود التي تم عرضها مؤخرا",
+  published: true,
+  products: [product, product, product, product]
+};
+
+var suppliers = {
+  type: "suppliers",
+  title: " الموردين",
+  background: "",
+  published: true,
+  list: [supplier, supplier, supplier, supplier]
+};
+
+var regions = {
+  type: "regions",
+  title: "اختيار الموردين الخاص بك حسب المناطق",
+  background: "",
+  published: true,
+  list: ["sudan.png", "usa.png", "eg.png", "canada.png", "France.png"]
+};
+
+var sections = [printing, regions, recently, suppliers];
+
+var footer = {
+  logo: "logo.png",
+  social: [
+    {
+      txt: "twitter",
+      ico: "fa fa-twitter"
+    },
+    {
+      txt: "facebook",
+      ico: "fa fa-facebook"
+    },
+    {
+      txt: "instagram",
+      ico: "fa fa-instagram"
+    }
+  ],
+  lists: [
+    {
+      title: "معلومات",
+      list: ["الخدمات", "الإعلان معنا", "الهوية التجارية"]
+    },
+    {
+      title: "خدمة الزبائن",
+      list: [
+        "قصص النجاح",
+        "قسم الصحافة",
+        "وظائف ومهن",
+        "ردود الفعل",
+        "مساعدة",
+        "دفع امن",
+        "خدمات التفتيش",
+        "مركز التعلم",
+        "أنا مستخدم جديد"
+      ]
+    },
+    {
+      title: "شراء التجارة  ",
+      list: [
+        "إرسال متطلبات الشراء",
+        "عرض ما بعد البيع",
+        "إنشاء موقع الويب الخاص بك مجانا",
+        "عرض العملاء المتوقعين",
+        "كيف اشترى",
+        "حد الائتمان الإلكتروني",
+        "إرسال نزاع",
+        "أنا المشتري"
+      ]
+    },
+    {
+      title: "شراء التجارة  ",
+      list: [
+        "إرسال متطلبات الشراء",
+        "عرض ما بعد البيع",
+        "إنشاء موقع الويب الخاص بك مجانا",
+        "عرض العملاء المتوقعين",
+        "كيف اشترى",
+        "حد الائتمان الإلكتروني",
+        "إرسال نزاع",
+        "أنا المشتري"
+      ]
+    }
+  ]
+};
 module.exports = {
   dir: "rtl",
   lang: "ar",

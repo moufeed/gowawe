@@ -1,0 +1,11 @@
+
+
+.flag-link{
+  display: inline-block;
+  img{
+    width: 60px;
+  }
+  &:hover{
+    box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
+  }
+}
