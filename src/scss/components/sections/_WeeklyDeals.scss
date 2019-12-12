@@ -1,0 +1,61 @@
+
+.weekly-section{
+  .deal{
+    z-index: 1;
+  }
+}
+
+.background{
+ @include absolute(top  bottom  left  right, 0 0 15px 15px);
+    @include var("background","dark-orange");
+    z-index: 0;
+    overflow: hidden;
+    &:after{
+      @include absolute(top $left,  20% 75%);
+      content: '';
+      @include square(100%);
+      @include var("background","dark-yellow");
+      transform: rotate(if-ltr(60deg , -60deg));
+    }
+    z-index: 0;
+}
+
+.count-timer{
+  @include var("color","dark");
+  span{
+    @include var("background","white");
+    @include var("color","dark");
+    padding: 15px;
+    display: inline-block;
+    border-radius: 3px;;
+    font-size: 40px;
+    font-weight: bolder;
+    position: relative;
+    min-width: 90px;
+    text-align: center;
+  }
+  sup{
+    font-size: 12px;
+    @include absolute( top $left , 12px 10px);
+  }
+
+}
+
+
+
+
+@include media-breakpoint-down(sm){
+  .weekly-section .display-3{
+    font-size: 45px;
+  }
+   .count-timer span{
+      font-size: 26px;
+      min-width: 70px;
+    }
+  }
+  @include media-breakpoint-only(lg){
+     .count-timer span{
+      font-size: 26px;
+      min-width: 70px;
+    }
+  }

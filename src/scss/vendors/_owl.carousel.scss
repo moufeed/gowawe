@@ -9,6 +9,36 @@
 @import "../../../node_modules/owl.carousel/src/scss/theme.default";
 
 
+ .owl-carousel  .owl-nav {
+    button {
+      @include absolute(top, calc(50% - 25px));
+      display: inline-block;
+      @include size(30px, 50px);
+      opacity: 0.8;
+      transition: all 0.3s;
+      &.owl-next,
+      &.owl-prev {
+        @include var("color", "white");
+        background: rgba(0, 0, 0, 0.5);
+      }
+      &.disabled {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+      &:hover {
+        opacity: 1;
+      }
+      @include if-rtl {
+        transform: rotate(180deg);
+      }
+    }
+    .owl-prev {
+      #{$left}: 10px;
+    }
+    .owl-next {
+      #{$right}: 10px;
+    }
+  }
 
 .owl-dots{
   .owl-dot{

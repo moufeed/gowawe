@@ -61,6 +61,11 @@ var config = {
           "./node_modules/owl.carousel/dist/owl.carousel.min.js",
           "./src/js/carousel.js"
         ]
+      },
+      {
+        output: "countdown.js",
+        es6: true,
+        inputs: ["./src/js/countdown.js"]
       }
     ],
     dist: "./dist/assets/js"

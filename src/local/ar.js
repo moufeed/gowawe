@@ -11,7 +11,60 @@ var local = {
   view_more: "المزيد",
   quantity: "كمية",
   request_quotation: "طلب الإقتباس",
-  Learn_more: "معرفة المزيد"
+  Learn_more: "معرفة المزيد",
+  from: "من",
+  deals_end_in: "العرض ينتهي في",
+  days: "ايام",
+  hours: "ساعات",
+  minutes: "دقائق"
+};
+
+var product = {
+  min_price: "10.00$ - 20.00$",
+  discount: "10%",
+  price: "9.00$ - 18.00$",
+  min: "100",
+  img: "",
+  title: "لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت",
+  factory: {
+    avatar: "avatar.jpg",
+    flag: "flag.png",
+    country: "امريكا",
+    name: "كيواي دولوريم أيوم فيوجايات كيو",
+    age: "4 years",
+    icons: ["ico-1.png", "ico-2.png", "ico-3.png"]
+  },
+  colors: ["red", "#ff00ff", "rgb(100,205,230)", "black", "white", "$000fff"],
+  images: ["product-1.jpg", "product-2.jpg", "product-3.jpg"],
+  actions: [
+    {
+      txt: "أضف إلى السلة",
+      ico: "fa fa-shopping-cart",
+      link: "#",
+      tooltip: false
+    },
+    {
+      txt: false,
+      ico: "fa fa-envelope",
+      link: "#",
+      tooltip: "تواصل مع البائع"
+    },
+    {
+      txt: false,
+      ico: "fa fa-heart-o",
+      link: "#",
+      tooltip: "أضف للمفضلة"
+    }
+  ]
+};
+
+var WeeklyDeals = {
+  type: "WeeklyDeals",
+  published: true,
+  title: "عروض أسبوعية",
+  off: "10% خصم",
+  date: "Jan 5, 2021 15:37:25",
+  products: [product, product, product, product, product, product]
 };
 
 var quotations = {
@@ -68,45 +121,6 @@ var offers = {
   type: "offers",
   published: true,
   data: [offer, selling]
-};
-
-var product = {
-  min_price: "10.00$ - 20.00$",
-  discount: "10%",
-  price: "9.00$ - 18.00$",
-  min: "100",
-  img: "",
-  title: "لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت",
-  factory: {
-    avatar: "avatar.jpg",
-    flag: "flag.png",
-    country: "امريكا",
-    name: "كيواي دولوريم أيوم فيوجايات كيو",
-    age: "4 years",
-    icons: ["ico-1.png", "ico-2.png", "ico-3.png"]
-  },
-  colors: ["red", "#ff00ff", "rgb(100,205,230)", "black", "white", "$000fff"],
-  images: ["product-1.jpg", "product-2.jpg", "product-3.jpg"],
-  actions: [
-    {
-      txt: "أضف إلى السلة",
-      ico: "fa fa-shopping-cart",
-      link: "#",
-      tooltip: false
-    },
-    {
-      txt: false,
-      ico: "fa fa-envelope",
-      link: "#",
-      tooltip: "تواصل مع البائع"
-    },
-    {
-      txt: false,
-      ico: "fa fa-heart-o",
-      link: "#",
-      tooltip: "أضف للمفضلة"
-    }
-  ]
 };
 
 var printing = {
@@ -199,7 +213,15 @@ var regions = {
   list: ["sudan.png", "usa.png", "eg.png", "canada.png", "France.png"]
 };
 
-var sections = [printing, regions, offers, quotations, recently, suppliers];
+var sections = [
+  WeeklyDeals,
+  printing,
+  regions,
+  offers,
+  quotations,
+  recently,
+  suppliers
+];
 
 var footer = {
   logo: "logo.png",

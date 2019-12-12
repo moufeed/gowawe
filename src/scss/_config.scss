@@ -1,13 +1,15 @@
-@import
-'./vendors/bootstrap.config',
-'./vendors/owl.carousel'
-;
 
+@import './vendors/bootstrap.config';
 
 @import
 './helpers/variables',
 './helpers/functions',
 './helpers/mixins'
+;
+
+@import
+
+'./vendors/owl.carousel'
 ;
 
 
@@ -22,7 +24,8 @@
 './components/sections/offers',
 './components/sections/regions',
 './components/sections/suppliers-card',
-'./components/sections/quotation'
+'./components/sections/quotation',
+'./components/sections/WeeklyDeals'
 ;
 
 @import

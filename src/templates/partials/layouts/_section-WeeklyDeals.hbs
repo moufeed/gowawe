@@ -1,0 +1,104 @@
+<section class="weekly-section container-fluid my-3">
+  <div class="bg-white py-5 px-3 shadow-sm">
+    <h2 class="mx-3 mb-35"><span>{{title}}</span></h2>
+
+    <div class="row">
+        <div class="col d-flex flex-column justify-content-center align-items-center">
+            <div class="background"></div>
+            <div class="deal px-3 py-4 text-white">
+                <span>
+                  {{local.from}} <strong class="display-3">{{off}}</strong>
+                </span>
+                <p class="h2 mt-35">{{local.deals_end_in}}</p>
+
+                <div class="count-timer mt-25" data-countdown="Jan 5, 2021 15:37:25">
+                  <span><sup>{{local.days}}</sup> <strong  class="days">00</strong></span> <b class="h1">:</b>
+                  <span><sup>{{local.hours}}</sup> <strong class="hours">00</strong></span> <b class="h1">:</b>
+                  <span><sup>{{local.minutes}}</sup> <strong class="minutes">00</strong></span>
+                </div>
+
+                  <a href="#" class="btn btn-light btn-lg mt-35">
+                    {{local.view_more}}
+                  </a>
+            </div>
+
+        </div>
+        <div class="col-lg-8 col-xsl-9">
+          <div class="owl-carousel weekly-carousel" data-rtl="{{isRtl dir}}" data-nav="true"  data-xl-items="3" data-md-items="2" data-lg-items="2">
+            {{#each products}}
+
+                        <div class="h-prod-item card">
+                          <div class="h-prod-header">
+                            <span>
+                              {{#if this.img.length}}
+                              <img src="./assets/img/{{img}}" alt="" class="pro-img">
+                              {{/if}}
+                              {{#if this.images.length}}
+                              <ul class="list-unstyled prod-imgs owl-carousel" data-singleitem="true" data-dots="true"
+                                data-rtl="{{isRtl ../dir}}">
+                                {{#each this.images}}
+                                <li class="item">
+                                  <img src="./assets/img/{{this}}" alt="">
+                                </li>
+                                {{/each}}
+                              </ul>
+                              {{/if}}
+                            </span>
+
+                            <span class="pt-25 h-info">
+                              <h5>{{../local.price}}</h5>
+                              <p class="h-prod-price">
+                                <b class="text-danger">{{min_price}}</b> /{{../local.pieces}} <br>
+                                <small><s>{{price}}</s></small>
+                                <span class="badge badge-danger">{{discount}}</span>
+                              </p>
+                              <p class="h-prod-order">
+                                <strong>{{../local.min_order}}</strong>: {{min}}
+                              </p>
+
+                              {{#if colors.length}}
+
+                              <div class="h-prod-colors">
+                                <strong class="d-block mb-2">{{../local.colors}} :</strong>
+                                {{#each colors}}
+                                <span style="background-color: {{this}};"></span>
+                                {{/each}}
+                              </div>
+                              {{/if}}
+                            </span>
+                          </div>
+                          <h4 class="h-prod-title card-title"><a href="#">
+                              {{title}}
+                            </a></h4>
+                          <footer class="h-prod-footer">
+                            <div class="factory d-flex align-items-center px-3 my-2">
+                              <img src="assets/img/{{factory.avatar}}" alt="" width="55" class="rounded no-owl">
+                              <span class="mx-2">
+                                <strong class="d-block">{{factory.name}}</strong>
+                                <img src="assets/img/{{factory.flag}}" alt="{{factory.country}}" width="25" class="no-owl">
+                                <small>{{factory.country}} | {{factory.age}}</small>
+                              </span>
+                            </div>
+                            <div class="actions-bar p-3">
+                              {{#each actions}}
+                              <a href="{{link}}" class="btn btn-outline-dark" {{#if tooltip}} data-toggle="tooltip" data-placement="top"
+                                title="{{tooltip}}" {{/if}}>
+                                {{#if ico}}
+                                <i class="{{ico}}"></i>
+                                {{/if}}
+
+                                {{#if txt}}
+                                <span>{{txt}}</span>
+                                {{/if}}
+                              </a>
+                              {{/each}}
+                            </div>
+                          </footer>
+                        </div>
+            {{/each}}
+          </div>
+        </div>
+    </div>
+
+  </div>
+</section>

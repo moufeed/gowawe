@@ -52,10 +52,14 @@ $cyan: #17a2b8 !default;
 $light-red: #ff4646;
 $dark-pink: #470f31;
 $desaturated-blue : #263b5e;
+$dark-orange :#E8500C;
+$dark-yellow :#FEAD0A;
 $colors: (
   "light-gray": $gray-100,
   "light-red": $light-red,
-  "dark-pink": $dark-pink
+  "dark-pink": $dark-pink,
+  "dark-orange" : $dark-orange,
+  "dark-yellow" : $dark-yellow
 ) !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge(
