@@ -7,7 +7,41 @@ var local = {
   location: "Location",
   view_details: "View Details",
   mainProducts: "Main Products",
-  targetMarket: "Target Market"
+  targetMarket: "Target Market",
+  view_more: "View more"
+};
+
+var data = [
+  {
+    flag: "canada.png",
+    name: "canada",
+    txt: "Want To Buy Zf Genuine Parts",
+    date: "30-Sep"
+  },
+  {
+    flag: "usa.png",
+    name: "USA",
+    txt: "Mercides Genuine Parts",
+    date: "30-Sep"
+  }
+];
+
+var selling = {
+  title: "New Selling Leads",
+  count: "3.423",
+  data: [...data, ...data]
+};
+
+var offer = {
+  title: "Latest By Offers",
+  count: "3.423",
+  data: [...data, ...data]
+};
+
+var offers = {
+  type: "offers",
+  published: true,
+  data: [offer, selling]
 };
 
 var product = {
@@ -140,7 +174,7 @@ var regions = {
   list: ["sudan.png", "usa.png", "eg.png", "canada.png", "France.png"]
 };
 
-var sections = [printing, regions, recently, suppliers];
+var sections = [printing, regions, offers, recently, suppliers];
 
 var footer = {
   logo: "logo.png",

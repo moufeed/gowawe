@@ -7,7 +7,41 @@ var local = {
   location: "الموقع",
   view_details: "التفاصيل",
   mainProducts: "المنتجات",
-  targetMarket: "السوق"
+  targetMarket: "السوق",
+  view_more: "المزيد"
+};
+
+var data = [
+  {
+    flag: "canada.png",
+    name: "كندا",
+    txt: "تريد شراء قطع غيار أصلية",
+    date: "30-Sep"
+  },
+  {
+    flag: "usa.png",
+    name: "امريكا",
+    txt: "قطع غيار أصلية",
+    date: "30-Sep"
+  }
+];
+
+var selling = {
+  title: "عروض بيع جديدة",
+  count: "3.423",
+  data: [...data, ...data]
+};
+
+var offer = {
+  title: "أحدث من العروض",
+  count: "3.423",
+  data: [...data, ...data]
+};
+
+var offers = {
+  type: "offers",
+  published: true,
+  data: [offer, selling]
 };
 
 var product = {
@@ -139,7 +173,7 @@ var regions = {
   list: ["sudan.png", "usa.png", "eg.png", "canada.png", "France.png"]
 };
 
-var sections = [printing, regions, recently, suppliers];
+var sections = [printing, regions, offers, recently, suppliers];
 
 var footer = {
   logo: "logo.png",
