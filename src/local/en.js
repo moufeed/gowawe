@@ -16,7 +16,9 @@ var local = {
   deals_end_in: "Deals end in",
   days: "days",
   hours: "hours",
-  minutes: "minutes"
+  minutes: "minutes",
+  categories: "categories",
+  more_categories: "More Categories"
 };
 
 var product = {
@@ -55,6 +57,66 @@ var product = {
       ico: "fa fa-heart-o",
       link: "#",
       tooltip: "Add to Wish List"
+    }
+  ]
+};
+
+var categories = {
+  type: "categories",
+  published: true,
+  title: "categories",
+  categories: [
+    "Manufacturing & Processing Machinery",
+    "Consumer Electronic",
+    "Industrial Equipment & Components",
+    "Electrical & Electronics",
+    "Construction & Decoration",
+    "Light industry & Daily use",
+    "Auto, Motorcycle Parts & Accessories",
+    "Apparel & Accessories",
+    "Lights & Lighting",
+    "Sporting Goods & Recreation",
+    "Transportation",
+    "Arts & Crafts",
+    "Health & Medicine",
+    "Packaging & Printing",
+    "Computer Products"
+  ],
+  slider: ["s1.png", "s2.png", "s3.png"],
+  featured: [
+    {
+      txt: "Getex 2019",
+      img: "c6.png"
+    },
+    {
+      txt: "Gift Packaging",
+      img: "c5.png"
+    },
+    {
+      txt: "Diving Suppliers",
+      img: "c4.png"
+    }
+  ],
+  likes: [
+    {
+      title: "Lorem ipsum, dolor sit amet",
+      txt: "15.000+  Products",
+      img: "c3.png"
+    },
+    {
+      title: "consectetur adipisicing elit.",
+      txt: "15.000+  Products",
+      img: "10150367264818.jpg"
+    },
+    {
+      title: "obcaecati assumenda ipsum",
+      txt: "15.000+  Products",
+      img: "9015165911090.jpg"
+    },
+    {
+      title: "obcaecati assumenda ipsum",
+      txt: "15.000+  Products",
+      img: "9015165911090.jpg"
     }
   ]
 };
@@ -218,6 +280,7 @@ var regions = {
 };
 
 var sections = [
+  categories,
   WeeklyDeals,
   printing,
   regions,
