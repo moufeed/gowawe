@@ -8,7 +8,33 @@ var local = {
   view_details: "التفاصيل",
   mainProducts: "المنتجات",
   targetMarket: "السوق",
-  view_more: "المزيد"
+  view_more: "المزيد",
+  quantity: "كمية",
+  request_quotation: "طلب الإقتباس",
+  Learn_more: "معرفة المزيد"
+};
+
+var quotations = {
+  type: "quotations",
+  published: true,
+  form: {
+    title: "طلب واحد ، ونقلت متعددة",
+    search: "أين أنت تبحث عن...",
+    select: ["حقيبة / حقائب"],
+    templates: {
+      title: "اختر نوع القالب",
+      data: ["سعر الطلب", "طلب عينة", "طلب تفاصيل السؤال"]
+    }
+  },
+  paragraph: {
+    background: "quotations.png",
+    title: "طريقة سهلة لإرسال طلبات الشراء للموردين والحصول على اقتباس بسرعة",
+    list: [
+      "الحصول على أسعار لطلبك مخصص",
+      "دع الموردين المناسبين يجدونك",
+      "إغلاق الصفقات بنقرة واحدة"
+    ]
+  }
 };
 
 var data = [
@@ -173,7 +199,7 @@ var regions = {
   list: ["sudan.png", "usa.png", "eg.png", "canada.png", "France.png"]
 };
 
-var sections = [printing, regions, offers, recently, suppliers];
+var sections = [printing, regions, offers, quotations, recently, suppliers];
 
 var footer = {
   logo: "logo.png",

@@ -1,6 +1,6 @@
 if ($().owlCarousel) {
   const LoadCarousel = () => {
-    $(".owl-carousel").each((index, _carousel) => {
+    $(".owl-carousel:not(.owl-thumbs)").each((index, _carousel) => {
       var $carousel = $(_carousel);
       var data = $carousel.data();
 
@@ -25,6 +25,7 @@ if ($().owlCarousel) {
         singleItem = data.singleitem ? data.singleitem : false,
         freeDrag = data.freedrag ? data.freedrag : false,
         autoHeight = data.autoheight ? data.autoheight : false,
+        lazyLoad = data.lazyLoad ? data.lazyLoad : false,
         hoverPause = data.hasOwnProperty("pause") ? data.pause : true,
         mouseDrag = data.hasOwnProperty("mousedrag") ? data.mousedrag : true,
         pullDrag = data.hasOwnProperty("pulldrag") ? data.pulldrag : true,
@@ -46,7 +47,8 @@ if ($().owlCarousel) {
         pullDrag: pullDrag,
         freeDrag: freeDrag,
         touchDrag: touchDrag,
-        autoHeight: autoHeight
+        autoHeight: autoHeight,
+        lazyLoad: lazyLoad
       };
 
       if (singleItem) {
@@ -76,4 +78,6 @@ if ($().owlCarousel) {
     });
   };
   LoadCarousel();
+
+  // thumbs slider
 }

@@ -8,9 +8,37 @@ var local = {
   view_details: "View Details",
   mainProducts: "Main Products",
   targetMarket: "Target Market",
-  view_more: "View more"
+  view_more: "View more",
+  quantity: "Quantity",
+  request_quotation: "Request For Quotation",
+  Learn_more: "Learn More"
 };
 
+var quotations = {
+  type: "quotations",
+  published: true,
+  form: {
+    title: "One Request,Multiple Quotes",
+    search: "Where Are You Looking For...",
+    select: ["Bag/Bags"],
+    templates: {
+      title: "Select Template Type:",
+      data: ["Request Price", "Request a sample", "Request Question Details"]
+    }
+  },
+  paragraph: {
+    background: "quotations.png",
+    title:
+      "An Easy Way To Send Buying Requests To Suppliers & Get Quote Quickly",
+    list: [
+      "Get Quotes For Your Custom Request",
+      "Let The Right Suppliers Find You",
+      "Close Deals With One Click"
+    ]
+  }
+};
+
+//#region offers
 var data = [
   {
     flag: "canada.png",
@@ -31,7 +59,7 @@ var selling = {
   count: "3.423",
   data: [...data, ...data]
 };
-
+//#endregion
 var offer = {
   title: "Latest By Offers",
   count: "3.423",
@@ -43,6 +71,7 @@ var offers = {
   published: true,
   data: [offer, selling]
 };
+//*offers
 
 var product = {
   min_price: "10.00$ - 20.00$",
@@ -174,7 +203,7 @@ var regions = {
   list: ["sudan.png", "usa.png", "eg.png", "canada.png", "France.png"]
 };
 
-var sections = [printing, regions, offers, recently, suppliers];
+var sections = [printing, regions, offers, quotations, recently, suppliers];
 
 var footer = {
   logo: "logo.png",

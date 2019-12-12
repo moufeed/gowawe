@@ -1,0 +1,45 @@
+
+
+.quotation-section{
+  .col{
+    position: relative;
+  }
+  .q-mask{
+     @include absolute(top  bottom  left  right, 0 0 15px 15px);
+    padding: 25px;
+    background-size:cover;
+    background-position:center center;
+    z-index: 0;
+    &:after{
+      content: '';
+      background: rgba(#000,.5);
+      @include absolute(top left  right bottom , 0 0 0 0);
+      z-index: 0;
+    }
+
+  }
+}
+.quot-paragraph {
+  z-index: 1;
+      position: relative;
+  @include var('color', "white");
+  @include media-breakpoint-up(lg){
+     h4 {
+        margin-#{$right}:30% ;
+        line-height: 35px;
+      }
+  }
+}
+/*
+ <div class="quot-paragraph py-3 px-3" >
+            <>{{paragraph.title}}</>
+            <ul>
+              {{#each paragraph.list}}
+                  <li>
+                    {{this}}
+                  </li>
+              {{/each}}
+            </ul>
+            <a href="#" class="btn btn-secondary">{{local.Learn_more}}</a>
+        </div>
+*/

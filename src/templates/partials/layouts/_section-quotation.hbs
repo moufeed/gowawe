@@ -1,0 +1,85 @@
+<section class="quotation-section container-fluid my-3">
+  <div class="bg-white py-5 px-3 shadow-sm">
+    <h2 class="mx-3 section-title"><span>{{local.request_quotation}}</span></h2>
+    <div class="row row-cols-1 row-cols-lg-2">
+      <div class="col  d-flex flex-column justify-content-center align-items-start"  >
+      <div class="q-mask" style="background-image:url('assets/img/{{paragraph.background}}')"></div>
+        <div class="quot-paragraph py-3 px-4 " >
+            <h4>{{paragraph.title}}</h4>
+            <ul>
+              {{#each paragraph.list}}
+                  <li>
+                    {{this}}
+                  </li>
+              {{/each}}
+            </ul>
+            <a href="#" class="btn btn-secondary">{{local.Learn_more}}</a>
+        </div>
+      </div>
+      <div class="col">
+
+        <form action="#" class="border border-secondary py-3 px-5 ">
+          <h4 class="mb-3 mt-2">{{paragraph.title}}</h4>
+          <div class="form-group">
+            <input type="text" class="form-control" id="search" placeholder="{{form.search}}">
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="{{local.quantity}}">
+            </div>
+            <div class="col">
+              <select name="select" id=""  class="form-control">
+                {{#each  form.select}}
+                    <option value="">{{this}}</option>
+                {{/each}}
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group mt-3">
+              <label class="h5 mb-2">{{form.templates.title}}</label>
+              <div class="btn-group-toggle" data-toggle="buttons">
+                {{#each form.templates.data}}
+                <label class="btn btn-light mt-2">
+                  <input type="checkbox" > {{this}}
+                </label>
+                 {{/each}}
+              </div>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-warning">{{local.request_quotation}}</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+{{!--
+requestQuotation: "Request For Quotation",
+LearnMore: "Learn More"
+};
+
+form: {
+title: "One Request,Multiple Quotes",
+search: "Where Are You Looking For...",
+select: ["Bag/Bags"],
+templates: {
+title: "Select Template Type:",
+data: ["Request Price", "Request a sample", "Request Question Details"]
+}
+},
+paragraph: {
+background: "quotations.png",
+title:
+"An Easy Way To Send Buying Requests To Suppliers & Get Quote Quickly",
+list: [
+"Get Quotes For Your Custom Request",
+"Let The Right Suppliers Find You",
+"Close Deals With One Click"
+]
+}
+};
+ --}}
