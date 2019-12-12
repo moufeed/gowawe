@@ -24,10 +24,9 @@ const regex = {
   js: /\.js$/,
   po: /\.po$/
 };
-
+//* /*!\n* <%= pkg.name %> - v <%= pkg.version %> \n* <%= pkg.description %> \n* Author :<%= pkg.author %>\n*/\n  */
 var config = {
-  header:
-    "/*!\n* <%= pkg.name %> - v <%= pkg.version %> \n* <%= pkg.description %> \n* Author :<%= pkg.author %>\n*/\n",
+  header: "",
   sassOptions: {
     outputStyle: "compressed"
   },
