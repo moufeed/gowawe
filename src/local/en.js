@@ -18,7 +18,8 @@ var local = {
   hours: "hours",
   minutes: "minutes",
   categories: "categories",
-  more_categories: "More Categories"
+  more_categories: "More Categories",
+  you_may_like: "You May Like"
 };
 
 var product = {
