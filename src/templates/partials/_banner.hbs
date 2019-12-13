@@ -1,0 +1,65 @@
+<section class="main-banner">
+    <div class="d-flex  py-3 tabs-links">
+      <ul class="nav " id="pills-tab" role="tablist">
+
+          {{#each banner.tabs}}
+            <li class="nav-item">
+              <a class="nav-link {{#is active true }}active{{/is}}" id="{{id}}-tab"
+              data-toggle="tab" href="#{{id}}" role="tab"
+                aria-controls="{{id}}" aria-selected="false">{{txt}}</a>
+            </li>
+          {{/each}}
+      </ul>
+    </div>
+
+
+<div class="tab-content" id="pills-tabContent">
+
+  {{#each banner.tabs}}
+  <div class="tab-pane fade  {{#is active true }} show  active{{/is}} main-tab" id="{{id}}" role="tabpanel" aria-labelledby="{{id}}-tab">
+
+      <picture class="d-flex justify-content-center ">
+        <img src="assets/img/slider/{{bg}}" alt="">
+      </picture>
+
+      <main class="t-content">
+            <div class="container">
+              <div class="owl-carousel owl-thumbs main-slider d " style="display: none;"  data-slider="slider" data-rtl="{{isRtl ../dir}}">
+              {{#each ../banner.slides}}
+                <div class="row no-gutters bg-white slider-card" data-bg="{{bg}}" data-color="{{color}}">
+                  <div class="col-12 col-md-6 col-lg-4 ">
+                    <div class="paragraph h-100 d-flex justify-content-center align-items-start flex-column p-x-35">
+                      <span>{{txt}}</span>
+                      <strong class="h2">{{title}}</strong>
+
+                      <a href="" class="btn btn-info mt-4 px-5" id="viewBtn">{{../../local.view_more}}</a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-8 d-flex flex-column justify-content-center">
+                    <div class="dimg">
+                      <img src="assets/img/slider/{{img}}" alt="">
+                    </div>
+                  </div>
+                </div>
+              {{/each}}
+              </div>
+            </div>
+      </main>
+
+
+    <footer class="banner-footer">
+          <div class="container">
+            <div class="owl-carousel owl-thumbs  "  style="display: none;"  data-slider="thumbs" data-rtl="{{isRtl ../dir}}">
+              {{#each ../banner.slides  }}
+              <a class="img-mask">
+                <img src="assets/img/slider/{{img}}" class="no-owl" alt="">
+              </a>
+              {{/each}}
+            </div>
+          </div>
+    </footer>
+
+  </div>
+  {{/each}}
+</div>
+</section>

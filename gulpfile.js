@@ -66,6 +66,11 @@ var config = {
         output: "countdown.js",
         es6: true,
         inputs: ["./src/js/countdown.js"]
+      },
+      {
+        output: "thumbs.js",
+        es6: true,
+        inputs: ["./src/js/carousel-thumbs.js"]
       }
     ],
     dist: "./dist/assets/js"

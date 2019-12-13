@@ -22,6 +22,87 @@ var local = {
   you_may_like: "You May Like"
 };
 
+var main_banner = {
+  published: true,
+  tabs: [
+    {
+      active: true,
+      txt: "Kampanyalar",
+      id: "Kampanyalar",
+      bg: "b1.jpg"
+    },
+    {
+      active: false,
+      txt: "Yılbaşına Özel",
+      id: "yilbasinaozel",
+      bg: "b2.png"
+    },
+    {
+      active: false,
+      txt: "Yeni Gelenler",
+      id: "yenigelenler",
+      bg: "b3.png"
+    },
+    {
+      active: false,
+      txt: "Keşfet",
+      id: "Kesfet",
+      bg: "b4.png"
+    }
+  ],
+  slides: [
+    {
+      img: "1.jpg",
+      bg: "b1.jpg",
+      title: "consectetur adipisicing elit.",
+      txt: "Lorem ipsum dolor sit amet ",
+      link: "#",
+      color: "white"
+    },
+    {
+      img: "2.jpg",
+      bg: "b2.jpg",
+      title: "obcaecati voluptatibus odio",
+      txt: "Molestiae eligendi ut nemo voluptatem",
+      link: "",
+      color: "white"
+    },
+    {
+      img: "3.jpg",
+      bg: "b3.png",
+      title: "quasi exercitationem vel",
+      txt: " Necessitatibus veniam, perferendis corrupti similique",
+      link: "#",
+      color: "#333333"
+    },
+    {
+      img: "4.jpg",
+      bg: "b4.png",
+      title: "ipsam optio nihil cupiditate",
+      txt: "neque saepe possimus distinctio quam ab delectus ratione",
+      link: "#",
+      color: "white"
+    },
+    {
+      img: "5.jpg",
+      bg: "b5.png",
+      title: "Quae natus quisquam neque beatae est fugit reiciendis",
+      txt:
+        "quibusdam ducimus aliquam quod dolor tempore rerum impedit? Laudantium, eligendi!",
+      link: "#",
+      color: "#333333"
+    },
+    {
+      img: "6.jpg",
+      bg: "b6.png",
+      title: "saepe ipsum, eligendi molestias",
+      txt: "Necessitatibus veniam, perferendis corrupti similique",
+      link: "#",
+      color: "#333333"
+    }
+  ]
+};
+
 var product = {
   min_price: "10.00$ - 20.00$",
   discount: "10%",
@@ -367,5 +448,6 @@ module.exports = {
   subtitle: "",
   local: local,
   sections: sections,
-  footer: footer
+  footer: footer,
+  banner: main_banner
 };
