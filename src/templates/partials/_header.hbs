@@ -1,4 +1,4 @@
-<header>
+<header class="main-header">
 <div class="container-fluid">
   <div class="row main-header">
       <div class="logo col">
@@ -60,13 +60,13 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
 
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav {{#is dir 'rtl'}} ml-auto {{else}}  mr-auto {{/is}} ">
         <li class="nav-item dropdown " id="categories-dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-list"></i> All Categories
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div class="dropdown-menu  {{#is dir 'rtl'}} dropdown-menu-lg-right {{/is}}  " aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Action</a>
             <a class="dropdown-item" href="#">Another action</a>
             <div class="dropdown-divider"></div>
@@ -85,7 +85,7 @@
             aria-haspopup="true" aria-expanded="false">
             Services
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div class="dropdown-menu {{#is dir 'rtl'}} dropdown-menu-lg-right {{/is}}" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Action</a>
             <a class="dropdown-item" href="#">Another action</a>
             <div class="dropdown-divider"></div>
