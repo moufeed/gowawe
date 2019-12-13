@@ -1,7 +1,7 @@
 <section class="categories-section container-fluid my-3">
   <div class="py-5 px-3 shadow-sm gray-bg">
-    <div class="row row-cols-3">
-      <div class="col col-xl-3 col-lg-4">
+    <div class="row justify-content-between">
+      <div class="col col-xl-2 col-lg-4 lst">
           <h3 class="categories-title mb-3">
             {{title}}
           </h3>
@@ -11,33 +11,44 @@
            {{/each}}
         </nav>
       </div>
-      <div class="col col-xl-7">
-        <div class="owl-carousel" data-singleitem="true">
+      <div class="col col-xl-8 crsl col-md-12 col-lg-12">
+        <div class="owl-carousel categories-slider mb-3" data-singleitem="true" data-nav="true" data-rtl="{{isRtl dir}}">
             {{#each slider}}
-            <div class="item">
               <img src="assets/img/{{this}}" alt="">
-            </div>
+
             {{/each}}
         </div>
-        <div class="row flex-wrap justify-content-around row-cols-3">
+        <div class="row flex-wrap justify-content-around row-cols-md-3 f-cate d-lg-none d-xl-flex">
               {{#each featured}}
                 <div class="col">
                     <div class="card shadow-sm p-4" style="background-image:url('assets/img/{{img}}')">
-                      <p class="h3">{{txt}}</p>
+                      <a  href="#" class="h3 text-dark">{{txt}}</a>
                     </div>
                 </div>
               {{/each}}
         </div>
       </div>
-      <div class="col-xl-2 col-lg-3">
-        <div class="bg-white shadow-sm py-3 px-2">
-        <h4>{{local.you_may_like}}</h4>
+      {{!--  only  for  lg screens --}}
+          <div class="d-none flex-wrap col-lg-4   f-cate  flex-column d-lg-flex order-2 d-xl-none">
+            {{#each featured}}
+              <div class="card shadow-sm p-4" style="background-image:url('assets/img/{{img}}')">
+                <a href="#" class="h3 text-dark">{{txt}}</a>
+              </div>
+            {{/each}}
+          </div>
+      {{!--  only  for  lg screens --}}
+
+      <div class="col-xl-2 col-lg-4 fcl">
+        <div class="bg-white shadow-sm py-3 px-2 d-scroll">
+        <h4 class="categories-title mb-3">{{local.you_may_like}}</h4>
         <div>
-          <ul class="list-unstyled">
+          <ul class="list-unstyled h-fav-list">
             {{#each likes}}
             <li class="itm">
               <a href="#">
-                <img src="assets/img/{{img}}" class="" alt="">
+               <span class="msk">
+                  <img src="assets/img/{{img}}" class="" alt="">
+               </span>
                 <div class="itm-body">
                   <strong>{{title}}</strong>
                   {{txt}}
