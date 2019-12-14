@@ -3,35 +3,40 @@
   min-height: 600px;
   @include var("background", "gray");
 
-  @include media-breakpoint-down(lg) {
-    min-height: 540px;
+   @include media-breakpoint-down(lg) {
+    min-height: 520px;
   }
-   @include media-breakpoint-down(sm) {
-    min-height: 540px;
+   @include media-breakpoint-down(md) {
+    min-height: 320px;
   }
 }
-
-.main-tab {
-  picture {
-    @include absolute(top left right bottom, 0 0 0 0);
-    z-index: 0;
-    img {
-      height: 100%;
-      object-fit: cover;
-      width: 100%;
-    }
-    &:after {
+.bg-msk{
+  @include absolute(top left right bottom, 0 0 0 0);
+  z-index: 0;
+  &:after {
       content: "";
       @include absolute(top $left, 0 0);
       height: 75px;
+      width: 100%;
       background: rgb(34, 193, 195);
       background: linear-gradient(
         0deg,
         rgba(34, 193, 195, 0) 0%,
-        rgba(0, 0, 0, 0.6699054621848739) 100%
+        rgba(0, 0, 0, 0.25) 100%
       );
+      z-index: 0;
+    }
+picture {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+    img {
+      height: 100%;
+      min-width: 100%;
     }
   }
+}
+.main-tab {
   main.t-content {
     padding-top: 75px;
     padding-bottom: 100px;
@@ -101,8 +106,12 @@
         align-items: center;
         border-radius: 15px;
         font-family: $font-regular, FontAwesome;
+
         @include media-breakpoint-down(lg) {
           display: none !important;
+        }
+        @include if-rtl {
+          transform: rotate(0);
         }
       }
     }
@@ -115,15 +124,9 @@
   }
 }
 .slider-card {
-  min-height: 380px;
+  min-height: 425px;
   border-radius: 8px;
   padding: 3px;
-  @include media-breakpoint-down(lg) {
-    min-height: 300px;
-  }
-  @include media-breakpoint-down(md) {
-    min-height: 200px;
-  }
 }
 
 .banner-footer {
@@ -146,5 +149,31 @@
 
   .owl-item.current .img-mask {
     border-color: white;
+  }
+}
+
+.dimg{
+    @include absolute(top left right bottom, 0 0 0 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    img{
+      height: 100%;
+       @include media-breakpoint-down(lg){
+         width: auto !important;
+       }
+    }
+
+}
+ @include media-breakpoint-down(sm){
+  .txt-col {order: 2;}
+  .img-col {order: 1;}
+  .dimg{
+    position: static;
+  }
+  .paragraph{
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
 }

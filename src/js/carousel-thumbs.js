@@ -1,6 +1,10 @@
 const initSlider = (slider, thumbs) => {
   let slidesPerPage = 1;
   let syncedSecondary = true;
+  let sliderData = slider.data();
+  let thumbsData = slider.data();
+  console.log(sliderData);
+  console.log(thumbsData);
 
   let syncPosition = el => {
     //if you set loop to false, you have to restore this next line
@@ -56,7 +60,9 @@ const initSlider = (slider, thumbs) => {
       items: 1,
       slideSpeed: 2000,
       nav: true,
-      navText: ["&#xf060;", "Next &#xf061; "],
+      navText: sliderData.navText
+        ? sliderData.navText
+        : ["&#xf060;", "&#xf061; "],
       autoplay: false,
       dots: false,
       loop: false,
@@ -66,7 +72,16 @@ const initSlider = (slider, thumbs) => {
       hoverPause: true,
       mouseDrag: false,
       pullDrag: false,
-      touchDrag: false
+      touchDrag: false,
+      rtl: sliderData.rtl,
+      responsive: {
+        0: {
+          autoHeight: true
+        },
+        720: {
+          autoHeight: false
+        }
+      }
     })
     .on("changed.owl.carousel", syncPosition);
 
@@ -86,7 +101,8 @@ const initSlider = (slider, thumbs) => {
       smartSpeed: 200,
       slideSpeed: 500,
       slideBy: 1,
-      responsiveRefreshRate: 100
+      responsiveRefreshRate: 100,
+      rtl: sliderData.rtl
     })
     .on("changed.owl.carousel", syncPosition2);
 

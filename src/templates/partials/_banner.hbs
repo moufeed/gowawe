@@ -18,16 +18,20 @@
   {{#each banner.tabs}}
   <div class="tab-pane fade  {{#is active true }} show  active{{/is}} main-tab" id="{{id}}" role="tabpanel" aria-labelledby="{{id}}-tab">
 
-      <picture class="d-flex justify-content-center ">
-        <img src="assets/img/slider/{{bg}}" alt="">
-      </picture>
+        <div class="bg-msk">
+           <picture class="d-flex justify-content-center align-items-center">
+            <img src="assets/img/slider/{{bg}}" alt="">
+          </picture>
+        </div>
 
       <main class="t-content">
             <div class="container">
-              <div class="owl-carousel owl-thumbs main-slider d " style="display: none;"  data-slider="slider" data-rtl="{{isRtl ../dir}}">
+              <div class="owl-carousel owl-thumbs main-slider d " style="display: none;"  data-slider="slider" data-rtl="{{isRtl ../dir}}"
+
+              data-nav-text='{{#is ../dir 'ltr'}}["&#xf060;", "next &#xf061;"]{{else}}["&#xf061;", "التالي &#xf060;"]{{/is}}'>
               {{#each ../banner.slides}}
                 <div class="row no-gutters bg-white slider-card" data-bg="{{bg}}" data-color="{{color}}">
-                  <div class="col-12 col-md-6 col-lg-4 ">
+                  <div class="col-12 col-md-6 col-lg-4 txt-col">
                     <div class="paragraph h-100 d-flex justify-content-center align-items-start flex-column p-x-35">
                       <span>{{txt}}</span>
                       <strong class="h2">{{title}}</strong>
@@ -35,7 +39,7 @@
                       <a href="" class="btn btn-info mt-4 px-5" id="viewBtn">{{../../local.view_more}}</a>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-8 d-flex flex-column justify-content-center">
+                  <div class="col-12 col-md-6 col-lg-8 d-flex flex-column justify-content-center img-col">
                     <div class="dimg">
                       <img src="assets/img/slider/{{img}}" alt="">
                     </div>

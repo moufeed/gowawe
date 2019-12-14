@@ -18,7 +18,86 @@ var local = {
   hours: "ساعات",
   minutes: "دقائق"
 };
-
+var main_banner = {
+  published: true,
+  tabs: [
+    {
+      active: true,
+      txt: "عروض",
+      id: "Kampanyalar",
+      bg: "b1.jpg"
+    },
+    {
+      active: false,
+      txt: "راس السنة",
+      id: "yilbasinaozel",
+      bg: "b2.png"
+    },
+    {
+      active: false,
+      txt: "طرح‌نما یا",
+      id: "yenigelenler",
+      bg: "b3.png"
+    },
+    {
+      active: false,
+      txt: "متنی",
+      id: "Kesfet",
+      bg: "b4.png"
+    }
+  ],
+  slides: [
+    {
+      img: "1.jpg",
+      bg: "b1.jpg",
+      title: "طرح‌نما یا لورم ایپسوم به ",
+      txt: "Lorem ipsum dolor sit amet ",
+      link: "#",
+      color: "white"
+    },
+    {
+      img: "2.jpg",
+      bg: "b2.jpg",
+      title: " بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی",
+      txt: "کلیِ طرح سفارش‌گرفته‌شده استفاده می‌کند، تا ازنظر گرافیکی نشانگر",
+      link: "",
+      color: "white"
+    },
+    {
+      img: "3.jpg",
+      bg: "b3.png",
+      title: "طراحی و صفحه‌بندی را به پایان برند",
+      txt: " که صفحهٔ طراحی یا صفحه‌بندی شده، بعد از اینکه متن در آن قرار گیرد",
+      link: "#",
+      color: "#333333"
+    },
+    {
+      img: "4.jpg",
+      bg: "b4.png",
+      title: "هدف بهبود ابزارهای کاربردی می باشد. کتابهای ",
+      txt: "شناخت بیشتری را برای طراحان رایانه ای علی الخصوص",
+      link: "#",
+      color: "white"
+    },
+    {
+      img: "5.jpg",
+      bg: "b5.png",
+      title: "طرح‌نما یا لورم ایپسوم به",
+      txt: " آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته",
+      link: "#",
+      color: "#333333"
+    },
+    {
+      img: "6.jpg",
+      bg: "b6.png",
+      title: "آنها با استفاده از محتویات ساختگی، صفحهٔ گرافیکی",
+      txt:
+        " خود را صفحه‌آرایی می‌کنند تا مرحلهٔ طراحی و صفحه‌بندی را به پایان برند.",
+      link: "#",
+      color: "#333333"
+    }
+  ]
+};
 var product = {
   min_price: "10.00$ - 20.00$",
   discount: "10%",
@@ -358,5 +437,6 @@ module.exports = {
   subtitle: "",
   local: local,
   sections: sections,
-  footer: footer
+  footer: footer,
+  banner: main_banner
 };
