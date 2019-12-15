@@ -131,11 +131,11 @@
         }
 
         @each $s in $sides {
-            .p#{nth($s,1)}-#{$i} {
+            .p-#{nth($s,1)}-#{$i} {
                 padding-#{nth($s,2)} : #{$i}px !important;
             }
 
-            .m#{nth($s,1)}-#{$i} {
+            .m-#{nth($s,1)}-#{$i} {
                 margin-#{nth($s,2)} : #{$i}px !important;
             }
         }

@@ -1,0 +1,19 @@
+<section  class="deals-header pt-5">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-white m-b-50">{{local.weekly_deals}}</h1>
+          <nav class="deals-nav d-flex justify-content-start   bg-white shadow-sm">
+            {{#each w_d.categories}}
+            <a href="#">
+              <picture>
+                <img src="assets/img/wd/{{img}}" alt="">
+              </picture>
+              <span>{{txt}}</span>
+            </a>
+            {{/each}}
+          </nav>
+      </div>
+    </div>
+  </div>
+</section>

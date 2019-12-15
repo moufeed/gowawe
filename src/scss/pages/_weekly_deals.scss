@@ -1,0 +1,85 @@
+.deals-header {
+  background: url('#{$img}/bg.png') top center/100% auto  no-repeat;
+
+
+}
+
+.deals-nav {
+  padding: 25px ;
+  margin: 0;
+  border-radius: 25px;
+  overflow: auto;
+  a {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px  10px;
+    margin: 5px 10px;
+    @include var('color','dark');
+    max-width: 225px;
+    min-width: 170px;
+
+    picture {
+      margin:10px auto;
+      @include square(100px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 5px solid rgba(#000 ,.03);
+      transition: all  .3s;
+      img{
+        max-height: 100%;
+        width: auto;
+      }
+    }
+    span{
+      display: block;
+      margin: 0 15px;
+    }
+    &:hover{
+      @include var('color' , 'red');
+        picture{
+          @include var('border-color' , 'red');
+        }
+    }
+  }
+}
+
+
+
+@include media-breakpoint-up(xl){
+  .deals-nav {
+    flex-wrap: wrap;
+  }
+}
+
+@include media-breakpoint-up(lg){
+  .deals-container{
+    padding: 0  75px;
+  }
+}
+
+@include media-breakpoint-down(lg){
+  .deals-header{
+    background-size: auto 50%;
+  }
+}
+
+ @include media-breakpoint-down(md){
+
+  .deals-nav a {
+    max-width: 100vw;
+    min-width: 50vw;
+  }
+ }
+
+  @include media-breakpoint-down(md){
+
+  .deals-nav a {
+    max-width: 250px;
+    min-width: 25vw;
+  }
+ }
