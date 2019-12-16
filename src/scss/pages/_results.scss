@@ -1,0 +1,265 @@
+.results-page {
+  background-image: url("#{$img}/bg1.png"), url("#{$img}/bg1.png"),
+    url("#{$img}/bg1.png"), url("#{$img}/bg2.png"), url("#{$img}/bg3.png");
+  background-repeat: no-repeat;
+  background-position: -12% 30%, 120% 15%, 110% 40%, 115% 107%, -16% 41%;
+}
+
+.results-tabs {
+  margin-#{$left}: 45px;
+  .nav-link {
+    border: 0;
+    border-top: 3px solid transparent;
+    background: $gray-200;
+    font-weight: bold;
+    color: $dark;
+    border-radius: 0;
+    padding: 10px 20px;
+    box-shadow: 0 0 4px 2px rgba(#000, 0.1);
+    &.active {
+      font-weight: normal;
+      border-top-color: $red;
+    }
+  }
+}
+
+//------------------------
+.list-results {
+  margin-#{$right}: 75px;
+}
+
+.supplier-info {
+  h3 {
+    font-weight: bolder;
+  }
+  .meta {
+    @include var("color", "text-color");
+    margin-bottom: 15px;
+    span:not(:first-child) {
+      margin-#{$left}: 15px;
+    }
+    img {
+      width: 16px;
+      margin-#{$right}: 3px;
+    }
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      margin-bottom: 10px;
+      strong {
+        color: $gray-600;
+        display: inline-block;
+        min-width: 150px;
+      }
+    }
+  }
+  .inquiry-btn {
+    font-size: 18px;
+  }
+}
+.supplier-images {
+  text-align: center;
+
+  span {
+    margin: 6px;
+    @include square(100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: $gray-100;
+    img {
+      height: 100%;
+    }
+  }
+}
+
+
+
+//*******************************************************************************
+
+
+.f-categories-list{}
+
+ .categoriesList{
+   padding-#{$left}:15px ;
+   li {
+     margin-bottom: 5px;
+     a{
+       color: $dark;
+       padding:2px 7px;
+        display: inline-block;
+       &:hover{
+         color: $red;
+
+       }
+       .fa{
+         transition: all .3s;
+          margin-#{$right}:10px ;
+       }
+       &[aria-expanded="true"]{
+         font-weight: bold;
+         .fa{
+           transform: rotate(90deg);
+         }
+       }
+     }
+     ul{
+        padding-top:15px ;
+        padding-#{$left}:25px ;
+        max-height: 500px;
+        overflow-y: auto;
+     }
+   }
+ }
+     /*
+
+
+           <li>
+             <a href="#">{{local.all}}</a>
+           </li>
+
+            {{#each sp.categories}}
+              <li>
+                <a class="" data-toggle="collapse" href="#category-{{@index}}" role="button" aria-expanded="false"
+                  aria-controls="category-{{@index}}">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  <span>{{category}}</span>
+                </a>
+                <ul class="list-unstyled sub-list collapse" aria-labelledby="category-{{@index}}"
+                 id="category-{{@index}}" data-parent="#categoriesList">
+                    <li>
+                      <a href="#">{{../local.all}}</a>
+                    </li>
+                  {{#each list}}
+                    <li>
+                      <a href="#">{{this}}</a>
+                    </li>
+                  {{/each}}
+                </ul>
+              </li>
+            {{/each}}
+
+         </ul>
+      </div>
+
+  </div>
+*/
+/*
+filters-list
+*/
+.filters-list {
+  .title {
+    a {
+      display: block;
+      padding: 10px 20px;
+      border-top: 1px solid $dark;
+      border-bottom: 1px solid $dark;
+      color: $dark;
+      font-size: 20px;
+      text-decoration: none;
+      transition: all 0.3s;
+
+      &:hover {
+        border-color: $red;
+        background: $red;
+        color: $white;
+      }
+    }
+    .fa-plus {
+      float: $right;
+      margin-top: 3px;
+    }
+    [aria-expanded="true"] .fa-plus:before {
+      content: "\f068";
+    }
+  }
+}
+
+.filters {
+  padding-#{$left}: 25px;
+  .btn-title {
+    font-weight: bold;
+    padding-#{$left}: 3px;
+    i {
+      margin-#{$right}: 5px;
+    }
+    &[aria-expanded="true"] .fa:before {
+      content: "\f106";
+    }
+  }
+  .from {
+    padding-#{$left}: 25px;
+    input:focus {
+      box-shadow: none;
+    }
+    .custom-control-input {
+       &:focus ~ .custom-control-label::before {
+         box-shadow:  0 0 0 2px rgba($green , .5);
+      }
+      &:active ~ .custom-control-label::before{
+        background: rgba($green , .5);
+         box-shadow:  0 0 0 2px rgba($green , .5);
+      }
+      &:checked ~ .custom-control-label::before {
+        background: $green;
+        border-color: $green;
+      }
+    }
+    .custom-control-label::before {
+      background: $gray-400;
+    }
+  }
+}
+
+
+
+
+//**********************************************************************************************************
+//**********************************************************************************************************
+//**********************************************************************************************************
+
+/**
+  responsive
+*/
+@include media-breakpoint-down(lg) {
+  .list-results {
+    margin-#{$right}: 25px;
+  }
+  .supplier-card {
+    padding: 25px 15px !important;
+  }
+  .supplier-images {
+    overflow: auto;
+    white-space: nowrap;
+  }
+  .btn-link.mx-4 {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+}
+@include media-breakpoint-down(md) {
+  .types-card{
+    padding: 15px !important;
+}
+  .list-results {
+    margin-#{$right}: 0;
+  }
+}
+@include media-breakpoint-down(sm) {
+ .types-card{
+    .card-body {
+      flex-direction: column !important;
+    }
+  }
+  .supplier-info {
+    .actions {
+      text-align: center;
+      .btn {
+        margin-top: 10px;
+      }
+    }
+  }
+}

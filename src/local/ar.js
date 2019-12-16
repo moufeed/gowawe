@@ -1,6 +1,6 @@
 var fromHome = require("./home/home.ar");
 var fromWeekly = require("./weaklydeals/weaklydeals.ar");
-
+var fromSuppliers = require("./suppliers/suppliers.ar");
 var local = {
   price: "السعر",
   pieces: "قطع",
@@ -21,7 +21,20 @@ var local = {
   hours: "ساعات",
   minutes: "دقائق",
   all_deals: "كل العروض",
-  weekly_deals: "عروض أسبوعية"
+  weekly_deals: "عروض أسبوعية",
+  contact_now: "اتصل بنا",
+  chat_with_supplier: "تواصل مع المورد",
+  inquiry_basket: "التحقق من السلة",
+  business_type: "النوع",
+  certification: "الشهادات",
+  city_province: "العنوان",
+  suppliers: "الموردين",
+  products: "المنتجات",
+  suppliers_types: "انواع المورادين",
+  all_categories: "التصنيفات",
+  product_feature: "ميزات المنتج",
+  supplier_features: "ميزات المورد",
+  all: "الكل"
 };
 
 /* end home page */
@@ -38,5 +51,6 @@ module.exports = {
   sections: fromHome.sections,
   footer: fromHome.footer,
   banner: fromHome.main_banner,
-  w_d: fromWeekly // weekly deals page
+  w_d: fromWeekly, // weekly deals page
+  sp: fromSuppliers // suppliers page
 };

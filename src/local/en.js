@@ -1,5 +1,6 @@
 var fromHome = require("./home/home.en");
 var fromWeekly = require("./weaklydeals/weaklydeals.en");
+var fromSuppliers = require("./suppliers/suppliers.en");
 var local = {
   price: "price",
   pieces: "pieces",
@@ -23,7 +24,20 @@ var local = {
   more_categories: "More Categories",
   you_may_like: "You May Like",
   all_deals: "all Deals",
-  weekly_deals: "Weekly Deals"
+  weekly_deals: "Weekly Deals",
+  contact_now: "Contact Now",
+  chat_with_supplier: "Chat With Supplier",
+  inquiry_basket: "Inquiry Basket",
+  business_type: "Business Type",
+  certification: "Certification",
+  city_province: "City/Province",
+  suppliers: "suppliers",
+  products: "Products",
+  suppliers_types: "Supplier Types",
+  all_categories: "All Categories",
+  product_feature: "Product Feature",
+  supplier_features: "Supplier Features",
+  all: "All"
 };
 
 module.exports = {
@@ -39,5 +53,6 @@ module.exports = {
   sections: fromHome.sections,
   footer: fromHome.footer,
   banner: fromHome.main_banner,
-  w_d: fromWeekly // weekly deals page
+  w_d: fromWeekly, // weekly deals page
+  sp: fromSuppliers // suppliers page
 };

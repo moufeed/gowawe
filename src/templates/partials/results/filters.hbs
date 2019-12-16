@@ -1,0 +1,76 @@
+<aside class="filters-list px-xl-5">
+  <div class="f-categories-list">
+      <h4 class="title">
+        <a data-toggle="collapse" href="#filters-categories" role="button" aria-expanded="true"
+          aria-controls="filters-categories">
+        <i class="fa fa-list" aria-hidden="true"></i>
+          {{local.all_categories}}
+          <i class="fa fa-plus"></i>
+        </a>
+      </h4>
+      <div class="collapse show " id="filters-categories">
+         <ul class="list-unstyled categoriesList"  id="categoriesList">
+           <li>
+             <a href="#">{{local.all}}</a>
+           </li>
+
+            {{#each sp.categories}}
+              <li>
+                <a class="" data-toggle="collapse" href="#category-{{@index}}" role="button" aria-expanded="false"
+                  aria-controls="category-{{@index}}">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  <span>{{category}}</span>
+                </a>
+                <ul class="list-unstyled sub-list collapse" aria-labelledby="category-{{@index}}"
+                 id="category-{{@index}}" data-parent="#categoriesList">
+                    <li>
+                      <a href="#">{{../local.all}}</a>
+                    </li>
+                  {{#each list}}
+                    <li>
+                      <a href="#">{{this}}</a>
+                    </li>
+                  {{/each}}
+                </ul>
+              </li>
+            {{/each}}
+
+         </ul>
+      </div>
+
+  </div>
+
+
+
+  <div class="products-filter">
+      <h4 class="title">
+        <a  data-toggle="collapse" href="#filters-products" role="button" aria-expanded="true"
+          aria-controls="filters-products">
+          <i class="fa fa-cube" aria-hidden="true"></i>
+          {{local.product_feature}}
+          <i class="fa fa-plus"></i>
+        </a>
+      </h4>
+      <div class="collapse show filters" id="filters-products">
+    {{#each sp.filters}}
+      <div >
+        <a class="btn btn-lg btn-title" data-toggle="collapse" href="#filters-{{@index}}" role="button" aria-expanded="true"
+          aria-controls="filters-{{@index}}">
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+          {{title}}
+        </a>
+        <div class="collapse show" id="filters-{{@index}}">
+            <form class="from">
+              {{#each list}}
+                    <div class="custom-control custom-checkbox mb-1">
+                      <input type="checkbox" class="custom-control-input" id="Check{{@index}}-{{@../index}}">
+                      <label class="custom-control-label" for="Check{{@index}}-{{@../index}}">{{this}}</label>
+                    </div>
+              {{/each}}
+            </form>
+        </div>
+      </div>
+    {{/each}}
+    </div>
+  </div>
+</aside>
