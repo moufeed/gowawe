@@ -1,0 +1,24 @@
+<style>
+  .adv-prod-slider{
+    background-image: url('assets/img/{{sp.slider.background}}');
+    background-color:#187FE8;
+    background-position: 80% 0;
+    display: none;
+  }
+</style>
+<section class="adv-prod-slider my-5" data-show="products-tab">
+  <div class="advprod_header p-x-50 py-4 text-white">
+    <h2>{{sp.slider.title}}</h2>
+    <p>{{sp.slider.subtitle}}</p>
+  </div>
+  <div class="s-slider shadow ">
+    <div class="owl-carousel " data-rtl="{{isRtl dir}}" data-nav="true" data-loop="true" data-md-items="4"
+      data-xl-items="10" data-prev="&#xf060;" data-next="&#xf061;">
+      {{#each sp.slider.images}}
+      <div>
+        <img src="assets/img/{{this}}" alt="">
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

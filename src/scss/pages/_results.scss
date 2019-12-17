@@ -1,4 +1,5 @@
 .results-page {
+  background-color: $white;
   background-image: url("#{$img}/bg1.png"), url("#{$img}/bg1.png"),
     url("#{$img}/bg1.png"), url("#{$img}/bg2.png"), url("#{$img}/bg3.png");
   background-repeat: no-repeat;
@@ -76,77 +77,41 @@
   }
 }
 
-
-
 //*******************************************************************************
 
 
-.f-categories-list{}
 
- .categoriesList{
-   padding-#{$left}:15px ;
-   li {
-     margin-bottom: 5px;
-     a{
-       color: $dark;
-       padding:2px 7px;
-        display: inline-block;
-       &:hover{
-         color: $red;
+.categoriesList {
+  padding-#{$left}: 15px;
+  li {
+    margin-bottom: 5px;
+    a {
+      color: $dark;
+      padding: 2px 7px;
+      display: inline-block;
+      &:hover {
+        color: $red;
+      }
+      .fa {
+        transition: all 0.3s;
+        margin-#{$right}: 10px;
+      }
+      &[aria-expanded="true"] {
+        font-weight: bold;
+        .fa {
+          transform: rotate(90deg);
+        }
+      }
+    }
+    ul {
+      padding-top: 15px;
+      padding-#{$left}: 25px;
+      max-height: 500px;
+      overflow-y: auto;
+    }
+  }
+}
 
-       }
-       .fa{
-         transition: all .3s;
-          margin-#{$right}:10px ;
-       }
-       &[aria-expanded="true"]{
-         font-weight: bold;
-         .fa{
-           transform: rotate(90deg);
-         }
-       }
-     }
-     ul{
-        padding-top:15px ;
-        padding-#{$left}:25px ;
-        max-height: 500px;
-        overflow-y: auto;
-     }
-   }
- }
-     /*
-
-
-           <li>
-             <a href="#">{{local.all}}</a>
-           </li>
-
-            {{#each sp.categories}}
-              <li>
-                <a class="" data-toggle="collapse" href="#category-{{@index}}" role="button" aria-expanded="false"
-                  aria-controls="category-{{@index}}">
-                  <i class="fa fa-angle-right" aria-hidden="true"></i>
-                  <span>{{category}}</span>
-                </a>
-                <ul class="list-unstyled sub-list collapse" aria-labelledby="category-{{@index}}"
-                 id="category-{{@index}}" data-parent="#categoriesList">
-                    <li>
-                      <a href="#">{{../local.all}}</a>
-                    </li>
-                  {{#each list}}
-                    <li>
-                      <a href="#">{{this}}</a>
-                    </li>
-                  {{/each}}
-                </ul>
-              </li>
-            {{/each}}
-
-         </ul>
-      </div>
-
-  </div>
-*/
 /*
 filters-list
 */
@@ -196,12 +161,12 @@ filters-list
       box-shadow: none;
     }
     .custom-control-input {
-       &:focus ~ .custom-control-label::before {
-         box-shadow:  0 0 0 2px rgba($green , .5);
+      &:focus ~ .custom-control-label::before {
+        box-shadow: 0 0 0 2px rgba($green, 0.5);
       }
-      &:active ~ .custom-control-label::before{
-        background: rgba($green , .5);
-         box-shadow:  0 0 0 2px rgba($green , .5);
+      &:active ~ .custom-control-label::before {
+        background: rgba($green, 0.5);
+        box-shadow: 0 0 0 2px rgba($green, 0.5);
       }
       &:checked ~ .custom-control-label::before {
         background: $green;
@@ -214,16 +179,99 @@ filters-list
   }
 }
 
-.filter-form-inline{
-  input{
+.filter-form-inline {
+  input {
     max-width: 200px;
-    margin:0 5px ;
+    margin: 0 5px;
   }
 }
 
+/**
+  products tab
+*/
 
-//**********************************************************************************************************
-//**********************************************************************************************************
+.adv-search-form {
+  .with-label {
+    label {
+      white-space: nowrap;
+    }
+    display: flex;
+    align-items: center;
+  }
+}
+
+/*
+
+
+prod-list-view
+
+*/
+.prod-list-view {
+  > .col-12.col-md-6 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: auto;
+  }
+  .h-prod-item {
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+  .h-prod-header {
+    grid-template-columns: 250px auto;
+    order: 2;
+    flex-grow: 1;
+  }
+
+  .card-title {
+    order: 1;
+    width: 100%;
+  }
+  .h-prod-footer {
+    order: 2;
+  }
+  .h-info {
+    padding: 25px;
+  }
+}
+//** slider
+
+.adv-prod-slider {
+  padding-top: 25px;
+  padding-bottom: 100px;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  margin-left:45px ;
+  margin-right:45px ;
+  .s-slider {
+    background: $white;
+    padding:5px 75px ;
+  }
+  .owl-nav{
+    button{
+      &.owl-prev,
+      &.owl-next{
+        background: $red;
+        @include square(35px);
+        border-radius: 50%;
+        font-family: FontAwesome;
+      }
+
+    &.owl-prev{
+      #{$left} : -30px;
+    }
+    &.owl-next{
+      #{$right} : -30px;
+    }
+  }
+  }
+}
+/*
+
+*/
+
 //**********************************************************************************************************
 
 /**
@@ -246,15 +294,18 @@ filters-list
   }
 }
 @include media-breakpoint-down(md) {
-  .types-card{
+  .filters-list .title .fa-plus {
+    display: none;
+  }
+  .types-card {
     padding: 15px !important;
-}
+  }
   .list-results {
     margin-#{$right}: 0;
   }
 }
 @include media-breakpoint-down(sm) {
- .types-card{
+  .types-card {
     .card-body {
       flex-direction: column !important;
     }
@@ -265,6 +316,31 @@ filters-list
       .btn {
         margin-top: 10px;
       }
+    }
+  }
+
+  .prod-list-view .h-prod-header {
+    grid-template-columns: 40% 60%;
+    width: 100%;
+    > span {
+      grid-column-start: 1;
+      grid-column-end: span 2;
+    }
+  }
+
+  .adv-prod-slider {
+      margin-left: 0;
+      margin-right: 0;
+  }
+}
+
+@include media-breakpoint-between(md, lg) {
+  .prod-list-view .h-prod-header {
+    grid-template-columns: 40% 60%;
+    width: 100%;
+    > span {
+      grid-column-start: 1;
+      grid-column-end: span 2;
     }
   }
 }

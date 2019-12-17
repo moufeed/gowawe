@@ -71,6 +71,11 @@ var config = {
         output: "thumbs.js",
         es6: true,
         inputs: ["./src/js/carousel-thumbs.js"]
+      },
+      {
+        output: "search.js",
+        es6: true,
+        inputs: ["./src/js/search.js"]
       }
     ],
     dist: "./dist/assets/js"

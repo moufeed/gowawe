@@ -1,0 +1,13 @@
+
+
+<div class="bg-light-gray flex-row d-flex types-card p-3 my-3">
+  <strong>{{local.suppliers_types}}</strong>
+  <form class="mx-3">
+    {{#each sp.types}}
+    <div class=" custom-control custom-checkbox d-inline-flex mx-2 px-2">
+      <input type="checkbox" class="custom-control-input" id="{{this}}">
+      <label class="custom-control-label" for="{{this}}">{{this}}</label>
+    </div>
+    {{/each}}
+  </form>
+</div>

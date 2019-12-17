@@ -1,5 +1,5 @@
 var categories = require("../utilities/categories-list.ar");
-
+var fromHome = require("../home/home.ar");
 var types = [
   "المورد الذهبي",
   "مزود التحقق",
@@ -61,9 +61,47 @@ function generateSuppliers() {
 
 var suppliers = generateSuppliers();
 
+function generateProducts() {
+  let result = [];
+  for (let index = 0; index < 20; index++) {
+    result.push(fromHome.product);
+  }
+  return result;
+}
+
+var products = generateProducts();
+
+var slider = {
+  title: "جينز نسائي",
+  background: "jeans.png",
+  subtitle: "كل ما تحتاجه في ملابس الجينز النسائية",
+  images: [
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png"
+  ]
+};
+
 module.exports = {
   types,
   suppliers,
   filters,
-  categories
+  categories,
+  products,
+  slider
 };

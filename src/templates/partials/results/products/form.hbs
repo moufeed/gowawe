@@ -1,0 +1,80 @@
+<div class="bg-white shadow card py-2 px-5 mb-4 rounded types-card">
+  <div class="card-body row ">
+    <strong class="col-auto">{{local.filter_by}}:</strong>
+    <div class="col">
+    <form  class="adv-search-form">
+            <div class="form-row align-items-start">
+          <div class="form-group col col-md-6 col-lg-4 col-xl-2 ">
+              <select name="" id="" class="form-control">
+                <option value="">all</option>
+                <option value="">Bahrain</option>
+                <option value="">Kuwait</option>
+                <option value="">Oman</option>
+                <option value="">Qatar</option>
+                <option value="">Saudi Arabia</option>
+                <option value="">Turkey</option>
+                <option value="">United Arab Emirates</option>
+              </select>
+
+          </div>
+          <div class="form-group col-md-6 col-lg-4 col-xl-2">
+              <select name="" id="" class="form-control">
+                <option value="">all</option>
+                <option value="">Adiyaman</option>
+                <option value="">Ad Dakhiliyah</option>
+                <option value="">Ad Dawhah</option>
+                <option value="">Al Jumayliyah</option>
+              </select>
+          </div>
+          <div class="form-group col-md-6 col-lg-4 col-xl-2 with-label">
+            <label for="" class="col">{{local.min_order}} : </label>
+            <input type="text" placeholder="{{local.min_order}}" class="form-control">
+          </div>
+
+            <div class="form-group col-md-6 col-lg-6 col-xl-3 with-label">
+              <label for="">{{local.price}} : </label>
+              <input type="text" placeholder="{{local.min}}" class="form-control mx-2">
+              <input type="text" placeholder="{{local.max}}" class="form-control mx-2">
+            </div>
+            <div class="form-group col-12 col-lg-6 col-xl-12">
+                  <div class="custom-control custom-checkbox mb-1">
+                    <input type="checkbox" class="custom-control-input" id="Check">
+                    <label class="custom-control-label" for="Check">{{local.ready_to_ship}} <small class="badge badge-success">{{local.new}}</small></label>
+                  </div>
+            </div>
+            <div class="form-group col-md-6 col-lg-4 col-xl-2 form-group">
+                <select name="" id="" class="form-control">
+                  <option value="">all</option>
+                  <option value="">Adiyaman</option>
+                  <option value="">Ad Dakhiliyah</option>
+                  <option value="">Ad Dawhah</option>
+                  <option value="">Al Jumayliyah</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6 col-lg-4 col-xl-2 form-group">
+              <select name="" id="" class="form-control">
+                <option value="">all</option>
+                <option value="">Adiyaman</option>
+                <option value="">Ad Dakhiliyah</option>
+                <option value="">Ad Dawhah</option>
+                <option value="">Al Jumayliyah</option>
+              </select>
+            </div>
+            <div class="form-group col-lg-4 col-xl-2 form-group">
+               <button class="btn btn-info">
+                 <i class="fa  fa-search"></i>
+                 {{local.search}}</button>
+            </div>
+            </div>
+    </form>
+    </div>
+  </div>
+</div>
+
+
+
+{{!--
+
+<span>
+
+</span> --}}

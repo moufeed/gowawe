@@ -41,7 +41,10 @@ body {
 
 
 @include if-rtl {
-
+    select.form-control{
+      padding-top: 1px;
+      padding-bottom: 1px;
+    }
     .custom-control-input{
         left :auto;
         right: 0;

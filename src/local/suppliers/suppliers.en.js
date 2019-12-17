@@ -1,4 +1,5 @@
 var categories = require("../utilities/categories-list.en");
+var fromHome = require("../home/home.en");
 var types = [
   "Golden Supplier",
   "Verified Supplier",
@@ -66,11 +67,49 @@ function generateSuppliers() {
   return result;
 }
 
+function generateProducts() {
+  let result = [];
+  for (let index = 0; index < 20; index++) {
+    result.push(fromHome.product);
+  }
+  return result;
+}
+
+var products = generateProducts();
+
 var suppliers = generateSuppliers();
+
+var slider = {
+  title: "Women's Jeans",
+  background: "jeans.png",
+  subtitle: "All You Need In Women's Jeans Clothing",
+  images: [
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png",
+    "jeans1.png"
+  ]
+};
 
 module.exports = {
   types,
   suppliers,
   filters,
-  categories
+  categories,
+  products,
+  slider
 };

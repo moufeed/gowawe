@@ -37,7 +37,19 @@ var local = {
   all_categories: "All Categories",
   product_feature: "Product Feature",
   supplier_features: "Supplier Features",
-  all: "All"
+  all: "All",
+  ok: "ok",
+  filter_by: "filter by",
+  new: "new",
+  ready_to_ship: "ready to ship",
+  sort_by: "Sort by",
+  title_a_to_z: "Title: A to Z",
+  title_z_to_a: "Title: Z to A",
+  newst_first: "Newest first",
+  oldest_first: "Oldest first",
+  min: "min",
+  max: "max",
+  search: "search"
 };
 
 module.exports = {

@@ -34,7 +34,19 @@ var local = {
   all_categories: "التصنيفات",
   product_feature: "ميزات المنتج",
   supplier_features: "ميزات المورد",
-  all: "الكل"
+  all: "الكل",
+  ok: "نعم",
+  filter_by: "بحث متقدم",
+  new: "جديد",
+  ready_to_ship: "جاهز للشحن",
+  sort_by: "ترتيب",
+  title_a_to_z: "الأسم : ا الى ي",
+  title_z_to_a: "الأسم : ي الى ا",
+  newst_first: "الأحدث أولاً",
+  oldest_first: "الأقدام أولاً",
+  min: "اقل",
+  max: "اكثر",
+  search: "بحث"
 };
 
 /* end home page */
