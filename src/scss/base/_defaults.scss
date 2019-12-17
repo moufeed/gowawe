@@ -1,32 +1,38 @@
-
-    body{
-        direction: $dir;
-        text-align: $left;
-        font-family: $font-regular, $font-family-base;
-         @include var('background','light-gray');
-    }
-
-
-    @include makeSpacing($lengths);
-
-
-.list-unstyled{
-    padding: 0;
+html {
+  font-size: 13px;
 }
 
-    .dropdown-menu{
-      &.fromleft{
-          #{$left}: auto;
-          #{$right}: 0;
-      }
-    }
+body {
+  direction: $dir;
+  text-align: $left;
+  font-family: $font-regular, $font-family-base;
+  @include var('background', 'light-gray');
+}
+
+
+@include makeSpacing($lengths);
+
+
+.list-unstyled {
+  padding: 0;
+}
+
+.dropdown-menu {
+  &.fromleft {
+    #{$left}: auto;
+    #{$right}: 0;
+  }
+}
 
 
 .section-title {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 48px;
-    @include var('color' , 'desaturated-blue');
-    margin-bottom: 25px;
+  text-align: center;
+  // font-size: 36px;
+  font-weight: 600;
+  line-height: 48px;
+  @include var('color', 'desaturated-blue');
+  // margin-bottom: 25px;
+  p{
+    margin-bottom: 0;
+  }
 }

@@ -10,10 +10,11 @@
 
 .section-header {
   background-size: cover;
-  padding: 25px;
-  min-height: 100px;
+  padding: 12px;
+  // min-height: 100px;
   @include var("color", "white");
   position: relative;
+
   &:after {
     @include absolute(top left, 0 0);
     content: "";
@@ -21,23 +22,29 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 0;
   }
+
   > * {
     z-index: 1;
   }
+
   h2 {
     font-weight: 700;
     @include var("color", "white");
   }
+
   .section-title p {
     font-size: 18px;
   }
+
   .section-brief {
     padding-#{$left}: 20px;
   }
 }
+
 .section-links {
   a {
     @include var("color", "white");
+
     &:hover {
       @include var("color", "white");
       @include var("background", "red");
@@ -48,27 +55,38 @@
 }
 
 .h-prod-item {
-  margin: 15px 0;
+  margin: 5px 0;
   padding: 2px;
   box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
-  border :0;
+  border: 0;
   border-radius: 4px;
+
   .owl-stage {
     display: flex;
     align-items: center;
   }
+
   .owl-dots {
     @include absolute(top $left, 15px 10px);
   }
+
   .h-info {
-    padding: 15px;
+    padding: 3px;
+  }
+
+  p {
+    margin-bottom: 2px;
   }
 
   .h-prod-header {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
 
-    @include media-breakpoint-between(md,lg) {
+    .prod-imgs {
+      margin-bottom: 0;
+    }
+
+    @include media-breakpoint-between(md, lg) {
       > span {
         grid-column-start: 1;
         grid-column-end: span 2;
@@ -83,13 +101,15 @@
 
   }
 }
+
 .h-prod-colors {
   span {
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     float: $left;
-    margin: 2px;
+    margin: 1px;
     border: 1px solid #000;
+
     &:hover {
       box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
     }
@@ -98,8 +118,9 @@
 
 .h-prod-title {
   a {
-    padding: 5px 10px;
-    margin: 5px 10px;
+    //padding: 5px 10px;
+    //margin: 5px 10px;
+    font-size: 1.1rem;
     display: inline-block;
     @include if-ltr {
       letter-spacing: 1px;
@@ -117,13 +138,15 @@
     background-size: 100% 100%;
     position: relative;
   }
+
   .mask {
     @include absolute(top $left, 0 0);
     @include square(100%);
     overflow: hidden;
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(sm) {
       position: relative;
     }
+
     img {
       min-height: 100%;
       width: auto !important;
