@@ -6,12 +6,15 @@ body {
   direction: $dir;
   text-align: $left;
   font-family: $font-regular, $font-family-base;
-  @include var('background', 'light-gray');
+  background: $white;
+  &.home-page{
+    @include var('background', 'light-gray');
+  }
+
 }
 
 
 @include makeSpacing($lengths);
-
 
 .list-unstyled {
   padding: 0;

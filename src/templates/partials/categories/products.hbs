@@ -1,0 +1,76 @@
+
+
+<div class="row no-gutters">
+    <aside class="col-12 col-md-4 col-lg-3 col-xl-2">
+        <div class="d-md-none my-4 text-center">
+            <button class="btn btn-outline-dark btn-block btn-lg" type="button" data-toggle="collapse" data-target="#collapseNav"
+              aria-expanded="true" aria-controls="collapseNav">
+              {{local.categories}}
+            </button>
+        </div>
+        <div class="collapse show" id="collapseNav">
+          <nav class="ca_list">
+            {{#each c_p.categories}}
+              <a href="#">
+                <picture>
+                  <img src="assets/img/{{img}}" alt="">
+                </picture>
+                <span>{{name}}</span>
+              </a>
+              {{/each}}
+          </nav>
+        </div>
+    </aside>
+    <main class="col-12 col-md-8 col-lg-9 col-xl-10">
+            {{!-- you can add custom style for each image by move this block into each loop --}}
+            <style>
+              .ca_slide{
+                background-color: #868fb9;
+              }
+              .ca_pic img {
+                margin-right: 15%;
+                margin-left: 15%;
+                height: 110%;
+              }
+            </style>
+            {{!-- end block --}}
+            {{!--
+            // replace ca_slider div with the next line to enable owl slider also make sure to include carousel.min.js
+              <div class="ca_slider owl-carousel" data-singleItem="true">
+             --}}
+        <div class="ca_slider">
+            {{#each c_p.slider}}
+                <div class="ca_slide d-flex flex-column justify-content-start align-items-start">
+                  <picture class="ca_pic justify-content-end">
+                    <img src="assets/img/p/{{img}}" alt="" class="no-owl">
+                  </picture>
+                  <div class="ca_slide_txt">
+                    <h4>{{title}}</h4>
+                    <a href="#">{{text}}</a>
+                  </div>
+                </div>
+            {{/each}}
+        </div>
+
+      <section class="ca_prods bg-light-gray">
+            {{#each c_p.products}}
+          <div class="bg-white rounded ca_prod m-4 p-3">
+            <h3><a href="#">{{title}}  <small>({{count}})</small></a></h3>
+               {{!-- <div class="ca_prod_imgs owl-carousel" data-xl-items="6" data-lg-items="4" data-md-items="2"
+                data-rtl="{{isRtl ../../dir }/}"> --}}
+                <div class="ca_prod_imgs ">
+                {{#each list}}
+                <a href="#" class="flex-column align-items-center justify-content-between">
+                  <picture>
+                    <img src="assets/img/p/{{img}}" alt="" class="no-owl">
+                  </picture>
+                  <span>( {{count}} )  </span>
+                  <strong>{{txt}}</strong>
+                </a>
+                {{/each}}
+              </div>
+          </div>
+            {{/each}}
+      </section>
+    </main>
+</div>

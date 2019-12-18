@@ -1,6 +1,3 @@
-var fromHome = require("./home/home.en");
-var fromWeekly = require("./weaklydeals/weaklydeals.en");
-var fromSuppliers = require("./suppliers/suppliers.en");
 var local = {
   price: "price",
   pieces: "pieces",
@@ -49,8 +46,15 @@ var local = {
   oldest_first: "Oldest first",
   min: "min",
   max: "max",
-  search: "search"
+  search: "search",
+  project_partner: "project partner",
+  jobs: "jobs"
 };
+
+var fromHome = require("./home/home.en");
+var fromWeekly = require("./weaklydeals/weaklydeals.en");
+var fromSuppliers = require("./suppliers/suppliers.en");
+var fromCategories = require("./categories/categories.en");
 
 module.exports = {
   dir: "ltr",
@@ -66,5 +70,6 @@ module.exports = {
   footer: fromHome.footer,
   banner: fromHome.main_banner,
   w_d: fromWeekly, // weekly deals page
-  sp: fromSuppliers // suppliers page
+  sp: fromSuppliers, // suppliers page,
+  c_p: fromCategories
 };

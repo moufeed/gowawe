@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style-en.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/lib.min.js"></script>
+</head>
+
+<body>
+
+  <header class="main-header">
+  <div class="container-fluid">
+    <div class="row main-header">
+        <div class="logo col">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo.png" alt="">
+          </a>
+        </div>
+    <div class="col search-wrap flex-grow-1">
+      <div class="search-box">
+        <select name="search_type" id="search_type">
+          <option value="">Products</option>
+          <option value="">Suppliers</option>
+        </select>
+        <input type="text" placeholder="What are you looking for ...">
+        <button type="subimt" class="btn btn-search">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+  
+  <div class="col-auto profile-btns">
+    <ul>
+      <li>
+        <a href="#">
+          <i class="fa fa-user"></i>
+          My Gowawe
+          <span class="badge">23</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-envelope"></i>
+          Messages
+          <span class="badge">23</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-suitcase"></i>
+          Orders
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-shopping-cart"></i>
+          Cart
+        </a>
+      </li>
+    </ul>
+  </div>
+    </div>
+  
+  
+    <nav class="navbar navbar-expand-lg navbar-light  ">
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+  
+        <ul class="navbar-nav   mr-auto  ">
+          <li class="nav-item dropdown " id="categories-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-list"></i> All Categories
+            </a>
+            <div class="dropdown-menu    " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="separator mr-4"></li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Ready To Ship <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Trade Shows</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Sell On Gowawe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Help </a>
+          </li>
+        </ul>
+        <ul class=" navbar-nav my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Get The App</a>
+          </li>
+          <li class="separator"></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              English - USD
+            </a>
+            <div class="dropdown-menu fromleft" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+  </header>
+
+  <section class="categories-page">
+    <div class="container-fluid">
+      <ul class="nav categories-tabs mt-3 mb-2" id="tap" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="products-tab" data-toggle="tab" href="#products" role="tab"
+            aria-controls="products" aria-selected="true">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " id="jobs-tab" data-toggle="tab" href="#jobs" role="tab" aria-controls="jobs"
+            aria-selected="false">jobs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " id="partner-tab" data-toggle="tab" href="#partner" role="tab" aria-controls="partner"
+            aria-selected="false">project partner</a>
+        </li>
+
+      </ul>
+      <div class="tab-content" id="tapContent">
+        <div class="tab-pane fade show active" id="products" role="tabpanel" aria-labelledby="products-tab">
+          
+          
+          <div class="row no-gutters">
+              <aside class="col-12 col-md-4 col-lg-3 col-xl-2">
+                  <div class="d-md-none my-4 text-center">
+                      <button class="btn btn-outline-dark btn-block btn-lg" type="button" data-toggle="collapse" data-target="#collapseNav"
+                        aria-expanded="true" aria-controls="collapseNav">
+                        categories
+                      </button>
+                  </div>
+                  <div class="collapse show" id="collapseNav">
+                    <nav class="ca_list">
+                        <a href="#">
+                          <picture>
+                            <img src="assets/img/placeholder.jpg" alt="">
+                          </picture>
+                          <span>Beachwear</span>
+                        </a>
+                        <a href="#">
+                          <picture>
+                            <img src="assets/img/placeholder.jpg" alt="">
+                          </picture>
+                          <span>Bottoms</span>
+                        </a>
+                        <a href="#">
+                          <picture>
+                            <img src="assets/img/placeholder.jpg" alt="">
+                          </picture>
+                          <span>Dresses</span>
+                        </a>
+                        <a href="#">
+                          <picture>
+                            <img src="assets/img/placeholder.jpg" alt="">
+                          </picture>
+                          <span>Homewear</span>
+                        </a>
+                        <a href="#">
+                          <picture>
+                            <img src="assets/img/placeholder.jpg" alt="">
+                          </picture>
+                          <span>Jumpsuit</span>
+                        </a>
+                        <a href="#">
+                          <picture>
+                            <img src="assets/img/placeholder.jpg" alt="">
+                          </picture>
+                          <span>Outerwear</span>
+                        </a>
+                        <a href="#">
+                          <picture>
+                            <img src="assets/img/placeholder.jpg" alt="">
+                          </picture>
+                          <span>Pyjamas</span>
+                        </a>
+                        <a href="#">
+                          <picture>
+                            <img src="assets/img/placeholder.jpg" alt="">
+                          </picture>
+                          <span>Sportswear</span>
+                        </a>
+                        <a href="#">
+                          <picture>
+                            <img src="assets/img/placeholder.jpg" alt="">
+                          </picture>
+                          <span>Tops</span>
+                        </a>
+                        <a href="#">
+                          <picture>
+                            <img src="assets/img/placeholder.jpg" alt="">
+                          </picture>
+                          <span>Underwear</span>
+                        </a>
+                    </nav>
+                  </div>
+              </aside>
+              <main class="col-12 col-md-8 col-lg-9 col-xl-10">
+                      <style>
+                        .ca_slide{
+                          background-color: #868fb9;
+                        }
+                        .ca_pic img {
+                          margin-right: 15%;
+                          margin-left: 15%;
+                          height: 110%;
+                        }
+                      </style>
+                  <div class="ca_slider">
+                          <div class="ca_slide d-flex flex-column justify-content-start align-items-start">
+                            <picture class="ca_pic justify-content-end">
+                              <img src="assets/img/p/ps1.png" alt="" class="no-owl">
+                            </picture>
+                            <div class="ca_slide_txt">
+                              <h4>Plus Size</h4>
+                              <a href="#">shop now</a>
+                            </div>
+                          </div>
+                  </div>
+          
+                <section class="ca_prods bg-light-gray">
+                    <div class="bg-white rounded ca_prod m-4 p-3">
+                      <h3><a href="#">Sunrise Dress  <small>(250)</small></a></h3>
+                          <div class="ca_prod_imgs ">
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p1.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 31 )  </span>
+                            <strong>Sunrise Dress</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p2.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 21 )  </span>
+                            <strong>Cadwell Dress</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p3.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 64 )  </span>
+                            <strong>Blanchard Tunic</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p4.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 84 )  </span>
+                            <strong>Elixir Dress</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p5.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 59 )  </span>
+                            <strong>Outdoor Research</strong>
+                          </a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded ca_prod m-4 p-3">
+                      <h3><a href="#">Skirts &amp; Dresses  <small>(362)</small></a></h3>
+                          <div class="ca_prod_imgs ">
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p6.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 31 )  </span>
+                            <strong>Sunrise Dress</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p7.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 21 )  </span>
+                            <strong>Cadwell Dress</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p8.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 64 )  </span>
+                            <strong>Blanchard Tunic</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p9.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 84 )  </span>
+                            <strong>Elixir Dress</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p10.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 59 )  </span>
+                            <strong>Outdoor Research</strong>
+                          </a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded ca_prod m-4 p-3">
+                      <h3><a href="#">Jackets &amp; Dresses  <small>(1208)</small></a></h3>
+                          <div class="ca_prod_imgs ">
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p11.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 17 )  </span>
+                            <strong>Sunrise Dress</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p12.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 611 )  </span>
+                            <strong>Cadwell Dress</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p13.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 24 )  </span>
+                            <strong>Blanchard Tunic</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p14.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 41 )  </span>
+                            <strong>Elixir Dress</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p15.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 12 )  </span>
+                            <strong>Retro Pile Hoody </strong>
+                          </a>
+                        </div>
+                    </div>
+                </section>
+              </main>
+          </div>
+        </div>
+        <div class="tab-pane fade " id="jobs" role="tabpanel" aria-labelledby="jobs-tab">
+        </div>
+        <div class="tab-pane fade " id="partner" role="tabpanel" aria-labelledby="partner-tab">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="main-footer pt-50">
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-4 col-lg-3  col-xl-2">
+            <div class="figure-wrapper">
+                <figure >
+                  <img src="assets/img/logo.png" alt="" class="f-logo" >
+                </figure>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-9 col-xl-10">
+            <div class="row justify-content-around">
+                  <div class="col-md-6 col-lg-3">
+                    <h5>Information</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Advertise with Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Business Identity</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <h5>Customer Service</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Success Stories</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Press Section</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Jobs &amp; Careers</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Feedback</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Help</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Secure Payment</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Inspection Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Learning Center</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">I am new user</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <h5>Buy Trade Lead</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Send Buy Requirement</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Post Sell Offer</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Create Your Free Website</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">View Buy Leads</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">How to Buy</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">e-Credit Line</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Submit a Dispute</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">I am buyer</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <h5>Sell Trade Lead</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">How to Sell</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Premium Membership</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Verified Membership</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Display Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Manage Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Supplier Memberships</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Gold Suppliers</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">I am seller</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Trade Assurance</a>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+          </div>
+      </div>
+  
+      <div class="bottom-footer">
+          <nav class="nav">
+            <a class="nav-link" href="#" title="twitter">
+               <i class="fa fa-twitter"></i>
+            </a>
+            <a class="nav-link" href="#" title="facebook">
+               <i class="fa fa-facebook"></i>
+            </a>
+            <a class="nav-link" href="#" title="instagram">
+               <i class="fa fa-instagram"></i>
+            </a>
+          </nav>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="assets/js/scripts.min.js"></script>
+</body>
+
+</html>
