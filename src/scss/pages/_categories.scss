@@ -1,190 +1,58 @@
-.categories-page {
-
-}
 
 
-.categories-tabs{
-  a{
-    color: $dark;
-    border-bottom: 3px solid transparent;
-    padding:8px 20px ;
-    transition: border .25s;
-    &.active{
-      font-weight: bolder;
-      border-bottom-color: $dark;
+.cate_nav_item{
+  border:1px solid $gray-300;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  height: 65px;
+  color: $dark;
+  picture{
+    display: inline-flex;
+    @include square(35px);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    img{
+      max-height: 80%;
+      max-width: 100%;
     }
+  }
+  span{
+    margin: 0 10px;
+    display: inline-block;
+    @include ellipse(14px, 1.4, 2 ,true);
+  }
+  &:hover , &:active , &.active{
+    border-color: $red;
+    color: $red;
+    text-decoration: none;
   }
 }
-//#region  ca_list
+//----------------------------------------
 
-  .ca_list{
-    margin-top: 15px;
-    a{
-      padding:5px  10px;
-      justify-content: flex-start;
-      color: lighten($dark , 40%);
-      font-weight: bold;
-      & , picture{
-        display: flex;
-        align-items: center;
-      }
-      picture{
-        margin-#{$right}:15px ;
-        @include square(48px);
-        border-radius: 50%;
-        overflow: hidden;
-        justify-content: center;
-        img{
-          height: 100%;
-        }
-      }
-
-      span{}
-
-      &:hover{
-        text-decoration: none;
-        background: $gray-200;
-        color: $dark;
-      }
-    }
-  }
-
-//#endregion
-
-//#region  ca_slider
-
-.ca_slider{
-   .ca_slide{
-     min-height: 400px;
-     position: relative;
-   }
-    picture{
-      @include absolute(top left , 0 0);
-      z-index: 0;
-      @include square(100%);
-      overflow: hidden;
-      display: flex;
-
-    }
-
-    .ca_slide_txt{
-      position: relative;
-      z-index: 1;
-      margin:7% 15%;
-      color: black;
-      text-align: center;
-      display: inline-block;
-       text-transform: uppercase;
-      h4{
-        font-size: 3rem;
-        font-weight: bolder;
-        margin: 0;
-      }
-      a{
-        color: black;
-        font-size: 1.5rem;
-        text-decoration: underline;
-        letter-spacing: 1px;
-        padding: 3px 6px;
-        transition: all .3s;
-        &:hover{
-          background: $red;
-          color: $white;
-        }
-      }
-    }
-  }
-
-  //#endregion
-
-
-
-  //region ca_prods
-
-/* .ca_prods{
-} */
-.ca_prod{
-  h3{
-    margin: 15px;
-    font-weight: bold;
-    a{
-      color: black;
-    }
-    small{
-      margin: 0 5px;
-      display: inline-block;
-      color: $gray-600;
-      font-size: 15px;
-    }
-  }
-  .ca_prod_imgs{
-    a{
-      display: inline-flex;
-      padding: 15px;
-       text-decoration: none;
-       &:hover{
-          text-decoration: none;
-           strong{
-            color: $red;
-          }
-       }
-    }
-    picture{
-      display: flex;
+.categories_list {
+  .c-bg{
+     @include absolute(top left right bottom , 0 0 0 0);
+    overflow: hidden;
+    display: flex;
       justify-content: center;
-      align-items:center;
-      height: 160px;
-      width: 100%;
-      overflow: hidden;
-      margin-bottom: 15px;
-      img{
-        height: 100%;
-      }
-    }
-    span{
-      color: $gray-600;
-      margin-bottom: 5px;
-
-    }
-    strong{
-      color: black;
-    }
-
-
-    &.owl-carousel{
-      a{
-        display: flex;
-      }
+      align-items: center;
+      color: rgba($red,.06);
+      font-family: FontAwesome;
+      font-size: 110vmin;
+      z-index: -1;
+     .fa{
+      transform: rotate(15deg);
     }
   }
 }
 
-//#endregion
+//---------------------------------------------
 
-
-@include media-breakpoint-up(xl){
-
-.ca_prod_imgs:not(.owl-carousel){
-   display: flex;
-   justify-content: space-around;
-  }
-}
-
-@include media-breakpoint-down(lg){
-  .ca_slider{
-   .ca_slide{
-     min-height: 300px;
-   }
-  }
-  .ca_prod_imgs:not(.owl-carousel){
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-}
-@include media-breakpoint-down(md){
-    .ca_slider{
-    .ca_slide{
-      min-height: 250px;
-    }
+@include media-breakpoint-up(md){
+  .categories-navigation .collapse {
+    display: block;
   }
 }

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style-ar.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/lib.min.js"></script>
+</head>
+
+<body>
+
+  <header class="main-header">
+  <div class="container-fluid">
+    <div class="row main-header">
+        <div class="logo col">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo.png" alt="">
+          </a>
+        </div>
+    <div class="col search-wrap flex-grow-1">
+      <div class="search-box">
+        <select name="search_type" id="search_type">
+          <option value="">Products</option>
+          <option value="">Suppliers</option>
+        </select>
+        <input type="text" placeholder="What are you looking for ...">
+        <button type="subimt" class="btn btn-search">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+  
+  <div class="col-auto profile-btns">
+    <ul>
+      <li>
+        <a href="#">
+          <i class="fa fa-user"></i>
+          My Gowawe
+          <span class="badge">23</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-envelope"></i>
+          Messages
+          <span class="badge">23</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-suitcase"></i>
+          Orders
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-shopping-cart"></i>
+          Cart
+        </a>
+      </li>
+    </ul>
+  </div>
+    </div>
+  
+  
+    <nav class="navbar navbar-expand-lg navbar-light  ">
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+  
+        <ul class="navbar-nav  ml-auto  ">
+          <li class="nav-item dropdown " id="categories-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-list"></i> All Categories
+            </a>
+            <div class="dropdown-menu   dropdown-menu-lg-right   " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="separator mr-4"></li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Ready To Ship <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Trade Shows</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu  dropdown-menu-lg-right " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Sell On Gowawe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Help </a>
+          </li>
+        </ul>
+        <ul class=" navbar-nav my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Get The App</a>
+          </li>
+          <li class="separator"></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              English - USD
+            </a>
+            <div class="dropdown-menu fromleft" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+  </header>
+
+  <section class="categories-page">
+    <div class="container-fluid">
+      <ul class="nav categories-tabs mt-3 mb-2" id="tap" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="products-tab" data-toggle="tab" href="#products" role="tab"
+            aria-controls="products" aria-selected="true">المنتجات</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " id="jobs-tab" data-toggle="tab" href="#jobs" role="tab" aria-controls="jobs"
+            aria-selected="false">أعمال</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " id="partner-tab" data-toggle="tab" href="#partner" role="tab" aria-controls="partner"
+            aria-selected="false">الشركاء</a>
+        </li>
+
+      </ul>
+      <div class="tab-content" id="tapContent">
+        <div class="tab-pane fade show active" id="products" role="tabpanel" aria-labelledby="products-tab">
+          
+          
+          <div class="row no-gutters">
+              <aside class="col-12 col-md-4 col-lg-3 col-xl-2">
+                  <div class="d-md-none my-4 text-center">
+                      <button class="btn btn-outline-dark btn-block btn-lg" type="button" data-toggle="collapse" data-target="#collapseNav"
+                        aria-expanded="true" aria-controls="collapseNav">
+                        
+                      </button>
+                  </div>
+                  <div class="collapse show" id="collapseNav">
+                    <nav class="ca_list">
+                        <a href="#">
+                          <picture>
+                            <img src="assets/img/placeholder.jpg" alt="">
+                          </picture>
+                          <span>ثياب البحر</span>
+                        </a>
+                        <a href="#">
+                          <picture>
+                            <img src="assets/img/placeholder.jpg" alt="">
+                          </picture>
+                          <span>قيعان</span>
+                        </a>
+                        <a href="#">
+                          <picture>
+                            <img src="assets/img/placeholder.jpg" alt="">
+                          </picture>
+                          <span>فساتين</span>
+                        </a>
+                        <a href="#">
+                          <picture>
+                            <img src="assets/img/placeholder.jpg" alt="">
+                          </picture>
+                          <span>ملابس البيت</span>
+                        </a>
+                        <a href="#">
+                          <picture>
+                            <img src="assets/img/placeholder.jpg" alt="">
+                          </picture>
+                          <span>بذلة</span>
+                        </a>
+                        <a href="#">
+                          <picture>
+                            <img src="assets/img/placeholder.jpg" alt="">
+                          </picture>
+                          <span>ملابس خارجية</span>
+                        </a>
+                        <a href="#">
+                          <picture>
+                            <img src="assets/img/placeholder.jpg" alt="">
+                          </picture>
+                          <span>لباس نوم</span>
+                        </a>
+                        <a href="#">
+                          <picture>
+                            <img src="assets/img/placeholder.jpg" alt="">
+                          </picture>
+                          <span>ملابس رياضية</span>
+                        </a>
+                        <a href="#">
+                          <picture>
+                            <img src="assets/img/placeholder.jpg" alt="">
+                          </picture>
+                          <span>قمم</span>
+                        </a>
+                        <a href="#">
+                          <picture>
+                            <img src="assets/img/placeholder.jpg" alt="">
+                          </picture>
+                          <span>ثياب داخلية</span>
+                        </a>
+                    </nav>
+                  </div>
+              </aside>
+              <main class="col-12 col-md-8 col-lg-9 col-xl-10">
+                      <style>
+                        .ca_slide{
+                          background-color: #868fb9;
+                        }
+                        .ca_pic img {
+                          margin-right: 15%;
+                          margin-left: 15%;
+                          height: 110%;
+                        }
+                      </style>
+                  <div class="ca_slider">
+                          <div class="ca_slide d-flex flex-column justify-content-start align-items-start">
+                            <picture class="ca_pic justify-content-end">
+                              <img src="assets/img/p/ps1.png" alt="" class="no-owl">
+                            </picture>
+                            <div class="ca_slide_txt">
+                              <h4>حجم اضافي</h4>
+                              <a href="#">تسوق الآن</a>
+                            </div>
+                          </div>
+                  </div>
+          
+                <section class="ca_prods bg-light-gray">
+                    <div class="bg-white rounded ca_prod m-4 p-3">
+                      <h3><a href="#">شروق الشمس اللباس  <small>(250)</small></a></h3>
+                          <div class="ca_prod_imgs ">
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p1.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 31 )  </span>
+                            <strong>شروق الشمس اللباس</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p2.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 21 )  </span>
+                            <strong>فستان كادويل</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p3.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 64 )  </span>
+                            <strong>بلانشارد تونك</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p4.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 84 )  </span>
+                            <strong>فستان إكسير</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p5.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 59 )  </span>
+                            <strong>البحوث في الهواء الطلق</strong>
+                          </a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded ca_prod m-4 p-3">
+                      <h3><a href="#">التنانير والفساتين  <small>(362)</small></a></h3>
+                          <div class="ca_prod_imgs ">
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p6.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 31 )  </span>
+                            <strong>شروق الشمس اللباس</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p7.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 21 )  </span>
+                            <strong>فستان كادويل</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p8.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 64 )  </span>
+                            <strong>بلانشارد تونك</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p9.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 84 )  </span>
+                            <strong>فستان إكسير</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p10.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 59 )  </span>
+                            <strong>البحوث في الهواء الطلق</strong>
+                          </a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded ca_prod m-4 p-3">
+                      <h3><a href="#">جاكيتات وفساتين  <small>(1208)</small></a></h3>
+                          <div class="ca_prod_imgs ">
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p11.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 17 )  </span>
+                            <strong>شروق الشمس اللباس</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p12.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 611 )  </span>
+                            <strong>فستان كادويل</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p13.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 24 )  </span>
+                            <strong>بلانشارد تونك</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p14.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 41 )  </span>
+                            <strong>فستان إكسير</strong>
+                          </a>
+                          <a href="#" class="flex-column align-items-center justify-content-between">
+                            <picture>
+                              <img src="assets/img/p/p15.jpg" alt="" class="no-owl">
+                            </picture>
+                            <span>( 12 )  </span>
+                            <strong>Retro Pile Hoody </strong>
+                          </a>
+                        </div>
+                    </div>
+                </section>
+              </main>
+          </div>
+        </div>
+        <div class="tab-pane fade " id="jobs" role="tabpanel" aria-labelledby="jobs-tab">
+        </div>
+        <div class="tab-pane fade " id="partner" role="tabpanel" aria-labelledby="partner-tab">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer pt-50">
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-4 col-lg-3  col-xl-2">
+            <div class="figure-wrapper">
+                <figure >
+                  <img src="assets/img/logo.png" alt="" class="f-logo" >
+                </figure>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-9 col-xl-10">
+            <div class="row justify-content-around">
+                  <div class="col-md-6 col-lg-3">
+                    <h5>معلومات</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">الخدمات</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">الإعلان معنا</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">الهوية التجارية</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <h5>خدمة الزبائن</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">قصص النجاح</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">قسم الصحافة</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">وظائف ومهن</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">ردود الفعل</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">مساعدة</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">دفع امن</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">خدمات التفتيش</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">مركز التعلم</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">أنا مستخدم جديد</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <h5>شراء التجارة  </h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">إرسال متطلبات الشراء</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">عرض ما بعد البيع</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">إنشاء موقع الويب الخاص بك مجانا</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">عرض العملاء المتوقعين</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">كيف اشترى</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">حد الائتمان الإلكتروني</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">إرسال نزاع</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">أنا المشتري</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <h5>شراء التجارة  </h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">إرسال متطلبات الشراء</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">عرض ما بعد البيع</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">إنشاء موقع الويب الخاص بك مجانا</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">عرض العملاء المتوقعين</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">كيف اشترى</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">حد الائتمان الإلكتروني</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">إرسال نزاع</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">أنا المشتري</a>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+          </div>
+      </div>
+  
+      <div class="bottom-footer">
+          <nav class="nav">
+            <a class="nav-link" href="#" title="twitter">
+               <i class="fa fa-twitter"></i>
+            </a>
+            <a class="nav-link" href="#" title="facebook">
+               <i class="fa fa-facebook"></i>
+            </a>
+            <a class="nav-link" href="#" title="instagram">
+               <i class="fa fa-instagram"></i>
+            </a>
+          </nav>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="assets/js/scripts.min.js"></script>
+</body>
+
+</html>

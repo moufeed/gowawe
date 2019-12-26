@@ -51,7 +51,10 @@ var local = {
 var fromHome = require("./home/home.ar");
 var fromWeekly = require("./weaklydeals/weaklydeals.ar");
 var fromSuppliers = require("./suppliers/suppliers.ar");
+var fromProducts = require("./products/products.ar");
+
 var fromCategories = require("./categories/categories.ar");
+var fromQuotation = require("./quotation/quotation.ar");
 
 module.exports = {
   dir: "rtl",
@@ -68,5 +71,7 @@ module.exports = {
   banner: fromHome.main_banner,
   w_d: fromWeekly, // weekly deals page
   sp: fromSuppliers, // suppliers page
-  c_p: fromCategories
+  c_p: fromProducts,
+  c: fromCategories,
+  q: fromQuotation
 };

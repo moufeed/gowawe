@@ -14,8 +14,7 @@
   <script src="assets/js/lib.min.js"></script>
 </head>
 
-<body>
-
+<body class="home-page">
   <header class="main-header">
   <div class="container-fluid">
     <div class="row main-header">
@@ -139,257 +138,575 @@
     </nav>
     </div>
   </header>
-
-  <section class="categories-page">
+  <nav aria-label="breadcrumb" class="container-fluid">
+    <ol class="breadcrumb bg-light my-4">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Library</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Data</li>
+    </ol>
+  </nav>  <section class="categories-navigation">
     <div class="container-fluid">
-      <ul class="nav categories-tabs mt-3 mb-2" id="tap" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" id="products-tab" data-toggle="tab" href="#products" role="tab"
-            aria-controls="products" aria-selected="true">المنتجات</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " id="jobs-tab" data-toggle="tab" href="#jobs" role="tab" aria-controls="jobs"
-            aria-selected="false">أعمال</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " id="partner-tab" data-toggle="tab" href="#partner" role="tab" aria-controls="partner"
-            aria-selected="false">الشركاء</a>
-        </li>
-
-      </ul>
-      <div class="tab-content" id="tapContent">
-        <div class="tab-pane fade show active" id="products" role="tabpanel" aria-labelledby="products-tab">
-          
-          
-          <div class="row no-gutters">
-              <aside class="col-12 col-md-4 col-lg-3 col-xl-2">
-                  <div class="d-md-none my-4 text-center">
-                      <button class="btn btn-outline-dark btn-block btn-lg" type="button" data-toggle="collapse" data-target="#collapseNav"
-                        aria-expanded="true" aria-controls="collapseNav">
-                        
-                      </button>
-                  </div>
-                  <div class="collapse show" id="collapseNav">
-                    <nav class="ca_list">
-                        <a href="#">
-                          <picture>
-                            <img src="assets/img/placeholder.jpg" alt="">
-                          </picture>
-                          <span>ثياب البحر</span>
-                        </a>
-                        <a href="#">
-                          <picture>
-                            <img src="assets/img/placeholder.jpg" alt="">
-                          </picture>
-                          <span>قيعان</span>
-                        </a>
-                        <a href="#">
-                          <picture>
-                            <img src="assets/img/placeholder.jpg" alt="">
-                          </picture>
-                          <span>فساتين</span>
-                        </a>
-                        <a href="#">
-                          <picture>
-                            <img src="assets/img/placeholder.jpg" alt="">
-                          </picture>
-                          <span>ملابس البيت</span>
-                        </a>
-                        <a href="#">
-                          <picture>
-                            <img src="assets/img/placeholder.jpg" alt="">
-                          </picture>
-                          <span>بذلة</span>
-                        </a>
-                        <a href="#">
-                          <picture>
-                            <img src="assets/img/placeholder.jpg" alt="">
-                          </picture>
-                          <span>ملابس خارجية</span>
-                        </a>
-                        <a href="#">
-                          <picture>
-                            <img src="assets/img/placeholder.jpg" alt="">
-                          </picture>
-                          <span>لباس نوم</span>
-                        </a>
-                        <a href="#">
-                          <picture>
-                            <img src="assets/img/placeholder.jpg" alt="">
-                          </picture>
-                          <span>ملابس رياضية</span>
-                        </a>
-                        <a href="#">
-                          <picture>
-                            <img src="assets/img/placeholder.jpg" alt="">
-                          </picture>
-                          <span>قمم</span>
-                        </a>
-                        <a href="#">
-                          <picture>
-                            <img src="assets/img/placeholder.jpg" alt="">
-                          </picture>
-                          <span>ثياب داخلية</span>
-                        </a>
-                    </nav>
-                  </div>
-              </aside>
-              <main class="col-12 col-md-8 col-lg-9 col-xl-10">
-                      <style>
-                        .ca_slide{
-                          background-color: #868fb9;
-                        }
-                        .ca_pic img {
-                          margin-right: 15%;
-                          margin-left: 15%;
-                          height: 110%;
-                        }
-                      </style>
-                  <div class="ca_slider">
-                          <div class="ca_slide d-flex flex-column justify-content-start align-items-start">
-                            <picture class="ca_pic justify-content-end">
-                              <img src="assets/img/p/ps1.png" alt="" class="no-owl">
-                            </picture>
-                            <div class="ca_slide_txt">
-                              <h4>حجم اضافي</h4>
-                              <a href="#">تسوق الآن</a>
-                            </div>
-                          </div>
-                  </div>
-          
-                <section class="ca_prods bg-light-gray">
-                    <div class="bg-white rounded ca_prod m-4 p-3">
-                      <h3><a href="#">شروق الشمس اللباس  <small>(250)</small></a></h3>
-                          <div class="ca_prod_imgs ">
-                          <a href="#" class="flex-column align-items-center justify-content-between">
-                            <picture>
-                              <img src="assets/img/p/p1.jpg" alt="" class="no-owl">
-                            </picture>
-                            <span>( 31 )  </span>
-                            <strong>شروق الشمس اللباس</strong>
-                          </a>
-                          <a href="#" class="flex-column align-items-center justify-content-between">
-                            <picture>
-                              <img src="assets/img/p/p2.jpg" alt="" class="no-owl">
-                            </picture>
-                            <span>( 21 )  </span>
-                            <strong>فستان كادويل</strong>
-                          </a>
-                          <a href="#" class="flex-column align-items-center justify-content-between">
-                            <picture>
-                              <img src="assets/img/p/p3.jpg" alt="" class="no-owl">
-                            </picture>
-                            <span>( 64 )  </span>
-                            <strong>بلانشارد تونك</strong>
-                          </a>
-                          <a href="#" class="flex-column align-items-center justify-content-between">
-                            <picture>
-                              <img src="assets/img/p/p4.jpg" alt="" class="no-owl">
-                            </picture>
-                            <span>( 84 )  </span>
-                            <strong>فستان إكسير</strong>
-                          </a>
-                          <a href="#" class="flex-column align-items-center justify-content-between">
-                            <picture>
-                              <img src="assets/img/p/p5.jpg" alt="" class="no-owl">
-                            </picture>
-                            <span>( 59 )  </span>
-                            <strong>البحوث في الهواء الطلق</strong>
-                          </a>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded ca_prod m-4 p-3">
-                      <h3><a href="#">التنانير والفساتين  <small>(362)</small></a></h3>
-                          <div class="ca_prod_imgs ">
-                          <a href="#" class="flex-column align-items-center justify-content-between">
-                            <picture>
-                              <img src="assets/img/p/p6.jpg" alt="" class="no-owl">
-                            </picture>
-                            <span>( 31 )  </span>
-                            <strong>شروق الشمس اللباس</strong>
-                          </a>
-                          <a href="#" class="flex-column align-items-center justify-content-between">
-                            <picture>
-                              <img src="assets/img/p/p7.jpg" alt="" class="no-owl">
-                            </picture>
-                            <span>( 21 )  </span>
-                            <strong>فستان كادويل</strong>
-                          </a>
-                          <a href="#" class="flex-column align-items-center justify-content-between">
-                            <picture>
-                              <img src="assets/img/p/p8.jpg" alt="" class="no-owl">
-                            </picture>
-                            <span>( 64 )  </span>
-                            <strong>بلانشارد تونك</strong>
-                          </a>
-                          <a href="#" class="flex-column align-items-center justify-content-between">
-                            <picture>
-                              <img src="assets/img/p/p9.jpg" alt="" class="no-owl">
-                            </picture>
-                            <span>( 84 )  </span>
-                            <strong>فستان إكسير</strong>
-                          </a>
-                          <a href="#" class="flex-column align-items-center justify-content-between">
-                            <picture>
-                              <img src="assets/img/p/p10.jpg" alt="" class="no-owl">
-                            </picture>
-                            <span>( 59 )  </span>
-                            <strong>البحوث في الهواء الطلق</strong>
-                          </a>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded ca_prod m-4 p-3">
-                      <h3><a href="#">جاكيتات وفساتين  <small>(1208)</small></a></h3>
-                          <div class="ca_prod_imgs ">
-                          <a href="#" class="flex-column align-items-center justify-content-between">
-                            <picture>
-                              <img src="assets/img/p/p11.jpg" alt="" class="no-owl">
-                            </picture>
-                            <span>( 17 )  </span>
-                            <strong>شروق الشمس اللباس</strong>
-                          </a>
-                          <a href="#" class="flex-column align-items-center justify-content-between">
-                            <picture>
-                              <img src="assets/img/p/p12.jpg" alt="" class="no-owl">
-                            </picture>
-                            <span>( 611 )  </span>
-                            <strong>فستان كادويل</strong>
-                          </a>
-                          <a href="#" class="flex-column align-items-center justify-content-between">
-                            <picture>
-                              <img src="assets/img/p/p13.jpg" alt="" class="no-owl">
-                            </picture>
-                            <span>( 24 )  </span>
-                            <strong>بلانشارد تونك</strong>
-                          </a>
-                          <a href="#" class="flex-column align-items-center justify-content-between">
-                            <picture>
-                              <img src="assets/img/p/p14.jpg" alt="" class="no-owl">
-                            </picture>
-                            <span>( 41 )  </span>
-                            <strong>فستان إكسير</strong>
-                          </a>
-                          <a href="#" class="flex-column align-items-center justify-content-between">
-                            <picture>
-                              <img src="assets/img/p/p15.jpg" alt="" class="no-owl">
-                            </picture>
-                            <span>( 12 )  </span>
-                            <strong>Retro Pile Hoody </strong>
-                          </a>
-                        </div>
-                    </div>
-                </section>
-              </main>
+      <div class="px-3 d-md-none my-4 text-center">
+        <button class="btn btn-outline-dark btn-block btn-lg" type="button" data-toggle="collapse" data-target="#collapseNav"
+          aria-expanded="true" aria-controls="collapseNav">
+          <i class="fa fa-cubes"></i>
+        </button>
+      </div>
+        <div class="collapse show" id="collapseNav">
+            <div class="row no-gutters shadow mb-5">
+              <div class="col-md-4 col-lg-3 col-xl-2">
+                <a href="#" class="cate_nav_item">
+                  <picture>
+                    <img src="assets/img/c/1.png" alt="">
+                  </picture>
+                  <span>
+                    الزراعة والغذاء
+                  </span>
+                </a>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-2">
+                <a href="#" class="cate_nav_item">
+                  <picture>
+                    <img src="assets/img/c/2.png" alt="">
+                  </picture>
+                  <span>
+                    الملابس والمنسوجات وملحقاتها
+                  </span>
+                </a>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-2">
+                <a href="#" class="cate_nav_item">
+                  <picture>
+                    <img src="assets/img/c/Group 119.png" alt="">
+                  </picture>
+                  <span>
+                    السيارات والنقل
+                  </span>
+                </a>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-2">
+                <a href="#" class="cate_nav_item">
+                  <picture>
+                    <img src="assets/img/c/bag.png" alt="">
+                  </picture>
+                  <span>
+                    حقائب وأحذية واكسسوارات
+                  </span>
+                </a>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-2">
+                <a href="#" class="cate_nav_item">
+                  <picture>
+                    <img src="assets/img/c/Fesha.png" alt="">
+                  </picture>
+                  <span>
+                    المعدات الكهربائية والمكونات والاتصالات
+                  </span>
+                </a>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-2">
+                <a href="#" class="cate_nav_item">
+                  <picture>
+                    <img src="assets/img/c/book.png" alt="">
+                  </picture>
+                  <span>
+                    التعبئة والتغليف والإعلان ومكتب
+                  </span>
+                </a>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-2">
+                <a href="#" class="cate_nav_item">
+                  <picture>
+                    <img src="assets/img/c/Path 12.png" alt="">
+                  </picture>
+                  <span>
+                    إلكتروني
+                  </span>
+                </a>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-2">
+                <a href="#" class="cate_nav_item">
+                  <picture>
+                    <img src="assets/img/c/chair.png" alt="">
+                  </picture>
+                  <span>
+                    المنزل ، الأنوار ومنشئ
+                  </span>
+                </a>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-2">
+                <a href="#" class="cate_nav_item">
+                  <picture>
+                    <img src="assets/img/c/beauty.png" alt="">
+                  </picture>
+                  <span>
+                    الصحة والجمال
+                  </span>
+                </a>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-2">
+                <a href="#" class="cate_nav_item">
+                  <picture>
+                    <img src="assets/img/c/giftbox.png" alt="">
+                  </picture>
+                  <span>
+                    الهدايا والرياضة والألعاب
+                  </span>
+                </a>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-2">
+                <a href="#" class="cate_nav_item">
+                  <picture>
+                    <img src="assets/img/c/chemicalsvg.png" alt="">
+                  </picture>
+                  <span>
+                    المعادن والكيماويات والمطاط والبلاستيك
+                  </span>
+                </a>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-2">
+                <a href="#" class="cate_nav_item">
+                  <picture>
+                    <img src="assets/img/c/machine.png" alt="">
+                  </picture>
+                  <span>
+                    الآلات وقطع الغيار الصناعية والأدوات
+                  </span>
+                </a>
+              </div>
+            </div>
+        </div>
+    </div>
+  </section>  <section class="categories_list mb-5 ">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-lg-8 col-xl-9">
+          <div class="c-bg">
+              <i class="fa fa-shopping-cart"></i>
           </div>
+            <div class="cate_list">
+                  <div class="c_header text-center my-3">
+                      <span class="bg-danger rounded-pill d-inline-flex mx-auto text-white align-items-center px-5  py-2 my-3">
+                        <img src="assets/img/wheat.png" alt="" width="46" height="46">
+                        <span class="h5 mx-2">
+                          الزراعة والغذاء
+                        </span>
+                      </span>
+                  </div>
+  
+            <div class="row">
+                    <div class="col-md-6">
+                      <h5 class="text-danger my-3">الزراعة  <small class="text-muted">( 32123 )</small></h5>
+                      <ul class="list-unstyled row">
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاصوليا</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">مقهى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">النفايات الزراعية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاكهة</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">السجائر العشبية السيجار</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">تغذية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المنتجات الزراعية الأخرى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">بذور النباتات والمصابيح</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المكسرات والحبات</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">حبوب الفانيليا</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاصوليا</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">مقهى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">النفايات الزراعية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاكهة</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">السجائر العشبية السيجار</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">تغذية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المنتجات الزراعية الأخرى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">بذور النباتات والمصابيح</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المكسرات والحبات</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">حبوب الفانيليا</a>
+                          </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <h5 class="text-danger my-3">طعام وشراب <small class="text-muted">( 566448 )</small></h5>
+                      <ul class="list-unstyled row">
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاصوليا</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">مقهى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">النفايات الزراعية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاكهة</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">السجائر العشبية السيجار</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">تغذية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المنتجات الزراعية الأخرى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">بذور النباتات والمصابيح</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المكسرات والحبات</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">حبوب الفانيليا</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاصوليا</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">مقهى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">النفايات الزراعية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاكهة</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">السجائر العشبية السيجار</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">تغذية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المنتجات الزراعية الأخرى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">بذور النباتات والمصابيح</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المكسرات والحبات</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">حبوب الفانيليا</a>
+                          </li>
+                      </ul>
+                    </div>
+            </div>
+  
+            </div>
+            <div class="cate_list">
+                  <div class="c_header text-center my-3">
+                      <span class="bg-danger rounded-pill d-inline-flex mx-auto text-white align-items-center px-5  py-2 my-3">
+                        <img src="assets/img/Path 145.png" alt="" width="46" height="46">
+                        <span class="h5 mx-2">
+                          الملابس والمنسوجات وملحقاتها
+                        </span>
+                      </span>
+                  </div>
+  
+            <div class="row">
+                    <div class="col-md-6">
+                      <h5 class="text-danger my-3">ثياب <small class="text-muted">( 32123 )</small></h5>
+                      <ul class="list-unstyled row">
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاصوليا</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">مقهى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">النفايات الزراعية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاكهة</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">السجائر العشبية السيجار</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">تغذية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المنتجات الزراعية الأخرى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">بذور النباتات والمصابيح</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المكسرات والحبات</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">حبوب الفانيليا</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاصوليا</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">مقهى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">النفايات الزراعية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاكهة</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">السجائر العشبية السيجار</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">تغذية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المنتجات الزراعية الأخرى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">بذور النباتات والمصابيح</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المكسرات والحبات</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">حبوب الفانيليا</a>
+                          </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <h5 class="text-danger my-3">منتجات النسيج والجلود  <small class="text-muted">( 566448 )</small></h5>
+                      <ul class="list-unstyled row">
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاصوليا</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">مقهى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">النفايات الزراعية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاكهة</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">السجائر العشبية السيجار</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">تغذية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المنتجات الزراعية الأخرى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">بذور النباتات والمصابيح</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المكسرات والحبات</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">حبوب الفانيليا</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاصوليا</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">مقهى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">النفايات الزراعية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاكهة</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">السجائر العشبية السيجار</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">تغذية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المنتجات الزراعية الأخرى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">بذور النباتات والمصابيح</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المكسرات والحبات</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">حبوب الفانيليا</a>
+                          </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <h5 class="text-danger my-3">اكسسوارات أزياء <small class="text-muted">( 2131 )</small></h5>
+                      <ul class="list-unstyled row">
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاصوليا</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">مقهى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">النفايات الزراعية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاكهة</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">السجائر العشبية السيجار</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">تغذية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المنتجات الزراعية الأخرى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">بذور النباتات والمصابيح</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المكسرات والحبات</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">حبوب الفانيليا</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاصوليا</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">مقهى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">النفايات الزراعية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاكهة</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">السجائر العشبية السيجار</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">تغذية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المنتجات الزراعية الأخرى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">بذور النباتات والمصابيح</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المكسرات والحبات</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">حبوب الفانيليا</a>
+                          </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <h5 class="text-danger my-3">الساعات ، مجوهرات ، نظارات  <small class="text-muted">( 566448 )</small></h5>
+                      <ul class="list-unstyled row">
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاصوليا</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">مقهى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">النفايات الزراعية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاكهة</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">السجائر العشبية السيجار</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">تغذية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المنتجات الزراعية الأخرى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">بذور النباتات والمصابيح</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المكسرات والحبات</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">حبوب الفانيليا</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاصوليا</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">مقهى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">النفايات الزراعية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">فاكهة</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">السجائر العشبية السيجار</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">تغذية</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المنتجات الزراعية الأخرى</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">بذور النباتات والمصابيح</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">المكسرات والحبات</a>
+                          </li>
+                          <li class="list-group-item col-lg-6 my-1">
+                            <a href="#" class="text-dark p-2">حبوب الفانيليا</a>
+                          </li>
+                      </ul>
+                    </div>
+            </div>
+  
+            </div>
         </div>
-        <div class="tab-pane fade " id="jobs" role="tabpanel" aria-labelledby="jobs-tab">
-        </div>
-        <div class="tab-pane fade " id="partner" role="tabpanel" aria-labelledby="partner-tab">
-        </div>
+        <div class="col-md-12 col-lg-4 col-xl-3 "></div>
       </div>
     </div>
   </section>
-
 
   <footer class="main-footer pt-50">
     <div class="container-fluid">
@@ -526,8 +843,6 @@
       </div>
     </div>
   </footer>
-
-
   <script src="assets/js/scripts.min.js"></script>
 </body>
 

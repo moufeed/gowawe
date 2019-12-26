@@ -54,8 +54,9 @@ var local = {
 var fromHome = require("./home/home.en");
 var fromWeekly = require("./weaklydeals/weaklydeals.en");
 var fromSuppliers = require("./suppliers/suppliers.en");
+var fromProducts = require("./products/products.en");
 var fromCategories = require("./categories/categories.en");
-
+var fromQuotation = require("./quotation/quotation.en");
 module.exports = {
   dir: "ltr",
   lang: "en",
@@ -71,5 +72,7 @@ module.exports = {
   banner: fromHome.main_banner,
   w_d: fromWeekly, // weekly deals page
   sp: fromSuppliers, // suppliers page,
-  c_p: fromCategories
+  c_p: fromProducts,
+  c: fromCategories,
+  q: fromQuotation
 };

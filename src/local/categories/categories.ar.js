@@ -1,154 +1,113 @@
 var categories = [
   {
-    name: "ثياب البحر",
-    img: "placeholder.jpg"
+    t: "الزراعة والغذاء",
+    i: "1.png"
   },
   {
-    name: "قيعان",
-    img: "placeholder.jpg"
+    t: "الملابس والمنسوجات وملحقاتها",
+    i: "2.png"
   },
   {
-    name: "فساتين",
-    img: "placeholder.jpg"
+    t: "السيارات والنقل",
+    i: "Group 119.png"
   },
   {
-    name: "ملابس البيت",
-    img: "placeholder.jpg"
+    t: "حقائب وأحذية واكسسوارات",
+    i: "bag.png"
   },
   {
-    name: "بذلة",
-    img: "placeholder.jpg"
+    t: "المعدات الكهربائية والمكونات والاتصالات",
+    i: "Fesha.png"
   },
   {
-    name: "ملابس خارجية",
-    img: "placeholder.jpg"
+    t: "التعبئة والتغليف والإعلان ومكتب",
+    i: "book.png"
   },
   {
-    name: "لباس نوم",
-    img: "placeholder.jpg"
+    t: "إلكتروني",
+    i: "Path 12.png"
   },
   {
-    name: "ملابس رياضية",
-    img: "placeholder.jpg"
+    t: "المنزل ، الأنوار ومنشئ",
+    i: "chair.png"
   },
   {
-    name: "قمم",
-    img: "placeholder.jpg"
+    t: "الصحة والجمال",
+    i: "beauty.png"
   },
   {
-    name: "ثياب داخلية",
-    img: "placeholder.jpg"
+    t: "الهدايا والرياضة والألعاب",
+    i: "giftbox.png"
+  },
+  {
+    t: "المعادن والكيماويات والمطاط والبلاستيك",
+    i: "chemicalsvg.png"
+  },
+  {
+    t: "الآلات وقطع الغيار الصناعية والأدوات",
+    i: "machine.png"
   }
 ];
 
-var slider = [
-  {
-    title: "حجم اضافي",
-    text: "تسوق الآن",
-    img: "ps1.png"
-  }
+var links = [
+  "فاصوليا",
+  "مقهى",
+  "النفايات الزراعية",
+  "فاكهة",
+  "السجائر العشبية السيجار",
+  "تغذية",
+  "المنتجات الزراعية الأخرى",
+  "بذور النباتات والمصابيح",
+  "المكسرات والحبات",
+  "حبوب الفانيليا"
 ];
 
-var P_A = {
-  title: "شروق الشمس اللباس",
-  count: 250,
-  list: [
-    {
-      img: "p1.jpg",
-      txt: "شروق الشمس اللباس",
-      count: 31
-    },
-    {
-      img: "p2.jpg",
-      txt: "فستان كادويل",
-      count: 21
-    },
-    {
-      img: "p3.jpg",
-      txt: "بلانشارد تونك",
-      count: 64
-    },
-    {
-      img: "p4.jpg",
-      txt: "فستان إكسير",
-      count: 84
-    },
-    {
-      img: "p5.jpg",
-      txt: "البحوث في الهواء الطلق",
-      count: 59
-    }
-  ]
-};
-
-var P_B = {
-  title: "التنانير والفساتين",
-  count: 362,
-  list: [
-    {
-      img: "p6.jpg",
-      txt: "شروق الشمس اللباس",
-      count: 31
-    },
-    {
-      img: "p7.jpg",
-      txt: "فستان كادويل",
-      count: 21
-    },
-    {
-      img: "p8.jpg",
-      txt: "بلانشارد تونك",
-      count: 64
-    },
-    {
-      img: "p9.jpg",
-      txt: "فستان إكسير",
-      count: 84
-    },
-    {
-      img: "p10.jpg",
-      txt: "البحوث في الهواء الطلق",
-      count: 59
-    }
-  ]
-};
-
-var P_C = {
-  title: "جاكيتات وفساتين",
-  count: 1208,
-  list: [
-    {
-      img: "p11.jpg",
-      txt: "شروق الشمس اللباس",
-      count: 17
-    },
-    {
-      img: "p12.jpg",
-      txt: "فستان كادويل",
-      count: 611
-    },
-    {
-      img: "p13.jpg",
-      txt: "بلانشارد تونك",
-      count: 24
-    },
-    {
-      img: "p14.jpg",
-      txt: "فستان إكسير",
-      count: 41
-    },
-    {
-      img: "p15.jpg",
-      txt: "Retro Pile Hoody ",
-      count: 12
-    }
-  ]
-};
-
-var products = [P_A, P_B, P_C];
+var categoryMap = [
+  {
+    t: "الزراعة والغذاء",
+    i: "wheat.png",
+    l: [
+      {
+        t: "الزراعة ",
+        c: 32123,
+        l: [...links, ...links]
+      },
+      {
+        t: "طعام وشراب",
+        c: 566448,
+        l: [...links, ...links]
+      }
+    ]
+  },
+  {
+    t: "الملابس والمنسوجات وملحقاتها",
+    i: "Path 145.png",
+    l: [
+      {
+        t: "ثياب",
+        c: 32123,
+        l: [...links, ...links]
+      },
+      {
+        t: "منتجات النسيج والجلود ",
+        c: 566448,
+        l: [...links, ...links]
+      },
+      {
+        t: "اكسسوارات أزياء",
+        c: 2131,
+        l: [...links, ...links]
+      },
+      {
+        t: "الساعات ، مجوهرات ، نظارات ",
+        c: 566448,
+        l: [...links, ...links]
+      }
+    ]
+  }
+];
 
 module.exports = {
   categories,
-  slider,
-  products
+  links: categoryMap
 };

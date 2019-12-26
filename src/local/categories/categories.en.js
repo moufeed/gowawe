@@ -1,154 +1,113 @@
 var categories = [
   {
-    name: "Beachwear",
-    img: "placeholder.jpg"
+    t: "Agriculture & Food",
+    i: "1.png"
   },
   {
-    name: "Bottoms",
-    img: "placeholder.jpg"
+    t: "Apparel,Textiles & Accessories",
+    i: "2.png"
   },
   {
-    name: "Dresses",
-    img: "placeholder.jpg"
+    t: "Auto & Transportation",
+    i: "Group 119.png"
   },
   {
-    name: "Homewear",
-    img: "placeholder.jpg"
+    t: "Bags, Shoes &  Accessories",
+    i: "bag.png"
   },
   {
-    name: "Jumpsuit",
-    img: "placeholder.jpg"
+    t: "Electrical Equipment, Components & Telecoms",
+    i: "Fesha.png"
   },
   {
-    name: "Outerwear",
-    img: "placeholder.jpg"
+    t: "Packaging, Advertising & Office",
+    i: "book.png"
   },
   {
-    name: "Pyjamas",
-    img: "placeholder.jpg"
+    t: "Electronic",
+    i: "Path 12.png"
   },
   {
-    name: "Sportswear",
-    img: "placeholder.jpg"
+    t: "Home, Lights & Constructor ",
+    i: "chair.png"
   },
   {
-    name: "Tops",
-    img: "placeholder.jpg"
+    t: "Health & Beauty",
+    i: "beauty.png"
   },
   {
-    name: "Underwear",
-    img: "placeholder.jpg"
+    t: "Gifts, Sports & Toys",
+    i: "giftbox.png"
+  },
+  {
+    t: "Metallurgy, Chemicals, Rubber & Plastics",
+    i: "chemicalsvg.png"
+  },
+  {
+    t: "Machinery, Industrial Parts & Tools",
+    i: "machine.png"
   }
 ];
 
-var slider = [
-  {
-    title: "Plus Size",
-    text: "shop now",
-    img: "ps1.png"
-  }
+var links = [
+  "Beans",
+  "Coffee Shop",
+  "Agricultural waste",
+  "Fruit",
+  "Herbal Cigars &amp; Cigarettes",
+  "Feed",
+  "Other Agriculture Products",
+  "Plant Seeds &amp; Bulbs",
+  "Nuts &amp; Kernels",
+  "Vanilla Beans"
 ];
 
-var P_A = {
-  title: "Sunrise Dress",
-  count: 250,
-  list: [
-    {
-      img: "p1.jpg",
-      txt: "Sunrise Dress",
-      count: 31
-    },
-    {
-      img: "p2.jpg",
-      txt: "Cadwell Dress",
-      count: 21
-    },
-    {
-      img: "p3.jpg",
-      txt: "Blanchard Tunic",
-      count: 64
-    },
-    {
-      img: "p4.jpg",
-      txt: "Elixir Dress",
-      count: 84
-    },
-    {
-      img: "p5.jpg",
-      txt: "Outdoor Research",
-      count: 59
-    }
-  ]
-};
-
-var P_B = {
-  title: "Skirts & Dresses",
-  count: 362,
-  list: [
-    {
-      img: "p6.jpg",
-      txt: "Sunrise Dress",
-      count: 31
-    },
-    {
-      img: "p7.jpg",
-      txt: "Cadwell Dress",
-      count: 21
-    },
-    {
-      img: "p8.jpg",
-      txt: "Blanchard Tunic",
-      count: 64
-    },
-    {
-      img: "p9.jpg",
-      txt: "Elixir Dress",
-      count: 84
-    },
-    {
-      img: "p10.jpg",
-      txt: "Outdoor Research",
-      count: 59
-    }
-  ]
-};
-
-var P_C = {
-  title: "Jackets & Dresses",
-  count: 1208,
-  list: [
-    {
-      img: "p11.jpg",
-      txt: "Sunrise Dress",
-      count: 17
-    },
-    {
-      img: "p12.jpg",
-      txt: "Cadwell Dress",
-      count: 611
-    },
-    {
-      img: "p13.jpg",
-      txt: "Blanchard Tunic",
-      count: 24
-    },
-    {
-      img: "p14.jpg",
-      txt: "Elixir Dress",
-      count: 41
-    },
-    {
-      img: "p15.jpg",
-      txt: "Retro Pile Hoody ",
-      count: 12
-    }
-  ]
-};
-
-var products = [P_A, P_B, P_C];
+var categoryMap = [
+  {
+    t: "Agriculture & Food",
+    i: "wheat.png",
+    l: [
+      {
+        t: "Agriculture ",
+        c: 32123,
+        l: [...links, ...links]
+      },
+      {
+        t: "Food & Beverage ",
+        c: 566448,
+        l: [...links, ...links]
+      }
+    ]
+  },
+  {
+    t: "Apparel,Textiles & Accessories",
+    i: "Path 145.png",
+    l: [
+      {
+        t: "Apparel",
+        c: 32123,
+        l: [...links, ...links]
+      },
+      {
+        t: "Textile & Leather Product ",
+        c: 566448,
+        l: [...links, ...links]
+      },
+      {
+        t: "Fashion Accessories",
+        c: 2131,
+        l: [...links, ...links]
+      },
+      {
+        t: "Timepieces, Jewelry, Eyewear ",
+        c: 566448,
+        l: [...links, ...links]
+      }
+    ]
+  }
+];
 
 module.exports = {
   categories,
-  slider,
-  products
+  links: categoryMap
 };

@@ -1,0 +1,40 @@
+<section class="categories_list mb-5 ">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 col-lg-8 col-xl-9">
+        <div class="c-bg">
+            <i class="fa fa-shopping-cart"></i>
+        </div>
+        {{#each c.links}}
+          <div class="cate_list">
+                <div class="c_header text-center my-3">
+                    <span class="bg-danger rounded-pill d-inline-flex mx-auto text-white align-items-center px-5  py-2 my-3">
+                      <img src="assets/img/{{i}}" alt="" width="46" height="46">
+                      <span class="h5 mx-2">
+                        {{t}}
+                      </span>
+                    </span>
+                </div>
+
+          <div class="row">
+              {{#each l}}
+                  <div class="col-md-6">
+                    <h5 class="text-danger my-3">{{t}} <small class="text-muted">( {{c}} )</small></h5>
+                    <ul class="list-unstyled row">
+                      {{#each l}}
+                        <li class="list-group-item col-lg-6 my-1">
+                          <a href="#" class="text-dark p-2">{{this}}</a>
+                        </li>
+                      {{/each}}
+                    </ul>
+                  </div>
+              {{/each}}
+          </div>
+
+          </div>
+        {{/each}}
+      </div>
+      <div class="col-md-12 col-lg-4 col-xl-3 "></div>
+    </div>
+  </div>
+</section>

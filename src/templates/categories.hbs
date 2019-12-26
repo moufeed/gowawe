@@ -14,50 +14,14 @@
   <script src="assets/js/lib.min.js"></script>
 </head>
 
-<body>
-
+<body class="home-page">
   {{>_header}}
 
-
-  <section class="categories-page">
-    <div class="container-fluid">
-      <ul class="nav categories-tabs mt-3 mb-2" id="tap" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" id="products-tab" data-toggle="tab" href="#products" role="tab"
-            aria-controls="products" aria-selected="true">{{local.products}}</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " id="jobs-tab" data-toggle="tab" href="#jobs" role="tab" aria-controls="jobs"
-            aria-selected="false">{{local.jobs}}</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " id="partner-tab" data-toggle="tab" href="#partner" role="tab" aria-controls="partner"
-            aria-selected="false">{{local.project_partner}}</a>
-        </li>
-
-      </ul>
-      <div class="tab-content" id="tapContent">
-        <div class="tab-pane fade show active" id="products" role="tabpanel" aria-labelledby="products-tab">
-          {{>categories/products}}
-        </div>
-        <div class="tab-pane fade " id="jobs" role="tabpanel" aria-labelledby="jobs-tab">
-          {{>categories/jobs}}
-        </div>
-        <div class="tab-pane fade " id="partner" role="tabpanel" aria-labelledby="partner-tab">
-          {{>categories/partners}}
-        </div>
-      </div>
-    </div>
-  </section>
-
+  {{> categories/_breadcrumb}}
+  {{> categories/_categories-navbar}}
+  {{> categories/_categories-list}}
 
   {{>_footer}}
-
-
-{{!--
-
-<script src="assets/js/carousel.min.js"></script>
- --}}
   <script src="assets/js/scripts.min.js"></script>
 </body>
 
