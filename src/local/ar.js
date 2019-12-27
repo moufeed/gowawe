@@ -45,7 +45,21 @@ var local = {
   max: "اكثر",
   search: "بحث",
   project_partner: "الشركاء",
-  jobs: "أعمال"
+  jobs: "أعمال",
+  attachments: "إضافة مرفقات",
+  remaining: "متبق",
+  agreement:
+    "أوافق على مشاركة <a href=''> بطاقة العمل </a> الخاصة بي مع الموردين المقتبسين.",
+  understood: "لقد قرأت وفهمت ووافقت على الالتزام بالشروط والأحكام",
+  other_requirements: "متطلبات اخرى",
+  other_requirements_txt: "تشمل سعر الوحدة ، شروط الدفع ، الخ",
+  request_for_quotation: "طلب عرض أسعار",
+  request_for_quotation_text: "طلب واحد ، ونقلت متعددة",
+  submit_rfq: "تقديم طلب عرض الأسعار",
+  coi: "اكتمال المعلومات",
+  fair: "عادي",
+  great: "جيد",
+  excellent: "ممتاز"
 };
 
 var fromHome = require("./home/home.ar");

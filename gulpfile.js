@@ -76,6 +76,20 @@ var config = {
         output: "search.js",
         es6: true,
         inputs: ["./src/js/search.js"]
+      },
+      {
+        output: "validation.js",
+        es6: false,
+        inputs: [
+          "./node_modules/jquery-validation/dist/jquery.validate.min.js",
+          "./node_modules/jquery-validation/dist/additional-methods.js",
+          "./node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"
+        ]
+      },
+      {
+        output: "rfq.js",
+        es6: true,
+        inputs: ["./src/js/rfq.js"]
       }
     ],
     dist: "./dist/assets/js"

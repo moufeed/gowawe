@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{page_title}}</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style-{{lang}}.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/lib.min.js"></script>
+</head>
+
+<body class="quotation-page bg-light-gray">
+  {{>_header}}
+    <section class="quotation-section px-xl-5 pt-5">
+      <div class="container-fluid">
+      <h2 class="mb-4">{{local.request_for_quotation}}</h2>
+      <div class="rounded shadow rfq-wrapper bg-white mb-5">
+          <div class="row no-gutters">
+            <div class="col-lg-8 rfq-h">
+              <div class="form-header rfq-pr">
+                    <strong class="h1 d-block mb-4 mt-3">{{q.t}}</strong>
+                    <span class="h3 d-block">{{q.st}}</span>
+                    <p class="">{{q.txt}}</p>
+              </div>
+            </div>
+            <div class="col-lg-4 rfq-l">
+                <div class="rfq-logo mt-3">
+                  <div class="logo"></div>
+                  <div class="title">
+                    <div class="mn">{{local.request_for_quotation}}</div>
+                    <div class="wk">{{local.request_for_quotation_text}}</div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <h4>{{local.coi}}</h4>
+
+                  <div class="rfq-progress-bar d-flex">
+                    <div class="fair">{{local.fair}}</div>
+                    <div class="great">{{local.great}}</div>
+                    <div class="excellent">{{local.excellent}}</div>
+                    <span class="bubble"></span>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+
+          <form action="" class="" id="rfqForm">
+            <div class="form-group row justify-content-between align-items-center no-gutters">
+              <div class="col-lg-8 rfq-pr">
+                  <input type="text" class="form-control  form-control-lg rounded-0 " id="keyword"
+                    aria-describedby="TextHelp" placeholder="{{q.k}}" required  >
+              </div>
+              <div class="col-lg-4">
+
+                  <p id="TextHelp" class="form-text text-muted">{{q.kp}}</p>
+              </div>
+            </div>
+
+
+
+
+            <div class="form-group row justify-content-between align-items-center no-gutters">
+              <div class="col-lg-8 rfq-pr">
+                <button  type="button" class="btn btn-link text-dark">
+                    {{q.s}}
+                    <i class="fa fa-angle-down mx-2"></i>
+                </button>
+              </div>
+              <div class="col-lg-4"></div>
+            </div>
+
+
+
+
+          <div class="form-group row justify-content-between align-items-center no-gutters">
+            <div class="col-lg-8 rfq-pr">
+
+                <div class="row no-gutters">
+                    <span class="col-md-8 col-lg-9">
+                      <input type="number" class="form-control  form-control-lg rounded-0 " id="" aria-describedby="countHelp"
+                        placeholder="{{q.q}}">
+                    </span>
+                    <span class="col-md-4 col-lg-3">
+                      <select name="" id="" class="form-control form-control-lg rounded-0">
+                        <option>{{q.p}}</option>
+                        {{#each q.ps}}
+                            <option value="">{{this}}</option>
+                        {{/each}}
+                      </select>
+                    </span>
+                </div>
+
+            </div>
+            <div class="col-lg-4">
+              <p id="countHelp" class="form-text text-muted">{{q.qpp}}</p>
+            </div>
+          </div>
+
+
+
+            <div class="form-group row justify-content-between  no-gutters">
+              <div class="col-lg-8 rfq-pr">
+                  <div class="textarea-control">
+                      <textarea name="" id="" rows="5" class="rounded-0"  aria-describedby="textareaHelp" placeholder="{{q.taps}}"  data-maxLimit="8000">{{q.ta}}</textarea>
+                      <div class="rfq-upload clearfix">
+                          <span class="prv-wrap">
+                          <picture class="img-prv">
+                              <img src="assets/img/avatar.jpg" class="img-fluid" alt="">
+                          </picture>
+                          </span>
+                          <input id="file" type="file" placeholder="" accept="image/*">
+                          <label for="file">
+                              {{local.attachments}}
+                          </label>
+                      </div>
+                      <p class="number-words">
+                          {{local.remaining}}
+                          <span class="number">6666</span>
+                      </p>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                 <div class="d-flex flex-column justify-content-between h-100">
+                    <p id="textareaHelp" class="form-text text-muted">{{q.tap}}</p>
+                    <p class="form-text text-muted">{{q.atta}}</p>
+                 </div>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="form-group row justify-content-between align-items-center no-gutters">
+              <div class="col-lg-8 rfq-pr">
+
+                  <div>
+                    <a data-toggle="collapse" href="#other_requirements" role="button" aria-expanded="false" aria-controls="other_requirements" class="collapse-btn btn">
+                      <strong class="d-inline-block h3">{{local.other_requirements}} <i class="fa fa-angle-down mx-2"></i> </strong>
+                      <br>
+                      <span class="text-black-50">{{local.other_requirements_txt}}</span>
+                    </a>
+
+                    <div class="collapse " id="other_requirements">
+                      <div class="mt-2">
+
+                          <div class="form-row">
+                            <div class="col-md-3">
+                              <select name="" id="" class="form-control form-control-lg rounded-0">
+                                {{#each q.req_s1}}
+                                <option value="">{{this}}</option>
+                                {{/each}}
+                              </select>
+                            </div>
+                            <div class="col-md-5 col-lg-7 col-xl-5">
+                              <div class="row no-gutters">
+                                <div class="col-md-8">
+                                  <input type="text" name="" id="" class="form-control form-control-lg rounded-0" placeholder="{{q.req_p}}">
+                                </div>
+                                <div class="col-md-4">
+                                  <select name="" id="" class="form-control form-control-lg rounded-0">
+                                    {{#each q.req_c}}
+                                    <option value="">{{this}}</option>
+                                    {{/each}}
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group mt-3 w-50 i-d">
+                              <input type="text " class="form-control form-control-lg rounded-0" placeholder="destination">
+                          </div>
+                          <div  class="no-gutters form-group mt-3">
+                            <div class="col-md-8">
+                              <select name="" id="" class="form-control form-control-lg rounded-0">
+                                {{#each q.req_t}}
+                                <option value="">{{this}}</option>
+                                {{/each}}
+                              </select>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+
+
+          <div class="form-group row justify-content-between no-gutters">
+            <div class="col-lg-8 rfq-pr">
+              <div class="custom-control custom-checkbox mb-2">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">{{{local.agreement}}}</label>
+              </div>
+
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                <label class="custom-control-label" for="customCheck2">{{local.understood}}</label>
+              </div>
+            </div>
+          </div>
+
+
+      <div class="form-group row justify-content-between no-gutters">
+        <div class="col-lg-8  rfq-pr">
+            <button type="submit" class=" mt-3 btn btn-warning btn-lg btn-block">{{local.submit_rfq}}</button>
+      </div>
+      </div>
+
+
+          </form>
+      </div>
+      </div>
+    </section>
+
+
+
+
+
+  {{>_footer}}
+  <script src="assets/js/validation.min.js"></script>
+  <script src="assets/js/rfq.min.js"></script>
+  <script src="assets/js/scripts.min.js"></script>
+</body>
+
+</html>

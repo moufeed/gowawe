@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style-ar.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/lib.min.js"></script>
+</head>
+
+<body class="quotation-page bg-light-gray">
+  <header class="main-header">
+  <div class="container-fluid">
+    <div class="row main-header">
+        <div class="logo col">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo.png" alt="">
+          </a>
+        </div>
+    <div class="col search-wrap flex-grow-1">
+      <div class="search-box">
+        <select name="search_type" id="search_type">
+          <option value="">Products</option>
+          <option value="">Suppliers</option>
+        </select>
+        <input type="text" placeholder="What are you looking for ...">
+        <button type="subimt" class="btn btn-search">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+  
+  <div class="col-auto profile-btns">
+    <ul>
+      <li>
+        <a href="#">
+          <i class="fa fa-user"></i>
+          My Gowawe
+          <span class="badge">23</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-envelope"></i>
+          Messages
+          <span class="badge">23</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-suitcase"></i>
+          Orders
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-shopping-cart"></i>
+          Cart
+        </a>
+      </li>
+    </ul>
+  </div>
+    </div>
+  
+  
+    <nav class="navbar navbar-expand-lg navbar-light  ">
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+  
+        <ul class="navbar-nav  ml-auto  ">
+          <li class="nav-item dropdown " id="categories-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-list"></i> All Categories
+            </a>
+            <div class="dropdown-menu   dropdown-menu-lg-right   " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="separator mr-4"></li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Ready To Ship <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Trade Shows</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu  dropdown-menu-lg-right " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Sell On Gowawe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Help </a>
+          </li>
+        </ul>
+        <ul class=" navbar-nav my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Get The App</a>
+          </li>
+          <li class="separator"></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              English - USD
+            </a>
+            <div class="dropdown-menu fromleft" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+  </header>    <section class="quotation-section px-xl-5 pt-5">
+      <div class="container-fluid">
+      <h2 class="mb-4">طلب عرض أسعار</h2>
+      <div class="rounded shadow rfq-wrapper bg-white mb-5">
+          <div class="row no-gutters">
+            <div class="col-lg-8 rfq-h">
+              <div class="form-header rfq-pr">
+                    <strong class="h1 d-block mb-4 mt-3">أخبر الموردين ما تحتاجه</strong>
+                    <span class="h3 d-block">استكمال RFQ الخاص بك</span>
+                    <p class="">كلما كانت معلوماتك أكثر تحديدًا ، زادت دقة مطابقة طلبك للموردين المناسبين</p>
+              </div>
+            </div>
+            <div class="col-lg-4 rfq-l">
+                <div class="rfq-logo mt-3">
+                  <div class="logo"></div>
+                  <div class="title">
+                    <div class="mn">طلب عرض أسعار</div>
+                    <div class="wk">طلب واحد ، ونقلت متعددة</div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <h4>اكتمال المعلومات</h4>
+
+                  <div class="rfq-progress-bar d-flex">
+                    <div class="fair">عادي</div>
+                    <div class="great">جيد</div>
+                    <div class="excellent">ممتاز</div>
+                    <span class="bubble"></span>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+
+          <form action="" class="" id="rfqForm">
+            <div class="form-group row justify-content-between align-items-center no-gutters">
+              <div class="col-lg-8 rfq-pr">
+                  <input type="text" class="form-control  form-control-lg rounded-0 " id="keyword"
+                    aria-describedby="TextHelp" placeholder="الكلمات الرئيسية للمنتجات التي تبحث عنها" required  >
+              </div>
+              <div class="col-lg-4">
+
+                  <p id="TextHelp" class="form-text text-muted">يرجى إدخال الكلمات الرئيسية المنتج</p>
+              </div>
+            </div>
+
+
+
+
+            <div class="form-group row justify-content-between align-items-center no-gutters">
+              <div class="col-lg-8 rfq-pr">
+                <button  type="button" class="btn btn-link text-dark">
+                    الرجاء تحديد الفئة
+                    <i class="fa fa-angle-down mx-2"></i>
+                </button>
+              </div>
+              <div class="col-lg-4"></div>
+            </div>
+
+
+
+
+          <div class="form-group row justify-content-between align-items-center no-gutters">
+            <div class="col-lg-8 rfq-pr">
+
+                <div class="row no-gutters">
+                    <span class="col-md-8 col-lg-9">
+                      <input type="number" class="form-control  form-control-lg rounded-0 " id="" aria-describedby="countHelp"
+                        placeholder="أدخل الكمية">
+                    </span>
+                    <span class="col-md-4 col-lg-3">
+                      <select name="" id="" class="form-control form-control-lg rounded-0">
+                        <option>قطع</option>
+                            <option value="">20 حاوية</option>
+                            <option value="">40 حاوية</option>
+                            <option value="">40 &#x27;HQ Container</option>
+                            <option value="">عكا / دونم</option>
+                            <option value="">أمبير / أمبير</option>
+                            <option value="">أكياس</option>
+                            <option value="">برميل / برميل</option>
+                            <option value="">مربعات</option>
+                            <option value="">بوشل / البوشل</option>
+                            <option value="">قيراط / قيراط</option>
+                            <option value="">الكرتون / كرتون</option>
+                            <option value="">حالة / حالات</option>
+                            <option value="">سنتيمتر / سنتيمتر</option>
+                            <option value="">سلسلة / سلاسل</option>
+                            <option value="">سنتيمتر مكعب / سنتيمتر مكعب</option>
+                            <option value="">قدم مكعب / قدم مكعب</option>
+                            <option value="">بوصة مكعبة / بوصة مكعبة</option>
+                            <option value="">متر مكعب / متر مكعب</option>
+                            <option value="">ساحة مكعب / ياردة مكعب</option>
+                            <option value="">درجة مئوية</option>
+                            <option value="">درجة فهرنهايت</option>
+                            <option value="">دزينة / العشرات</option>
+                            <option value="">أرمينى / درام</option>
+                            <option value="">أوقية السوائل / أوقية السوائل</option>
+                            <option value="">القدم</option>
+                            <option value="">فورلونج / الفرلنغ</option>
+                            <option value="">جالون / جالون</option>
+                            <option value="">جيل / الخياشيم</option>
+                            <option value="">الحبوب / الحبوب</option>
+                            <option value="">غرام / غرام</option>
+                            <option value="">إجمالي</option>
+                            <option value="">هكتار / هكتار</option>
+                            <option value="">هيرتز</option>
+                            <option value="">بوصة / إنش</option>
+                            <option value="">Kiloampere / Kiloamperes</option>
+                            <option value="">كيلوغرام / كيلوغرام</option>
+                            <option value="">الكيلوهيرتز</option>
+                            <option value="">الكيلومتر / كيلومترات</option>
+                            <option value="">Kiloohm / Kiloohms</option>
+                            <option value="">الكيلوفولت / كيلو فولت</option>
+                            <option value="">كيلو واط / كيلو واط</option>
+                            <option value="">لتر / لتر</option>
+                            <option value="">طن طويل / طن طويل</option>
+                            <option value="">ميغاهرتز</option>
+                            <option value="">متر</option>
+                            <option value="">طن متري / طن متري</option>
+                            <option value="">ميل / مايلز</option>
+                            <option value="">ميلي أمبير / مل أمبير</option>
+                            <option value="">مليغرام / الملليغرامات</option>
+                            <option value="">Millihertz</option>
+                            <option value="">ملليلتر / الملليلترات</option>
+                            <option value="">الملليمتر / المليمترات</option>
+                            <option value="">Milliohm / Milliohms</option>
+                            <option value="">الميليفولت / بالميليفولت</option>
+                            <option value="">ميللي وات / الميللي واط</option>
+                            <option value="">ميل بحري / ميل بحري</option>
+                            <option value="">أوم / أوم</option>
+                            <option value="">اوقية (الاونصة) / اوقيه</option>
+                            <option value="">حزمة / حزم</option>
+                            <option value="">أزواج</option>
+                            <option value="">البليت / منصات</option>
+                            <option value="">الارض / الطرود</option>
+                            <option value="">جثم / العلياء</option>
+                            <option value="">قطع</option>
+                            <option value="">نصف لتر / مكاييل</option>
+                            <option value="">المنشآت / النباتات</option>
+                            <option value="">القطب / البولنديين</option>
+                            <option value="">الجنيه / ليرة</option>
+                            <option value="">الكوارت / الكوارتات</option>
+                            <option value="">الربع / الأحياء</option>
+                            <option value="">رزمة</option>
+                            <option value="">رود / قضبان</option>
+                            <option value="">لفات</option>
+                            <option value="">مجموعات</option>
+                            <option value="">ورقة / ورقة</option>
+                            <option value="">طن قصير / طن قصير</option>
+                            <option value="">سنتيمتر مربع / سنتيمترات مربعة</option>
+                            <option value="">قدم مكعب</option>
+                            <option value="">بوصة مربعة / بوصة مربعة</option>
+                            <option value="">متر مربع</option>
+                            <option value="">ميل مربع / ميل مربع</option>
+                            <option value="">ساحة ساحة / ساحة ياردة</option>
+                            <option value="">ستون / الأحجار</option>
+                            <option value="">ستراند / السواحل</option>
+                            <option value="">طن / طن</option>
+                            <option value="">طن</option>
+                            <option value="">صينية / صواني</option>
+                            <option value="">وحدة / وحدات</option>
+                            <option value="">فولت / فولت</option>
+                            <option value="">وات / واتس</option>
+                            <option value="">الفسفور الابيض</option>
+                      </select>
+                    </span>
+                </div>
+
+            </div>
+            <div class="col-lg-4">
+              <p id="countHelp" class="form-text text-muted">أدخل الكمية المقدرة للطلب بالجملة أولاً حتى إذا كنت تطلب عينات</p>
+            </div>
+          </div>
+
+
+
+            <div class="form-group row justify-content-between  no-gutters">
+              <div class="col-lg-8 rfq-pr">
+                  <div class="textarea-control">
+                      <textarea name="" id="" rows="5" class="rounded-0"  aria-describedby="textareaHelp" placeholder="مواصفات المنتج"  data-maxLimit="8000">سيدي العزيز / سيدتي
+ ، أنا أبحث عن منتجات بالمواصفات التالية:</textarea>
+                      <div class="rfq-upload clearfix">
+                          <span class="prv-wrap">
+                          <picture class="img-prv">
+                              <img src="assets/img/avatar.jpg" class="img-fluid" alt="">
+                          </picture>
+                          </span>
+                          <input id="file" type="file" placeholder="" accept="image/*">
+                          <label for="file">
+                              إضافة مرفقات
+                          </label>
+                      </div>
+                      <p class="number-words">
+                          متبق
+                          <span class="number">6666</span>
+                      </p>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                 <div class="d-flex flex-column justify-content-between h-100">
+                    <p id="textareaHelp" class="form-text text-muted">يرجى إعلام الموردين بالمتطلبات التفصيلية الخاصة بك. قد تشمل: اللون ، الحجم ، المادة ، الدرجة / المعيار ، إلخ.</p>
+                    <p class="form-text text-muted">يرجى إعلام الموردين بالمتطلبات التفصيلية الخاصة بك. قد تشمل: اللون ، الحجم ، المادة ، الدرجة / المعيار ، إلخ.</p>
+                 </div>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="form-group row justify-content-between align-items-center no-gutters">
+              <div class="col-lg-8 rfq-pr">
+
+                  <div>
+                    <a data-toggle="collapse" href="#other_requirements" role="button" aria-expanded="false" aria-controls="other_requirements" class="collapse-btn btn">
+                      <strong class="d-inline-block h3">متطلبات اخرى <i class="fa fa-angle-down mx-2"></i> </strong>
+                      <br>
+                      <span class="text-black-50">تشمل سعر الوحدة ، شروط الدفع ، الخ</span>
+                    </a>
+
+                    <div class="collapse " id="other_requirements">
+                      <div class="mt-2">
+
+                          <div class="form-row">
+                            <div class="col-md-3">
+                              <select name="" id="" class="form-control form-control-lg rounded-0">
+                                <option value="">EXW</option>
+                                <option value="">FAS</option>
+                                <option value="">FCA</option>
+                                <option value="">CFR</option>
+                                <option value="">CPT</option>
+                                <option value="">CIF</option>
+                                <option value="">CIP</option>
+                                <option value="">DES</option>
+                                <option value="">DAF</option>
+                                <option value="">DEQ</option>
+                                <option value="">DDP</option>
+                                <option value="">DDU</option>
+                              </select>
+                            </div>
+                            <div class="col-md-5 col-lg-7 col-xl-5">
+                              <div class="row no-gutters">
+                                <div class="col-md-8">
+                                  <input type="text" name="" id="" class="form-control form-control-lg rounded-0" placeholder="سعر الوحدة المفضل">
+                                </div>
+                                <div class="col-md-4">
+                                  <select name="" id="" class="form-control form-control-lg rounded-0">
+                                    <option value="">GBP</option>
+                                    <option value="">RMB</option>
+                                    <option value="">EUR</option>
+                                    <option value="">AUD</option>
+                                    <option value="">CAD</option>
+                                    <option value="">CHF</option>
+                                    <option value="">JPY</option>
+                                    <option value="">HKD</option>
+                                    <option value="">NZD</option>
+                                    <option value="">SGD</option>
+                                    <option value="">NTD</option>
+                                    <option value="">BRL</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group mt-3 w-50 i-d">
+                              <input type="text " class="form-control form-control-lg rounded-0" placeholder="destination">
+                          </div>
+                          <div  class="no-gutters form-group mt-3">
+                            <div class="col-md-8">
+                              <select name="" id="" class="form-control form-control-lg rounded-0">
+                                <option value="">L/C</option>
+                                <option value="">D/P</option>
+                                <option value="">Western Union</option>
+                                <option value="">Money Gram</option>
+                              </select>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+
+
+          <div class="form-group row justify-content-between no-gutters">
+            <div class="col-lg-8 rfq-pr">
+              <div class="custom-control custom-checkbox mb-2">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">أوافق على مشاركة <a href=''> بطاقة العمل </a> الخاصة بي مع الموردين المقتبسين.</label>
+              </div>
+
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                <label class="custom-control-label" for="customCheck2">لقد قرأت وفهمت ووافقت على الالتزام بالشروط والأحكام</label>
+              </div>
+            </div>
+          </div>
+
+
+      <div class="form-group row justify-content-between no-gutters">
+        <div class="col-lg-8  rfq-pr">
+            <button type="submit" class=" mt-3 btn btn-warning btn-lg btn-block">تقديم طلب عرض الأسعار</button>
+      </div>
+      </div>
+
+
+          </form>
+      </div>
+      </div>
+    </section>
+
+
+
+
+
+  <footer class="main-footer pt-50">
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-4 col-lg-3  col-xl-2">
+            <div class="figure-wrapper">
+                <figure >
+                  <img src="assets/img/logo.png" alt="" class="f-logo" >
+                </figure>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-9 col-xl-10">
+            <div class="row justify-content-around">
+                  <div class="col-md-6 col-lg-3">
+                    <h5>معلومات</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">الخدمات</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">الإعلان معنا</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">الهوية التجارية</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <h5>خدمة الزبائن</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">قصص النجاح</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">قسم الصحافة</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">وظائف ومهن</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">ردود الفعل</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">مساعدة</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">دفع امن</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">خدمات التفتيش</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">مركز التعلم</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">أنا مستخدم جديد</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <h5>شراء التجارة  </h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">إرسال متطلبات الشراء</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">عرض ما بعد البيع</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">إنشاء موقع الويب الخاص بك مجانا</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">عرض العملاء المتوقعين</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">كيف اشترى</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">حد الائتمان الإلكتروني</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">إرسال نزاع</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">أنا المشتري</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <h5>شراء التجارة  </h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">إرسال متطلبات الشراء</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">عرض ما بعد البيع</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">إنشاء موقع الويب الخاص بك مجانا</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">عرض العملاء المتوقعين</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">كيف اشترى</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">حد الائتمان الإلكتروني</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">إرسال نزاع</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">أنا المشتري</a>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+          </div>
+      </div>
+  
+      <div class="bottom-footer">
+          <nav class="nav">
+            <a class="nav-link" href="#" title="twitter">
+               <i class="fa fa-twitter"></i>
+            </a>
+            <a class="nav-link" href="#" title="facebook">
+               <i class="fa fa-facebook"></i>
+            </a>
+            <a class="nav-link" href="#" title="instagram">
+               <i class="fa fa-instagram"></i>
+            </a>
+          </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/validation.min.js"></script>
+  <script src="assets/js/rfq.min.js"></script>
+  <script src="assets/js/scripts.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style-en.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/lib.min.js"></script>
+</head>
+
+<body class="quotation-page bg-light-gray">
+  <header class="main-header">
+  <div class="container-fluid">
+    <div class="row main-header">
+        <div class="logo col">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo.png" alt="">
+          </a>
+        </div>
+    <div class="col search-wrap flex-grow-1">
+      <div class="search-box">
+        <select name="search_type" id="search_type">
+          <option value="">Products</option>
+          <option value="">Suppliers</option>
+        </select>
+        <input type="text" placeholder="What are you looking for ...">
+        <button type="subimt" class="btn btn-search">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+  
+  <div class="col-auto profile-btns">
+    <ul>
+      <li>
+        <a href="#">
+          <i class="fa fa-user"></i>
+          My Gowawe
+          <span class="badge">23</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-envelope"></i>
+          Messages
+          <span class="badge">23</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-suitcase"></i>
+          Orders
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-shopping-cart"></i>
+          Cart
+        </a>
+      </li>
+    </ul>
+  </div>
+    </div>
+  
+  
+    <nav class="navbar navbar-expand-lg navbar-light  ">
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+  
+        <ul class="navbar-nav   mr-auto  ">
+          <li class="nav-item dropdown " id="categories-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-list"></i> All Categories
+            </a>
+            <div class="dropdown-menu    " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="separator mr-4"></li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Ready To Ship <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Trade Shows</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Sell On Gowawe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Help </a>
+          </li>
+        </ul>
+        <ul class=" navbar-nav my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Get The App</a>
+          </li>
+          <li class="separator"></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              English - USD
+            </a>
+            <div class="dropdown-menu fromleft" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+  </header>    <section class="quotation-section px-xl-5 pt-5">
+      <div class="container-fluid">
+      <h2 class="mb-4">Request for Quotation</h2>
+      <div class="rounded shadow rfq-wrapper bg-white mb-5">
+          <div class="row no-gutters">
+            <div class="col-lg-8 rfq-h">
+              <div class="form-header rfq-pr">
+                    <strong class="h1 d-block mb-4 mt-3">Tell Suppliers What You need</strong>
+                    <span class="h3 d-block">Complete Your RFQ</span>
+                    <p class="">The more specific your information, the more accurately we can match your request to the right suppliers</p>
+              </div>
+            </div>
+            <div class="col-lg-4 rfq-l">
+                <div class="rfq-logo mt-3">
+                  <div class="logo"></div>
+                  <div class="title">
+                    <div class="mn">Request for Quotation</div>
+                    <div class="wk">One Request, Multiple Quotes</div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <h4>Completeness of Information</h4>
+
+                  <div class="rfq-progress-bar d-flex">
+                    <div class="fair">Fair</div>
+                    <div class="great">Great</div>
+                    <div class="excellent">Excellent</div>
+                    <span class="bubble"></span>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+
+          <form action="" class="" id="rfqForm">
+            <div class="form-group row justify-content-between align-items-center no-gutters">
+              <div class="col-lg-8 rfq-pr">
+                  <input type="text" class="form-control  form-control-lg rounded-0 " id="keyword"
+                    aria-describedby="TextHelp" placeholder="Key Words For Products You are Looking for" required  >
+              </div>
+              <div class="col-lg-4">
+
+                  <p id="TextHelp" class="form-text text-muted">Please input product keywords</p>
+              </div>
+            </div>
+
+
+
+
+            <div class="form-group row justify-content-between align-items-center no-gutters">
+              <div class="col-lg-8 rfq-pr">
+                <button  type="button" class="btn btn-link text-dark">
+                    Please Select a Category
+                    <i class="fa fa-angle-down mx-2"></i>
+                </button>
+              </div>
+              <div class="col-lg-4"></div>
+            </div>
+
+
+
+
+          <div class="form-group row justify-content-between align-items-center no-gutters">
+            <div class="col-lg-8 rfq-pr">
+
+                <div class="row no-gutters">
+                    <span class="col-md-8 col-lg-9">
+                      <input type="number" class="form-control  form-control-lg rounded-0 " id="" aria-describedby="countHelp"
+                        placeholder="Enter Quantity">
+                    </span>
+                    <span class="col-md-4 col-lg-3">
+                      <select name="" id="" class="form-control form-control-lg rounded-0">
+                        <option>Pieces</option>
+                            <option value="">20&#x27; Container</option>
+                            <option value="">40&#x27; Container</option>
+                            <option value="">40&#x27; HQ Container</option>
+                            <option value="">Acre/Acres</option>
+                            <option value="">Ampere/Amperes</option>
+                            <option value="">Bags</option>
+                            <option value="">Barrel/Barrels</option>
+                            <option value="">Boxes</option>
+                            <option value="">Bushel/Bushels</option>
+                            <option value="">Carat/Carats</option>
+                            <option value="">Carton/Cartons</option>
+                            <option value="">Case/Cases</option>
+                            <option value="">Centimeter/Centimeters</option>
+                            <option value="">Chain/Chains</option>
+                            <option value="">Cubic Centimeter/Cubic Centimeters</option>
+                            <option value="">Cubic Foot/Cubic Feet</option>
+                            <option value="">Cubic Inch/Cubic Inches</option>
+                            <option value="">Cubic Meter/Cubic Meters</option>
+                            <option value="">Cubic Yard/Cubic Yards</option>
+                            <option value="">Degrees Celsius</option>
+                            <option value="">Degrees Fahrenheit</option>
+                            <option value="">Dozen/Dozens</option>
+                            <option value="">Dram/Drams</option>
+                            <option value="">Fluid Ounce/Fluid Ounces</option>
+                            <option value="">Foot</option>
+                            <option value="">Furlong/Furlongs</option>
+                            <option value="">Gallon/Gallons</option>
+                            <option value="">Gill/Gills</option>
+                            <option value="">Grain/Grains</option>
+                            <option value="">Gram/Grams</option>
+                            <option value="">Gross</option>
+                            <option value="">Hectare/Hectares</option>
+                            <option value="">Hertz</option>
+                            <option value="">Inch/Inches</option>
+                            <option value="">Kiloampere/Kiloamperes</option>
+                            <option value="">Kilogram/Kilograms</option>
+                            <option value="">Kilohertz</option>
+                            <option value="">Kilometer/Kilometers</option>
+                            <option value="">Kiloohm/Kiloohms</option>
+                            <option value="">Kilovolt/Kilovolts</option>
+                            <option value="">Kilowatt/Kilowatts</option>
+                            <option value="">Liter/Liters</option>
+                            <option value="">Long Ton/Long Tons</option>
+                            <option value="">Megahertz</option>
+                            <option value="">Meter</option>
+                            <option value="">Metric Ton/Metric Tons</option>
+                            <option value="">Mile/Miles</option>
+                            <option value="">Milliampere/Milliamperes</option>
+                            <option value="">Milligram/Milligrams</option>
+                            <option value="">Millihertz</option>
+                            <option value="">Milliliter/Milliliters</option>
+                            <option value="">Millimeter/Millimeters</option>
+                            <option value="">Milliohm/Milliohms</option>
+                            <option value="">Millivolt/Millivolts</option>
+                            <option value="">Milliwatt/Milliwatts</option>
+                            <option value="">Nautical Mile/Nautical Miles</option>
+                            <option value="">Ohm/Ohms</option>
+                            <option value="">Ounce/Ounces</option>
+                            <option value="">Pack/Packs</option>
+                            <option value="">Pairs</option>
+                            <option value="">Pallet/Pallets</option>
+                            <option value="">Parcel/Parcels</option>
+                            <option value="">Perch/Perches</option>
+                            <option value="">Pieces</option>
+                            <option value="">Pint/Pints</option>
+                            <option value="">Plant/Plants</option>
+                            <option value="">Pole/Poles</option>
+                            <option value="">Pound/Pounds</option>
+                            <option value="">Quart/Quarts</option>
+                            <option value="">Quarter/Quarters</option>
+                            <option value="">Reams</option>
+                            <option value="">Rod/Rods</option>
+                            <option value="">Rolls</option>
+                            <option value="">Sets</option>
+                            <option value="">Sheet/Sheets</option>
+                            <option value="">Short Ton/Short Tons</option>
+                            <option value="">Square Centimeter/Square Centimeters</option>
+                            <option value="">Square Feet</option>
+                            <option value="">Square Inch/Square Inches</option>
+                            <option value="">Square Meters</option>
+                            <option value="">Square Mile/Square Miles</option>
+                            <option value="">Square Yard/Square Yards</option>
+                            <option value="">Stone/Stones</option>
+                            <option value="">Strand/Strands</option>
+                            <option value="">Tonne/Tonnes</option>
+                            <option value="">Tons</option>
+                            <option value="">Tray/Trays</option>
+                            <option value="">Unit/Units</option>
+                            <option value="">Volt/Volts</option>
+                            <option value="">Watt/Watts</option>
+                            <option value="">Wp</option>
+                            <option value="">Yard/Yards</option>
+                      </select>
+                    </span>
+                </div>
+
+            </div>
+            <div class="col-lg-4">
+              <p id="countHelp" class="form-text text-muted">Enter estimated bulk order quantity first even if you’re requesting for samples</p>
+            </div>
+          </div>
+
+
+
+            <div class="form-group row justify-content-between  no-gutters">
+              <div class="col-lg-8 rfq-pr">
+                  <div class="textarea-control">
+                      <textarea name="" id="" rows="5" class="rounded-0"  aria-describedby="textareaHelp" placeholder="Product Detailed Specifications"  data-maxLimit="8000">Dear Sir/Madam,
+I&#x27;m looking for products with the following specifications:</textarea>
+                      <div class="rfq-upload clearfix">
+                          <span class="prv-wrap">
+                          <picture class="img-prv">
+                              <img src="assets/img/avatar.jpg" class="img-fluid" alt="">
+                          </picture>
+                          </span>
+                          <input id="file" type="file" placeholder="" accept="image/*">
+                          <label for="file">
+                              Upload Attachments
+                          </label>
+                      </div>
+                      <p class="number-words">
+                          Remaining
+                          <span class="number">6666</span>
+                      </p>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                 <div class="d-flex flex-column justify-content-between h-100">
+                    <p id="textareaHelp" class="form-text text-muted">Please let suppliers know your detailed requirements. You may include: color, size, material, grade/standard, etc.</p>
+                    <p class="form-text text-muted">Attachments like product pictures/images would  improve your RFQ.</p>
+                 </div>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="form-group row justify-content-between align-items-center no-gutters">
+              <div class="col-lg-8 rfq-pr">
+
+                  <div>
+                    <a data-toggle="collapse" href="#other_requirements" role="button" aria-expanded="false" aria-controls="other_requirements" class="collapse-btn btn">
+                      <strong class="d-inline-block h3">Other Requirements <i class="fa fa-angle-down mx-2"></i> </strong>
+                      <br>
+                      <span class="text-black-50">Include unit price, payment terms, etc.</span>
+                    </a>
+
+                    <div class="collapse " id="other_requirements">
+                      <div class="mt-2">
+
+                          <div class="form-row">
+                            <div class="col-md-3">
+                              <select name="" id="" class="form-control form-control-lg rounded-0">
+                                <option value="">EXW</option>
+                                <option value="">FAS</option>
+                                <option value="">FCA</option>
+                                <option value="">CFR</option>
+                                <option value="">CPT</option>
+                                <option value="">CIF</option>
+                                <option value="">CIP</option>
+                                <option value="">DES</option>
+                                <option value="">DAF</option>
+                                <option value="">DEQ</option>
+                                <option value="">DDP</option>
+                                <option value="">DDU</option>
+                              </select>
+                            </div>
+                            <div class="col-md-5 col-lg-7 col-xl-5">
+                              <div class="row no-gutters">
+                                <div class="col-md-8">
+                                  <input type="text" name="" id="" class="form-control form-control-lg rounded-0" placeholder="Preferred Unit price">
+                                </div>
+                                <div class="col-md-4">
+                                  <select name="" id="" class="form-control form-control-lg rounded-0">
+                                    <option value="">GBP</option>
+                                    <option value="">RMB</option>
+                                    <option value="">EUR</option>
+                                    <option value="">AUD</option>
+                                    <option value="">CAD</option>
+                                    <option value="">CHF</option>
+                                    <option value="">JPY</option>
+                                    <option value="">HKD</option>
+                                    <option value="">NZD</option>
+                                    <option value="">SGD</option>
+                                    <option value="">NTD</option>
+                                    <option value="">BRL</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group mt-3 w-50 i-d">
+                              <input type="text " class="form-control form-control-lg rounded-0" placeholder="destination">
+                          </div>
+                          <div  class="no-gutters form-group mt-3">
+                            <div class="col-md-8">
+                              <select name="" id="" class="form-control form-control-lg rounded-0">
+                                <option value="">L/C</option>
+                                <option value="">D/P</option>
+                                <option value="">Western Union</option>
+                                <option value="">Money Gram</option>
+                              </select>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+
+
+          <div class="form-group row justify-content-between no-gutters">
+            <div class="col-lg-8 rfq-pr">
+              <div class="custom-control custom-checkbox mb-2">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">I agree to share my <a href=''>Business Card</a> with quoted suppliers.</label>
+              </div>
+
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                <label class="custom-control-label" for="customCheck2">I have read, understood and agreed to abide by Terms and Conditions</label>
+              </div>
+            </div>
+          </div>
+
+
+      <div class="form-group row justify-content-between no-gutters">
+        <div class="col-lg-8  rfq-pr">
+            <button type="submit" class=" mt-3 btn btn-warning btn-lg btn-block">Submit RFQ</button>
+      </div>
+      </div>
+
+
+          </form>
+      </div>
+      </div>
+    </section>
+
+
+
+
+
+  <footer class="main-footer pt-50">
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-4 col-lg-3  col-xl-2">
+            <div class="figure-wrapper">
+                <figure >
+                  <img src="assets/img/logo.png" alt="" class="f-logo" >
+                </figure>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-9 col-xl-10">
+            <div class="row justify-content-around">
+                  <div class="col-md-6 col-lg-3">
+                    <h5>Information</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Advertise with Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Business Identity</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <h5>Customer Service</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Success Stories</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Press Section</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Jobs &amp; Careers</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Feedback</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Help</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Secure Payment</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Inspection Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Learning Center</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">I am new user</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <h5>Buy Trade Lead</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Send Buy Requirement</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Post Sell Offer</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Create Your Free Website</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">View Buy Leads</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">How to Buy</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">e-Credit Line</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Submit a Dispute</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">I am buyer</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <h5>Sell Trade Lead</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">How to Sell</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Premium Membership</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Verified Membership</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Display Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Manage Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Supplier Memberships</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Gold Suppliers</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">I am seller</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Trade Assurance</a>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+          </div>
+      </div>
+  
+      <div class="bottom-footer">
+          <nav class="nav">
+            <a class="nav-link" href="#" title="twitter">
+               <i class="fa fa-twitter"></i>
+            </a>
+            <a class="nav-link" href="#" title="facebook">
+               <i class="fa fa-facebook"></i>
+            </a>
+            <a class="nav-link" href="#" title="instagram">
+               <i class="fa fa-instagram"></i>
+            </a>
+          </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/validation.min.js"></script>
+  <script src="assets/js/rfq.min.js"></script>
+  <script src="assets/js/scripts.min.js"></script>
+</body>
+
+</html>

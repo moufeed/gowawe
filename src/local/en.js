@@ -48,7 +48,22 @@ var local = {
   max: "max",
   search: "search",
   project_partner: "project partner",
-  jobs: "jobs"
+  jobs: "jobs",
+  attachments: "Upload Attachments",
+  remaining: "Remaining",
+  agreement:
+    "I agree to share my <a href=''>Business Card</a> with quoted suppliers.",
+  understood:
+    "I have read, understood and agreed to abide by Terms and Conditions",
+  other_requirements: "Other Requirements",
+  other_requirements_txt: "Include unit price, payment terms, etc.",
+  request_for_quotation: "Request for Quotation",
+  request_for_quotation_text: "One Request, Multiple Quotes",
+  submit_rfq: "Submit RFQ",
+  coi: "Completeness of Information",
+  fair: "Fair",
+  great: "Great",
+  excellent: "Excellent"
 };
 
 var fromHome = require("./home/home.en");
