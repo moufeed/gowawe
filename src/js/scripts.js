@@ -19,3 +19,40 @@ $(function() {
     }, 500);
   });
 });
+
+const readURL = (input, target) => {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      const img = new Image();
+      img.src = e.target.result;
+      img.classList = ["img-fluid"];
+      $(target)
+        .css({
+          display: "flex",
+          opacity: 1
+        })
+        .html(img);
+    };
+
+    reader.readAsDataURL(input.files[0]);
+  }
+};
+
+$("[data-characters]").each(function(index, item) {
+  let $this = $(item);
+  let data = $this.data();
+  let length = data.max - $this.val().length;
+  $this
+    .parent()
+    .find(".number")
+    .text(length);
+
+  $this.keyup(() =>
+    $this
+      .parent()
+      .find(".number")
+      .text(data.max - this.value.length)
+  );
+});

@@ -88,9 +88,9 @@
                     </span>
                     <span class="col-md-4 col-lg-3">
                       <select name="" id="" class="form-control form-control-lg rounded-0">
-                        <option>{{q.p}}</option>
+                        <option value="">{{q.p}}</option>
                         {{#each q.ps}}
-                            <option value="">{{this}}</option>
+                            <option value="{{this}}">{{this}}</option>
                         {{/each}}
                       </select>
                     </span>
@@ -107,21 +107,19 @@
             <div class="form-group row justify-content-between  no-gutters">
               <div class="col-lg-8 rfq-pr">
                   <div class="textarea-control">
-                      <textarea name="" id="" rows="5" class="rounded-0"  aria-describedby="textareaHelp" placeholder="{{q.taps}}"  data-maxLimit="8000">{{q.ta}}</textarea>
+                      <textarea name="" id="" rows="5" class="rounded-0"  aria-describedby="textareaHelp" placeholder="{{q.taps}}"  data-max="8000" data-characters>{{q.ta}}</textarea>
                       <div class="rfq-upload clearfix">
                           <span class="prv-wrap">
-                          <picture class="img-prv">
-                              <img src="assets/img/avatar.jpg" class="img-fluid" alt="">
-                          </picture>
+                          <picture class="img-prv justify-content-center align-items-center" id="imgPrev"></picture>
                           </span>
-                          <input id="file" type="file" placeholder="" accept="image/*">
+                          <input id="file" type="file" placeholder="" data-preview="#imgPrev" accept="image/*">
                           <label for="file">
                               {{local.attachments}}
                           </label>
                       </div>
                       <p class="number-words">
                           {{local.remaining}}
-                          <span class="number">6666</span>
+                          <span class="number">8000</span>
                       </p>
                   </div>
               </div>
@@ -153,8 +151,9 @@
                           <div class="form-row">
                             <div class="col-md-3">
                               <select name="" id="" class="form-control form-control-lg rounded-0">
+                                <option value="">select</option>
                                 {{#each q.req_s1}}
-                                <option value="">{{this}}</option>
+                                <option value="{{this}}">{{this}}</option>
                                 {{/each}}
                               </select>
                             </div>
@@ -165,8 +164,9 @@
                                 </div>
                                 <div class="col-md-4">
                                   <select name="" id="" class="form-control form-control-lg rounded-0">
+                                    <option value="">select</option>
                                     {{#each q.req_c}}
-                                    <option value="">{{this}}</option>
+                                    <option value="{{this}}">{{this}}</option>
                                     {{/each}}
                                   </select>
                                 </div>
@@ -179,8 +179,9 @@
                           <div  class="no-gutters form-group mt-3">
                             <div class="col-md-8">
                               <select name="" id="" class="form-control form-control-lg rounded-0">
+                                <option value="">select</option>
                                 {{#each q.req_t}}
-                                <option value="">{{this}}</option>
+                                <option value="{{this}}">{{this}}</option>
                                 {{/each}}
                               </select>
                             </div>
@@ -226,8 +227,9 @@
 
   {{>_footer}}
   <script src="assets/js/validation.min.js"></script>
-  <script src="assets/js/rfq.min.js"></script>
   <script src="assets/js/scripts.min.js"></script>
+
+  <script src="assets/js/rfq.min.js"></script>
 </body>
 
 </html>
