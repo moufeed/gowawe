@@ -1,0 +1,35 @@
+<section class="cp-sliders my-5">
+  <div class="container-fluid">
+    <div class="cp_background d-flex justify-content-center align-items-center">
+      <img src="assets/img/{{c.bg}}" alt="">
+    </div>
+    <div class="cp-content px-lg-5 pt-5">
+        <div class="cp-mainslider">
+          <h2>{{c.t}}</h2>
+          <div class="owl-carousel shadow " data-singleItem="true"  data-nav="true" data-rtl="{{isRtl ./dir}}">
+            {{#each c.ms}}
+                <div class="slid-item">
+                        <img src="assets/img/{{this}}" alt="">
+                </div>
+            {{/each}}
+          </div>
+        </div>
+
+           <div class="cp-cslider bg-white shadow px-lg-4">
+              <h3>{{c.cs.t}}</h3>
+              <div class="owl-carousel" data-md-items="3" data-lg-items="4" data-xl-items="6" data-rtl="{{isRtl ./dir}}" data-loop="true" data-nav="true" >
+                {{#each c.cs.s}}
+                    <a href="#" class="cp-cs-item">
+                        <picture>
+                          <img src="assets/img/c/{{i}}" alt="" class="no-owl">
+                        </picture>
+                          <span>{{t}}</span>
+                    </a>
+                {{/each}}
+
+              </div>
+           </div>
+
+    </div>
+    </div>
+</section>

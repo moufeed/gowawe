@@ -1,0 +1,51 @@
+
+
+<section class="cs-section my-5 ">
+  <div class="container-fluid">
+      <div class="cp_background no-overlay d-flex justify-content-center align-items-center">
+      </div>
+      <div class="px-lg-5 cp-content pt-5">
+          <h2 class="cs-title"><span>{{c.title}}</span></h2>
+
+
+          <div class="row">
+              {{#each_up_to sp.products  6}}
+              <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="cs-item shadow my-4">
+                    <div class="ss-images">
+                      <a href="#">
+                          {{#each images}}
+                          <picture  data-id="main-{{@index}}">
+                              <img src="assets/img/{{this}}" alt="">
+                          </picture>
+                          {{/each}}
+                      </a>
+                      <span class="ss-thumbs d-flex justify-content-center align-items-center">
+                          {{#each images}}
+                            <picture data-id="{{@index}}">
+                              <img src="assets/img/{{this}}" alt="">
+                            </picture>
+                          {{/each}}
+                      </span>
+                    </div>
+                    <div class="ss-content clearfix p-x-25 p-y-25">
+                        <img src="assets/img/{{factory.avatar}}" alt="" class="f-logo">
+                        <span>
+                          <h4><a href="#">{{factory.name}}</a></h4>
+                          <p >
+                            <small class="badge badge-light">{{factory.age}}</small>
+                            <small>
+                              <img src="assets/img/{{factory.flag}}" alt="" width="25">
+                              {{factory.country}}
+                            </small>
+                            <small>{{price}}</small>
+                          </p>
+                        </span>
+                    </div>
+                </div>
+              </div>
+              {{/each_up_to}}
+          </div>
+      </div>
+  </div>
+</section>

@@ -90,6 +90,11 @@ var config = {
         output: "rfq.js",
         es6: true,
         inputs: ["./src/js/rfq.js"]
+      },
+      {
+        output: "category.js",
+        es6: true,
+        inputs: ["./src/js/category.js"]
       }
     ],
     dist: "./dist/assets/js"

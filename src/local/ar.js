@@ -69,6 +69,7 @@ var fromProducts = require("./products/products.ar");
 
 var fromCategories = require("./categories/categories.ar");
 var fromQuotation = require("./quotation/quotation.ar");
+var fromCategory = require("./category/category.ar");
 
 module.exports = {
   dir: "rtl",
@@ -87,5 +88,6 @@ module.exports = {
   sp: fromSuppliers, // suppliers page
   c_p: fromProducts,
   c: fromCategories,
-  q: fromQuotation
+  q: fromQuotation,
+  cy: fromCategory
 };

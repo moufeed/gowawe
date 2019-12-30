@@ -1,0 +1,16 @@
+$(() => {
+  $(".ss-images").on("click", "picture", function() {
+    let id = $(this).attr("data-id");
+    let parent = $($(this).parents(".ss-images")[0]);
+    $(this)
+      .parent()
+      .find("picture")
+      .removeClass("active");
+    $(this).addClass("active");
+    parent
+      .find(`picture[data-id="main-${id}"]`)
+      .fadeIn()
+      .siblings()
+      .fadeOut();
+  });
+});

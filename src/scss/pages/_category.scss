@@ -1,0 +1,347 @@
+.cs-page {
+  background-color: $white;
+  background-image: url("#{$img}/bg1.png"), url("#{$img}/bg1.png"),
+    url("#{$img}/bg1.png"), url("#{$img}/bg2.png"), url("#{$img}/bg3.png");
+  background-repeat: no-repeat;
+  background-position: -12% 30%, 120% 15%, 110% 40%, 115% 107%, -16% 41%;
+}
+.cp-section,
+.cs-section,
+.cp-sliders {
+  position: relative;
+}
+
+.cp_background {
+  background: #f0f0f0;
+  @include absolute(top $left, 0 1%);
+  overflow: hidden;
+  height: 600px;
+  width: 98%;
+  z-index: 0;
+  border-radius: 20px;
+  img {
+    min-height: 100%;
+    min-width: 100%;
+  }
+  &:after {
+    content: "";
+    @include absolute(top $left, 0 0);
+    @include square(100%);
+    background: rgba($black, 0.5);
+  }
+
+  &.no-overlay {
+    &:after {
+      content: none;
+    }
+  }
+}
+.cp-content {
+  position: relative;
+  z-index: 1;
+}
+.cp-title {
+  color: $white;
+  position: relative;
+  margin-bottom: 35px;
+  &:before {
+    content: "";
+    @include absolute(top $left, 50% 0);
+    @include size(100%, 4px);
+    background: $red;
+    z-index: 0;
+  }
+  span {
+    position: relative;
+    z-index: 1;
+    padding: 6px 25px;
+    border-radius: 25px;
+    display: inline-block;
+    background: $red;
+  }
+}
+
+//------------------------------------------------------------------
+
+.cs-item {
+  background: #f0f0f0;
+  border-radius: 25px;
+}
+
+.ss-images {
+  position: relative;
+
+  a {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: block;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+
+    &:after {
+      content: "";
+      @include absolute(bottom $left, 0 0);
+      height: 35%;
+      width: 100%;
+      background: rgba($dark, 0.4);
+      background: linear-gradient(
+        0deg,
+        rgba($dark, 0.9) 0%,
+        rgba($black, 0) 100%
+      );
+    }
+    picture {
+      display: flex;
+      background: #f0f0f0;
+      justify-content: center;
+      align-items: center;
+      @include absolute(top $left, 0 0);
+      @include square(100%);
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.ss-thumbs {
+  position: relative;
+  z-index: 2;
+  height: 100px;
+  background: $white;
+  padding: 15px;
+  width: 80%;
+  margin: auto;
+  border-radius: 50px;
+  overflow: auto;
+  margin-top: -50px;
+  flex-wrap: nowrap;
+  picture {
+    cursor: pointer;
+    position: relative;
+    @include square(60px);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+
+    margin: 0 15px;
+    img {
+      height: 100%;
+    }
+    &.active {
+      border: 2px solid $red;
+    }
+  }
+}
+
+.ss-content {
+  .f-logo {
+    float: $left;
+    width: 60px;
+    height: 60px;
+    margin-#{$right}: 15px;
+    border-radius: 5px;
+  }
+  h4 {
+    a {
+      text-transform: capitalize;
+      color: $dark;
+    }
+  }
+  p {
+    small {
+      display: inline-block;
+      margin-#{$right}: 10px;
+      padding: 6px 12px;
+      position: relative;
+      &:not(:last-child):not(:first-child) {
+        border-#{$right}: 1px solid #bbb;
+      }
+      &:nth-child(2) {
+        border-#{$left}: 1px solid #bbb;
+      }
+    }
+  }
+}
+
+//-------------------------------------------------------------------
+
+.cp-sliders {
+  .cp_background {
+    height: 450px;
+  }
+}
+
+.cp-mainslider {
+  h2 {
+    color: $white;
+  }
+  .owl-carousel {
+    margin: 35px 5%;
+    width: 90%;
+  }
+  .owl-stage-outer {
+    border-radius: 25px;
+    box-shadow: 0 2px 5px 0px rgba($black, 0.7);
+  }
+  .slid-item {
+    border-radius: 25px;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .owl-nav {
+    button {
+      &.owl-next,
+      &.owl-prev {
+        background: $white;
+        border-radius: 5px;
+        i {
+          color: $red;
+        }
+      }
+    }
+  }
+}
+
+.cp-cslider {
+  padding: 25px;
+  border-radius: 15px;
+
+  .owl-carousel {
+    width: 90%;
+    margin: 25px auto;
+  }
+  .cp-cs-item {
+    color: $dark;
+    picture,
+    & {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    picture {
+      @include square(125px);
+      overflow: hidden;
+      img {
+        min-height: 100%;
+        width: auto;
+      }
+    }
+
+    span {
+      display: inline-block;
+      margin-top: 15px;
+    }
+  }
+  .owl-nav {
+    button {
+      &.owl-next,
+      &.owl-prev {
+        background: $red;
+        border-radius: 5px;
+        i {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+/*
+
+
+
+
+           <div class=" bg-white shadow px-lg-4 rounded">
+              <h3>{{c.cs.t}}</h3>
+              <div class="owl-carousel">
+                {{#each c.cs.s}}
+                    <a href="#" class="">
+                        <picture>
+                          <img src="assets/img/c/{{i}}" alt="" class="no-owl">
+                        </picture>
+                          <span>{{t}}</span>
+                    </a>
+                {{/each}}
+              </div>
+           </div>
+
+    </div>
+    </div>
+</section>
+
+*/
+
+//-------------------------------------------------------------------
+
+@include media-breakpoint-only(lg) {
+  .ss-images a {
+    height: 200px;
+  }
+
+  .ss-thumbs {
+    padding: 5px;
+    height: 70px;
+    margin-top: -35px;
+    picture {
+      @include square(45px);
+    }
+  }
+  .ss-content {
+    padding: 10px !important;
+    .f-logo {
+      display: none;
+    }
+  }
+     .cp-mainslider {
+
+    .slid-item {
+
+      height: 210px;
+
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .ss-images a {
+    height: 250px;
+  }
+   .cp-mainslider {
+
+    .slid-item {
+
+      height: 180px;
+
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .cp-title {
+    &:before {
+      content: none;
+    }
+  }
+  .ss-images a {
+    height: 270px;
+  }
+
+  .cp-mainslider {
+    .owl-stage-outer {
+      box-shadow: none;
+    }
+    .slid-item {
+
+      height: auto;
+      overflow: visible;
+    }
+  }
+}
