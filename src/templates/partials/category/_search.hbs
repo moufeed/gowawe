@@ -1,0 +1,70 @@
+<section class="cp-search my-5 position-relative">
+  <div class="container-fluid">
+    <div class="cp_background d-flex justify-content-center align-items-center">
+      <img src="assets/img/{{c.bg}}" alt="">
+    </div>
+
+  <div class="px-lg-5 cp-content pt-5">
+      <h2 class="cp-search-title"><span>{{c.t}}</span></h2>
+
+      <div class="row">
+        {{#each c.c}}
+        <div class="col-lg-6">
+              <div class="ci-card bg-white shadow">
+                    <div class="ci-header d-flex align-items-center">
+                      <img src="assets/img/{{i}}" alt="">
+                          <a href="#" class="h3">{{t}}</a>
+                        <small class="badge badge-gray" >{{a}} year</small>
+                    </div>
+                    <div class="ci-body row">
+                        {{#each p}}
+                            <div class="col-md-6 col-lg-12 col-xl-6">
+                              <a href="#" class="ci-image justify-content-center align-items-center">
+                                <img src="assets/img/{{i}}" alt="">
+                              </a>
+                              <div class="ci-info">
+                                  <a href="#" class="h4">{{t}}</a>
+                                  <span class="clearfix d-block mt-2">
+                                    {{p}}
+                                    <small>{{c}} pieces</small>
+                                  </span>
+                              </div>
+                            </div>
+                        {{/each}}
+                    </div>
+              </div>
+        </div>
+        {{/each}}
+      </div>
+  </div>
+    </div>
+</section>
+
+
+
+
+
+{{!--
+var sp2 = {
+t: "Especial Meets For Your Dinner",
+i: "sp-2.jpg",
+p: "156$",
+c: 25
+};
+
+
+var sc = {
+t: "Starbucks",
+a: "2",
+i: "avatar.jpg",
+p: [sp1, sp2]
+};
+
+
+
+
+
+
+
+
+ --}}

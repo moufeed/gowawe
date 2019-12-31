@@ -1,14 +1,39 @@
 .cs-page {
   background-color: $white;
-  background-image: url("#{$img}/bg1.png"), url("#{$img}/bg1.png"),
-    url("#{$img}/bg1.png"), url("#{$img}/bg2.png"), url("#{$img}/bg3.png");
+  background-image:
+    url("#{$img}/bg1.png"),
+    url("#{$img}/bg1.png"),
+    url("#{$img}/bg4.png"),
+    url("#{$img}/bg2.png"),
+    url("#{$img}/bg5.png"),
+    url("#{$img}/bg3.png");
   background-repeat: no-repeat;
-  background-position: -12% 30%, 120% 15%, 110% 40%, 115% 107%, -16% 41%;
+  background-position:
+  -12% 30%,
+  120% 15%,
+  110% 40%,
+  115% 107%,
+  -15% 70%,
+  -16% 41%;
 }
 .cp-section,
 .cs-section,
 .cp-sliders {
   position: relative;
+}
+
+
+.cp-cs-item , .cp-cs-item  picture,
+.cp-mainslider   .slid-item ,
+.ss-images a picture,
+.ss-thumbs picture,
+.si-card .si-mask ,
+.si-card .si-mask[data-video]:after,
+.fsp-item picture
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cp_background {
@@ -22,6 +47,8 @@
   img {
     min-height: 100%;
     min-width: 100%;
+    width: 100%;
+    height: auto;
   }
   &:after {
     content: "";
@@ -68,6 +95,8 @@
   border-radius: 25px;
 }
 
+
+
 .ss-images {
   position: relative;
 
@@ -93,10 +122,7 @@
       );
     }
     picture {
-      display: flex;
       background: #f0f0f0;
-      justify-content: center;
-      align-items: center;
       @include absolute(top $left, 0 0);
       @include square(100%);
     }
@@ -106,6 +132,8 @@
     }
   }
 }
+
+
 
 .ss-thumbs {
   position: relative;
@@ -124,10 +152,6 @@
     position: relative;
     @include square(60px);
     overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    display: inline-flex;
-
     margin: 0 15px;
     img {
       height: 100%;
@@ -176,6 +200,9 @@
   }
 }
 
+
+
+
 .cp-mainslider {
   h2 {
     color: $white;
@@ -192,9 +219,6 @@
     border-radius: 25px;
     height: 250px;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .owl-nav {
     button {
@@ -210,6 +234,8 @@
   }
 }
 
+
+
 .cp-cslider {
   padding: 25px;
   border-radius: 15px;
@@ -222,10 +248,9 @@
     color: $dark;
     picture,
     & {
-      display: flex;
+
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+
     }
     picture {
       @include square(125px);
@@ -254,35 +279,200 @@
     }
   }
 }
+//----------------------------------------------------------------------
 
-/*
+.cp-search-title{
+  color: $white;
+  margin-bottom: 35px;
+}
+.ci-card {
+
+    border-radius: 25px;
+    margin-bottom: 40px;
+    padding: 25px 35px;
 
 
-
-
-           <div class=" bg-white shadow px-lg-4 rounded">
-              <h3>{{c.cs.t}}</h3>
-              <div class="owl-carousel">
-                {{#each c.cs.s}}
-                    <a href="#" class="">
-                        <picture>
-                          <img src="assets/img/c/{{i}}" alt="" class="no-owl">
-                        </picture>
-                          <span>{{t}}</span>
-                    </a>
-                {{/each}}
-              </div>
-           </div>
-
-    </div>
-    </div>
-</section>
-
-*/
+  .ci-header {
+    margin-bottom: 16px;
+    color: $dark;
+    img {
+      @include square(48px);
+      border-radius: 50%;
+    }
+    a {
+      margin: 0 4px;
+      color: $dark;
+      padding: 6px;
+    }
+  }
+  .ci-image {
+    width: 100%;
+    background: $gray-100;
+    display: flex;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all .25s;
+    img {
+      height: 100%;
+      width: auto;
+      transition: all 0.2s;
+    }
+    &:hover {
+      box-shadow: 0 0 25px rgba($black , .1);
+      img {
+        filter: grayscale(0.7);
+      }
+    }
+  }
+  .ci-info {
+    margin-top: 16px;
+    a{
+      color: $dark;
+      &:hover{
+        color: $red;
+      }
+    }
+    span{
+      small{
+        float: $right;
+        margin-#{$right}: 10px;
+      }
+    }
+  }
+}
 
 //-------------------------------------------------------------------
 
+
+
+//--------------------------------------------------------------------------------------------------
+// .fs-row {}
+
+.cp-featured{
+  .cp_background{
+height: 460px;
+  }
+}
+.si-card{
+  margin-top: 15px;
+  margin-bottom: 35px;
+  padding: 0;
+  border-radius: 25px;
+  .si-mask{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background: $gray-100;
+    border-radius: 25px 25px 0 0;
+    img{
+      height: 100%;
+      width: auto ;
+      min-width: 100%;
+    }
+    &[data-video]{
+      cursor: pointer;
+      &:after{
+        @include absolute(top left right bottom , 0 0 0 0);
+        content: '\f01d';
+        font-family: FontAwesome;
+        font-size: 80px;
+        color: rgba($white , .7);
+      }
+    }
+  }
+  .si-title{
+    //margin:25px 25px 0;
+    text-transform: capitalize;
+    a{
+      color: $dark;
+      &:hover{
+        color: $red;
+      }
+    }
+  }
+  .si-info{
+    padding: 25px;
+  }
+  .avatar{
+    width: 60px;
+    border-radius:50% ;
+    margin-#{$right}:15px ;
+  }
+  span{
+    img{margin: 0 5px;}
+    div{
+      margin-top: 7px;
+    }
+  }
+}
+//--------------------------------
+
+.fsp-carousel{
+  .owl-stage-outer{
+    padding: 15px 0;
+  }
+}
+.fsp-item{
+  padding: 16px;
+  border-radius: 16px;
+  picture{
+    background: $gray-200;
+    overflow: hidden;
+    width: 100%;
+    height: 280px;
+    box-shadow: 0 0 16px rgba($black , .1);
+    position: relative;
+    &[data-video]{
+      cursor: pointer;
+      &:after{
+        @include absolute($right bottom , 5px 5px);
+        content: '\f04b';
+        font-family: FontAwesome;
+        font-size: 20px;
+        color: $white;
+        @include square(40px);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        background: $gray-400;
+      }
+    }
+    img{
+      height: 100%;
+      width: auto;
+    }
+    margin-bottom: 15px;
+  }
+  .fsp-info{
+    .h4{
+      color: $dark;
+      display: inline-block;
+      @include ellipse(14px ,1.2 , 2);
+    }
+  }
+  .fsp-price{
+    small{
+      margin-#{$left}:5px ;
+    }
+  }
+}
+
+.btn-close-video{
+  @include absolute(top right , -15px -15px);
+  z-index: 10;
+  border-radius: 50%;
+  @include square(40px)
+}
+
+//--------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
 @include media-breakpoint-only(lg) {
+  .cp_background{
+    height: 500px;
+  }
   .ss-images a {
     height: 200px;
   }
@@ -301,27 +491,38 @@
       display: none;
     }
   }
-     .cp-mainslider {
-
+  .cp-mainslider {
     .slid-item {
-
       height: 210px;
+    }
+  }
+  .ci-card{
 
+    .ci-info{
+      margin-bottom: 25px;
     }
   }
 }
 
+
 @include media-breakpoint-down(md) {
+  .cp_background{
+    height: 300px;
+  }
   .ss-images a {
     height: 250px;
   }
-   .cp-mainslider {
-
+  .cp-mainslider {
     .slid-item {
-
       height: 180px;
-
     }
+  }
+  .ci-card{
+
+    .ci-image{
+      height: 300px;
+    }
+
   }
 }
 @include media-breakpoint-down(sm) {
@@ -339,9 +540,19 @@
       box-shadow: none;
     }
     .slid-item {
-
       height: auto;
       overflow: visible;
+    }
+  }
+
+  .ci-card{
+    padding: 16px;
+    border-radius: 10px;
+    .ci-image{
+      height: auto;
+    }
+    .ci-info{
+      margin-bottom: 25px;
     }
   }
 }

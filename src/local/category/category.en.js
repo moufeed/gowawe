@@ -1,3 +1,5 @@
+var fromHome = require("../home/home.en");
+
 var arrivals = {
   title: "New Arrivals",
   img: "arrivals.jpg"
@@ -61,8 +63,74 @@ var sliders = {
   }
 };
 
+var sp1 = {
+  t: "Spicily Coffee For Your Morning ",
+  i: "sp-1.png",
+  p: "26$",
+  c: 50
+};
+
+var sp2 = {
+  t: "Especial Meets For Your Dinner",
+  i: "sp-2.png",
+  p: "156$",
+  c: 25
+};
+
+var sc = {
+  t: "Starbucks",
+  a: "2",
+  i: "avatar.jpg",
+  p: [sp1, sp2]
+};
+
+var search = {
+  t: "Search By Category",
+  bg: "2450851.jpg",
+  c: [sc, sc, sc, sc]
+};
+
+function generateProducts() {
+  let result = [];
+  for (let index = 0; index < 4; index++) {
+    result.push(fromHome.product);
+    if (index % 2 == 0) {
+      result[index] = {
+        ...result[index],
+        video: "assets/videos/oceans.mp4"
+      };
+    }
+  }
+
+  return result;
+}
+
+var fs1 = {
+  img: "12.jpg",
+  avatar: "avatar.jpg",
+  flag: "flag.png",
+  country: "USA",
+  name: "reprehenderit fuga sapiente",
+  age: "4 years",
+  icons: ["ico-1.png", "ico-2.png", "ico-3.png"],
+  products: generateProducts()
+};
+
+var fs2 = {
+  ...fs1,
+  img: "supplier.png",
+  video: "assets/videos/oceans.mp4"
+};
+
+var featured = {
+  t: "Featured Suppliers",
+  bg: "alphacolor-r6RCPk1X91c-unsplash.jpg",
+  s: [fs1, fs2, fs1, fs2]
+};
 module.exports = {
   categories,
   suppliers,
-  sliders
+  sliders,
+  search,
+  featured
 };

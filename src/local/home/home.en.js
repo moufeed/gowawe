@@ -85,6 +85,7 @@ var product = {
   price: "9.00$ - 18.00$",
   min: "100",
   img: "",
+
   title:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus mollitia ",
   factory: {
