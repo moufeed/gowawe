@@ -1,0 +1,65 @@
+/*
+header
+*/
+
+
+.seller-header{
+  padding:50px 25px;
+  position: relative;
+  background:url('#{$img}bg-seller.jpg');
+  &:before{
+    background: linear-gradient(90deg, rgba(122, 57, 54, 0.8) 0%, rgba(darken($red ,25%),.5) 100%);
+    content: '';
+     @include absolute(top left right bottom, 0 0 0 0);
+  }
+  color: $white;
+      .logo{
+        img{
+          max-width: 150px;
+        }
+      }
+      .seller-name{
+        margin-#{$right}: auto  !important;
+        h2{
+          font-size: 2.5rem;
+          font-weight: bold;
+          letter-spacing: 1px;
+        }
+        p{
+          max-width:80%;
+          font-size: 1.2rem;
+          letter-spacing: 1px;
+           @include ellipse(16px, 1.4, 2 , true)
+        }
+      }
+
+    &.with-bg{
+      &.before{
+        content: none;
+      }
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      &:after{
+        @include absolute(top left right bottom, 0 0 0 0);
+        content: '';
+        background: rgba($white , .5);
+      }
+      .container-fluid{
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+
+}
+.seller-icons{
+  padding: 10px 20px;
+  border-radius: 35px;
+  box-shadow: 0 0 15px 2px rgba($black , .5) ;
+  background:rgba(#111 , .9);
+  img{
+    max-height: 40px;
+    margin: 0 5px;
+  }
+}

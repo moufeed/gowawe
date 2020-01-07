@@ -73,6 +73,7 @@ var fromProducts = require("./products/products.en");
 var fromCategories = require("./categories/categories.en");
 var fromQuotation = require("./quotation/quotation.en");
 var fromCategory = require("./category/category.en");
+var fromSeller = require("./seller/seller.en");
 module.exports = {
   dir: "ltr",
   lang: "en",
@@ -91,5 +92,6 @@ module.exports = {
   c_p: fromProducts,
   c: fromCategories,
   q: fromQuotation,
-  cy: fromCategory
+  cy: fromCategory,
+  s: fromSeller
 };
