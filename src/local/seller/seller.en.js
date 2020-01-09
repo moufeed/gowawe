@@ -3,5 +3,48 @@ module.exports = {
     t: "Seller Name",
     d:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo deleniti recusandae fugit, facere dolorum corporis nesciunt optio corrupti debitis. Veniam debitis pariatur voluptatem optio eius maiores laboriosam expedita odio sint."
-  }
+  },
+  tabs: [
+    "home page",
+    "company profile",
+    "product list",
+    "classified",
+    "seller feedback",
+    "contact us"
+  ],
+  carousel: [
+    {
+      i: "1-1.jpg",
+      t: "Leather Bag",
+      p: "€29.99",
+      ty: "Grey Messenger Bag"
+    },
+    {
+      i: "2-1.jpg",
+      t: "Black Bagpack",
+      p: "€23.49",
+      ty: "college Backpack"
+    },
+    {
+      i: "3-1.jpg",
+      t: "Women Office Bag",
+      p: "€11.99",
+      ty: "Hand Bag"
+    },
+    {
+      i: "3-2.jpg",
+      t: "Men Black Bag",
+      p: "€39.00",
+      ty: "Laptop Bag"
+    },
+    {
+      i: "4-1.jpg",
+      t: "Lady Shoulder Bag.",
+      p: "€39.00",
+      ty: "Laptop Bag"
+    }
+  ],
+    contact : {
+      name : ""
+    }
 };

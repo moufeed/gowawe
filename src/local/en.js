@@ -63,8 +63,29 @@ var local = {
   coi: "Completeness of Information",
   fair: "Fair",
   great: "Great",
-  excellent: "Excellent"
+  excellent: "Excellent",
+  contact_details: "Contact Details",
+  Mobile: "Mobile",
+  address: "Address",
+  email: "Email",
+  website: "Website url",
+  description: "Description",
+  store_name: "Name Of Your Store",
+  accepted_currencies_: "accepted currencies",
+  accept_escrow_services: "accept escrow services",
+  number_employ: "number employ",
+  year_of_establishment: "year of establishment",
+  language_communication: "language & communication",
+  contact_person: "Contact Person",
+  name: "Name",
+  user_type: "user type",
+  country: "Country",
+  company_address: "Company Address",
+  find_us: "Find us on"
 };
+
+var lorem =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus doloremque cum consequatur voluptatibus ad veniam asperiores architecto fugit sunt maxime necessitatibus, aperiam ullam dignissimos similique, suscipit corrupti omnis quas quo!";
 
 var fromHome = require("./home/home.en");
 var fromWeekly = require("./weaklydeals/weaklydeals.en");
@@ -83,6 +104,7 @@ module.exports = {
   main_title: "",
   page_title: "",
   subtitle: "",
+  lorem: lorem,
   local: local,
   sections: fromHome.sections,
   footer: fromHome.footer,

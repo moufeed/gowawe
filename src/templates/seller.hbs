@@ -20,9 +20,57 @@
 
   {{>seller/_header c=s.header}}
 
+<div class="seller-toolbar">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+    <div class="col-lg-9 col-xl-8 seller-nav">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            {{#each s.tabs}}
+            <a class="nav-item nav-link {{#is @index 0 }} active {{/is}}" id="nav-{{@index}}-tab" data-toggle="tab" href="#tab-{{@index}}" role="tab"
+              aria-controls="tab-{{@index}}" aria-selected="{{#is @index 0 }} true {{@else}} false {{/is}}">{{this}}</a>
+            {{/each}}
+          </div>
+        </nav>
+    </div>
+    <div class="col-12 col-xl-auto seller-links">
+        <nav class="contact-links">
+          <a href="tel:8745745695">
+              <i class="fa fa-phone"></i>
+            <span dir="ltr">8745745695</span></a>
+          <a href="mailto:miss.@gmail.com">
+            <i class="fa fa-envelope"></i>
+            miss.@gmail.com</a>
+        </nav>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade active show" id="tab-0" role="tabpanel" aria-labelledby="tab-0-tab">
+    {{>seller/_home_page}}
+  </div>
+  <div class="tab-pane fade" id="tab-1" role="tabpanel" aria-labelledby="tab-1-tab">
+  {{>seller/_profile}}
+  </div>
+  <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2-tab">
+  {{>seller/_products}}
+  </div>
+  <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3-tab">
+  {{>seller/_classified}}
+  </div>
+  <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="tab-4-tab">
+  {{>seller/_feedback}}
+  </div>
+  <div class="tab-pane fade" id="tab-5" role="tabpanel" aria-labelledby="tab-5-tab">
+    {{>seller/_contact}}
+  </div>
+</div>
+
 
   {{>_footer}}
-
+<script src="assets/js/carousel.min.js"></script>
   <script src="assets/js/scripts.min.js"></script>
 
 </body>

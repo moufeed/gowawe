@@ -59,8 +59,29 @@ var local = {
   coi: "اكتمال المعلومات",
   fair: "عادي",
   great: "جيد",
-  excellent: "ممتاز"
+  excellent: "ممتاز",
+  contact_details: "بيانات المتصل",
+  Mobile: "جوال",
+  address: "العنوان",
+  email: "البريد الالكتروني",
+  website: "الموقع",
+  description: "الوصف",
+  store_name: "اسم المتجر",
+  accepted_currencies_: "العملات المقبولة",
+  accept_escrow_services: "قبول خدمات الضمان",
+  number_employ: "عدد الموظفين",
+  year_of_establishment: "سنة التأسيس",
+  language_communication: "اللغة والتواصل",
+  contact_person: "مواظف التواصل",
+  name: "الاسم",
+  user_type: "المنصب الوظيفي",
+  country: "البلد",
+  company_address: "عنوان الشركة",
+  find_us: "تجدنا على "
 };
+
+var lorem =
+  "لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبورأنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا .يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواسأيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت نيولا باراياتيور. أيكسسيبتيور ساينت أوككايكات كيوبايداتات نون بروايدينت ,سيونت ان كيولباكيو أوفيسيا ديسيريونتموليت انيم أيدي ايست لابوريوم.";
 
 var fromHome = require("./home/home.ar");
 var fromWeekly = require("./weaklydeals/weaklydeals.ar");
@@ -82,6 +103,7 @@ module.exports = {
   page_title: "",
   subtitle: "",
   local: local,
+  lorem: lorem,
   sections: fromHome.sections,
   footer: fromHome.footer,
   banner: fromHome.main_banner,

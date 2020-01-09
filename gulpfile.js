@@ -122,7 +122,7 @@ var config = {
     }
   },
   images: {
-    src: "./src/images/*",
+    src: "./src/images/**/*",
     dist: "./dist/assets/img/"
   },
   copy: {

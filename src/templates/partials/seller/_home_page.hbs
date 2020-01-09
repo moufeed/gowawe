@@ -1,0 +1,213 @@
+<section class="seller-home-tab my-5">
+  <div class="container-fluid">
+
+
+
+      <div class="slider-row bg-white shadow-lg p-4 my-5">
+        <div class="row">
+            <div class="col-md-5  col-lg-4 col-xl-3">
+              <div class="px-3 d-md-none my-4 text-center">
+                <button class="btn btn-outline-dark btn-block btn-lg" type="button" data-toggle="collapse" data-target="#collapseNav"
+                  aria-expanded="true" aria-controls="collapseNav">
+                  <i class="fa fa-cubes"></i>{{local.categories}}
+                </button>
+              </div>
+          <div  class="collapse show" id="collapseNav">
+              <div class="se-categories">
+                  <h3>
+                    <span>{{local.categories}}</span>
+                  </h3>
+                  <ul class="nav nav-list flex-column mb-5" id="categoriesList">
+                    {{#each sp.categories}}
+                    <li class="nav-item">
+                        {{#if list.length}}
+                        <a class="nav-link" data-toggle="collapse" href="#category-{{@index}}" role="button" aria-expanded="false"
+                          aria-controls="category-{{@index}}">{{category}} ({{list.length}})</a>
+                          <ul class="collapse" aria-labelledby="category-{{@index}}" id="category-{{@index}}"
+                            data-parent="#categoriesList">
+                            {{#each list}}
+                            <li class="nav-item"><a class="nav-link" href="#">{{this}}</a></li>
+                            {{/each}}
+                          </ul>
+                          {{else}}
+                          <a class="nav-link" href="#">{{category}}</a>
+                        {{/if}}
+                      </li>
+                    {{/each}}
+                  </ul>
+              </div>
+          </div>
+
+            </div>
+            <div class="col-md-7 col-lg-8 col-xl-9">
+              <div class="se-slider owl-carousel" data-rtl="{{isRtl dir}}" data-singleItem = "true"  data-nav="true" data-prev="&#xf060;" data-next="&#xf061;" >
+                    <div class="se-item">
+                        <img src="assets/img/seller/1.jpg" alt="" class="no-owl">
+                    </div>
+                    <div class="se-item">
+                      <img src="assets/img/seller/2.jpg" alt="" class="no-owl">
+                    </div>
+                    <div class="se-item">
+                      <img src="assets/img/seller/3.jpg" alt="" class="no-owl">
+                    </div>
+              </div>
+
+              <div class="se-carousel owl-carousel"  data-rtl="{{isRtl dir}}" data-xl-items="4" data-lg-items="3" data-md-items="2" data-margin="25" >
+                {{#each s.carousel}}
+                  <div class="se-item">
+                      <a href="#" class="img">
+                        <img src="assets/img/seller/{{i}}" alt="" class="no-owl">
+                      </a>
+                      <a href="#" class="h5">{{t}}</a>
+                      <p class="se-info d-flex justify-content-between align-items-center">
+                        <a href="#" >{{ty}}</a>
+                        <span class="price">{{p}}</span>
+                      </p>
+
+                  </div>
+                  {{/each}}
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+    <div class="contact-details-row bg-white shadow-lg p-4 my-5">
+      <div class="row justify-content-between">
+        <div class="col-12  col-md-7 col-xl-9">
+          <div class="se-details">
+            <h3><span>{{local.contact_details}}</span></h3>
+            <ul class="list-unstyled d-flex se-c-list">
+              <li>
+                <strong> <i class="fa fa-mobile"></i> {{local.Mobile}}</strong>
+                <span>8745745695</span>
+              </li>
+              <li>
+                <strong> <i class="fa fa-map-marker"></i> {{local.address}} </strong>
+                <span>Rajasthan, India</span>
+              </li>
+              <li>
+                <strong> <i class="fa fa-envelope-o"></i> {{local.email}}</strong>
+                <a href="#">miss.@gmail.com</a>
+              </li>
+              <li>
+                <strong><i class="fa fa-globe"></i> {{local.website}}</strong>
+                <a href="#">www.gowawe.com</a>
+              </li>
+
+              <li>
+                <strong><i class="fa fa-globe"></i> {{local.find_us}}</strong>
+                <nav class="se-social-links">
+                  <a href="#"> <i class="fa fa-facebook"></i></a>
+                  <a href="#"> <i class="fa fa-twitter"></i></a>
+                  <a href="#"> <i class="fa fa-youtube"></i></a>
+                </nav>
+              </li>
+            </ul>
+            <hr>
+           <div class="se-des mt-4">
+              <h3><span>{{local.description}}</span></h3>
+              <div class="se-d-content">{{lorem}}</div >
+           </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-5 col-xl-3">
+          <div class="se-map">
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+              src="https://maps.google.com/maps?hl=en&q=&ie=UTF8&t=roadmap&z=15&iwloc=B&output=embed"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="company-row bg-white shadow-lg p-4 my-5">
+        <div class="row justify-content-between align-items-center">
+              <div class="col-12 col-md-7 col-xl-9">
+                <div class="se-com-table">
+                  <h3><span>Company Name</span></h3>
+                  <div class="se-info-table mt-5">
+                  <div class="row">
+                      <div class="col-12 col-md-6  col-xl-3 se-info-item">
+                          <strong>{{local.store_name}}</strong>
+                          <span>Company Name</span>
+                      </div>
+                      <div class="col-12 col-md-6  col-xl-3 se-info-item">
+                        <strong>{{local.contact_person}}</strong>
+                        <span>person name</span>
+                      </div>
+                      <div class="col-12 col-md-6  col-xl-3 se-info-item">
+                        <strong>{{local.accepted_currencies_}}</strong>
+                        <span>€</span>
+                      </div>
+                      <div class="col-12 col-md-6  col-xl-3 se-info-item">
+                        <strong>{{local.accept_escrow_services}}</strong>
+                        <span>No</span>
+                      </div>
+                      <div class="col-12 col-md-6  col-xl-3 se-info-item">
+                        <strong>{{local.number_employ}}</strong>
+                        <span>50-10</span>
+                      </div>
+                      <div class="col-12 col-md-6  col-xl-3 se-info-item">
+                        <strong>{{local.year_of_establishment}}</strong>
+                        <span>2010</span>
+                      </div>
+                      <div class="col-12 col-md-12 col-lg-6  col-xl-3 se-info-item">
+                        <strong>{{local.language_communication}}</strong>
+                        <span>Individual (Sole Proprietorship)</span>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-5 col-xl-3">
+                <div class="se-con-person text-center">
+                <h3 class="d-md-none"><span>{{local.contact_person}}</span></h3>
+                    <picture>
+                      <img src="assets/img/person.jpg" alt="">
+                    </picture>
+                    <div class="text-center mt-4 se-pi">
+                      <strong class="h4 d-block">person name</strong>
+                      <p class="se-p-ty">{{local.user_type}}</p>
+                    </div>
+                    <div class="se-p-c">
+                        {{!-- <p class="d-flex justify-content-between">
+                          <small>{{local.country}}</small>
+                          <span>syria</span>
+                        </p>
+                        <hr>
+                        --}}
+
+                        <p>
+                          <small>{{local.company_address}}</small>
+                          <span> 136 Chandler Drive , Seligman</span>
+                        </p>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+  </div>
+</section>
+{{!--
+
+contact_details: "Contact Details",
+Mobile: "Mobile",
+address: "Address",
+email: "Email",
+website: "Website url",
+description: "Description",
+store_name: "Name Of Your Store",
+accepted_currencies_: "accepted currencies",
+accept_escrow_services: "accept escrow services",
+number_employ: "number employ",
+year_of_establishment: "year of establishment",
+language_communication: "language & communication",
+contact_person: "Contact Person",
+name: "Name",
+user_type: "user type",
+country: "Country",
+: "Company Address"
+ --}}
