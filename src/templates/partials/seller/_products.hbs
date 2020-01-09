@@ -1,0 +1,49 @@
+
+<section class="seller-products-tab my-5 px-xl-5">
+  <div class="container-fluid">
+      <div class="row ">
+          {{#each s.productsList}}
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+              <div class="fsp-item shadow-lg bg-white m-b-30">
+                <picture {{#if video}} data-video="{{video}}" data-poster="assets/img/product-{{@index}}.jpg" {{/if}}>
+                  <img src="assets/img/products/{{@index}}.jpg" alt="" class="no-owl">
+                </picture>
+                <div class="fsp-info">
+                  <a href="#" class="h4">{{title}}</a>
+                  <p class="fsp-price">
+                    <span class="d-flex justify-content-between">
+                      <b class="text-danger">{{min_price}}</b>
+                      <span>
+                        <small><s>{{price}}</s></small>
+                        <span class="badge badge-danger">{{discount}}</span>
+                      </span>
+                    </span>
+                    <strong>{{../local.min_order}}</strong>: {{min}}
+                  </p>
+                </div>
+              </div>
+            </div>
+          {{/each}}
+      </div>
+  </div>
+  </section>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="VideosModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+      <button type="button" class="btn btn-dark btn-close-video" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body">
+        <video width="100%" controls>
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+    </div>
+  </div>
+</div>

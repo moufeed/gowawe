@@ -18,8 +18,6 @@ function getBundles(regexPattern, files) {
   });
 }
 
-
-
 const regex = {
   css: /\.css$/,
   html: /\.(html|htm)$/,
@@ -105,6 +103,11 @@ var config = {
           "./node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
           "./src/js/magnific.js"
         ]
+      },
+      {
+        output: "seller.js",
+        es6: true,
+        inputs: ["./src/js/seller.js"]
       }
     ],
     dist: "./dist/assets/js"

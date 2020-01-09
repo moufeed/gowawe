@@ -511,6 +511,69 @@ header
   }
 }
 
+
+.seller-products-tab {
+.fsp-item {
+    border-radius: 4px;
+}
+}
+
+
+
+.se-contact-header{
+  h3{
+    font-weight: bolder;
+    font-size: 30px;
+    text-transform: capitalize;
+  }
+  p{
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+  }
+}
+.se-contact-form{
+form{
+    h3{
+      text-transform: capitalize;
+      color: lighten(#0b3954 ,20%);
+      margin-bottom: 35px;
+    }
+    label{
+      text-transform: capitalize;
+      font-weight: bold;
+      color: $black;
+      margin-bottom: 10px;
+    }
+    .form-control{
+      border-radius: 0;
+    }
+  }
+}
+.se-contact-info{
+
+  >div{
+     background: #0b3954 url('#{$img}contact-us.png') 90% 130% /120% no-repeat;
+      color: $white;
+      height: 100%;
+  }
+
+}
+/*
+
+
+
+          <div class="col-md-8 col-lg-9 ">
+            <div class="p-5">
+              a
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 ">
+            <div></div>
+          </div>
+        </div>
+*/
+
 //***********************************
 //***********************************
 //***********************************
@@ -593,6 +656,9 @@ header
         width: 48%;
       }
     }
+  }
+  .seller-icons-col{
+    margin-#{$left}: auto;
   }
 }
 @include media-breakpoint-down(md) {

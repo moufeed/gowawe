@@ -27,7 +27,7 @@
           <div class="col-lg-9 col-xl-8 seller-nav">
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                {{#each s.tabs}}
+                {{#each s.navs}}
                 <a class="nav-item nav-link {{#is @index 0 }} active {{/is}}" id="nav-{{@index}}-tab" data-toggle="tab"
                   href="#tab-{{@index}}" role="tab" aria-controls="tab-{{@index}}"
                   aria-selected="{{#is @index 0 }} true {{@else}} false {{/is}}">{{this}}</a>
@@ -78,6 +78,7 @@
   {{>_footer}}
 <script src="assets/js/carousel.min.js"></script>
 <script src="assets/js/magnific.min.js"></script>
+<script src="assets/js/seller.min.js"></script>
   <script src="assets/js/scripts.min.js"></script>
 
 </body>

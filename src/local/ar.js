@@ -104,7 +104,12 @@ var local = {
   other_products_you_sell: "المنتجات الأخرى التي تبيعها",
   terms_and_conditions: "الأحكام والشروط",
   company_policy: "سياسة الشركة",
-  payment_terms: "شروط الدفع وطريقة"
+  payment_terms: "شروط الدفع وطريقة",
+  get_in_touch: "ابقى على تواصل",
+  send_us_message: "ارسل لنا",
+  subject: "الموضوع",
+  message: "الرسالة",
+  send: "إرسال"
 };
 
 var lorem =

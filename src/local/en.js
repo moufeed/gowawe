@@ -108,7 +108,12 @@ var local = {
   other_products_you_sell: "Other Products You Sell",
   terms_and_conditions: "Terms And Conditions",
   company_policy: "Company Policy",
-  payment_terms: "Payment Terms & Method"
+  payment_terms: "Payment Terms & Method",
+  get_in_touch: "get in touch",
+  send_us_message: "send us message",
+  subject: "subject",
+  message: "message",
+  send: "send"
 };
 
 var lorem =

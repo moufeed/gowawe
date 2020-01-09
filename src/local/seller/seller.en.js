@@ -1,10 +1,27 @@
+var fromHome = require("../home/home.en");
+
+function generateProducts() {
+  let result = [];
+  for (let index = 0; index < 15; index++) {
+    result.push(fromHome.product);
+    if (index % 2 == 0) {
+      result[index] = {
+        ...result[index],
+        video: "assets/videos/oceans.mp4"
+      };
+    }
+  }
+
+  return result;
+}
+
 module.exports = {
   header: {
     t: "Seller Name",
     d:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo deleniti recusandae fugit, facere dolorum corporis nesciunt optio corrupti debitis. Veniam debitis pariatur voluptatem optio eius maiores laboriosam expedita odio sint."
   },
-  tabs: [
+  navs: [
     "home page",
     "company profile",
     "product list",
@@ -53,5 +70,6 @@ module.exports = {
     "Information Policies",
     "Image gallery",
     "Certification achieved"
-  ]
+  ],
+  productsList: generateProducts()
 };

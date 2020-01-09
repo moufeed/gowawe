@@ -1,10 +1,27 @@
+var fromHome = require("../home/home.ar");
+
+function generateProducts() {
+  let result = [];
+  for (let index = 0; index < 15; index++) {
+    result.push(fromHome.product);
+    if (index % 2 == 0) {
+      result[index] = {
+        ...result[index],
+        video: "assets/videos/oceans.mp4"
+      };
+    }
+  }
+
+  return result;
+}
+
 module.exports = {
   header: {
     t: "اسم البائع",
     d:
       "لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت"
   },
-  tabs: [
+  navs: [
     "الرئيسية",
     "ملف الشركة",
     "المنتجات",
@@ -53,5 +70,6 @@ module.exports = {
     "سياسات المعلومات",
     "معرض الصور",
     "شهادة تحققت"
-  ]
+  ],
+  productsList: generateProducts()
 };
