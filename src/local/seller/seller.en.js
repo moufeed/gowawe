@@ -44,7 +44,14 @@ module.exports = {
       ty: "Laptop Bag"
     }
   ],
-    contact : {
-      name : ""
-    }
+  contact: {
+    name: ""
+  },
+  tabs: [
+    "Company Profile",
+    "Trade Productions",
+    "Information Policies",
+    "Image gallery",
+    "Certification achieved"
+  ]
 };

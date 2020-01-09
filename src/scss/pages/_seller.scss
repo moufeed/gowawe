@@ -2,7 +2,24 @@
 header
 */
 
-
+.seller-page{
+ background-color: $white;
+  background-image:
+    url("#{$img}/bg1.png"),
+    url("#{$img}/bg1.png"),
+    url("#{$img}/bg4.png"),
+    url("#{$img}/bg2.png"),
+    url("#{$img}/bg5.png"),
+    url("#{$img}/bg3.png");
+  background-repeat: no-repeat;
+  background-position:
+  -12% 30%,
+  120% 15%,
+  110% 40%,
+  115% 107%,
+  -15% 70%,
+  -16% 41%;
+}
 .se-details,
 .se-categories,
 .se-com-table,
@@ -13,7 +30,6 @@ header
     text-transform: capitalize;
   }
 }
-
 
 .seller-header {
   padding: 50px 25px;
@@ -154,7 +170,6 @@ header
   }
 }
 
-
 .se-categories {
   padding: 25px 15px;
   max-height: 890px;
@@ -186,7 +201,7 @@ header
 
       &:before {
         font-family: FontAwesome;
-        content: if-ltr("\f054" , "\f053");
+        content: if-ltr("\f054", "\f053");
         font-weight: 900;
         position: absolute;
         top: 8px;
@@ -369,6 +384,132 @@ header
     }
   }
 }
+/***/
+
+.nav-line {
+  li {
+    > a.nav-link {
+      color: $dark;
+      &:hover {
+        color: $blue;
+        border-color: transparent;
+      }
+      &.active,
+      &:focus {
+        margin-bottom: 0;
+        color: $red;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-bottom-color: $red;
+        cursor: default;
+      }
+    }
+  }
+}
+
+/**/
+.se-pro-slider {
+  .se-pro-item {
+    overflow: hidden;
+    height: 350px;
+    background: #f5f5f5;
+    img {
+      max-width: 100%;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .owl-dots {
+    margin-top: 10px;
+    text-align: center;
+    .owl-dot {
+      span {
+        background: rgba($red, 0.4);
+      }
+      &.active {
+        span {
+          background: rgba($red, 0.9);
+        }
+      }
+    }
+  }
+}
+
+/**/
+.terms_tab {
+  article {
+    > h3 {
+      font-weight: bold;
+      margin: 15px 0;
+      text-transform: capitalize;
+      span {
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+        &:before {
+          @include absolute(bottom $left, -3px 0);
+          content: "";
+          @include size(50%, 50%);
+          background: rgba($red, 0.3);
+          z-index: -1;
+          transform: skewY(if-ltr(3deg, -3deg));
+          transform-origin: top $right;
+        }
+      }
+    }
+    .content {
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 1.6;
+    }
+  }
+}
+
+.gallery_tab {
+  // .se-gallery{}
+  .se-gallery-item {
+    overflow: hidden;
+    @include size(100%, 200px);
+    margin-bottom: 25px;
+    position: relative;
+    &:after {
+      @include absolute(top left, 0 0);
+      @include square(100%);
+      background: rgba($red, 0.3);
+      content: "+";
+      font-size: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      opacity: 0;
+      transition: all .3s;
+    }
+    img {
+      width: 100%;
+      transition: all .3s;
+    }
+    &:hover{
+      &:after{
+        opacity: 1;
+      }
+      img{
+        filter: grayscale(1);
+      }
+    }
+  }
+}
+.tab-table{
+  tr{
+
+      td:first-child{
+        width: 225px;
+      }
+
+  }
+}
 
 //***********************************
 //***********************************
@@ -429,6 +570,12 @@ header
       }
     }
   }
+   .nav-tabs.nav-line{
+
+    .nav-link{
+     padding: 6px if-ltr(3px , 10px);
+    }
+  }
 }
 @include media-breakpoint-only(md) {
   .se-slider .se-item {
@@ -440,11 +587,21 @@ header
   .se-categories {
     max-height: 540px;
   }
-   .se-details {
+  .se-details {
     > ul.d-flex {
       li {
         width: 48%;
       }
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+   .nav-tabs.nav-line{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    .nav-link{
+      white-space: nowrap;
     }
   }
 }
@@ -478,14 +635,17 @@ header
   .se-slider .se-item {
     height: auto;
   }
-   .se-details {
+  .se-details {
     > ul.d-flex {
       li {
         width: 50%;
-        margin:10px 0;
+        margin: 10px 0;
         text-align: $left;
-
       }
     }
+  }
+
+  .gallery_tab .se-gallery-item{
+    height: 140px;
   }
 }

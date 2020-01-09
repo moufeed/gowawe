@@ -64,6 +64,10 @@ body {
 .z1{
   z-index: 1;
 }
+
+.fixed-table{
+  table-layout: fixed;
+}
 /*
 //width
 ::-webkit-scrollbar {
