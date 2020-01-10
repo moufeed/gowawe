@@ -121,7 +121,8 @@ var local = {
   bad: "bad ",
   okay: "okay",
   good: "good",
-  great: "great"
+  great: "great",
+  feedback: "feedback"
 };
 
 var lorem =
