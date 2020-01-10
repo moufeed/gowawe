@@ -142,6 +142,10 @@ var config = {
     js: {
       src: [],
       dist: "./dist/assets/js"
+    },
+    fonts: {
+      src: "./src/fonts/**/*",
+      dist: "./dist/assets/fonts"
     }
   }
 };
@@ -241,6 +245,11 @@ gulp.task("copy:js", function() {
   return gulp.src(config.copy.js.src).pipe(gulp.dest(config.copy.js.dist));
 });
 
+gulp.task("copy:fonts", function() {
+  return gulp
+    .src(config.copy.fonts.src)
+    .pipe(gulp.dest(config.copy.fonts.dist));
+});
 // ----------------------------------------------------
 // -----------------   watch/files  -----------------
 // ----------------------------------------------------

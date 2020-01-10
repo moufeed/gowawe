@@ -109,7 +109,15 @@ var local = {
   send_us_message: "ارسل لنا",
   subject: "الموضوع",
   message: "الرسالة",
-  send: "إرسال"
+  send: "إرسال",
+  give_feedback: "كتابة تقييم",
+  title: "العنوان",
+  average_rating: "متوسط التقيم",
+  terrible: "رهيب",
+  bad: "سيئ",
+  okay: "مقبول",
+  good: "جيد",
+  great: "ممتاز"
 };
 
 var lorem =

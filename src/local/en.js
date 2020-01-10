@@ -113,7 +113,15 @@ var local = {
   send_us_message: "send us message",
   subject: "subject",
   message: "message",
-  send: "send"
+  send: "send",
+  give_feedback: "Give feedback",
+  title: "title",
+  average_rating: "Average rating",
+  terrible: "terrible",
+  bad: "bad ",
+  okay: "okay",
+  good: "good",
+  great: "great"
 };
 
 var lorem =
