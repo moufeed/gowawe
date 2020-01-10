@@ -557,22 +557,49 @@ form{
       color: $white;
       height: 100%;
   }
+  .pd{
+    padding: 5%;
+    h3{
+      font-weight: bold;
+      margin: 35px 0;
+    }
+  }
 
+  .links-list{
+    font-size: 16px;
+    li{
+      margin-bottom: 15px;
+    }
+    i{
+      color: rgba($white , .6);
+      margin: 0 3px;
+    }
+    color: $white;
+    a{
+      color: $white;
+    }
+  }
+  .social-list{
+    padding: 0;
+    list-style: none;
+    a{
+      i{
+        font-size: 25px;
+        display: inline-block;
+        @include square(45px);
+        line-height :45px;
+        text-align: center;
+
+      }
+      &:hover{
+        color: $white;
+      }
+    }
+  }
 }
-/*
 
 
 
-          <div class="col-md-8 col-lg-9 ">
-            <div class="p-5">
-              a
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-3 ">
-            <div></div>
-          </div>
-        </div>
-*/
 
 //***********************************
 //***********************************
@@ -660,6 +687,12 @@ form{
   .seller-icons-col{
     margin-#{$left}: auto;
   }
+.se-contact-info>div {
+  background-position: 90% 108%;
+}
+  .se-contact-info .pd h3{
+    text-align: center;
+  }
 }
 @include media-breakpoint-down(md) {
    .nav-tabs.nav-line{
@@ -713,5 +746,14 @@ form{
 
   .gallery_tab .se-gallery-item{
     height: 140px;
+  }
+
+  .se-contact-info{
+    > div{
+      background-blend-mode: soft-light;
+      .social-list{
+        a { color: $white;}
+      }
+    }
   }
 }

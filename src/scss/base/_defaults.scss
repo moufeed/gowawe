@@ -67,6 +67,15 @@ body {
 
 .fixed-table{
   table-layout: fixed;
+
+
+}
+
+@include media-breakpoint-down(sm){
+
+.fixed-table{
+  min-width: 600px;
+}
 }
 /*
 //width
