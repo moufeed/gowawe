@@ -117,7 +117,8 @@ var local = {
   bad: "سيئ",
   okay: "مقبول",
   good: "جيد",
-  great: "ممتاز"
+  great: "ممتاز",
+  feedback: "التقيم"
 };
 
 var lorem =

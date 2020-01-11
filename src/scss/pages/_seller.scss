@@ -2,23 +2,14 @@
 header
 */
 
-.seller-page{
- background-color: $white;
-  background-image:
-    url("#{$img}/bg1.png"),
-    url("#{$img}/bg1.png"),
-    url("#{$img}/bg4.png"),
-    url("#{$img}/bg2.png"),
-    url("#{$img}/bg5.png"),
+.seller-page {
+  background-color: $white;
+  background-image: url("#{$img}/bg1.png"), url("#{$img}/bg1.png"),
+    url("#{$img}/bg4.png"), url("#{$img}/bg2.png"), url("#{$img}/bg5.png"),
     url("#{$img}/bg3.png");
   background-repeat: no-repeat;
-  background-position:
-  -12% 30%,
-  120% 15%,
-  110% 40%,
-  115% 107%,
-  -15% 70%,
-  -16% 41%;
+  background-position: -12% 30%, 120% 15%, 110% 40%, 115% 107%, -15% 70%,
+    -16% 41%;
 }
 .se-details,
 .se-categories,
@@ -485,121 +476,240 @@ header
       justify-content: center;
       color: #fff;
       opacity: 0;
-      transition: all .3s;
+      transition: all 0.3s;
     }
     img {
       width: 100%;
-      transition: all .3s;
+      transition: all 0.3s;
     }
-    &:hover{
-      &:after{
+    &:hover {
+      &:after {
         opacity: 1;
       }
-      img{
+      img {
         filter: grayscale(1);
       }
     }
   }
 }
-.tab-table{
-  tr{
-
-      td:first-child{
-        width: 225px;
-      }
-
+.tab-table {
+  tr {
+    td:first-child {
+      width: 225px;
+    }
   }
 }
 
-
 .seller-products-tab {
-.fsp-item {
+  .fsp-item {
     border-radius: 4px;
+  }
 }
-}
 
-
-
-.se-contact-header{
-  h3{
+.se-contact-header {
+  h3 {
     font-weight: bolder;
     font-size: 30px;
     text-transform: capitalize;
   }
-  p{
+  p {
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 1.6;
   }
 }
-.se-contact-form{
-form{
-    h3{
+.se-contact-form {
+  form {
+    h3 {
       text-transform: capitalize;
-      color: lighten(#0b3954 ,20%);
+      color: lighten(#0b3954, 20%);
       margin-bottom: 35px;
     }
-    label{
+    label {
       text-transform: capitalize;
       font-weight: bold;
       color: $black;
       margin-bottom: 10px;
     }
-    .form-control{
+    .form-control {
       border-radius: 0;
     }
   }
 }
-.se-contact-info{
-
-  >div{
-     background: #0b3954 url('#{$img}contact-us.png') 90% 130% /120% no-repeat;
-      color: $white;
-      height: 100%;
+.se-contact-info {
+  > div {
+    background: #0b3954 url("#{$img}contact-us.png") 90% 130% /120% no-repeat;
+    color: $white;
+    height: 100%;
   }
-  .pd{
+  .pd {
     padding: 5%;
-    h3{
+    h3 {
       font-weight: bold;
       margin: 35px 0;
     }
   }
 
-  .links-list{
+  .links-list {
     font-size: 16px;
-    li{
+    li {
       margin-bottom: 15px;
     }
-    i{
-      color: rgba($white , .6);
+    i {
+      color: rgba($white, 0.6);
       margin: 0 3px;
     }
     color: $white;
-    a{
+    a {
       color: $white;
     }
   }
-  .social-list{
+  .social-list {
     padding: 0;
     list-style: none;
-    a{
-      i{
+    a {
+      i {
         font-size: 25px;
         display: inline-block;
         @include square(45px);
-        line-height :45px;
+        line-height: 45px;
         text-align: center;
-
       }
-      &:hover{
+      &:hover {
         color: $white;
       }
     }
   }
 }
+.feedback-form {
 
+  h3{
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+}
 
+.rating-group {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  input {
+    display: none;
+    &:checked {
+      + span {
+        color: $red;
+        &.s1 {
+          color: #e62919;
+        }
+        &.s2 {
+          color: #ff9b00;
+        }
+        &.s3 {
+          color: #f5d01e;
+        }
+        &.s4 {
+          color: #68ce37;
+        }
+        &.s5 {
+          color: #32c03e;
+        }
+      }
+    }
+  }
 
+  .rating {
+    margin: 0 15px;
+    span {
+      position: relative;
+      width: 75px;
+      height: 75px;
+      display: inline-flex;
+      align-items: flex-end;
+      justify-content: center;
+      text-transform: capitalize;
+      cursor: pointer;
+      &:after {
+        @include absolute(top $left, 0 0);
+        font-family: "re";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+      }
+
+      &.s1 {
+        &:after {
+          content: "\e80d";
+        }
+      }
+      &.s2 {
+        &:after {
+          content: "\e802";
+        }
+      }
+      &.s3 {
+        &:after {
+          content: "\e80a";
+        }
+      }
+      &.s4 {
+        &:after {
+          content: "\e800";
+        }
+      }
+      &.s5 {
+        &:after {
+          content: "\e812";
+        }
+      }
+    }
+  }
+}
+
+/*
+
+.emo-happy:before { content: '\e800'; }
+.emo-unhappy:before { content: '\e802'; } /* ''
+.emo-displeased:before { content: '\e80a'; } /* ''
+.emo-angry:before { content: '\e80d'; } /* ''
+.emo-laugh:before { content: '\e812'; } /
+*/
+
+/*
+<form action="" class="feedback-form">
+            <h3>{{local.give_feedback}}</h3>
+
+            <div class="form-group rating-group">
+              <label for="s1" class="rating s1">
+                <input type="radio" name="rating" id="s1">
+                <span>{{local.terrible}}</span>
+              </label>
+
+              <label for="s2" class="rating s2">
+                <input type="radio" name="rating" id="s2">
+                <span>{{local.bad}}</span>
+              </label>
+
+              <label for="s3" class="rating s3">
+                <input type="radio" name="rating" id="s3">
+                <span>{{local.okay}}</span>
+              </label>
+
+              <label for="s4" class="rating s4">
+                <input type="radio" name="rating" id="s4">
+                <span>{{local.good}}</span>
+              </label>
+
+              <label for="s5" class="rating s5">
+                <input type="radio" name="rating" id="s5">
+                <span>{{local.great}}</span>
+              </label>
+            </div>
+          </form>
+*/
 
 //***********************************
 //***********************************
@@ -660,10 +770,9 @@ form{
       }
     }
   }
-   .nav-tabs.nav-line{
-
-    .nav-link{
-     padding: 6px if-ltr(3px , 10px);
+  .nav-tabs.nav-line {
+    .nav-link {
+      padding: 6px if-ltr(3px, 10px);
     }
   }
 }
@@ -684,22 +793,22 @@ form{
       }
     }
   }
-  .seller-icons-col{
+  .seller-icons-col {
     margin-#{$left}: auto;
   }
-.se-contact-info>div {
-  background-position: 90% 108%;
-}
-  .se-contact-info .pd h3{
+  .se-contact-info > div {
+    background-position: 90% 108%;
+  }
+  .se-contact-info .pd h3 {
     text-align: center;
   }
 }
 @include media-breakpoint-down(md) {
-   .nav-tabs.nav-line{
+  .nav-tabs.nav-line {
     flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
-    .nav-link{
+    .nav-link {
       white-space: nowrap;
     }
   }
@@ -744,15 +853,26 @@ form{
     }
   }
 
-  .gallery_tab .se-gallery-item{
+  .gallery_tab .se-gallery-item {
     height: 140px;
   }
 
-  .se-contact-info{
-    > div{
+  .se-contact-info {
+    > div {
       background-blend-mode: soft-light;
-      .social-list{
-        a { color: $white;}
+      .social-list {
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+ .rating-group .rating {
+    span{
+      width: 30px;
+      height: 50px;
+      &:after{
+        font-size: 18px;
       }
     }
   }

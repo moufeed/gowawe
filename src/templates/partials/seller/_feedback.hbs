@@ -2,12 +2,62 @@
   <div class="container-fluid">
     <div class="bg-white shadow-lg p-4">
       <div class="row">
-        <div class="col-12 col-md-6">1</div>
-        <div class="col-12 col-md-6">2</div>
+        <div class="col-12 col-md-6 col-xl-7">1</div>
+        <div class="col-12 col-md-6 col-xl-5">
+          <form action="" class="feedback-form p-lg-4">
+            <h3><span>{{local.give_feedback}}</span></h3>
+
+            <div class="form-group rating-group">
+              <label for="s1" class="rating">
+                <input type="radio" name="rating" id="s1">
+                <span class="s1">{{local.terrible}}</span>
+              </label>
+
+              <label for="s2" class="rating">
+                <input type="radio" name="rating" id="s2">
+                <span class="s2" >{{local.bad}}</span>
+              </label>
+
+              <label for="s3" class="rating">
+                <input type="radio" name="rating" id="s3">
+                <span class="s3">{{local.okay}}</span>
+              </label>
+
+              <label for="s4" class="rating">
+                <input type="radio" name="rating" id="s4">
+                <span class="s4">{{local.good}}</span>
+              </label>
+
+              <label for="s5" class="rating">
+                <input type="radio" name="rating" id="s5">
+                <span class="s5">{{local.great}}</span>
+              </label>
+            </div>
+
+            <div class="form-row form-group">
+                <div class="col-md-6">
+                  <label for="" class="text-capitalize">{{local.name}}</label>
+                  <input type="text" name="" id="" class="form-control form-control-lg" required >
+                </div>
+                <div class="col-md-6">
+                  <label for="" class="text-capitalize">{{local.email}}</label>
+                  <input type="email" name="" id="" class="form-control form-control-lg" required>
+                </div>
+            </div>
+            <div class="form-group">
+              <label for="" class="text-capitalize">{{local.feedback}}</label>
+              <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+            </div>
+            <div class="form-group d-flex justify-content-end">
+              <button type="submit" class="btn btn-success px-5">{{local.send}}</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
 </section>
+<<<<<<< HEAD
 
 terrible
 bad
@@ -18,3 +68,5 @@ great
 
 
 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam modi nemo suscipit aspernatur optio, perspiciatis odio repudiandae repellendus unde odit a iste fugiat voluptates eum dignissimos adipisci animi laudantium saepe?
+=======
+>>>>>>> 6cf387853ead2066ecbf5075aa95e2bcc111764c
