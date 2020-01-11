@@ -71,5 +71,82 @@ module.exports = {
     "Image gallery",
     "Certification achieved"
   ],
-  productsList: generateProducts()
+  productsList: generateProducts(),
+  feedbacks: [
+    {
+      n: "farouk a",
+      s: "s2",
+      d: "15/12/2012",
+      f: "Lorem, ipsum dolor sit amet consectetur"
+    },
+    {
+      n: "mohamad",
+      s: "s1",
+      d: "1/1234/11",
+      f: " consectetur adipisicing elit."
+    },
+    {
+      n: "hasan",
+      s: "s4",
+      d: "12/03/2002",
+      f:
+        "sit amet consectetur adipisicing elit. Delectus doloremque cum consequatur voluptatibus ad veniam asperiores architecto fugit sunt maxime necessitatibus, aperiam ullam dignissimos similique,"
+    },
+    {
+      n: "",
+      s: "s2",
+      d: "12/03/2002",
+      f:
+        "sit amet consectetur adipisicing elit. Delectus doloremque cum consequatur voluptatibus ad veniam asperiores architecto fugit sunt maxime necessitatibus, aperiam ullam dignissimos similique,"
+    },
+    {
+      n: "",
+      s: "s1",
+      d: "12/03/2002",
+      f:
+        "sit amet consectetur adipisicing elit. Delectus doloremque cum consequatur voluptatibus ad veniam asperiores architecto fugit sunt maxime necessitatibus, aperiam ullam dignissimos similique,"
+    },
+    {
+      n: "",
+      s: "s3",
+      d: "12/03/2002",
+      f:
+        "sit amet consectetur adipisicing elit. Delectus doloremque cum consequatur voluptatibus ad veniam asperiores architecto fugit sunt maxime necessitatibus, aperiam ullam dignissimos similique,"
+    },
+    {
+      n: "",
+      s: "s4",
+      d: "12/03/2002",
+      f:
+        "sit amet consectetur adipisicing elit. Delectus doloremque cum consequatur voluptatibus ad veniam asperiores architecto fugit sunt maxime necessitatibus, aperiam ullam dignissimos similique sit amet consectetur adipisicing elit. Delectus doloremque cum consequatur voluptatibus ad veniam asperiores architecto fugit sunt maxime necessitatibus, aperiam ullam dignissimos similique, sit amet consectetur adipisicing elit. Delectus doloremque cum consequatur voluptatibus ad veniam asperiores architecto fugit sunt maxime necessitatibus, aperiam ullam dignissimos similique,"
+    },
+    {
+      n: "",
+      s: "s5",
+      d: "12/03/2002",
+      f:
+        "sit amet consectetur adipisicing elit. Delectus doloremque cum consequatur voluptatibus ad veniam asperiores architecto fugit sunt maxime necessitatibus, aperiam ullam dignissimos similique ,sit amet consectetur adipisicing elit. Delectus doloremque cum consequatur voluptatibus ad veniam asperiores architecto fugit sunt maxime necessitatibus, aperiam ullam dignissimos similique,"
+    },
+    {
+      n: "",
+      s: "s2",
+      d: "12/03/2002",
+      f:
+        "sit amet consectetur adipisicing elit. Delectus doloremque cum consequatur voluptatibus ad veniam similique,"
+    },
+    {
+      n: "",
+      s: "s3",
+      d: "3/23/2002",
+      f:
+        "sit amet consectetur voluptatibus ad veniam asperiores architecto fugit sunt maxime necessitatibus, aperiam ullam dignissimos similique,"
+    },
+    {
+      n: "mufid",
+      s: "s4",
+      d: "12/03/2067",
+      f:
+        "sit amet consectetur adipisicing elit. Delectus doloremque cum consequatur voluptatibus ad veniam"
+    }
+  ]
 };
