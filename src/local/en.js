@@ -123,7 +123,8 @@ var local = {
   good: "good",
   great: "great",
   feedback: "feedback",
-  feedbacks: "feedbacks"
+  reviews: "feedbacks",
+  continue_reading: "continue reading"
 };
 
 var lorem =

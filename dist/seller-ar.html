@@ -183,9 +183,9 @@
           <div class="col-lg-9 col-xl-8 seller-nav">
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link  active " id="nav-0-tab" data-toggle="tab"
+                <a class="nav-item nav-link " id="nav-0-tab" data-toggle="tab"
                   href="#tab-0" role="tab" aria-controls="tab-0"
-                  aria-selected=" true  false ">الرئيسية</a>
+                  aria-selected="">الرئيسية</a>
                 <a class="nav-item nav-link " id="nav-1-tab" data-toggle="tab"
                   href="#tab-1" role="tab" aria-controls="tab-1"
                   aria-selected="">ملف الشركة</a>
@@ -195,9 +195,9 @@
                 <a class="nav-item nav-link " id="nav-3-tab" data-toggle="tab"
                   href="#tab-3" role="tab" aria-controls="tab-3"
                   aria-selected="">التصنيفات</a>
-                <a class="nav-item nav-link " id="nav-4-tab" data-toggle="tab"
+                <a class="nav-item nav-link  active " id="nav-4-tab" data-toggle="tab"
                   href="#tab-4" role="tab" aria-controls="tab-4"
-                  aria-selected="">الاراء</a>
+                  aria-selected=" true  false ">الاراء</a>
                 <a class="nav-item nav-link " id="nav-5-tab" data-toggle="tab"
                   href="#tab-5" role="tab" aria-controls="tab-5"
                   aria-selected="">اتصل بنا</a>
@@ -219,7 +219,7 @@
     </div>
 
     <div class="tab-content" id="nav-tabContent">
-      <div class="tab-pane fade active show" id="tab-0" role="tabpanel" aria-labelledby="tab-0-tab">
+      <div class="tab-pane fade" id="tab-0" role="tabpanel" aria-labelledby="tab-0-tab">
         <section class="seller-home-tab my-5">
           <div class="container-fluid">
         
@@ -1361,51 +1361,91 @@
         </div>      </div>
       <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3-tab">
       </div>
-      <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="tab-4-tab">
+      <div class="tab-pane fade  active show" id="tab-4" role="tabpanel" aria-labelledby="tab-4-tab">
         <section class="seller-feedback-tab my-5">
           <div class="container-fluid">
             <div class="bg-white shadow-lg p-4">
-              <div class="row">
-                <div class="col-12 col-md-6 col-xl-7">1</div>
+              <div class="row align-items-center">
+                <div class="col-12 col-md-6 col-xl-7">
+        
+                  <div class="row rating-sys">
+                    <div class="col-12 col-md-12 col-xl-4">
+                      <div class="rating-average">
+                        <p class="av-num">3.5</p>
+                        <span class="av-star">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                          <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </span>
+                        <p class="h4">متوسط التقيم</p>
+                      </div>
+                    </div>
+                    <div class="col-7   col-md-8 col-xl-5">
+                      <div class="rating-progress">
+                        <div><span style="width: 80%;"></span></div>
+                        <div><span style="width: 65%;"></span></div>
+                        <div><span style="width: 45%;"></span></div>
+                        <div><span style="width: 20%;"></span></div>
+                        <div><span style="width: 10%;"></span></div>
+                      </div>
+                    </div>
+                    <div class="col-5    col-md-4 col-xl-3">
+                      <div class="rating-percentage">
+                        <span><i class="emo-laugh"></i> <strong>80%</strong></span>
+                        <span><i class="emo-happy"></i> <strong>60%</strong></span>
+                        <span><i class="emo-displeased"></i> <strong>45%</strong></span>
+                        <span><i class="emo-unhappy"></i> <strong>36%</strong></span>
+                        <span><i class="emo-angry "></i> <strong>10%</strong></span>
+                      </div>
+                    </div>
+                  </div>
+        
+                </div>
+        
+        
                 <div class="col-12 col-md-6 col-xl-5">
-                  <form action="" class="feedback-form p-lg-4">
+                  <form action="" class="feedback-form p-lg-4" id="feedForm">
                     <h3><span>كتابة تقييم</span></h3>
+                    <div class="form-group">
+                      <div class="rating-group">
+                        <label for="s1" class="rating">
+                          <input type="radio" name="rating" id="s1" data-name="rating" required>
+                          <span class="s1">رهيب</span>
+                        </label>
         
-                    <div class="form-group rating-group">
-                      <label for="s1" class="rating">
-                        <input type="radio" name="rating" id="s1">
-                        <span class="s1">رهيب</span>
-                      </label>
+                        <label for="s2" class="rating">
+                          <input type="radio" name="rating" id="s2">
+                          <span class="s2">سيئ</span>
+                        </label>
         
-                      <label for="s2" class="rating">
-                        <input type="radio" name="rating" id="s2">
-                        <span class="s2" >سيئ</span>
-                      </label>
+                        <label for="s3" class="rating">
+                          <input type="radio" name="rating" id="s3">
+                          <span class="s3">مقبول</span>
+                        </label>
         
-                      <label for="s3" class="rating">
-                        <input type="radio" name="rating" id="s3">
-                        <span class="s3">مقبول</span>
-                      </label>
+                        <label for="s4" class="rating">
+                          <input type="radio" name="rating" id="s4">
+                          <span class="s4">جيد</span>
+                        </label>
         
-                      <label for="s4" class="rating">
-                        <input type="radio" name="rating" id="s4">
-                        <span class="s4">جيد</span>
-                      </label>
-        
-                      <label for="s5" class="rating">
-                        <input type="radio" name="rating" id="s5">
-                        <span class="s5">ممتاز</span>
-                      </label>
+                        <label for="s5" class="rating">
+                          <input type="radio" name="rating" id="s5">
+                          <span class="s5">ممتاز</span>
+                        </label>
+                      </div>
+                      <div id="ratingError"></div>
                     </div>
                     <div class="form-row form-group">
-                        <div class="col-md-6">
-                          <label for="" class="text-capitalize">الاسم</label>
-                          <input type="text" name="" id="" class="form-control form-control-lg" required >
-                        </div>
-                        <div class="col-md-6">
-                          <label for="" class="text-capitalize">البريد الالكتروني</label>
-                          <input type="email" name="" id="" class="form-control form-control-lg" required>
-                        </div>
+                      <div class="col-md-6">
+                        <label for="" class="text-capitalize">الاسم</label>
+                        <input type="text" name="" id="" class="form-control form-control-lg" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="" class="text-capitalize">البريد الالكتروني</label>
+                        <input type="email" name="" id="" class="form-control form-control-lg" required>
+                      </div>
                     </div>
                     <div class="form-group">
                       <label for="" class="text-capitalize">التقيم</label>
@@ -1420,63 +1460,125 @@
             </div>
         
         
-        
-            <div class="bg-white shadow-lg  p-4 my-5">
+            <div class="bg-white shadow-lg  px-4 py-5 p-md-5 my-5 feedbacks-row">
               <h3><span>التقيمات</span></h3>
               <div class="row">
-                  <div class="col-md-6 col-lg-4">
-                    <div class="d-flex">
-                      == 1
-                      <span>
-                        <i class="emo-angry"></i>
-                      </span>
+                <div class="col-md-6 col-lg-4">
+                  <div class="d-flex fk-card">
+                    <span class="fk-icon">
+                      <i class="emo-angry" data-content="رهيب"></i>
+                    </span>
+                    <div class="fk-content">
+                      <span class="d-block h5">حسام سعيد</span>
+                      <small class="d-block fk-d">15/12/2012</small>
+                      <p class="fx-txt">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى </p>
+                      <div class="d-flex justify-content-end">
+                        <button type="button" data-toggle="modal" data-target="#FeedbackModal"
+                          class="btn btn-link btn-feed">متابعة القراءة</button>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-md-6 col-lg-4">
-                    <div class="d-flex">
-                      == 3
-                      <span>
-                        <i class="emo-displeased"></i>
-                      </span>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="d-flex fk-card">
+                    <span class="fk-icon">
+                      <i class="emo-displeased" data-content="مقبول"></i>
+                    </span>
+                    <div class="fk-content">
+                      <span class="d-block h5">حسام اسماء</span>
+                      <small class="d-block fk-d">15/12/2012</small>
+                      <p class="fx-txt">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةاستخدام هنا يوجد محتوى نصي، هنا يوجد محتوى نصي فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي</p>
+                      <div class="d-flex justify-content-end">
+                        <button type="button" data-toggle="modal" data-target="#FeedbackModal"
+                          class="btn btn-link btn-feed">متابعة القراءة</button>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-md-6 col-lg-4">
-                    <div class="d-flex">
-                      == 2
-                      <span>
-                        <i class="emo-unhappy"></i>
-                      </span>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="d-flex fk-card">
+                    <span class="fk-icon">
+                      <i class="emo-unhappy" data-content="سيئ"></i>
+                    </span>
+                    <div class="fk-content">
+                      <span class="d-block h5">أسعد</span>
+                      <small class="d-block fk-d">15/12/2012</small>
+                      <p class="fx-txt">ل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام هنا يوجد محتوى نصي، هنا يوجد محتوى نصي فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي</p>
+                      <div class="d-flex justify-content-end">
+                        <button type="button" data-toggle="modal" data-target="#FeedbackModal"
+                          class="btn btn-link btn-feed">متابعة القراءة</button>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-md-6 col-lg-4">
-                    <div class="d-flex">
-                      == 5
-                      <span>
-                        <i class="emo-angry"></i>
-                      </span>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="d-flex fk-card">
+                    <span class="fk-icon">
+                      <i class="emo-laugh" data-content="ممتاز"></i>
+                    </span>
+                    <div class="fk-content">
+                      <span class="d-block h5">أنغام أليكا</span>
+                      <small class="d-block fk-d">15/12/2012</small>
+                      <p class="fx-txt">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام هنا يوجد محتوى نصي، هنا يوجد محتوى نصي فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي</p>
+                      <div class="d-flex justify-content-end">
+                        <button type="button" data-toggle="modal" data-target="#FeedbackModal"
+                          class="btn btn-link btn-feed">متابعة القراءة</button>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-md-6 col-lg-4">
-                    <div class="d-flex">
-                      == 4
-                      <span>
-                        <i class="emo-angry"></i>
-                      </span>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="d-flex fk-card">
+                    <span class="fk-icon">
+                      <i class="emo-happy" data-content="جيد"></i>
+                    </span>
+                    <div class="fk-content">
+                      <span class="d-block h5">اسماء أليكا</span>
+                      <small class="d-block fk-d">15/12/2012</small>
+                      <p class="fx-txt">هناك حقيقة مثبتة منذ زمن طويل و يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام هنا يوجد محتوى نصي، هنا يوجد محتوى نصي فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي</p>
+                      <div class="d-flex justify-content-end">
+                        <button type="button" data-toggle="modal" data-target="#FeedbackModal"
+                          class="btn btn-link btn-feed">متابعة القراءة</button>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-md-6 col-lg-4">
-                    <div class="d-flex">
-                      == 2
-                      <span>
-                        <i class="emo-unhappy"></i>
-                      </span>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="d-flex fk-card">
+                    <span class="fk-icon">
+                      <i class="emo-unhappy" data-content="سيئ"></i>
+                    </span>
+                    <div class="fk-content">
+                      <span class="d-block h5">سعيد أيات</span>
+                      <small class="d-block fk-d">15/12/2012</small>
+                      <p class="fx-txt">هناك حقيقة مثبتة عن التركيز على الشكل لك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام هنا يوجد محتوى نصي، هنا يوجد محتوى نصي فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي</p>
+                      <div class="d-flex justify-content-end">
+                        <button type="button" data-toggle="modal" data-target="#FeedbackModal"
+                          class="btn btn-link btn-feed">متابعة القراءة</button>
+                      </div>
                     </div>
                   </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
-      </div>
+        
+        
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="FeedbackModal" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+              <button type="button" class="btn btn-dark btn-close-video" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-body">
+              </div>
+            </div>
+          </div>
+        </div>      </div>
       <div class="tab-pane fade" id="tab-5" role="tabpanel" aria-labelledby="tab-5-tab">
         <section class="seller-products-tab my-5">
           <div class="container-fluid">
@@ -1992,9 +2094,12 @@
     </div>
   </footer>
 <script src="assets/js/carousel.min.js"></script>
+<script src="assets/js/validation.min.js"></script>
+
+<script src="assets/js/messages.ar.min.js"></script>
 <script src="assets/js/magnific.min.js"></script>
 <script src="assets/js/seller.min.js"></script>
-  <script src="assets/js/scripts.min.js"></script>
+<script src="assets/js/scripts.min.js"></script>
 
 </body>
 

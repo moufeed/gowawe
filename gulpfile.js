@@ -87,6 +87,11 @@ var config = {
         ]
       },
       {
+        output: "messages.ar.js",
+        es6: false,
+        inputs: ["./src/js/messages_ar.js"]
+      },
+      {
         output: "rfq.js",
         es6: true,
         inputs: ["./src/js/rfq.js"]

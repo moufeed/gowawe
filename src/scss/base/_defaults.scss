@@ -77,6 +77,13 @@ body {
   min-width: 600px;
 }
 }
+
+
+@include if-rtl {
+  .was-validated .form-control:invalid, .form-control.is-invalid{
+    background-position: left calc(.375em + .1875rem) center;
+  }
+}
 /*
 //width
 ::-webkit-scrollbar {

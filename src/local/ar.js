@@ -119,7 +119,8 @@ var local = {
   good: "جيد",
   great: "ممتاز",
   feedback: "التقيم",
-  feedbacks: "التقيمات"
+  reviews: "التقيمات",
+  continue_reading: "متابعة القراءة"
 };
 
 var lorem =

@@ -14,7 +14,8 @@ header
 .se-details,
 .se-categories,
 .se-com-table,
-.se-con-person {
+.se-con-person,
+.feedbacks-row {
   h3 {
     font-weight: bold;
     margin-bottom: 20px;
@@ -582,8 +583,7 @@ header
   }
 }
 .feedback-form {
-
-  h3{
+  h3 {
     font-weight: bold;
     margin-bottom: 20px;
     text-transform: capitalize;
@@ -594,25 +594,29 @@ header
   display: flex;
   justify-content: center;
   padding: 15px;
+
+  &.is-invalid {
+    box-shadow: 0 0 0 1px $red;
+  }
   input {
     display: none;
     &:checked {
       + span {
         color: $red;
         &.s1 {
-          color: #e62919;
+          color: $angry;
         }
         &.s2 {
-          color: #ff9b00;
+          color: $unhappy;
         }
         &.s3 {
-          color: #f5d01e;
+          color: $displeased;
         }
         &.s4 {
-          color: #68ce37;
+          color: $happy;
         }
         &.s5 {
-          color: #32c03e;
+          color: $laugh;
         }
       }
     }
@@ -669,46 +673,159 @@ header
   }
 }
 
+.fk-card {
+  padding: 10px 0;
+  .fk-icon {
+    i {
+      font-size: 28px;
+      width: 60px;
+      display: inline-block;
+      margin-#{$right}: 10px;
+      position: relative;
+      &:after {
+        margin: 0 0.5em;
+        content: attr(data-content);
+        font-size: 12px;
+        position: absolute;
+        bottom: -15px;
+        font-style: normal;
+        width: 100%;
+        text-align: $left;
+        #{$left}: 0;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  .emo-angry {
+    color: $angry;
+  }
+  .emo-unhappy {
+    color: $unhappy;
+  }
+  .emo-displeased {
+    color: $displeased;
+  }
+  .emo-happy {
+    color: $happy;
+  }
+  .emo-laugh {
+    color: $laugh;
+  }
+
+  .fk-content {
+    width: 100%;
+    .h5 {
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+    .fx-txt {
+      letter-spacing: 1px;
+      @include ellipse(14px, 1.4, 4, true);
+    }
+  }
+  .fk-d {
+    margin: 3px 0;
+  }
+
+  .btn-feed {
+    color: $gray-600;
+    text-transform: capitalize;
+  }
+}
+.inModal {
+  padding: 25px;
+  .fk-content {
+    .fx-txt {
+      letter-spacing: 1px;
+      overflow: visible;
+      height: auto;
+      line-height: 1.6;
+      max-height: none;
+    }
+  }
+}
+
+.rating-sys {
+}
+
+.rating-progress {
+  div {
+    height: 26px;
+    background: #edf7fa;
+    border-radius: 15px;
+    margin: 15px 0;
+    padding: 3px;
+    span {
+      display: block;
+      height: 20px;
+      background: lighten($red, 15%);
+      border-radius: 15px;
+      transition: all 0.3s;
+    }
+  }
+}
+.rating-percentage {
+  span {
+    display: block;
+    font-size: 25px;
+    font-weight: 100;
+    color: #555;
+    margin: 5px 0;
+  }
+  .emo-angry {
+    color: $angry;
+  }
+  .emo-unhappy {
+    color: $unhappy;
+  }
+  .emo-displeased {
+    color: $displeased;
+  }
+  .emo-happy {
+    color: $happy;
+  }
+  .emo-laugh {
+    color: $laugh;
+  }
+}
+
+.rating-average {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .av-num {
+    font-size: 8rem;
+    font-weight: bold;
+    line-height: 1;
+  }
+  .av-star {
+    color: #fdc91b;
+    font-size: 24px;
+  }
+  .h4 {
+    font-size: 18px;
+  }
+}
+
 /*
 
-.emo-happy:before { content: '\e800'; }
-.emo-unhappy:before { content: '\e802'; } /* ''
-.emo-displeased:before { content: '\e80a'; } /* ''
-.emo-angry:before { content: '\e80d'; } /* ''
-.emo-laugh:before { content: '\e812'; } /
-*/
 
-/*
-<form action="" class="feedback-form">
-            <h3>{{local.give_feedback}}</h3>
 
-            <div class="form-group rating-group">
-              <label for="s1" class="rating s1">
-                <input type="radio" name="rating" id="s1">
-                <span>{{local.terrible}}</span>
-              </label>
 
-              <label for="s2" class="rating s2">
-                <input type="radio" name="rating" id="s2">
-                <span>{{local.bad}}</span>
-              </label>
 
-              <label for="s3" class="rating s3">
-                <input type="radio" name="rating" id="s3">
-                <span>{{local.okay}}</span>
-              </label>
 
-              <label for="s4" class="rating s4">
-                <input type="radio" name="rating" id="s4">
-                <span>{{local.good}}</span>
-              </label>
 
-              <label for="s5" class="rating s5">
-                <input type="radio" name="rating" id="s5">
-                <span>{{local.great}}</span>
-              </label>
-            </div>
-          </form>
+
+
+
+
+
+
+
+
 */
 
 //***********************************
@@ -775,6 +892,15 @@ header
       padding: 6px if-ltr(3px, 10px);
     }
   }
+    .rating-group .rating {
+    span {
+      width: 50px;
+      height: 50px;
+      &:after {
+        font-size: 20px;
+      }
+    }
+  }
 }
 @include media-breakpoint-only(md) {
   .se-slider .se-item {
@@ -801,6 +927,15 @@ header
   }
   .se-contact-info .pd h3 {
     text-align: center;
+  }
+  .rating-group .rating {
+    span {
+      width: 40px;
+      height: 50px;
+      &:after {
+        font-size: 20px;
+      }
+    }
   }
 }
 @include media-breakpoint-down(md) {
@@ -867,11 +1002,11 @@ header
       }
     }
   }
- .rating-group .rating {
-    span{
+  .rating-group .rating {
+    span {
       width: 30px;
       height: 50px;
-      &:after{
+      &:after {
         font-size: 18px;
       }
     }

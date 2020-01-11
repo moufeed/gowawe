@@ -3,7 +3,6 @@ $(() => {
   var validator = $form.validate({
     errorClass: "invalid-feedback",
     validClass: "valid-feedback",
-
     ignore: ".ignore",
     errorElement: "span",
     highlight: function(element) {
