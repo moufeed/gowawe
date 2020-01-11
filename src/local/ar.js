@@ -118,7 +118,8 @@ var local = {
   okay: "مقبول",
   good: "جيد",
   great: "ممتاز",
-  feedback: "التقيم"
+  feedback: "التقيم",
+  feedbacks: "التقيمات"
 };
 
 var lorem =

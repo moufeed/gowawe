@@ -33,7 +33,6 @@
                 <span class="s5">{{local.great}}</span>
               </label>
             </div>
-
             <div class="form-row form-group">
                 <div class="col-md-6">
                   <label for="" class="text-capitalize">{{local.name}}</label>
@@ -55,18 +54,37 @@
         </div>
       </div>
     </div>
+
+
+
+    <div class="bg-white shadow-lg  p-4 my-5">
+      <h3><span>{{local.feedbacks}}</span></h3>
+      <div class="row">
+        {{#each s.feedbacks}}
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex">
+              == {{s}}
+              <span>
+                {{#is s '1' }}
+                <i class="emo-angry"></i>
+                {{/is}}
+                {{#is s '2' }}
+                <i class="emo-unhappy"></i>
+                {{/is}}
+                {{#is s '3' }}
+                <i class="emo-displeased"></i>
+                {{/is}}
+                {{#is s '4' }}
+                <i class="emo-angry"></i>
+                {{/is}}
+                {{#is s '5' }}
+                <i class="emo-angry"></i>
+                {{/is}}
+              </span>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
   </div>
 </section>
-<<<<<<< HEAD
-
-terrible
-bad
-okay
-good
-great
-
-
-
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam modi nemo suscipit aspernatur optio, perspiciatis odio repudiandae repellendus unde odit a iste fugiat voluptates eum dignissimos adipisci animi laudantium saepe?
-=======
->>>>>>> 6cf387853ead2066ecbf5075aa95e2bcc111764c
