@@ -1,0 +1,16 @@
+<section class="seller-classified-tab my-5 px-xl-5">
+  <div class="container-fluid">
+    <div class="row se-gallery">
+      {{#each s.productsList}}
+
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <a href="assets/img/products/{{@index}}.jpg" title="{{title}}"
+          class="se-class-item shadow-lg bg-white m-b-30 d-flex justify-content-center align-items-center">
+          <img src="assets/img/products/{{@index}}.jpg" alt="" class="bg">
+          <img src="assets/img/products/{{@index}}.jpg" alt="">
+        </a>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>
