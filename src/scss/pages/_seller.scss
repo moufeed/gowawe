@@ -810,73 +810,50 @@ header
   }
 }
 
-
-
-.seller-classified-tab{
-
-  .se-class-item{
+.seller-classified-tab {
+  .se-class-item {
     overflow: hidden;
     height: 300px;
     width: 100%;
     position: relative;
     border: 1px solid #fff;
-    &:after{
-      @include absolute(top left , 0  0 );
+    &:after {
+      @include absolute(top left, 0 0);
       @include square(100%);
-      background: rgba(#fff,.5);
-      content: '';
+      background: rgba(#fff, 0.5);
+      content: "";
       z-index: 2;
       transform: scale(0);
-      transition: all .3s;
+      transition: all 0.3s;
     }
     img.bg {
-      @include absolute(top left , 0 0 );
+      @include absolute(top left, 0 0);
       @include square(100%);
       z-index: 0;
       filter: blur(25px);
-      transition: all .3s;
+      transition: all 0.3s;
     }
     img:not(.bg) {
       position: relative;
       z-index: 1;
       width: 100%;
       height: auto;
-      transition: all .3s;
+      transition: all 0.3s;
     }
 
-    &:hover{
-        img:not(.bg) {
-          transform: scale(1.2);
-        }
-        &:after{
-          transform: scale(0.5);
-        }
+    &:hover {
+      img:not(.bg) {
+        transform: scale(1.2);
+      }
+      &:after {
+        transform: scale(0.5);
+      }
     }
   }
 }
 
-
-
 /*
 
-
-
-<section class=" my-5 px-xl-5">
-  <div class="container-fluid">
-    <div class="row se-gallery">
-      {{#each s.productsList}}
-
-      <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-        <a href="assets/img/products/{{@index}}.jpg" title="{{title}}"
-          class="se-class-item shadow-lg bg-white m-b-30 d-flex justify-content-center align-items-center">
-          <img src="assets/img/products/{{@index}}.jpg" alt="" class="bg">
-          <img src="assets/img/products/{{@index}}.jpg" alt="">
-        </a>
-      </div>
-      {{/each}}
-    </div>
-  </div>
-</section>
 
 
 
@@ -946,7 +923,7 @@ header
       padding: 6px if-ltr(3px, 10px);
     }
   }
-    .rating-group .rating {
+  .rating-group .rating {
     span {
       width: 50px;
       height: 50px;
@@ -989,6 +966,11 @@ header
       &:after {
         font-size: 20px;
       }
+    }
+  }
+  .seller-classified-tab {
+    .se-class-item {
+      height: 250px;
     }
   }
 }
@@ -1062,6 +1044,26 @@ header
       height: 50px;
       &:after {
         font-size: 18px;
+      }
+    }
+  }
+
+  .seller-classified-tab {
+    .se-class-item {
+      overflow: visible;
+      height: auto;
+
+      img.bg {
+        display: none;
+      }
+
+      &:hover {
+        img:not(.bg) {
+          transform: scale(1);
+        }
+        &:after {
+          transform: scale(0.5);
+        }
       }
     }
   }
