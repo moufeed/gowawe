@@ -1,0 +1,178 @@
+<section class="product-details bg-white shadow-lg p3 p-lg-5 mt-3 mb-5">
+  <div class="row">
+    <div class="col-12 col-lg-5 col-xl-6">
+      <div class="product-carousel owl-carousel se-gallery" data-rtl="{{isRtl dir}}" data-singleitem="true"
+        data-dots="true">
+        {{#times  5}}
+        <a href="assets/img/products/{{this}}.jpg"
+          class="p-item d-inline-flex justify-content-center algin-items-center">
+          <img src="assets/img/products/{{this}}.jpg" alt="" class="no-owl">
+        </a>
+        {{/times}}
+      </div>
+    </div>
+    <div class="col-12 col-lg-7 col-xl-6">
+      <div class="product-description">
+        <p class="mb-0"><a href="" class="product-category">Women</a></p>
+        <a class="product-title"><a href="#">Lorem, ipsum dolor. ipsum dolor sit amet consectetur.</a>
+          <span class="d-flex">
+            <div class="product-rate">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <span class="product-reviews">
+              <small>3 customer reviews</small>
+              <a   data-toggle="modal" href="#WriteFeedbackModal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Write a review</a>
+            </span>
+          </span>
+          <span class="d-flex justify-content-between">
+            <ul class="product-specifications list-unstyled">
+              <li>
+                <strong>Availability</strong>
+                <span>In Stock</span>
+              </li>
+              <li>
+                <strong>Product Code</strong>
+                <span>Product 7</span>
+              </li>
+              <li>
+                <strong>Brand</strong>
+                <span><a href="#">gowawe</a></span>
+              </li>
+            </ul>
+
+            <div class="product-price">
+              <del class="price-old"><b>$</b>62.00</del>
+              <span> <b>$</b>39.00</span>
+            </div>
+          </span>
+
+          <p class="product-brief">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+            piece of classical Latin literature from 45 BC, making it over 2000 years old.
+            Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked
+            up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+            going through the cites of the word in</p>
+
+          <div class="product-meta">
+            <p>Tags: <a href="#" rel="tag">literature</a>, <a rel="tag" href="#">T-Lorem</a>
+            </p>
+          </div>
+
+      </div>
+
+
+      <div class="product-options">
+        <form action="">
+          <div class="row">
+            <div class="col-lg-6">
+              <h6>Select the size</h6>
+              <ul class="product-size">
+                <li>
+                  <label>
+                    <input type="radio" value="xs" name="product-size"><span>xs</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" value="s" name="product-size"><span>s</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" value="m" name="product-size"><span>m</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" value="l" name="product-size"><span>l</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" value="xl" name="product-size"><span>xl</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <h6>select color</h6>
+              <select class="form-control">
+                <option value="">Select color…</option>
+                <option value="">White</option>
+                <option value="" selected="selected">Green</option>
+                <option value="">Brown</option>
+                <option value="">Yellow</option>
+                <option value="">Pink</option>
+              </select>
+            </div>
+
+            <div class="col-lg-6">
+              <h6>Select quantity</h6>
+              <div class="cart-product-quantity">
+                <div class="quantity m-l-5">
+                  <input type="button" class="minus" value="-">
+                  <input type="text" class="qty" value="1">
+                  <input type="button" class="plus" value="+">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h6>Add to Cart</h6>
+              <a class="btn btn-success" href="#"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+            </div>
+          </div>
+        </form>
+      </div>
+
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="product-tabs bg-white shadow-lg p3 p-lg-5 my-5">
+  <ul class="nav nav-tabs nav-line" id="productTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="Description-tab" data-toggle="tab" href="#Description" role="tab"
+        aria-controls="Description" aria-selected="true">Product Description</a>
+
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="Details-tab" data-toggle="tab" href="#Details" role="tab" aria-controls="Details"
+        aria-selected="true">Product Details</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="Images_Videos-tab" data-toggle="tab" href="#Images_Videos" role="tab"
+        aria-controls="Images_Videos" aria-selected="false">Images & Videos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="Feedback-tab" data-toggle="tab" href="#Feedback" role="tab" aria-controls="Feedback"
+        aria-selected="false">Feedback</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="product-TabContent">
+    <div class="tab-pane fade show active" id="Description" role="tabpanel" aria-labelledby="Description-tab">
+      {{> product/_descriptions_tab}}
+    </div>
+    <div class="tab-pane fade " id="Details" role="tabpanel" aria-labelledby="Details-tab">
+      {{> product/_specifications_tab}}
+    </div>
+    <div class="tab-pane fade" id="Images_Videos" role="tabpanel" aria-labelledby="Images_Videos-tab">
+      {{>product/_gallery_tab}}
+    </div>
+    <div class="tab-pane fade" id="Feedback" role="tabpanel" aria-labelledby="Feedback-tab">
+      {{> product/_feedback_tab}}
+    </div>
+  </div>
+</section>
+
+
+
+
+{{>product/_review.modal}}

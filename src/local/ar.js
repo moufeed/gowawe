@@ -135,7 +135,7 @@ var fromCategories = require("./categories/categories.ar");
 var fromQuotation = require("./quotation/quotation.ar");
 var fromCategory = require("./category/category.ar");
 var fromSeller = require("./seller/seller.ar");
-
+var fromProduct = require("./product/product.ar");
 module.exports = {
   dir: "rtl",
   lang: "ar",
@@ -156,5 +156,6 @@ module.exports = {
   c: fromCategories,
   q: fromQuotation,
   cy: fromCategory,
-  s: fromSeller
+  s: fromSeller,
+  p: fromProduct
 };

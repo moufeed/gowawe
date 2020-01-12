@@ -1,0 +1,29 @@
+
+
+.product-carousel{
+  .p-item{
+    height: 500px ;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: #f6f6f6;
+    img{
+      height: 100%;
+      width: auto;
+    }
+  }
+  .owl-dots{
+    margin-top: 15px;
+  }
+}
+
+
+
+
+.products-gallery-tab{
+  .fsp-item{
+    padding: 0;
+    border: 3px solid #fff;
+    border-radius: 0;
+  }
+}

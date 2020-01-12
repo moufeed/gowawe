@@ -113,6 +113,11 @@ var config = {
         output: "seller.js",
         es6: true,
         inputs: ["./src/js/seller.js"]
+      },
+      {
+        output: "product.js",
+        es6: true,
+        inputs: ["./src/js/product.js"]
       }
     ],
     dist: "./dist/assets/js"

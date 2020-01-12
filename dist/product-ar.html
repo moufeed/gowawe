@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style-ar.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/lib.min.js"></script>
+</head>
+
+<body>
+
+  <header class="main-header">
+  <div class="container-fluid">
+    <div class="row main-header">
+        <div class="logo col">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/logo.png" alt="">
+          </a>
+        </div>
+    <div class="col search-wrap flex-grow-1">
+      <div class="search-box">
+        <select name="search_type" id="search_type">
+          <option value="">Products</option>
+          <option value="">Suppliers</option>
+        </select>
+        <input type="text" placeholder="What are you looking for ...">
+        <button type="subimt" class="btn btn-search">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+  
+  <div class="col-auto profile-btns">
+    <ul>
+      <li>
+        <a href="#">
+          <i class="fa fa-user"></i>
+          My Gowawe
+          <span class="badge">23</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-envelope"></i>
+          Messages
+          <span class="badge">23</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-suitcase"></i>
+          Orders
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-shopping-cart"></i>
+          Cart
+        </a>
+      </li>
+    </ul>
+  </div>
+    </div>
+  
+  
+    <nav class="navbar navbar-expand-lg navbar-light  ">
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+  
+        <ul class="navbar-nav  ml-auto  ">
+          <li class="nav-item dropdown " id="categories-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-list"></i> All Categories
+            </a>
+            <div class="dropdown-menu   dropdown-menu-lg-right   " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="separator mr-4"></li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Ready To Ship <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Trade Shows</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu  dropdown-menu-lg-right " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Sell On Gowawe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Help </a>
+          </li>
+        </ul>
+        <ul class=" navbar-nav my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Get The App</a>
+          </li>
+          <li class="separator"></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              English - USD
+            </a>
+            <div class="dropdown-menu fromleft" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+  </header>  <section class="product-page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb" class="container-fluid">
+            <ol class="breadcrumb bg-light my-4">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Library</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="col-12 col-md-7 col-lg-8 col-xl-9">
+          <section class="product-details bg-white shadow-lg p3 p-lg-5 mt-3 mb-5">
+            <div class="row">
+              <div class="col-12 col-lg-5 col-xl-6">
+                <div class="product-carousel owl-carousel se-gallery" data-rtl="true" data-singleitem="true"
+                  data-dots="true">
+                  <a href="assets/img/products/0.jpg"
+                    class="p-item d-inline-flex justify-content-center algin-items-center">
+                    <img src="assets/img/products/0.jpg" alt="" class="no-owl">
+                  </a>
+                  <a href="assets/img/products/1.jpg"
+                    class="p-item d-inline-flex justify-content-center algin-items-center">
+                    <img src="assets/img/products/1.jpg" alt="" class="no-owl">
+                  </a>
+                  <a href="assets/img/products/2.jpg"
+                    class="p-item d-inline-flex justify-content-center algin-items-center">
+                    <img src="assets/img/products/2.jpg" alt="" class="no-owl">
+                  </a>
+                  <a href="assets/img/products/3.jpg"
+                    class="p-item d-inline-flex justify-content-center algin-items-center">
+                    <img src="assets/img/products/3.jpg" alt="" class="no-owl">
+                  </a>
+                  <a href="assets/img/products/4.jpg"
+                    class="p-item d-inline-flex justify-content-center algin-items-center">
+                    <img src="assets/img/products/4.jpg" alt="" class="no-owl">
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-lg-7 col-xl-6">
+                <div class="product-description">
+                  <p class="mb-0"><a href="" class="product-category">Women</a></p>
+                  <a class="product-title"><a href="#">Lorem, ipsum dolor. ipsum dolor sit amet consectetur.</a>
+                    <span class="d-flex">
+                      <div class="product-rate">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                      </div>
+                      <span class="product-reviews">
+                        <small>3 customer reviews</small>
+                        <a   data-toggle="modal" href="#WriteFeedbackModal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Write a review</a>
+                      </span>
+                    </span>
+                    <span class="d-flex justify-content-between">
+                      <ul class="product-specifications list-unstyled">
+                        <li>
+                          <strong>Availability</strong>
+                          <span>In Stock</span>
+                        </li>
+                        <li>
+                          <strong>Product Code</strong>
+                          <span>Product 7</span>
+                        </li>
+                        <li>
+                          <strong>Brand</strong>
+                          <span><a href="#">gowawe</a></span>
+                        </li>
+                      </ul>
+          
+                      <div class="product-price">
+                        <del class="price-old"><b>$</b>62.00</del>
+                        <span> <b>$</b>39.00</span>
+                      </div>
+                    </span>
+          
+                    <p class="product-brief">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                      piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                      Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked
+                      up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+                      going through the cites of the word in</p>
+          
+                    <div class="product-meta">
+                      <p>Tags: <a href="#" rel="tag">literature</a>, <a rel="tag" href="#">T-Lorem</a>
+                      </p>
+                    </div>
+          
+                </div>
+          
+          
+                <div class="product-options">
+                  <form action="">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <h6>Select the size</h6>
+                        <ul class="product-size">
+                          <li>
+                            <label>
+                              <input type="radio" value="xs" name="product-size"><span>xs</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="radio" value="s" name="product-size"><span>s</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="radio" value="m" name="product-size"><span>m</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="radio" value="l" name="product-size"><span>l</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="radio" value="xl" name="product-size"><span>xl</span>
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-6">
+                        <h6>select color</h6>
+                        <select class="form-control">
+                          <option value="">Select color…</option>
+                          <option value="">White</option>
+                          <option value="" selected="selected">Green</option>
+                          <option value="">Brown</option>
+                          <option value="">Yellow</option>
+                          <option value="">Pink</option>
+                        </select>
+                      </div>
+          
+                      <div class="col-lg-6">
+                        <h6>Select quantity</h6>
+                        <div class="cart-product-quantity">
+                          <div class="quantity m-l-5">
+                            <input type="button" class="minus" value="-">
+                            <input type="text" class="qty" value="1">
+                            <input type="button" class="plus" value="+">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <h6>Add to Cart</h6>
+                        <a class="btn btn-success" href="#"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+          
+          
+          
+              </div>
+            </div>
+          </section>
+          
+          
+          
+          
+          <section class="product-tabs bg-white shadow-lg p3 p-lg-5 my-5">
+            <ul class="nav nav-tabs nav-line" id="productTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="Description-tab" data-toggle="tab" href="#Description" role="tab"
+                  aria-controls="Description" aria-selected="true">Product Description</a>
+          
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="Details-tab" data-toggle="tab" href="#Details" role="tab" aria-controls="Details"
+                  aria-selected="true">Product Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="Images_Videos-tab" data-toggle="tab" href="#Images_Videos" role="tab"
+                  aria-controls="Images_Videos" aria-selected="false">Images & Videos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="Feedback-tab" data-toggle="tab" href="#Feedback" role="tab" aria-controls="Feedback"
+                  aria-selected="false">Feedback</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="product-TabContent">
+              <div class="tab-pane fade show active" id="Description" role="tabpanel" aria-labelledby="Description-tab">
+                <section class="py-5 product-description-tab">
+                  <h2>
+                    Product description
+                  </h2>
+                  <p>The details you provide for a product affect the way the product appears to customers, make it easier for you to
+                    organize your products, and help customers find the product. You don't have to provide every detail for each
+                    product.</p>
+                  <p>For products that don't have any variants, the <strong>Pricing</strong>, <strong>Inventory</strong>, and
+                    <strong>Shipping</strong> sections are shown on the product details page. If you add variants, then those sections
+                    are no longer shown on the product details page. To change the details for product variants, see <a
+                      href="#"><em>Editing variants for an existing product</em></a>.</p>
+                
+                  <div class="alert alert-warning fade show" role="alert">
+                    <strong>Note!</strong>
+                    <p>
+                      Although you can change your product details at any time, the changes can affect your reports. For information on
+                      how the changes can affect the way that products appear and are grouped in your reports, see <a
+                        href="#"><em>Changes
+                          to product details</em></a>.</p>
+                  </div>
+                  <h3>Title and description</h3>
+                  <ul>
+                    <li>
+                      <p><strong>Title</strong> - The name for your product as you want your customers to see it.</p>
+                    </li>
+                    <li>
+                      <p><strong>Description</strong> - The description for your product. This area uses the <a href="#">rich text
+                          editor</a> so that you can format your text.
+                        Describe your products in detail to inform and persuade your potential customers. If you're a reseller, then
+                        don't use a manufacturer's exact description, because you want your products to be unique to search engines.</p>
+                    </li>
+                  </ul>
+                
+                
+                
+                
+                
+                
+                  <aside class="note tip">
+                    <h4>Tip</h4>
+                    <p>
+                      If you need help writing effective descriptions for your products, then you can <a
+                        href="#"> hire a
+                        Shopify expert</a>.</p>
+                  </aside>
+                  <h3 id="images">Images</h3>
+                  <p>The images show your customers what the product looks like. For information on adding product images, see <a
+                      href="#"><em>Product images</em></a>.</p>
+                  <h3 id="pricing">Pricing</h3>
+                
+                  <ul>
+                    <li>
+                      <p><strong>Price</strong> - The price that you're charging for the product. You set the currency on the <strong><a
+                            href="#">General</a></strong> settings page. If you are <a
+                          href="#">selling in multiple currencies</a>, then click
+                        <strong>Available in other currencies. Manage currencies</strong> to view your currency settings. Click
+                        <strong>Charge taxes on this product</strong> if the product is taxable.</p>
+                    </li>
+                    <li>
+                      <p><strong>Compare at price</strong> - The original price for a product that is on sale. When you enter a compare
+                        at price, the product displays a <a href="#">sale price</a>.
+                      </p>
+                    </li>
+                    <li>
+                      <p><strong>Tax code</strong> - For Shopify Plus plans, you can use a third-party tax service. If you use the
+                        service, then the tax code for the product is shown here.</p>
+                    </li>
+                    <li>
+                      <p><strong>Cost per item</strong> - How much it costs you for the product or variant. For example, if you resell a
+                        product, then you can enter the price that you paid the manufacturer, excluding taxes, shipping, or other costs.
+                        If you create the product yourself, then you can enter a value that is based on your labor and material costs.
+                      </p>
+                      <p> For products that have a product cost entered—unless you <a
+                          href="#">include taxes in your
+                          prices</a>—the projected margin is shown below the <strong>Price</strong> field on the product details page.
+                        The margin is calculated as ([price - cost] / price) * 100). For example, if your price is $50 and your cost is
+                        $30, then the margin (calculated as ([50 - 30] / 50) * 100) is 40%.</p>
+                      <p>If you’re on the Shopify plan or higher, then you can access <a
+                          href="#">reports</a> to analyze
+                        your product costs and margins. You can also find your cost of goods sold (COGS).</p>
+                      <p>Entering the cost per item is optional. If you choose to enter your costs, then add the amounts to all your
+                        existing products at the same time by using the bulk editor or a CSV import. By updating the information at the
+                        same time, you can get the most value out of your profit reports.</p>
+                      <p>Cost per item doesn't apply to gift card products.</p>
+                    </li>
+                  </ul>
+                
+                  <h3 id="inventory">Inventory</h3>
+                
+                  <ul>
+                    <li>
+                      <p><strong>SKU (stock keeping unit)</strong> - The code that identifies the product within your business. For
+                        effective tracking and sales reporting, each SKU needs to be unique.</p>
+                      <p>SKUs are optional. You can create your own SKU format. For more information about SKUs, see <a
+                          href="/manual/products/details/sku.md"><em>SKU formats</em></a>.</p>
+                    </li>
+                    <li>
+                      <p><strong>Barcode (ISBN, UPC, GTIN, etc.)</strong> - Barcodes are typically used by resellers. The identifier
+                        needs to be a new or existing Global Trade Item Number (GTIN). Some sales channels require a GTIN before a
+                        product can be published using the channel.</p>
+                      <p>GTINs are unique identifiers used internationally to store and locate product information. UPC, EAN, and ISBN
+                        numbers are examples of GTINs, which might vary in length depending on the product type. You can find the GTIN
+                        above or below the barcode on the packaging for your product.</p>
+                      <p>The barcode is used by <a href="//www.shopify.com/pos">Shopify POS</a> in a retail store, for publishing
+                        products using the <a href="/manual/apps/apps-by-shopify/google-shopping-app">Google Shopping app</a>, and when
+                        listing a product using the <a href="/en/manual/sell-online/amazon-sales-channel">Amazon sales channel</a>.</p>
+                      <p>If you don't have a GTIN for a product, then you can request it from the manufacturer. Learn how to get a GTIN
+                        for a product you manufacture at the <a href="http://www.gs1.org/barcodes">GS1 standards website</a>. Don't
+                        invent false GTIN information for your products.</p>
+                      <p>For information on how to enter barcodes by using your smartphone, see <a
+                          href="/en/manual/products/add-update-products#scan-a-barcode-with-your-devices-camera"><em>Scan a barcode with
+                            your device's camera</em></a>.</p>
+                    </li>
+                    <li>
+                      <p><strong>Inventory policy</strong> - The setting for <a href="/en/manual/products/inventory">inventory
+                          tracking</a>.</p>
+                    </li>
+                    <li>
+                      <p><strong>Quantity</strong> - Number of units in stock. If you are managing your inventory across <a
+                          href="/en/manual/locations">multiple locations</a>, then the quantity is shown for each location.</p>
+                    </li>
+                    <li>
+                      <p><strong>Incoming</strong> - Number of incoming units. See <a
+                          href="/en/manual/products/inventory/transfers"><em>Transfers</em></a>.</p>
+                    </li>
+                  </ul>
+                
+                  <h3 id="shipping">Shipping</h3>
+                
+                  <ul>
+                    <li>
+                      <p><strong>This is a physical product</strong> - The setting for whether a product needs to be shipped. Uncheck it
+                        for digital products or services, or for products that you never ship.</p>
+                    </li>
+                    <li>
+                      <p><strong>Weight</strong> - The product's actual weight. This field only appears when <strong>This is a physical
+                          product</strong> is checked. Product weight needs to be exact because it is used to calculate shipping rates.
+                        You can buy a shipping scale <a href="//hardware.shopify.com/collections/shipping">at the Shopify Hardware
+                          Store</a>.</p>
+                    </li>
+                    <li>
+                      <p><strong>Country/Region of origin</strong> - The country where the product was manufactured or assembled. If the
+                        product consists of materials from different countries or regions, then the country or region where it takes its
+                        essential form is the country or region of origin. Different countries or regions and international treaties
+                        have different rules of origin.</p>
+                    </li>
+                    <li>
+                      <p><strong>HS code</strong> - If you want to ship the product internationally, then enter the harmonized system
+                        (HS) tariff code. These codes provide customs with information so that correct tariffs can be applied to the
+                        order. You can find the HS code for your product by searching using a keyword in the HS code field of the
+                        product details page. Learn more about HS codes from the <a
+                          href="http://www.wcoomd.org/en/topics/nomenclature/overview/what-is-the-harmonized-system.aspx">World Customs
+                          Organization</a>.</p>
+                    </li>
+                    <li>
+                      <p><strong>Fulfillment service</strong> - Select a <a
+                          href="/manual/shipping/rates-and-methods/fulfillment-services">fulfillment service</a> from the list of the
+                        ones that you are using. If you're not using a fulfillment service, then select <strong>Shopify</strong>.</p>
+                    </li>
+                  </ul>
+                
+                  <h3 id="variants">Variants</h3>
+                  <p>For a product that has variants, this section shows the options for the product, such as color and size. For more
+                    information about variants, see <a href="/en/manual/products/variants"><em>Variants</em></a>.</p>
+                  <h3 id="search-engine-listing-preview">Search engine listing preview</h3>
+                  <p>A preview of how your product will appear in search engine results. Click <strong>Edit website SEO</strong> to make
+                    changes to the preview.</p>
+                  <p>The preview consists of the product title, its URL on your online store, and part of the description. For
+                    information on changing the preview, see <a
+                      href="/en/manual/products/add-update-products#edit-a-search-engine-listing-preview"><em>Edit a search engine
+                        listing preview</em></a>.</p>
+                  <h3 id="product-availability">Product availability</h3>
+                  <p>A list of your active sales channels where you can make the product available. To edit sales channel availability,
+                    click <strong>Manage</strong>. For more information about products and sales channels, see <a
+                      href="/en/manual/products/add-update-products#make-products-available-on-your-sales-channels"><em>Make products
+                        available on your sales channels</em></a>.</p>
+                  <p>You can't set sales channel availability for individual product variants.</p>
+                  <h3 id="organization">Organization</h3>
+                
+                  <ul>
+                    <li>
+                      <p><strong>Product type</strong> - A category for the product that you can use to manage your products. For
+                        example, you can use the product type as a condition for an <a
+                          href="/en/manual/products/collections/automated-collections">automated collection</a>, or to help you filter
+                        your products in the Shopify admin. A product can have only one product type.</p>
+                      <p>You can choose from any defined product type, or create a new one. To create a product type, enter it into the
+                        <strong>Product type</strong> field and then save the product. You can also create and edit product types in the
+                        <a href="/en/manual/productivity-tools/bulk-editing-products">bulk editor</a>.</p>
+                    </li>
+                    <li>
+                      <p><strong>Vendor</strong> - The manufacturer, wholesaler, or other vendor for the product. You can filter your
+                        product list by vendor, which can speed up ordering inventory.</p>
+                    </li>
+                    <li>
+                      <p><strong>Collections</strong> - The collections that a product is included in. You can use this field to add the
+                        product directly to <a
+                          href="/en/manual/products/collections/manual-shopify-collection#create-a-manual-collection">a manual
+                          collection</a>. Automated collections include the product when it matches the collection conditions.</p>
+                    </li>
+                    <li>
+                      <p><strong>Tags</strong> - Tags are searchable keywords that you can associate with your product. Tags can help
+                        customers find your product through your online store search, and you can also use them to create <a
+                          href="#">automated collections</a>. For more
+                        information about tags, see <a href="/en/manual/products/details/tags"><em>Tag formats</em></a>.</p>
+                    </li>
+                  </ul>
+                
+                
+                  </article>    </div>
+              <div class="tab-pane fade " id="Details" role="tabpanel" aria-labelledby="Details-tab">
+                
+                <div class="my-5 table-responsive">
+                  <table class="table table-hover">
+                    <tbody>
+                      <tr>
+                        <td class="bold">Brand Name:</td>
+                        <td> BlackBeans </td>
+                      </tr>
+                      <tr>
+                        <td class="bold">Inco terms</td>
+                        <td> N/A</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">Country of origin</td>
+                        <td> Benin</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">Model number</td>
+                        <td> N/A</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">Ean Code</td>
+                        <td> N/A</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">Size</td>
+                        <td> N/A</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">New</td>
+                        <td> N/A</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">Shape</td>
+                        <td> N/A</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">Color</td>
+                        <td> N/A</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">Material</td>
+                        <td> N/A</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">Available certificates</td>
+                        <td> N/A</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">Available size range</td>
+                        <td> N/A</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">Type of packing product</td>
+                        <td> N/A</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">Thickness</td>
+                        <td> N/A</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">Number of Pc per inner</td>
+                        <td> N/A</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">Size inner</td>
+                        <td> N/A</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">Type of inner packing</td>
+                        <td> N/A</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">Number Inner per outer</td>
+                        <td> N/A</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">Type of outer packing</td>
+                        <td> N/A</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">Size outer</td>
+                        <td> N/A</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">Number of masters per pallet</td>
+                        <td> N/A</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">Type of pallet</td>
+                        <td> N/A</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>    </div>
+              <div class="tab-pane fade" id="Images_Videos" role="tabpanel" aria-labelledby="Images_Videos-tab">
+                <section class="products-gallery-tab my-5">
+                  <div class="container-fluid">
+                    <div class="row se-gallery">
+                
+                      <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="fsp-item   bg-white m-b-30">
+                          <picture data-video="assets/videos/oceans.mp4" data-poster="assets/img/product-0.jpg">
+                            <img src="assets/img/products/0.jpg" alt="">
+                          </picture>
+                
+                        </div>
+                      </div>
+                
+                      <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="fsp-item   bg-white m-b-30">
+                          <a href="assets/img/products/1.jpg">
+                            <picture>
+                              <img src="assets/img/products/1.jpg" alt="">
+                            </picture>
+                            </a>
+                
+                        </div>
+                      </div>
+                
+                      <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="fsp-item   bg-white m-b-30">
+                          <picture data-video="assets/videos/oceans.mp4" data-poster="assets/img/product-2.jpg">
+                            <img src="assets/img/products/2.jpg" alt="">
+                          </picture>
+                
+                        </div>
+                      </div>
+                
+                      <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="fsp-item   bg-white m-b-30">
+                          <a href="assets/img/products/3.jpg">
+                            <picture>
+                              <img src="assets/img/products/3.jpg" alt="">
+                            </picture>
+                            </a>
+                
+                        </div>
+                      </div>
+                
+                      <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="fsp-item   bg-white m-b-30">
+                          <picture data-video="assets/videos/oceans.mp4" data-poster="assets/img/product-4.jpg">
+                            <img src="assets/img/products/4.jpg" alt="">
+                          </picture>
+                
+                        </div>
+                      </div>
+                
+                      <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="fsp-item   bg-white m-b-30">
+                          <a href="assets/img/products/5.jpg">
+                            <picture>
+                              <img src="assets/img/products/5.jpg" alt="">
+                            </picture>
+                            </a>
+                
+                        </div>
+                      </div>
+                
+                      <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="fsp-item   bg-white m-b-30">
+                          <picture data-video="assets/videos/oceans.mp4" data-poster="assets/img/product-6.jpg">
+                            <img src="assets/img/products/6.jpg" alt="">
+                          </picture>
+                
+                        </div>
+                      </div>
+                
+                      <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="fsp-item   bg-white m-b-30">
+                          <a href="assets/img/products/7.jpg">
+                            <picture>
+                              <img src="assets/img/products/7.jpg" alt="">
+                            </picture>
+                            </a>
+                
+                        </div>
+                      </div>
+                
+                      <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="fsp-item   bg-white m-b-30">
+                          <picture data-video="assets/videos/oceans.mp4" data-poster="assets/img/product-8.jpg">
+                            <img src="assets/img/products/8.jpg" alt="">
+                          </picture>
+                
+                        </div>
+                      </div>
+                
+                      <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="fsp-item   bg-white m-b-30">
+                          <a href="assets/img/products/9.jpg">
+                            <picture>
+                              <img src="assets/img/products/9.jpg" alt="">
+                            </picture>
+                            </a>
+                
+                        </div>
+                      </div>
+                
+                      <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="fsp-item   bg-white m-b-30">
+                          <picture data-video="assets/videos/oceans.mp4" data-poster="assets/img/product-10.jpg">
+                            <img src="assets/img/products/10.jpg" alt="">
+                          </picture>
+                
+                        </div>
+                      </div>
+                
+                      <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="fsp-item   bg-white m-b-30">
+                          <a href="assets/img/products/11.jpg">
+                            <picture>
+                              <img src="assets/img/products/11.jpg" alt="">
+                            </picture>
+                            </a>
+                
+                        </div>
+                      </div>
+                
+                      <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="fsp-item   bg-white m-b-30">
+                          <picture data-video="assets/videos/oceans.mp4" data-poster="assets/img/product-12.jpg">
+                            <img src="assets/img/products/12.jpg" alt="">
+                          </picture>
+                
+                        </div>
+                      </div>
+                
+                      <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="fsp-item   bg-white m-b-30">
+                          <a href="assets/img/products/13.jpg">
+                            <picture>
+                              <img src="assets/img/products/13.jpg" alt="">
+                            </picture>
+                            </a>
+                
+                        </div>
+                      </div>
+                
+                      <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="fsp-item   bg-white m-b-30">
+                          <picture data-video="assets/videos/oceans.mp4" data-poster="assets/img/product-14.jpg">
+                            <img src="assets/img/products/14.jpg" alt="">
+                          </picture>
+                
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                
+                
+                <!-- Modal -->
+                <div class="modal fade" id="VideosModal" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                      <button type="button" class="btn btn-dark btn-close-video" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <div class="modal-body">
+                        <video width="100%" controls>
+                          Your browser does not support HTML5 video.
+                        </video>
+                      </div>
+                    </div>
+                  </div>
+                </div>    </div>
+              <div class="tab-pane fade" id="Feedback" role="tabpanel" aria-labelledby="Feedback-tab">
+                <div class="feedback-tab-content">
+                  <div class="row rating-sys m-y-50">
+                    <div class="col-12 col-md-12 col-xl-4">
+                      <div class="rating-average">
+                        <p class="av-num">3.5</p>
+                        <span class="av-star">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                          <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </span>
+                        <p class="h4">متوسط التقيم</p>
+                      </div>
+                    </div>
+                    <div class="col-7   col-md-8 col-xl-5">
+                      <div class="rating-progress">
+                        <div><span style="width: 80%;"></span></div>
+                        <div><span style="width: 65%;"></span></div>
+                        <div><span style="width: 45%;"></span></div>
+                        <div><span style="width: 20%;"></span></div>
+                        <div><span style="width: 10%;"></span></div>
+                      </div>
+                    </div>
+                    <div class="col-5    col-md-4 col-xl-3">
+                      <div class="rating-percentage">
+                        <span><i class="emo-laugh"></i> <strong>80%</strong></span>
+                        <span><i class="emo-happy"></i> <strong>60%</strong></span>
+                        <span><i class="emo-displeased"></i> <strong>45%</strong></span>
+                        <span><i class="emo-unhappy"></i> <strong>36%</strong></span>
+                        <span><i class="emo-angry "></i> <strong>10%</strong></span>
+                      </div>
+                    </div>
+                  </div>
+                
+                
+                    <h2  class="reviews-title mb-4">
+                    Reviews <small>(30)</small>
+                    </h2>
+                  <div class="row">
+                    <div class="col-md-6 col-lg-6">
+                      <div class="d-flex fk-card">
+                        <span class="fk-icon">
+                          <i class="emo-angry" data-content="رهيب"></i>
+                        </span>
+                        <div class="fk-content">
+                          <span class="d-block h5">حسام سعيد</span>
+                          <small class="d-block fk-d">15/12/2012</small>
+                          <p class="fx-txt">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى </p>
+                          <div class="d-flex justify-content-end">
+                            <button type="button" data-toggle="modal" data-target="#FeedbackModal"
+                              class="btn btn-link btn-feed">متابعة القراءة</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                      <div class="d-flex fk-card">
+                        <span class="fk-icon">
+                          <i class="emo-displeased" data-content="مقبول"></i>
+                        </span>
+                        <div class="fk-content">
+                          <span class="d-block h5">حسام اسماء</span>
+                          <small class="d-block fk-d">15/12/2012</small>
+                          <p class="fx-txt">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةاستخدام هنا يوجد محتوى نصي، هنا يوجد محتوى نصي فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي</p>
+                          <div class="d-flex justify-content-end">
+                            <button type="button" data-toggle="modal" data-target="#FeedbackModal"
+                              class="btn btn-link btn-feed">متابعة القراءة</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                      <div class="d-flex fk-card">
+                        <span class="fk-icon">
+                          <i class="emo-unhappy" data-content="سيئ"></i>
+                        </span>
+                        <div class="fk-content">
+                          <span class="d-block h5">أسعد</span>
+                          <small class="d-block fk-d">15/12/2012</small>
+                          <p class="fx-txt">ل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام هنا يوجد محتوى نصي، هنا يوجد محتوى نصي فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي</p>
+                          <div class="d-flex justify-content-end">
+                            <button type="button" data-toggle="modal" data-target="#FeedbackModal"
+                              class="btn btn-link btn-feed">متابعة القراءة</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                      <div class="d-flex fk-card">
+                        <span class="fk-icon">
+                          <i class="emo-laugh" data-content="ممتاز"></i>
+                        </span>
+                        <div class="fk-content">
+                          <span class="d-block h5">أنغام أليكا</span>
+                          <small class="d-block fk-d">15/12/2012</small>
+                          <p class="fx-txt">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام هنا يوجد محتوى نصي، هنا يوجد محتوى نصي فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي</p>
+                          <div class="d-flex justify-content-end">
+                            <button type="button" data-toggle="modal" data-target="#FeedbackModal"
+                              class="btn btn-link btn-feed">متابعة القراءة</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                      <div class="d-flex fk-card">
+                        <span class="fk-icon">
+                          <i class="emo-happy" data-content="جيد"></i>
+                        </span>
+                        <div class="fk-content">
+                          <span class="d-block h5">اسماء أليكا</span>
+                          <small class="d-block fk-d">15/12/2012</small>
+                          <p class="fx-txt">هناك حقيقة مثبتة منذ زمن طويل و يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام هنا يوجد محتوى نصي، هنا يوجد محتوى نصي فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي</p>
+                          <div class="d-flex justify-content-end">
+                            <button type="button" data-toggle="modal" data-target="#FeedbackModal"
+                              class="btn btn-link btn-feed">متابعة القراءة</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                      <div class="d-flex fk-card">
+                        <span class="fk-icon">
+                          <i class="emo-unhappy" data-content="سيئ"></i>
+                        </span>
+                        <div class="fk-content">
+                          <span class="d-block h5">سعيد أيات</span>
+                          <small class="d-block fk-d">15/12/2012</small>
+                          <p class="fx-txt">هناك حقيقة مثبتة عن التركيز على الشكل لك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام هنا يوجد محتوى نصي، هنا يوجد محتوى نصي فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي</p>
+                          <div class="d-flex justify-content-end">
+                            <button type="button" data-toggle="modal" data-target="#FeedbackModal"
+                              class="btn btn-link btn-feed">متابعة القراءة</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                
+                </div>
+                
+                
+                <!-- Modal -->
+                <div class="modal fade" id="FeedbackModal" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                      <button type="button" class="btn btn-dark btn-close-video" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <div class="modal-body">
+                      </div>
+                    </div>
+                  </div>
+                </div>    </div>
+            </div>
+          </section>
+          
+          
+          
+          
+          <!-- Modal -->
+          
+          
+          <div class="modal fade" id="WriteFeedbackModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+              <div class="modal-content">
+                <button type="button" class="btn btn-dark btn-close-video" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                  <form action="" class="feedback-form p-lg-4" id="feedForm">
+                    <h3><span>كتابة تقييم</span></h3>
+                    <div class="form-group">
+                      <div class="rating-group">
+                        <label for="s1" class="rating">
+                          <input type="radio" name="rating" id="s1" data-name="rating" required>
+                          <span class="s1">رهيب</span>
+                        </label>
+          
+                        <label for="s2" class="rating">
+                          <input type="radio" name="rating" id="s2">
+                          <span class="s2">سيئ</span>
+                        </label>
+          
+                        <label for="s3" class="rating">
+                          <input type="radio" name="rating" id="s3">
+                          <span class="s3">مقبول</span>
+                        </label>
+          
+                        <label for="s4" class="rating">
+                          <input type="radio" name="rating" id="s4">
+                          <span class="s4">جيد</span>
+                        </label>
+          
+                        <label for="s5" class="rating">
+                          <input type="radio" name="rating" id="s5">
+                          <span class="s5">ممتاز</span>
+                        </label>
+                      </div>
+                      <div id="ratingError"></div>
+                    </div>
+                    <div class="form-row form-group">
+                      <div class="col-md-6">
+                        <label for="" class="text-capitalize">الاسم</label>
+                        <input type="text" name="" id="" class="form-control form-control-lg" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="" class="text-capitalize">البريد الالكتروني</label>
+                        <input type="email" name="" id="" class="form-control form-control-lg" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="" class="text-capitalize">التقيم</label>
+                      <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group d-flex justify-content-end">
+                      <button type="submit" class="btn btn-success px-5">إرسال</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="related-products-tab my-5 pt-5 shadow-lg px-3 bg-white">
+                <h3>Related Products</h3>
+              <div class="owl-carousel" data-dir="true" data-xl-items="4" data-margin="30">
+          <div class="fsp-item  m-b-30">
+            <picture>
+              <a href="#"> <img src="assets/img/products/0.jpg" alt="" class="no-owl"> </a>
+            </picture>
+            <div class="fsp-info">
+              <a href="#" class="h4">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت</a>
+              <p class="fsp-price">
+                <span class="d-flex justify-content-between">
+                  <b class="text-danger">10.00$ - 20.00$</b>
+                  <span>
+                    <small><s>9.00$ - 18.00$</s></small>
+                    <span class="badge badge-danger">10%</span>
+                  </span>
+                </span>
+                <strong> الحد الأدنى</strong>: 100
+              </p>
+            </div>
+          </div>
+          <div class="fsp-item  m-b-30">
+            <picture>
+              <a href="#"> <img src="assets/img/products/1.jpg" alt="" class="no-owl"> </a>
+            </picture>
+            <div class="fsp-info">
+              <a href="#" class="h4">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت</a>
+              <p class="fsp-price">
+                <span class="d-flex justify-content-between">
+                  <b class="text-danger">10.00$ - 20.00$</b>
+                  <span>
+                    <small><s>9.00$ - 18.00$</s></small>
+                    <span class="badge badge-danger">10%</span>
+                  </span>
+                </span>
+                <strong> الحد الأدنى</strong>: 100
+              </p>
+            </div>
+          </div>
+          <div class="fsp-item  m-b-30">
+            <picture>
+              <a href="#"> <img src="assets/img/products/2.jpg" alt="" class="no-owl"> </a>
+            </picture>
+            <div class="fsp-info">
+              <a href="#" class="h4">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت</a>
+              <p class="fsp-price">
+                <span class="d-flex justify-content-between">
+                  <b class="text-danger">10.00$ - 20.00$</b>
+                  <span>
+                    <small><s>9.00$ - 18.00$</s></small>
+                    <span class="badge badge-danger">10%</span>
+                  </span>
+                </span>
+                <strong> الحد الأدنى</strong>: 100
+              </p>
+            </div>
+          </div>
+          <div class="fsp-item  m-b-30">
+            <picture>
+              <a href="#"> <img src="assets/img/products/3.jpg" alt="" class="no-owl"> </a>
+            </picture>
+            <div class="fsp-info">
+              <a href="#" class="h4">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت</a>
+              <p class="fsp-price">
+                <span class="d-flex justify-content-between">
+                  <b class="text-danger">10.00$ - 20.00$</b>
+                  <span>
+                    <small><s>9.00$ - 18.00$</s></small>
+                    <span class="badge badge-danger">10%</span>
+                  </span>
+                </span>
+                <strong> الحد الأدنى</strong>: 100
+              </p>
+            </div>
+          </div>
+          <div class="fsp-item  m-b-30">
+            <picture>
+              <a href="#"> <img src="assets/img/products/4.jpg" alt="" class="no-owl"> </a>
+            </picture>
+            <div class="fsp-info">
+              <a href="#" class="h4">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت</a>
+              <p class="fsp-price">
+                <span class="d-flex justify-content-between">
+                  <b class="text-danger">10.00$ - 20.00$</b>
+                  <span>
+                    <small><s>9.00$ - 18.00$</s></small>
+                    <span class="badge badge-danger">10%</span>
+                  </span>
+                </span>
+                <strong> الحد الأدنى</strong>: 100
+              </p>
+            </div>
+          </div>
+          <div class="fsp-item  m-b-30">
+            <picture>
+              <a href="#"> <img src="assets/img/products/5.jpg" alt="" class="no-owl"> </a>
+            </picture>
+            <div class="fsp-info">
+              <a href="#" class="h4">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت</a>
+              <p class="fsp-price">
+                <span class="d-flex justify-content-between">
+                  <b class="text-danger">10.00$ - 20.00$</b>
+                  <span>
+                    <small><s>9.00$ - 18.00$</s></small>
+                    <span class="badge badge-danger">10%</span>
+                  </span>
+                </span>
+                <strong> الحد الأدنى</strong>: 100
+              </p>
+            </div>
+          </div>
+          <div class="fsp-item  m-b-30">
+            <picture>
+              <a href="#"> <img src="assets/img/products/6.jpg" alt="" class="no-owl"> </a>
+            </picture>
+            <div class="fsp-info">
+              <a href="#" class="h4">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت</a>
+              <p class="fsp-price">
+                <span class="d-flex justify-content-between">
+                  <b class="text-danger">10.00$ - 20.00$</b>
+                  <span>
+                    <small><s>9.00$ - 18.00$</s></small>
+                    <span class="badge badge-danger">10%</span>
+                  </span>
+                </span>
+                <strong> الحد الأدنى</strong>: 100
+              </p>
+            </div>
+          </div>
+          <div class="fsp-item  m-b-30">
+            <picture>
+              <a href="#"> <img src="assets/img/products/7.jpg" alt="" class="no-owl"> </a>
+            </picture>
+            <div class="fsp-info">
+              <a href="#" class="h4">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت</a>
+              <p class="fsp-price">
+                <span class="d-flex justify-content-between">
+                  <b class="text-danger">10.00$ - 20.00$</b>
+                  <span>
+                    <small><s>9.00$ - 18.00$</s></small>
+                    <span class="badge badge-danger">10%</span>
+                  </span>
+                </span>
+                <strong> الحد الأدنى</strong>: 100
+              </p>
+            </div>
+          </div>
+          <div class="fsp-item  m-b-30">
+            <picture>
+              <a href="#"> <img src="assets/img/products/8.jpg" alt="" class="no-owl"> </a>
+            </picture>
+            <div class="fsp-info">
+              <a href="#" class="h4">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت</a>
+              <p class="fsp-price">
+                <span class="d-flex justify-content-between">
+                  <b class="text-danger">10.00$ - 20.00$</b>
+                  <span>
+                    <small><s>9.00$ - 18.00$</s></small>
+                    <span class="badge badge-danger">10%</span>
+                  </span>
+                </span>
+                <strong> الحد الأدنى</strong>: 100
+              </p>
+            </div>
+          </div>
+          <div class="fsp-item  m-b-30">
+            <picture>
+              <a href="#"> <img src="assets/img/products/9.jpg" alt="" class="no-owl"> </a>
+            </picture>
+            <div class="fsp-info">
+              <a href="#" class="h4">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت</a>
+              <p class="fsp-price">
+                <span class="d-flex justify-content-between">
+                  <b class="text-danger">10.00$ - 20.00$</b>
+                  <span>
+                    <small><s>9.00$ - 18.00$</s></small>
+                    <span class="badge badge-danger">10%</span>
+                  </span>
+                </span>
+                <strong> الحد الأدنى</strong>: 100
+              </p>
+            </div>
+          </div>
+          <div class="fsp-item  m-b-30">
+            <picture>
+              <a href="#"> <img src="assets/img/products/10.jpg" alt="" class="no-owl"> </a>
+            </picture>
+            <div class="fsp-info">
+              <a href="#" class="h4">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت</a>
+              <p class="fsp-price">
+                <span class="d-flex justify-content-between">
+                  <b class="text-danger">10.00$ - 20.00$</b>
+                  <span>
+                    <small><s>9.00$ - 18.00$</s></small>
+                    <span class="badge badge-danger">10%</span>
+                  </span>
+                </span>
+                <strong> الحد الأدنى</strong>: 100
+              </p>
+            </div>
+          </div>
+          <div class="fsp-item  m-b-30">
+            <picture>
+              <a href="#"> <img src="assets/img/products/11.jpg" alt="" class="no-owl"> </a>
+            </picture>
+            <div class="fsp-info">
+              <a href="#" class="h4">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت</a>
+              <p class="fsp-price">
+                <span class="d-flex justify-content-between">
+                  <b class="text-danger">10.00$ - 20.00$</b>
+                  <span>
+                    <small><s>9.00$ - 18.00$</s></small>
+                    <span class="badge badge-danger">10%</span>
+                  </span>
+                </span>
+                <strong> الحد الأدنى</strong>: 100
+              </p>
+            </div>
+          </div>
+          <div class="fsp-item  m-b-30">
+            <picture>
+              <a href="#"> <img src="assets/img/products/12.jpg" alt="" class="no-owl"> </a>
+            </picture>
+            <div class="fsp-info">
+              <a href="#" class="h4">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت</a>
+              <p class="fsp-price">
+                <span class="d-flex justify-content-between">
+                  <b class="text-danger">10.00$ - 20.00$</b>
+                  <span>
+                    <small><s>9.00$ - 18.00$</s></small>
+                    <span class="badge badge-danger">10%</span>
+                  </span>
+                </span>
+                <strong> الحد الأدنى</strong>: 100
+              </p>
+            </div>
+          </div>
+          <div class="fsp-item  m-b-30">
+            <picture>
+              <a href="#"> <img src="assets/img/products/13.jpg" alt="" class="no-owl"> </a>
+            </picture>
+            <div class="fsp-info">
+              <a href="#" class="h4">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت</a>
+              <p class="fsp-price">
+                <span class="d-flex justify-content-between">
+                  <b class="text-danger">10.00$ - 20.00$</b>
+                  <span>
+                    <small><s>9.00$ - 18.00$</s></small>
+                    <span class="badge badge-danger">10%</span>
+                  </span>
+                </span>
+                <strong> الحد الأدنى</strong>: 100
+              </p>
+            </div>
+          </div>
+          <div class="fsp-item  m-b-30">
+            <picture>
+              <a href="#"> <img src="assets/img/products/14.jpg" alt="" class="no-owl"> </a>
+            </picture>
+            <div class="fsp-info">
+              <a href="#" class="h4">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت</a>
+              <p class="fsp-price">
+                <span class="d-flex justify-content-between">
+                  <b class="text-danger">10.00$ - 20.00$</b>
+                  <span>
+                    <small><s>9.00$ - 18.00$</s></small>
+                    <span class="badge badge-danger">10%</span>
+                  </span>
+                </span>
+                <strong> الحد الأدنى</strong>: 100
+              </p>
+            </div>
+          </div>
+          
+            </div>
+          </section>
+        </div>
+        <div class="col-12 col-md-5 col-lg-4 col-xl-3">
+          <div class="bg-white shadow-lg py-5 px-3 mt-3">
+            <h3>gowawe</h3>
+          
+            <picture class="text-center d-block my-4">
+              <img src="./assets/img/logo.png" class="log" alt="" width="170">
+            </picture>
+          
+            <ul class="company-info list-unstyled">
+              <li>
+                <i class="fa fa-envelope"></i>
+                <a href="#" dir="ltr">info@gowawe.com</a>
+              </li>
+              <li>
+                <i class="fa fa-phone"></i>
+                <a href="#" dir="ltr">905386119393</a>
+              </li>
+              <li>
+                <i class="fa fa-map-marker"></i>
+                <address>
+                  Mersin, Icel, Turkey
+                </address>
+              </li>
+            </ul>
+          
+            <div class="table-responsive company-table">
+              <table class="table fixed-layout table-borderless">
+                <tr>
+                  <td>Accepted Payment Currency by you :</td>
+                  <td>dollar</td>
+                </tr>
+                <tr>
+                  <td>Accepted Delivery Terms by you :</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Payment Method you accept :</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Average Lead Time / Day(s) :</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Nearest Port :</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Accept Escrow Services :</td>
+                  <td>2</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          
+          
+          
+          
+          
+          <div class="bg-white shadow-lg py-5 px-3 my-5">
+          
+            <p class="lead">
+              Leave a reply Your email address will not be published.
+            </p>
+            <form action="" class="">
+              <div class="form-group">
+                <label>Name:</label>
+                <input type="text" required name="name" class="form-control form-control-lg">
+              </div>
+          
+              <div class="form-group">
+                <label>Mobile No:</label>
+                <input type="tel" value="" required name="mobile" class="form-control form-control-lg">
+              </div>
+          
+              <div class="form-group">
+                <label>Email:</label>
+                <input type="email" value="" required name="email" class="form-control form-control-lg">
+              </div>
+              <div class="form-group">
+                <label>Subject:</label>
+                <input type="text" value="" required name="subject" class="form-control form-control-lg">
+              </div>
+          
+              <div class="form-group">
+                <label>Message:</label>
+                <textarea   name="message" class="form-control "></textarea>
+              </div>
+          
+              <div class="form-group d-flex justify-content-end">
+          
+                <button class="btn btn-outline-success p-x-40 btn-lg" type="submit">send</button>
+              </div>
+          
+          
+            </form>
+          </div>        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer pt-50">
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-4 col-lg-3  col-xl-2">
+            <div class="figure-wrapper">
+                <figure >
+                  <img src="assets/img/logo.png" alt="" class="f-logo" >
+                </figure>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-9 col-xl-10">
+            <div class="row justify-content-around">
+                  <div class="col-md-6 col-lg-3">
+                    <h5>معلومات</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">الخدمات</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">الإعلان معنا</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">الهوية التجارية</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <h5>خدمة الزبائن</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">قصص النجاح</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">قسم الصحافة</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">وظائف ومهن</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">ردود الفعل</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">مساعدة</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">دفع امن</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">خدمات التفتيش</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">مركز التعلم</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">أنا مستخدم جديد</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <h5>شراء التجارة  </h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">إرسال متطلبات الشراء</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">عرض ما بعد البيع</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">إنشاء موقع الويب الخاص بك مجانا</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">عرض العملاء المتوقعين</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">كيف اشترى</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">حد الائتمان الإلكتروني</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">إرسال نزاع</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">أنا المشتري</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <h5>شراء التجارة  </h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">إرسال متطلبات الشراء</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">عرض ما بعد البيع</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">إنشاء موقع الويب الخاص بك مجانا</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">عرض العملاء المتوقعين</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">كيف اشترى</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">حد الائتمان الإلكتروني</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">إرسال نزاع</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">أنا المشتري</a>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+          </div>
+      </div>
+  
+      <div class="bottom-footer">
+          <nav class="nav">
+            <a class="nav-link" href="#" title="twitter">
+               <i class="fa fa-twitter"></i>
+            </a>
+            <a class="nav-link" href="#" title="facebook">
+               <i class="fa fa-facebook"></i>
+            </a>
+            <a class="nav-link" href="#" title="instagram">
+               <i class="fa fa-instagram"></i>
+            </a>
+          </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/validation.min.js"></script>
+
+  <script src="assets/js/messages.ar.min.js"></script>
+  <script src="assets/js/carousel.min.js"></script>
+  <script src="assets/js/magnific.min.js"></script>
+  <script src="assets/js/product.min.js"></script>
+  <script src="assets/js/scripts.min.js"></script>
+
+</body>
+
+</html>

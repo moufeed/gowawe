@@ -1,0 +1,90 @@
+<div class="feedback-tab-content">
+  <div class="row rating-sys m-y-50">
+    <div class="col-12 col-md-12 col-xl-4">
+      <div class="rating-average">
+        <p class="av-num">3.5</p>
+        <span class="av-star">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </span>
+        <p class="h4">{{local.average_rating}}</p>
+      </div>
+    </div>
+    <div class="col-7   col-md-8 col-xl-5">
+      <div class="rating-progress">
+        <div><span style="width: 80%;"></span></div>
+        <div><span style="width: 65%;"></span></div>
+        <div><span style="width: 45%;"></span></div>
+        <div><span style="width: 20%;"></span></div>
+        <div><span style="width: 10%;"></span></div>
+      </div>
+    </div>
+    <div class="col-5    col-md-4 col-xl-3">
+      <div class="rating-percentage">
+        <span><i class="emo-laugh"></i> <strong>80%</strong></span>
+        <span><i class="emo-happy"></i> <strong>60%</strong></span>
+        <span><i class="emo-displeased"></i> <strong>45%</strong></span>
+        <span><i class="emo-unhappy"></i> <strong>36%</strong></span>
+        <span><i class="emo-angry "></i> <strong>10%</strong></span>
+      </div>
+    </div>
+  </div>
+
+
+    <h2  class="reviews-title mb-4">
+    Reviews <small>(30)</small>
+    </h2>
+  <div class="row">
+    {{#each s.feedbacks}}
+    <div class="col-md-6 col-lg-6">
+      <div class="d-flex fk-card">
+        <span class="fk-icon">
+          {{#is s '1' }}
+          <i class="emo-angry" data-content="{{../local.terrible}}"></i>
+          {{/is}}
+          {{#is s '2' }}
+          <i class="emo-unhappy" data-content="{{../local.bad}}"></i>
+          {{/is}}
+          {{#is s '3' }}
+          <i class="emo-displeased" data-content="{{../local.okay}}"></i>
+          {{/is}}
+          {{#is s '4' }}
+          <i class="emo-happy" data-content="{{../local.good}}"></i>
+          {{/is}}
+          {{#is s '5' }}
+          <i class="emo-laugh" data-content="{{../local.great}}"></i>
+          {{/is}}
+        </span>
+        <div class="fk-content">
+          <span class="d-block h5">{{n}}</span>
+          <small class="d-block fk-d">{{d}}</small>
+          <p class="fx-txt">{{f}}</p>
+          <div class="d-flex justify-content-end">
+            <button type="button" data-toggle="modal" data-target="#FeedbackModal"
+              class="btn btn-link btn-feed">{{../local.continue_reading}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+
+
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="FeedbackModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+      <button type="button" class="btn btn-dark btn-close-video" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{page_title}}</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style-{{lang}}.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/lib.min.js"></script>
+</head>
+
+<body>
+
+  {{>_header}}
+  <section class="product-page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb" class="container-fluid">
+            <ol class="breadcrumb bg-light my-4">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Library</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="col-12 col-md-7 col-lg-8 col-xl-9">
+          {{> product/_details}}
+
+
+          {{> product/_related_products}}
+
+        </div>
+        <div class="col-12 col-md-5 col-lg-4 col-xl-3">
+          {{>product/_sidebar}}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{>_footer}}
+  <script src="assets/js/validation.min.js"></script>
+
+  {{#is dir 'rtl'}}
+  <script src="assets/js/messages.ar.min.js"></script>
+  {{/is}}
+  <script src="assets/js/carousel.min.js"></script>
+  <script src="assets/js/magnific.min.js"></script>
+  <script src="assets/js/product.min.js"></script>
+  <script src="assets/js/scripts.min.js"></script>
+
+</body>
+
+</html>
