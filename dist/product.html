@@ -151,7 +151,7 @@
           </nav>
         </div>
         <div class="col-12 col-md-7 col-lg-8 col-xl-9">
-          <section class="product-details bg-white shadow-lg p3 p-lg-5 mt-3 mb-5">
+          <section class="product-details bg-white shadow-lg p-3   p-lg-5 mt-3 mb-5">
             <div class="row">
               <div class="col-12 col-lg-5 col-xl-6">
                 <div class="product-carousel owl-carousel se-gallery" data-rtl="false" data-singleitem="true"
@@ -181,7 +181,7 @@
               <div class="col-12 col-lg-7 col-xl-6">
                 <div class="product-description">
                   <p class="mb-0"><a href="" class="product-category">Women</a></p>
-                  <a class="product-title"><a href="#">Lorem, ipsum dolor. ipsum dolor sit amet consectetur.</a>
+                  <a class="product-title" href="#">Lorem, ipsum dolor. ipsum dolor sit amet consectetur.</a>
                     <span class="d-flex">
                       <div class="product-rate">
                         <i class="fa fa-star"></i>
@@ -212,8 +212,8 @@
                       </ul>
           
                       <div class="product-price">
-                        <del class="price-old"><b>$</b>62.00</del>
-                        <span> <b>$</b>39.00</span>
+                        <del class="old-price"><b>$</b><ins>62.00</ins></del>
+                        <span class="current-price"> <b>$</b><ins>39.00</ins></span>
                       </div>
                     </span>
           
@@ -231,42 +231,23 @@
                 </div>
           
           
-                <div class="product-options">
-                  <form action="">
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <h6>Select the size</h6>
-                        <ul class="product-size">
-                          <li>
-                            <label>
-                              <input type="radio" value="xs" name="product-size"><span>xs</span>
-                            </label>
-                          </li>
-                          <li>
-                            <label>
-                              <input type="radio" value="s" name="product-size"><span>s</span>
-                            </label>
-                          </li>
-                          <li>
-                            <label>
-                              <input type="radio" value="m" name="product-size"><span>m</span>
-                            </label>
-                          </li>
-                          <li>
-                            <label>
-                              <input type="radio" value="l" name="product-size"><span>l</span>
-                            </label>
-                          </li>
-                          <li>
-                            <label>
-                              <input type="radio" value="xl" name="product-size"><span>xl</span>
-                            </label>
-                          </li>
-                        </ul>
+                <div class="product-options pt-3 mt-4">
+                  <form action="" class="">
+                    <div class="form-row ">
+                      <div class="col-lg-6 form-group">
+                        <label for="">Select the size</label>
+                        <select name="" class="form-control form-control-lg select" id="">
+                          <option value="xs">xs</option>
+                          <option value="">s</option>
+                          <option value="">m</option>
+                          <option value="">l</option>
+                          <option value="">xl</option>
+                        </select>
+          
                       </div>
-                      <div class="col-lg-6">
-                        <h6>select color</h6>
-                        <select class="form-control">
+                      <div class="col-lg-6 form-group">
+                        <label for="">Select color</label>
+                        <select class="form-control form-control-lg select">
                           <option value="">Select color…</option>
                           <option value="">White</option>
                           <option value="" selected="selected">Green</option>
@@ -276,19 +257,17 @@
                         </select>
                       </div>
           
-                      <div class="col-lg-6">
-                        <h6>Select quantity</h6>
-                        <div class="cart-product-quantity">
-                          <div class="quantity m-l-5">
-                            <input type="button" class="minus" value="-">
-                            <input type="text" class="qty" value="1">
-                            <input type="button" class="plus" value="+">
-                          </div>
+                      <div class="form-group col-lg-6">
+                        <label for="">Select quantity</label>
+                        <div class="product-quantity m-l-5 d-flex">
+                          <input type="button" class="minus btn btn-lg" value="-" data-price="39" data-oldprice="62">
+                          <input type="number" class="qty form-control form-control-lg" value="1"   data-instock="60" data-price="39" data-oldprice="62">
+                          <input type="button" class="plus btn btn-lg" value="+" data-instock="60" data-price="39" data-oldprice="62">
                         </div>
                       </div>
-                      <div class="col-lg-6">
-                        <h6>Add to Cart</h6>
-                        <a class="btn btn-success" href="#"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                      <div class="form-group col-lg-6 mt-4">
+                        <a class="btn btn-success rounded-0 btn-lg p-x-25" href="#"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                        <a class="btn btn-outline-danger rounded-0 btn-lg" href="#"><i class="fa fa-heart"></i></a>
                       </div>
                     </div>
                   </form>
@@ -303,7 +282,7 @@
           
           
           
-          <section class="product-tabs bg-white shadow-lg p3 p-lg-5 my-5">
+          <section class="product-tabs bg-white shadow-lg p-3 p-lg-5 my-5">
             <ul class="nav nav-tabs nav-line" id="productTab" role="tablist">
               <li class="nav-item">
                 <a class="nav-link active" id="Description-tab" data-toggle="tab" href="#Description" role="tab"
@@ -1449,7 +1428,7 @@
             <p class="lead">
               Leave a reply Your email address will not be published.
             </p>
-            <form action="" class="">
+            <form action="" class=""  id="fSupplier">
               <div class="form-group">
                 <label>Name:</label>
                 <input type="text" required name="name" class="form-control form-control-lg">

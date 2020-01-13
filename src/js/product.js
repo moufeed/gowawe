@@ -27,7 +27,7 @@ $("[data-video]").on("click", function() {
 });
 
 $(() => {
-  var $form = $("#feedForm");
+  var $form = $("#feedForm ");
   var validator = $form.validate({
     errorClass: "invalid-feedback",
     validClass: "valid-feedback",
@@ -58,6 +58,18 @@ $(() => {
     }
   });
 
+  $("#fSupplier").validate({
+    errorClass: "invalid-feedback",
+    validClass: "valid-feedback",
+    ignore: ".ignore",
+    highlight: function(element) {
+      $(element).addClass("is-invalid");
+    },
+    unhighlight: function(element) {
+      $(element).removeClass("is-invalid");
+    }
+  });
+
   $(".fk-content").each((index, item) => {
     let $item = $(item);
     if ($item.find(".fx-txt").text().length < 300) {
@@ -79,4 +91,57 @@ $("#FeedbackModal").on("show.bs.modal", function(e) {
 $("#FeedbackModal").on("hidden.bs.modal", function(e) {
   var modal = $(this);
   modal.find(".modal-body").html("");
+});
+
+function changeOldPrice(qty, price) {
+  $(".old-price ins").text(qty * price);
+}
+function changePrice(qty, price) {
+  $(".current-price ins").text(qty * price);
+}
+
+function GetOptions(event) {
+  let available = $(event.target).data("instock");
+  let price = $(event.target).data("price");
+  let oldPrice = $(event.target).data("oldprice");
+  return { available, price, oldPrice };
+}
+
+function ChangePrices(qty, options) {
+  if (options.price !== undefined) {
+    changePrice(qty, options.price);
+  }
+  if (options.oldPrice !== undefined) {
+    changeOldPrice(qty, options.oldPrice);
+  }
+}
+
+function changeQTY(event, increases) {
+  let qty = 1;
+  let val = parseInt($(".product-quantity .qty").val()) | 0;
+  let options = GetOptions(event);
+  if (increases) {
+    let max = options.available !== undefined ? options.available : 500;
+    qty = val < max ? ++val : max;
+    $(".product-quantity .qty").val(qty);
+  } else {
+    qty = val > 1 ? --val : val;
+    $(".product-quantity .qty").val(qty);
+  }
+  ChangePrices(qty, options);
+}
+
+$(".product-quantity .minus").on("click", event => changeQTY(event, false));
+$(".product-quantity .plus").on("click", event => changeQTY(event, true));
+$(".product-quantity .qty").on("change", function(event) {
+  let options = GetOptions(event);
+  let qty = parseInt($(this).val());
+  if (qty >= 1) {
+    let max = options.available !== undefined ? options.available : 500;
+    qty = qty < max ? qty : max;
+    $(this).val(qty);
+    ChangePrices(qty, options);
+  } else {
+    $(this).val(1);
+  }
 });

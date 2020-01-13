@@ -1,29 +1,136 @@
-
-
-.product-carousel{
-  .p-item{
-    height: 500px ;
+.product-carousel {
+  .p-item {
+    height: 500px;
     overflow: hidden;
     position: relative;
     width: 100%;
     background: #f6f6f6;
-    img{
+    img {
       height: 100%;
       width: auto;
     }
   }
-  .owl-dots{
+  .owl-dots {
     margin-top: 15px;
+  }
+}
+
+.product-description {
+  color: #484848;
+  .product-category {
+    color: #999;
+  }
+  .product-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: $dark;
+    display: inline-block;
+    margin: 10px 0;
+    letter-spacing: 1px;
+  }
+
+  .product-rate {
+    margin-bottom: 10px;
+    margin-#{right}: 10px;
+    color: #ffc300;
+  }
+  .product-reviews {
+    a {
+      color: $red;
+      display: inline-block;
+      margin: 0 5px;
+    }
+  }
+
+  .product-specifications {
+    strong {
+      display: inline-block;
+      margin-top: 5px;
+      margin-#{$right}: 5px;
+    }
+  }
+  .product-price {
+    text-align: center;
+    del,
+    span {
+      display: block;
+    }
+    .old-price {
+      color: $red;
+      font-size: 16px;
+    }
+    .current-price {
+      font-size: 22px;
+      font-weight: bold;
+    }
+  }
+  .product-brief {
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    color: #666;
+    line-height: 1.8;
+  }
+  .product-meta {
+    margin-top: 15px;
+    color: $dark;
+    font-size: 14px;
+    a {
+      display: inline-block;
+      color: #000;
+      text-transform: capitalize;
+      margin: 0 3px;
+    }
+  }
+}
+.product-options {
+  border-top: 1px solid #eee;
+}
+
+.product-quantity {
+  .btn {
+    border-radius: 0;
+    border: 1px solid #ced4da;
+  }
+  .qty {
+     border-radius: 0;
+    appearance: textfield !important;
+    max-width: 150px;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}
+
+.products-gallery-tab {
+  .fsp-item {
+    padding: 0;
+    border: 3px solid #fff;
+    border-radius: 0;
   }
 }
 
 
 
 
-.products-gallery-tab{
-  .fsp-item{
-    padding: 0;
-    border: 3px solid #fff;
-    border-radius: 0;
+
+
+@include media-breakpoint-down(sm){
+  .product-carousel {
+    .p-item{
+      height: auto;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .product-quantity{
+    .form-control{
+      margin-bottom: 0;
+    }
   }
 }
