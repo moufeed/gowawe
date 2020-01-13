@@ -16,6 +16,11 @@
 
 <body>
 
+
+
+
+
+
   <header class="main-header">
   <div class="container-fluid">
     <div class="row main-header">
@@ -145,15 +150,15 @@
           <nav aria-label="breadcrumb" class="container-fluid">
             <ol class="breadcrumb bg-light my-4">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="#">Library</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Data</li>
+              <li class="breadcrumb-item"><a href="#">library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">data</li>
             </ol>
           </nav>
         </div>
-        <div class="col-12 col-md-7 col-lg-8 col-xl-9">
+        <div class="col-12 col-lg-8 col-xl-9">
           <section class="product-details bg-white shadow-lg p-3   p-lg-5 mt-3 mb-5">
             <div class="row">
-              <div class="col-12 col-lg-5 col-xl-6">
+              <div class="col-12  col-xl-6">
                 <div class="product-carousel owl-carousel se-gallery" data-rtl="true" data-singleitem="true"
                   data-dots="true">
                   <a href="assets/img/products/0.jpg"
@@ -178,11 +183,11 @@
                   </a>
                 </div>
               </div>
-              <div class="col-12 col-lg-7 col-xl-6">
+              <div class="col-12 col-xl-6">
                 <div class="product-description">
                   <p class="mb-0"><a href="" class="product-category">Women</a></p>
                   <a class="product-title" href="#">Lorem, ipsum dolor. ipsum dolor sit amet consectetur.</a>
-                    <span class="d-flex">
+                    <span class="d-flex products-feedback-info">
                       <div class="product-rate">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -195,7 +200,7 @@
                         <a   data-toggle="modal" href="#WriteFeedbackModal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Write a review</a>
                       </span>
                     </span>
-                    <span class="d-flex justify-content-between">
+                    <span class="d-flex justify-content-between options-price">
                       <ul class="product-specifications list-unstyled">
                         <li>
                           <strong>Availability</strong>
@@ -234,7 +239,7 @@
                 <div class="product-options pt-3 mt-4">
                   <form action="" class="">
                     <div class="form-row ">
-                      <div class="col-lg-6 form-group">
+                      <div class="col-md-6 form-group">
                         <label for="">Select the size</label>
                         <select name="" class="form-control form-control-lg select" id="">
                           <option value="xs">xs</option>
@@ -245,7 +250,7 @@
                         </select>
           
                       </div>
-                      <div class="col-lg-6 form-group">
+                      <div class="col-md-6 form-group">
                         <label for="">Select color</label>
                         <select class="form-control form-control-lg select">
                           <option value="">Select color…</option>
@@ -257,7 +262,7 @@
                         </select>
                       </div>
           
-                      <div class="form-group col-lg-6">
+                      <div class="form-group col-md-6">
                         <label for="">Select quantity</label>
                         <div class="product-quantity m-l-5 d-flex">
                           <input type="button" class="minus btn btn-lg" value="-" data-price="39" data-oldprice="62">
@@ -265,8 +270,8 @@
                           <input type="button" class="plus btn btn-lg" value="+" data-instock="60" data-price="39" data-oldprice="62">
                         </div>
                       </div>
-                      <div class="form-group col-lg-6 mt-4">
-                        <a class="btn btn-success rounded-0 btn-lg p-x-25" href="#"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                      <div class="form-group col-md-6 mt-4 pt-2">
+                        <a class="btn btn-success rounded-0 btn-lg p-x-25 btn-toCart" href="#"><i class="fa fa-shopping-cart"></i> Add to cart</a>
                         <a class="btn btn-outline-danger rounded-0 btn-lg" href="#"><i class="fa fa-heart"></i></a>
                       </div>
                     </div>
@@ -303,7 +308,7 @@
               </li>
             </ul>
             <div class="tab-content" id="product-TabContent">
-              <div class="tab-pane fade show active" id="Description" role="tabpanel" aria-labelledby="Description-tab">
+              <div class="tab-pane fade show active product-description" id="Description" role="tabpanel" aria-labelledby="Description-tab">
                 <section class="py-5 product-description-tab">
                   <h2>
                     Product description
@@ -614,7 +619,7 @@
                   <div class="container-fluid">
                     <div class="row se-gallery">
                 
-                      <div class="col-12 col-md-6 col-lg-4 ">
+                      <div class="col-12 col-md-6 col-xl-4 ">
                         <div class="fsp-item   bg-white m-b-30">
                           <picture data-video="assets/videos/oceans.mp4" data-poster="assets/img/product-0.jpg">
                             <img src="assets/img/products/0.jpg" alt="">
@@ -623,7 +628,7 @@
                         </div>
                       </div>
                 
-                      <div class="col-12 col-md-6 col-lg-4 ">
+                      <div class="col-12 col-md-6 col-xl-4 ">
                         <div class="fsp-item   bg-white m-b-30">
                           <a href="assets/img/products/1.jpg">
                             <picture>
@@ -634,7 +639,7 @@
                         </div>
                       </div>
                 
-                      <div class="col-12 col-md-6 col-lg-4 ">
+                      <div class="col-12 col-md-6 col-xl-4 ">
                         <div class="fsp-item   bg-white m-b-30">
                           <picture data-video="assets/videos/oceans.mp4" data-poster="assets/img/product-2.jpg">
                             <img src="assets/img/products/2.jpg" alt="">
@@ -643,7 +648,7 @@
                         </div>
                       </div>
                 
-                      <div class="col-12 col-md-6 col-lg-4 ">
+                      <div class="col-12 col-md-6 col-xl-4 ">
                         <div class="fsp-item   bg-white m-b-30">
                           <a href="assets/img/products/3.jpg">
                             <picture>
@@ -654,7 +659,7 @@
                         </div>
                       </div>
                 
-                      <div class="col-12 col-md-6 col-lg-4 ">
+                      <div class="col-12 col-md-6 col-xl-4 ">
                         <div class="fsp-item   bg-white m-b-30">
                           <picture data-video="assets/videos/oceans.mp4" data-poster="assets/img/product-4.jpg">
                             <img src="assets/img/products/4.jpg" alt="">
@@ -663,7 +668,7 @@
                         </div>
                       </div>
                 
-                      <div class="col-12 col-md-6 col-lg-4 ">
+                      <div class="col-12 col-md-6 col-xl-4 ">
                         <div class="fsp-item   bg-white m-b-30">
                           <a href="assets/img/products/5.jpg">
                             <picture>
@@ -674,7 +679,7 @@
                         </div>
                       </div>
                 
-                      <div class="col-12 col-md-6 col-lg-4 ">
+                      <div class="col-12 col-md-6 col-xl-4 ">
                         <div class="fsp-item   bg-white m-b-30">
                           <picture data-video="assets/videos/oceans.mp4" data-poster="assets/img/product-6.jpg">
                             <img src="assets/img/products/6.jpg" alt="">
@@ -683,7 +688,7 @@
                         </div>
                       </div>
                 
-                      <div class="col-12 col-md-6 col-lg-4 ">
+                      <div class="col-12 col-md-6 col-xl-4 ">
                         <div class="fsp-item   bg-white m-b-30">
                           <a href="assets/img/products/7.jpg">
                             <picture>
@@ -694,7 +699,7 @@
                         </div>
                       </div>
                 
-                      <div class="col-12 col-md-6 col-lg-4 ">
+                      <div class="col-12 col-md-6 col-xl-4 ">
                         <div class="fsp-item   bg-white m-b-30">
                           <picture data-video="assets/videos/oceans.mp4" data-poster="assets/img/product-8.jpg">
                             <img src="assets/img/products/8.jpg" alt="">
@@ -703,7 +708,7 @@
                         </div>
                       </div>
                 
-                      <div class="col-12 col-md-6 col-lg-4 ">
+                      <div class="col-12 col-md-6 col-xl-4 ">
                         <div class="fsp-item   bg-white m-b-30">
                           <a href="assets/img/products/9.jpg">
                             <picture>
@@ -714,7 +719,7 @@
                         </div>
                       </div>
                 
-                      <div class="col-12 col-md-6 col-lg-4 ">
+                      <div class="col-12 col-md-6 col-xl-4 ">
                         <div class="fsp-item   bg-white m-b-30">
                           <picture data-video="assets/videos/oceans.mp4" data-poster="assets/img/product-10.jpg">
                             <img src="assets/img/products/10.jpg" alt="">
@@ -723,7 +728,7 @@
                         </div>
                       </div>
                 
-                      <div class="col-12 col-md-6 col-lg-4 ">
+                      <div class="col-12 col-md-6 col-xl-4 ">
                         <div class="fsp-item   bg-white m-b-30">
                           <a href="assets/img/products/11.jpg">
                             <picture>
@@ -734,7 +739,7 @@
                         </div>
                       </div>
                 
-                      <div class="col-12 col-md-6 col-lg-4 ">
+                      <div class="col-12 col-md-6 col-xl-4 ">
                         <div class="fsp-item   bg-white m-b-30">
                           <picture data-video="assets/videos/oceans.mp4" data-poster="assets/img/product-12.jpg">
                             <img src="assets/img/products/12.jpg" alt="">
@@ -743,7 +748,7 @@
                         </div>
                       </div>
                 
-                      <div class="col-12 col-md-6 col-lg-4 ">
+                      <div class="col-12 col-md-6 col-xl-4 ">
                         <div class="fsp-item   bg-white m-b-30">
                           <a href="assets/img/products/13.jpg">
                             <picture>
@@ -754,7 +759,7 @@
                         </div>
                       </div>
                 
-                      <div class="col-12 col-md-6 col-lg-4 ">
+                      <div class="col-12 col-md-6 col-xl-4 ">
                         <div class="fsp-item   bg-white m-b-30">
                           <picture data-video="assets/videos/oceans.mp4" data-poster="assets/img/product-14.jpg">
                             <img src="assets/img/products/14.jpg" alt="">
@@ -1009,7 +1014,7 @@
 
           <section class="related-products-tab my-5 pt-5 shadow-lg px-3 bg-white">
                 <h3>Related Products</h3>
-              <div class="owl-carousel" data-dir="true" data-xl-items="4" data-margin="30">
+              <div class="owl-carousel" data-dir="true" data-md-items="2" data-xl-items="4" data-margin="30">
           <div class="fsp-item  m-b-30">
             <picture>
               <a href="#"> <img src="assets/img/products/0.jpg" alt="" class="no-owl"> </a>
@@ -1284,13 +1289,13 @@
             </div>
           </section>
         </div>
-        <div class="col-12 col-md-5 col-lg-4 col-xl-3">
-          <div class="bg-white shadow-lg py-5 px-3 mt-3">
-            <h3>gowawe</h3>
+        <div class="col-12   col-lg-4 col-xl-3 product-sidebar">
+          <div class="bg-white shadow-lg pt-3 pb-5 px-3 mt-3 supplier-card col-md-6  col-lg-12">
           
             <picture class="text-center d-block my-4">
               <img src="./assets/img/logo.png" class="log" alt="" width="170">
             </picture>
+            <h3>gowawe</h3>
           
             <ul class="company-info list-unstyled">
               <li>
@@ -1309,7 +1314,7 @@
               </li>
             </ul>
           
-            <div class="table-responsive company-table">
+            <div class="table-responsive company-table ">
               <table class="table fixed-layout table-borderless">
                 <tr>
                   <td>Accepted Payment Currency by you :</td>
@@ -1343,8 +1348,7 @@
           
           
           
-          <div class="bg-white shadow-lg py-5 px-3 my-5">
-          
+          <div class="bg-white shadow-lg py-5 px-3  mt-md-3 my-lg-5 col-md-6  col-lg-12 pro-form-supplier">
             <p class="lead">
               Leave a reply Your email address will not be published.
             </p>
@@ -1384,6 +1388,9 @@
       </div>
     </div>
   </section>
+
+
+
   <footer class="main-footer pt-50">
     <div class="container-fluid">
       <div class="row">
@@ -1519,6 +1526,24 @@
       </div>
     </div>
   </footer>
+
+
+<div class="fixed-top w-100 p-4 d-flex justify-content-end" aria-live="polite" aria-atomic="true" >
+    <div class="toast" id="cart-toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="10000">
+      <div class="toast-header">
+         <i class="fa fa-shopping-cart mx-2 text-success"></i>
+        <strong class="mr-auto">Gowawe</strong>
+        <small class="text-muted">just now</small>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="toast-body">
+         product successfully added to your cart
+      </div>
+    </div>
+</div>
+
   <script src="assets/js/validation.min.js"></script>
 
   <script src="assets/js/messages.ar.min.js"></script>

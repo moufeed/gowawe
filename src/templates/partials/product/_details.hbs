@@ -1,6 +1,6 @@
 <section class="product-details bg-white shadow-lg p-3   p-lg-5 mt-3 mb-5">
   <div class="row">
-    <div class="col-12 col-lg-5 col-xl-6">
+    <div class="col-12  col-xl-6">
       <div class="product-carousel owl-carousel se-gallery" data-rtl="{{isRtl dir}}" data-singleitem="true"
         data-dots="true">
         {{#times  5}}
@@ -11,11 +11,11 @@
         {{/times}}
       </div>
     </div>
-    <div class="col-12 col-lg-7 col-xl-6">
+    <div class="col-12 col-xl-6">
       <div class="product-description">
         <p class="mb-0"><a href="" class="product-category">Women</a></p>
         <a class="product-title" href="#">Lorem, ipsum dolor. ipsum dolor sit amet consectetur.</a>
-          <span class="d-flex">
+          <span class="d-flex products-feedback-info">
             <div class="product-rate">
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
@@ -28,7 +28,7 @@
               <a   data-toggle="modal" href="#WriteFeedbackModal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Write a review</a>
             </span>
           </span>
-          <span class="d-flex justify-content-between">
+          <span class="d-flex justify-content-between options-price">
             <ul class="product-specifications list-unstyled">
               <li>
                 <strong>Availability</strong>
@@ -67,7 +67,7 @@
       <div class="product-options pt-3 mt-4">
         <form action="" class="">
           <div class="form-row ">
-            <div class="col-lg-6 form-group">
+            <div class="col-md-6 form-group">
               <label for="">Select the size</label>
               <select name="" class="form-control form-control-lg select" id="">
                 <option value="xs">xs</option>
@@ -78,7 +78,7 @@
               </select>
 
             </div>
-            <div class="col-lg-6 form-group">
+            <div class="col-md-6 form-group">
               <label for="">Select color</label>
               <select class="form-control form-control-lg select">
                 <option value="">Select color…</option>
@@ -90,7 +90,7 @@
               </select>
             </div>
 
-            <div class="form-group col-lg-6">
+            <div class="form-group col-md-6">
               <label for="">Select quantity</label>
               <div class="product-quantity m-l-5 d-flex">
                 <input type="button" class="minus btn btn-lg" value="-" data-price="39" data-oldprice="62">
@@ -98,8 +98,8 @@
                 <input type="button" class="plus btn btn-lg" value="+" data-instock="60" data-price="39" data-oldprice="62">
               </div>
             </div>
-            <div class="form-group col-lg-6 mt-4">
-              <a class="btn btn-success rounded-0 btn-lg p-x-25" href="#"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+            <div class="form-group col-md-6 mt-4 pt-2">
+              <a class="btn btn-success rounded-0 btn-lg p-x-25 btn-toCart" href="#"><i class="fa fa-shopping-cart"></i> Add to cart</a>
               <a class="btn btn-outline-danger rounded-0 btn-lg" href="#"><i class="fa fa-heart"></i></a>
             </div>
           </div>
@@ -136,7 +136,7 @@
     </li>
   </ul>
   <div class="tab-content" id="product-TabContent">
-    <div class="tab-pane fade show active" id="Description" role="tabpanel" aria-labelledby="Description-tab">
+    <div class="tab-pane fade show active product-description" id="Description" role="tabpanel" aria-labelledby="Description-tab">
       {{> product/_descriptions_tab}}
     </div>
     <div class="tab-pane fade " id="Details" role="tabpanel" aria-labelledby="Details-tab">

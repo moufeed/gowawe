@@ -70,6 +70,10 @@ body {
 }
 
 @include if-rtl {
+  .nav {
+    padding-left: auto;
+    padding-right: 0;
+  }
   .was-validated .form-control:invalid,
   .form-control.is-invalid {
     background-position: left calc(0.375em + 0.1875rem) center;
@@ -83,6 +87,8 @@ body {
   background-position: center $right !important;
   background-repeat: no-repeat !important;
 }
+
+
 /*
 //width
 ::-webkit-scrollbar {

@@ -145,3 +145,7 @@ $(".product-quantity .qty").on("change", function(event) {
     $(this).val(1);
   }
 });
+
+$(".btn-toCart").click(function() {
+  $("#cart-toast").toast("show");
+});
