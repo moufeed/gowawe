@@ -133,7 +133,9 @@ var local = {
     "Enter any valid coupon or promo code here to redeem your discount.",
   apply: "Apply",
   update_cart: "Update Cart",
-  invalid_coupon: "Invalid Coupon code"
+  invalid_coupon: "Invalid Coupon code",
+  cart_empty: "Cart is empty",
+  cart_empty_msg: "Looks like you haven't added any thing to your cart yet"
 };
 
 var lorem =
