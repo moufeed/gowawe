@@ -124,7 +124,16 @@ var local = {
   great: "great",
   feedback: "feedback",
   reviews: "feedbacks",
-  continue_reading: "continue reading"
+  continue_reading: "continue reading",
+  total: "total",
+  cart_total: "Cart Subtotal",
+  proceed_to_checkout: "Proceed to Checkout",
+  coupon: "Coupon",
+  enter_coupon:
+    "Enter any valid coupon or promo code here to redeem your discount.",
+  apply: "Apply",
+  update_cart: "Update Cart",
+  invalid_coupon: "Invalid Coupon code"
 };
 
 var lorem =

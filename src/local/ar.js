@@ -120,7 +120,16 @@ var local = {
   great: "ممتاز",
   feedback: "التقيم",
   reviews: "التقيمات",
-  continue_reading: "متابعة القراءة"
+  continue_reading: "متابعة القراءة",
+  total: "المجموع",
+  cart_total: "مجموع السلة",
+  proceed_to_checkout: "متابعة الشراء",
+  coupon: "كود تخفيض",
+  enter_coupon:
+    "أدخل أي قسيمة صالحة أو الرمز الترويجي هنا لاسترداد الخصم الخاص بك.",
+  apply: "تطبيق",
+  update_cart: "تحديث السلة",
+  invalid_coupon: "رقم قسيمه غير صالح"
 };
 
 var lorem =

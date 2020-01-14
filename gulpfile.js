@@ -118,6 +118,11 @@ var config = {
         output: "product.js",
         es6: true,
         inputs: ["./src/js/product.js"]
+      },
+      {
+        output: "cart.js",
+        es6: true,
+        inputs: ["./src/js/cart.js"]
       }
     ],
     dist: "./dist/assets/js"
