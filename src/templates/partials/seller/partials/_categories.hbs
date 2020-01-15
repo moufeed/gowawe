@@ -1,0 +1,35 @@
+<a  href="#" class="top_picks d-flex align-items-center m-b-20">
+  <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+  <strong>{{local.top_picks}}</strong>
+</a>
+
+<div class="bg-white shadow py-md-5 px-3">
+  <h3 class="m-b-25 px-3 text-capitalize">
+    <strong>{{local.product_categories}}</strong>
+  </h3>
+  <hr>
+  <ul class="list-unstyled categoriesList seller-categories" id="categoriesList">
+
+    {{#each sp.categories}}
+    <li>
+      <a class="" data-toggle="collapse" href="#category-{{@index}}" role="button" aria-expanded="false"
+        aria-controls="category-{{@index}}">
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+        <span>{{category}}</span>
+      </a>
+      <ul class="list-unstyled sub-list collapse" aria-labelledby="category-{{@index}}" id="category-{{@index}}"
+        data-parent="#categoriesList">
+        <li>
+          <a href="#">{{../local.all}}</a>
+        </li>
+        {{#each list}}
+        <li>
+          <a href="#">{{this}}</a>
+        </li>
+        {{/each}}
+      </ul>
+    </li>
+    {{/each}}
+
+  </ul>
+</div>

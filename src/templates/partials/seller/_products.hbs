@@ -1,33 +1,42 @@
 
-<section class="seller-products-tab py-5 px-xl-5">
-  <div class="container-fluid">
-      <div class="row ">
-          {{#each s.productsList}}
 
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-              <div class="fsp-item shadow-lg bg-white m-b-30">
-                <picture {{#if video}} data-video="{{video}}" data-poster="assets/img/product-{{@index}}.jpg" {{/if}}>
-                  <img src="assets/img/products/{{@index}}.jpg" alt="" class="no-owl">
-                </picture>
-                <div class="fsp-info">
-                  <a href="#" class="h4">{{title}}</a>
-                  <p class="fsp-price">
-                    <span class="d-flex justify-content-between">
-                      <b class="text-danger">{{min_price}}</b>
-                      <span>
-                        <small><s>{{price}}</s></small>
-                        <span class="badge badge-danger">{{discount}}</span>
-                      </span>
-                    </span>
-                    <strong>{{../local.min_order}}</strong>: {{min}}
-                  </p>
-                </div>
+<section class="seller-products-tab py-5 px-xl-5">
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 col-xl-3">
+              {{> seller/partials/_categories}}
+          </div>
+          <div class="col-md-8 col-xl-9">
+            <ul class="nav nav-tabs pro-tabs" id="proTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="Products-tab" data-toggle="tab" href="#Products" role="tab" aria-controls="Products"
+                  aria-selected="true">All Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="Customization-tab" data-toggle="tab" href="#Customization" role="tab" aria-controls="Customization"
+                  aria-selected="false">Customization</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="Ship-tab" data-toggle="tab" href="#Ship" role="tab" aria-controls="Ship"
+                  aria-selected="false">Ready to Ship</a>
+              </li>
+            </ul>
+            <div class="tab-content pro-tabs-content" id="pContent">
+              <div class="tab-pane fade show active " id="Products" role="tabpanel" aria-labelledby="Products-tab">
+                {{>seller/partials/_productsList}}
+              </div>
+              <div class="tab-pane fade " id="Customization" role="tabpanel" aria-labelledby="Customization-tab">
+                {{>seller/partials/_productsList}}
+              </div>
+              <div class="tab-pane fade " id="Ship" role="tabpanel" aria-labelledby="Ship-tab">
+                {{>seller/partials/_productsList}}
               </div>
             </div>
-          {{/each}}
-      </div>
-  </div>
-  </section>
+
+          </div>
+        </div>
+    </div>
+</section>
 
 
 

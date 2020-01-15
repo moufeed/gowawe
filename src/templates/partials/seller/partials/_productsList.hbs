@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <div class="row no-gutters">
+    {{#each s.productsList}}
+
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <div class="fsp-item shadow-sm  card bg-white m-b-10 m-x-5">
+        <picture {{#if video}} data-video="{{video}}" data-poster="assets/img/product-{{@index}}.jpg" {{/if}}>
+          <img src="assets/img/products/{{@index}}.jpg" alt="" class="no-owl">
+        </picture>
+        <div class="fsp-info p-b-15">
+          <a href="#" class="h4">{{title}}</a>
+          <span class="discount">
+            <small><s>{{price}}</s></small>
+            <span class="badge badge-danger">{{discount}}</span>
+          </span>
+
+          <p class="min_price">
+            <strong>{{min_price}}</strong> <small>/ {{../local.piece}}</small>
+          </p>
+          <p class="min_order">
+            <strong>{{min}}</strong> <small>({{../local.min_order}})</small>
+          </p>
+
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>

@@ -1,6 +1,7 @@
 var local = {
   price: "السعر",
   pieces: "قطع",
+  piece: "قطعة",
   min_order: " الحد الأدنى",
   colors: "الألوان",
   shopping: "تسوق الآن",
@@ -152,7 +153,12 @@ var local = {
   Change: "يتغيرون",
   Payment: "دفع",
   show_order_summary: "عرض ملخص الطلب",
-  hide_order_summary: "إخفاء ملخص الطلب"
+  hide_order_summary: "إخفاء ملخص الطلب",
+  top_picks: "أعلى مختارات",
+  all_products: "جميع المنتجات",
+  customization: "التخصيص",
+  ready_to_ship: "جاهز للشحن",
+  product_categories: "فئات المنتجات"
 };
 
 var lorem =

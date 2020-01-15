@@ -28,9 +28,9 @@
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 {{#each s.navs}}
-                <a class="nav-item nav-link {{#is @index 3 }} active {{/is}}" id="nav-{{@index}}-tab" data-toggle="tab"
+                <a class="nav-item nav-link {{#is @index 2 }} active {{/is}}" id="nav-{{@index}}-tab" data-toggle="tab"
                   href="#tab-{{@index}}" role="tab" aria-controls="tab-{{@index}}"
-                  aria-selected="{{#is @index 3 }} true {{@else}} false {{/is}}">{{this}}</a>
+                  aria-selected="{{#is @index 2 }} true {{@else}} false {{/is}}">{{this}}</a>
                 {{/each}}
               </div>
             </nav>
@@ -56,10 +56,10 @@
       <div class="tab-pane fade" id="tab-1" role="tabpanel" aria-labelledby="tab-1-tab">
         {{>seller/_profile}}
       </div>
-      <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2-tab">
+      <div class="tab-pane fade active show" id="tab-2" role="tabpanel" aria-labelledby="tab-2-tab">
         {{>seller/_products}}
       </div>
-      <div class="tab-pane fade active show" id="tab-3" role="tabpanel" aria-labelledby="tab-3-tab">
+      <div class="tab-pane fade " id="tab-3" role="tabpanel" aria-labelledby="tab-3-tab">
         {{>seller/_classified}}
       </div>
       <div class="tab-pane fade  " id="tab-4" role="tabpanel" aria-labelledby="tab-4-tab">

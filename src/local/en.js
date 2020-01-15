@@ -1,6 +1,7 @@
 var local = {
   price: "price",
   pieces: "pieces",
+  piece: "piece",
   min_order: "min order",
   colors: "colors",
   shopping: "shopping now",
@@ -156,7 +157,12 @@ var local = {
   Change: "Change",
   Payment: "Payment",
   show_order_summary: "Show order summary",
-  hide_order_summary: "Hide order summary"
+  hide_order_summary: "Hide order summary",
+  top_picks: "top picks",
+  all_products: "All Products",
+  customization: "Customization",
+  ready_to_ship: "Ready to Ship",
+  product_categories: "product categories"
 };
 
 var lorem =

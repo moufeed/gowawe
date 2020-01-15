@@ -292,13 +292,13 @@ header
       width: 100%;
     }
   }
-  &.fixed-container{
+  &.fixed-container {
     .se-c-list {
-      li{
-          margin-#{$right}: 5%;
+      li {
+        margin-#{$right}: 5%;
       }
     }
-    .se-des .se-d-content{
+    .se-des .se-d-content {
       max-width: 95%;
     }
   }
@@ -513,9 +513,115 @@ header
 
 .seller-products-tab {
   .fsp-item {
-    border-radius: 4px;
+    position: relative;
+    padding: 7px;
+    box-sizing: content-box;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-right: 8px;
+    picture {
+      background: #fff;
+      box-shadow: none;
+      &[data-video] {
+        &:after {
+          @include absolute($right bottom, calc(50% - 30px) calc(50% - 30px));
+          content: "\f04b";
+          font-family: FontAwesome;
+          font-size: 20px;
+          color: $white;
+          @include square(60px);
+          border-radius: 50%;
+          border: 2px solid #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: rgba($black, 0.7);
+        }
+      }
+    }
+    .h4 {
+      @include ellipse(16px, 1.6, 2);
+    }
+  }
+  .min_price,
+  .min_order {
+    margin: 0;
+    font-size: 16px;
   }
 }
+
+.top_picks {
+  padding: 10px 12px;
+  background: #e9eff5;
+  border: 1px solid #dbe3ef;
+  transition: all;
+  &:hover {
+    background: darken(#e9eff5, 10%);
+  }
+  i {
+    @include square(60px);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #97b3d5;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+  }
+  strong {
+    font-size: 16px;
+    margin: 0 10px;
+    text-transform: capitalize;
+    color: #000;
+  }
+}
+
+.categoriesList {
+  &.seller-categories {
+    li {
+      ul {
+        max-height: none;
+        overflow: visible;
+      }
+    }
+  }
+}
+
+.pro-tabs {
+  .nav-link {
+    padding: 16px;
+    font-weight: bold;
+    color: $dark;
+    &.active{
+      color: $red;
+    }
+  }
+}
+
+.pro-tabs-content {
+  position: relative;
+  padding-top: 15px;
+  &:after {
+    content: "";
+    @include absolute(top $left, 0 0);
+    @include size(1px, 50%);
+
+    background: rgb(222, 226, 230);
+    background: linear-gradient(
+      0deg,
+      rgba(222, 226, 230, 0) 0%,
+      rgba(222, 226, 230, 1) 100%
+    );
+  }
+}
+
+/*
+<div class="top_picks d-flex">
+  <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+  <span>{{local.top_picks}}</span>
+</div>
+*/
 
 .se-contact-header {
   h3 {
