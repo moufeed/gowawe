@@ -1,13 +1,15 @@
-<section class="seller-products-tab my-5">
-  <div class="container-fluid">
-    <div class="col-12 col-md-6 col-xl-5 se-contact-header">
+<section class="seller-products-tab py-5">
+  <div class="container">
+    <div class="col-12 col-md-12 col-xl-8 se-contact-header">
       <h3><span>{{local.get_in_touch}}</span></h3>
       <p>{{lorem}}</p>
     </div>
+    {{>seller/partials/_contact_details  class="fixed-container"}}
+    {{>seller/partials/_company-details class="fixed-container"}}
       <div class="bg-white shadow-lg ">
         <div class="row">
 
-          <div class="col-md-8 col-xl-9  se-contact-form">
+          <div class="col-md-8   se-contact-form">
             <div class="p-5">
 
               <form action="" class="form p-xl-5">
@@ -43,7 +45,7 @@
 
             </div>
           </div>
-          <div class="col-md-4 col-xl-3 se-contact-info">
+          <div class="col-md-4  se-contact-info">
             <div class="d-flex flex-column justify-content-start align-items-center pd">
               <h3><span>Contact information</span></h3>
               <ul class="list-unstyled links-list">

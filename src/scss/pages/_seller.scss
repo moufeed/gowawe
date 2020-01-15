@@ -292,6 +292,16 @@ header
       width: 100%;
     }
   }
+  &.fixed-container{
+    .se-c-list {
+      li{
+          margin-#{$right}: 5%;
+      }
+    }
+    .se-des .se-d-content{
+      max-width: 95%;
+    }
+  }
 }
 .se-des {
   .se-d-content {
