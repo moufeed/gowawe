@@ -135,7 +135,28 @@ var local = {
   update_cart: "Update Cart",
   invalid_coupon: "Invalid Coupon code",
   cart_empty: "Cart is empty",
-  cart_empty_msg: "Looks like you haven't added any thing to your cart yet"
+  cart_empty_msg: "Looks like you haven't added any thing to your cart yet",
+  contact_information: "Contact information",
+  have_account: " Already have an account?",
+  login: "log in",
+  keep_me_up: "Keep me up to date on news and exclusive offers",
+  shipping_address: "Shipping address",
+  first_name: "First Name",
+  last_name: "Last Name",
+  address: "address",
+  apartment: "Apartment, suite, etc.",
+  city: "city",
+  postal_code: "postal code ",
+  country: "Country/Region",
+  back_to_cart: "Return to cart",
+  continue_to_payment: "continue to payment",
+  back_to_information: "Return to information",
+  Contact: "Contact",
+  ship_to: "Ship to",
+  Change: "Change",
+  Payment: "Payment",
+  show_order_summary: "Show order summary",
+  hide_order_summary: "Hide order summary"
 };
 
 var lorem =
@@ -150,6 +171,7 @@ var fromQuotation = require("./quotation/quotation.en");
 var fromCategory = require("./category/category.en");
 var fromSeller = require("./seller/seller.en");
 var fromProduct = require("./product/product.en");
+var fromCountries = require("./countries");
 module.exports = {
   dir: "ltr",
   lang: "en",
@@ -171,5 +193,6 @@ module.exports = {
   q: fromQuotation,
   cy: fromCategory,
   s: fromSeller,
-  p: fromProduct
+  p: fromProduct,
+  countries: fromCountries.en
 };

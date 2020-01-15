@@ -131,7 +131,28 @@ var local = {
   update_cart: "تحديث السلة",
   invalid_coupon: "رقم قسيمه غير صالح",
   cart_empty: "السلة فارغة",
-  cart_empty_msg: "يبدو أنك لم تضف أي شيء إلى سلة التسوق حتى الآن"
+  cart_empty_msg: "يبدو أنك لم تضف أي شيء إلى سلة التسوق حتى الآن",
+  contact_information: "معلومات الاتصال",
+  have_account: "هل لديك حساب؟",
+  login: "تسجيل الدخول",
+  keep_me_up: "تبقي لي حتى الآن على الأخبار والعروض الحصرية",
+  shipping_address: "عنوان الشحن",
+  first_name: "الاسم الاول",
+  last_name: "الكنية",
+  address: "عنوان",
+  apartment: "جناح شقة الخ",
+  city: "مدينة",
+  postal_code: "الكود البريدى",
+  country: "البلد / المنطقة",
+  back_to_cart: "العودة إلى السلة",
+  continue_to_payment: "مواصلة الدفع",
+  back_to_information: "العودة إلى المعلومات",
+  Contact: "اتصل",
+  ship_to: "سافر على متن سفينة ل",
+  Change: "يتغيرون",
+  Payment: "دفع",
+  show_order_summary: "عرض ملخص الطلب",
+  hide_order_summary: "إخفاء ملخص الطلب"
 };
 
 var lorem =
@@ -147,6 +168,7 @@ var fromQuotation = require("./quotation/quotation.ar");
 var fromCategory = require("./category/category.ar");
 var fromSeller = require("./seller/seller.ar");
 var fromProduct = require("./product/product.ar");
+var fromCountries = require("./countries");
 module.exports = {
   dir: "rtl",
   lang: "ar",
@@ -168,5 +190,6 @@ module.exports = {
   q: fromQuotation,
   cy: fromCategory,
   s: fromSeller,
-  p: fromProduct
+  p: fromProduct,
+  countries: fromCountries.en
 };

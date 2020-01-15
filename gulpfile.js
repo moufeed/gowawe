@@ -123,6 +123,11 @@ var config = {
         output: "cart.js",
         es6: true,
         inputs: ["./src/js/cart.js"]
+      },
+      {
+        output: "checkout.js",
+        es6: true,
+        inputs: ["./src/js/checkout.js"]
       }
     ],
     dist: "./dist/assets/js"
