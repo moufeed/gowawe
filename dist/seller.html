@@ -146,38 +146,152 @@
       add [with-bg] class to [seller-header] class if he has an image
       */
       .with-bg {
-        background-image : url('assets/img/seller-banner.png');
+        background-image: url('assets/img/seller-banner.png');
       }
-      .with-bg:after{
-         background: rgba(white , .5);
+    
+      .with-bg:after {
+        background: rgba(white, .5);
       }
-     .with-bg .seller-name{
+    
+      .with-bg .seller-name {
         color: black;
       }
     </style>
     
     <div class="seller-header ">
       <div class="container">
-          <div class="row justify-content-start align-items-center">
-            <div class="col-12 col-md-3 col-lg-2 text-center">
-              <a href="#" class="logo">
-                <img src="assets/img/seller-logo.png" alt="">
-              </a>
-            </div>
-            <div class="seller-name col-md-9 col-lg-6">
+        <div class="row justify-content-start align-items-center">
+          <div class="col-12 col-md-3 col-lg-2 text-center">
+            <a href="#" class="logo">
+              <img src="assets/img/seller-logo.png" alt="">
+            </a>
+          </div>
+          <div  class="seller-header-title col-md-9 col-lg-6">
+            <span id="sellerName">
               <h2><span>Seller Name</span></h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo deleniti recusandae fugit, facere dolorum corporis nesciunt optio corrupti debitis. Veniam debitis pariatur voluptatem optio eius maiores laboriosam expedita odio sint.</p>
-            </div>
-            <div class="col-12 col-md-auto seller-icons-col">
-              <div class="seller-icons d-inline-flex   justify-content-center align-items-center">
-                  <img src="assets/img/vfd.png" alt="">
-                  <img src="assets/img/ts.png" alt="">
-                  <img src="assets/img/ico-1.png" alt="">
+              
+              
+              <div class="sr-comInfo-details bg-white shadow-lg p-4  ">
+                <div class="row">
+                  <div class="col-md-4 col-lg-3 details-address">
+                    <p>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <span>Shandong, China</span>
+                    </p>
+                    <picture>
+                      <img src="assets/img/map.png" alt="" class="img-fluid">
+                    </picture>
+                  </div>
+                  <div class="col-md-8 col-lg-9">
+                    <div class="info-fields row justify-content-between">
+                      <div class="col-12   col-lg-7">
+                        <ul class="list-unstyled">
+                          <li>
+              
+                            <span class="info-label">
+                              <i class="fa fa-check text-success" aria-hidden="true"></i>
+                              Business Type:</span>
+                            <span>Manufacturer/Factory & Trading Company</span>
+                          </li>
+                          <li>
+              
+                            <span class="info-label">
+                              <i class="fa fa-check text-success" aria-hidden="true"></i>
+                              Main Products:</span>
+                            <a href="#">Green House</a>
+                          </li>
+                          <li>
+              
+                            <span class="info-label">
+                              <i class="fa fa-check text-success" aria-hidden="true"></i>
+                              Number of Employees:</span>
+                            <span>56</span>
+                          </li>
+                          <li>
+              
+                            <span class="info-label">
+                              <i class="fa fa-check text-success" aria-hidden="true"></i>
+                              Year of Establishment:</span>
+                            <span>2012-03-09</span>
+                          </li>
+                          <li>
+                            <span class="info-label">Management System Certification:</span>
+                            <span>ISO 9001</span>
+                          </li>
+                          <li>
+              
+                            <span class="info-label">
+                              <i class="fa fa-check text-success" aria-hidden="true"></i>
+                              Average Lead Time:</span>
+                            <span>Peak season lead time: one month
+                              Off season lead time: one month</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-12   col-lg-auto">
+                        <ul class="list-unstyled">
+                          <li>
+              
+                            <span class="info-label">
+                              <i class="fa fa-check text-success" aria-hidden="true"></i>
+                              OEM/ODM Service</span>
+                          </li>
+                          <li>
+              
+                            <span class="info-label">
+                                <i class="fa fa-check text-success" aria-hidden="true"></i>
+                                Sample Available</span>
+                          </li>
+                          <li>
+              
+                            <span class="info-label">
+                              <i class="fa fa-check text-success" aria-hidden="true"></i>
+                              Russian / Spanish Speaker</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <p class="my-4 details-intro">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus doloremque cum consequatur voluptatibus ad veniam asperiores architecto fugit sunt maxime necessitatibus, aperiam ullam dignissimos similique, suscipit corrupti omnis quas quo!
+                    </p>
+                  </div>
+                </div>
+                <div class="details-footer d-flex">
+                  <a href="#">
+                    <i class="fa fa-envelope"></i>
+                    Contact Supplier
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                    Chat with Supplier.
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    Company Favorites
+                  </a>
+                </div>
               </div>
+            </span>
+              <p class="seller-header-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo deleniti recusandae fugit, facere dolorum corporis nesciunt optio corrupti debitis. Veniam debitis pariatur voluptatem optio eius maiores laboriosam expedita odio sint.</p>
+    
+          </div>
+          <div class="col-12 col-md-auto seller-icons-col">
+            <div class="seller-icons d-inline-flex   justify-content-center align-items-center">
+              <img src="assets/img/vfd.png" alt="">
+              <img src="assets/img/ts.png" alt="">
+              <img src="assets/img/ico-1.png" alt="">
             </div>
           </div>
+        </div>
       </div>
+    
     </div>
+    
+    
+    
+
     <div class="seller-toolbar">
       <div class="container">
         <div class="row align-items-center">
@@ -1029,7 +1143,7 @@
                         <strong>top picks</strong>
                       </a>
                       
-                      <div class="bg-white shadow py-md-5 px-3">
+                      <div class="bg-white shadow  py-md-5 p-3">
                         <h3 class="m-b-25 px-3 text-capitalize">
                           <strong>product categories</strong>
                         </h3>
@@ -2694,7 +2808,7 @@
                         </ul>
                       </div>
                       
-                      <div class="bg-white shadow  mt-5 py-md-5 px-3">
+                      <div class="bg-white shadow  my-5 py-md-5 p-3">
                         <div class="product-recommend-small"  data-slick='{"slidesToShow": 4, "slidesToScroll": 4 ,"arrows": false, "vertical" : true}'>
                           <div class="d-flex product-itm">
                             <picture  class="d-flex justify-content-center align-items-center"  data-video="assets/videos/oceans.mp4" data-poster="assets/img/product-0.jpg"  >

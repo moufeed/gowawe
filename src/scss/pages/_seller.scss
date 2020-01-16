@@ -42,14 +42,16 @@ header
       max-width: 150px;
     }
   }
-  .seller-name {
+  .seller-header-title {
     margin-#{$right}: auto !important;
     h2 {
       font-size: 2.5rem;
       font-weight: bold;
       letter-spacing: 1px;
+      display: inline-block;
+      cursor: pointer;
     }
-    p {
+    .seller-header-intro {
       max-width: 80%;
       font-size: 1.2rem;
       letter-spacing: 1px;
@@ -593,7 +595,7 @@ header
     padding: 16px;
     font-weight: bold;
     color: $dark;
-    &.active{
+    &.active {
       color: $red;
     }
   }
@@ -616,35 +618,34 @@ header
   }
 }
 
-.product-recommend-small{
-
-  .product-itm{
+.product-recommend-small {
+  .product-itm {
     margin-bottom: 15px;
-    a{
+    a {
       color: $dark;
     }
-    picture{
+    picture {
       position: relative;
       overflow: hidden;
       @include square(70px);
-      img{
+      img {
         height: 100%;
       }
     }
   }
-  .product-itm-body{
+  .product-itm-body {
     padding: 5px;
     width: calc(100% - 80px);
   }
-  .product-itm-title{
-     @include ellipse(14px, 1.4, 2);
+  .product-itm-title {
+    @include ellipse(14px, 1.4, 2);
   }
 }
 
-.slick-buttons-group{
-    .btn{
-      border-radius: 0 !important;
-    }
+.slick-buttons-group {
+  .btn {
+    border-radius: 0 !important;
+  }
 }
 
 .se-contact-header {
@@ -999,6 +1000,81 @@ header
 
 */
 
+.sr-comInfo-details {
+  border: 1px solid #e6ecf2;
+  z-index: 99;
+
+  display: none;
+  @include absolute(top $left, 35px 0);
+  border-radius: 3px;
+  width: 100%;
+  color: $dark;
+  @include media-breakpoint-up(sm) {
+    width: 540px;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 800px;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 1070px;
+  }
+  .details-intro {
+    color: #888;
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
+
+  .details-footer {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    a {
+      display: inline-block;
+      padding: 6px 12px;
+      color: $dark;
+      &:hover {
+        color: $red;
+      }
+    }
+    .fa {
+      margin: 0 3px;
+    }
+  }
+  .details-address {
+    font-size: 16px;
+    i {
+      margin-#{$right}: 5px;
+    }
+    img {
+      max-height: 200px;
+    }
+  }
+
+  .info-fields {
+    li {
+      margin-bottom: 10px;
+      padding-#{$left}: 15px;
+      display: flex;
+      i {
+        margin-#{$left}: -20px;
+        float: $left;
+        margin-top: 4px;
+      }
+      .info-label {
+        margin-#{$left}: 15px;
+        display: inline-block;
+        width: 160px;
+        color: #888;
+      }
+      span:not(.info-label) {
+        width: calc(100% - 160px);
+      }
+    }
+  }
+}
+/*
+
+*/
+
 //***********************************
 //***********************************
 //***********************************
@@ -1113,6 +1189,19 @@ header
       height: 250px;
     }
   }
+  .seller-products-tab {
+    .form-inline {
+      > .form-group {
+        label {
+          display: none;
+        }
+        &.mx-3 {
+          margin-left: 5px !important;
+          margin-right: 5px !important;
+        }
+      }
+    }
+  }
 }
 @include media-breakpoint-down(md) {
   .nav-tabs.nav-line {
@@ -1126,9 +1215,9 @@ header
 }
 @include media-breakpoint-down(sm) {
   .seller-header {
-    .seller-name {
+    .seller-header-title {
       text-align: center;
-      p {
+      .seller-header-intro {
         max-width: 100%;
         max-height: none;
         overflow: visible;
@@ -1204,6 +1293,45 @@ header
         &:after {
           transform: scale(0.5);
         }
+      }
+    }
+  }
+  .seller-products-tab {
+    > .container-fluid > .row {
+      flex-wrap: wrap-reverse;
+    }
+    .form-inline {
+      flex-direction: column;
+      .form-group {
+        width: 100%;
+        .form-control {
+          margin-left: 0 !important ;
+          margin-right: 0 !important ;
+        }
+      }
+    }
+  }
+  .pro-tabs {
+    .nav-link {
+      padding: 16px 8px;
+    }
+  }
+  .sr-comInfo-details {
+
+    .details-footer{
+        flex-direction: column;
+      }
+
+    .details-address {
+      text-align: center;
+    }
+    .info-fields li {
+      flex-direction: column;
+
+      .info-label,
+      span:not(.info-label) , a {
+        width: 100%;
+        margin-#{$left}:15px ;
       }
     }
   }

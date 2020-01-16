@@ -3,35 +3,151 @@
   add [with-bg] class to [seller-header] class if he has an image
   */
   .with-bg {
-    background-image : url('assets/img/seller-banner.png');
+    background-image: url('assets/img/seller-banner.png');
   }
-  .with-bg:after{
-     background: rgba(white , .5);
+
+  .with-bg:after {
+    background: rgba(white, .5);
   }
- .with-bg .seller-name{
+
+  .with-bg .seller-name {
     color: black;
   }
 </style>
 
 <div class="seller-header ">
   <div class="container">
-      <div class="row justify-content-start align-items-center">
-        <div class="col-12 col-md-3 col-lg-2 text-center">
-          <a href="#" class="logo">
-            <img src="assets/img/seller-logo.png" alt="">
-          </a>
-        </div>
-        <div class="seller-name col-md-9 col-lg-6">
+    <div class="row justify-content-start align-items-center">
+      <div class="col-12 col-md-3 col-lg-2 text-center">
+        <a href="#" class="logo">
+          <img src="assets/img/seller-logo.png" alt="">
+        </a>
+      </div>
+      <div  class="seller-header-title col-md-9 col-lg-6">
+        <span id="sellerName">
           <h2><span>{{c.t}}</span></h2>
-          <p>{{c.d}}</p>
-        </div>
-        <div class="col-12 col-md-auto seller-icons-col">
-          <div class="seller-icons d-inline-flex   justify-content-center align-items-center">
-              <img src="assets/img/vfd.png" alt="">
-              <img src="assets/img/ts.png" alt="">
-              <img src="assets/img/ico-1.png" alt="">
-          </div>
+          {{>dropdown}}
+        </span>
+          <p class="seller-header-intro">{{c.d}}</p>
+
+      </div>
+      <div class="col-12 col-md-auto seller-icons-col">
+        <div class="seller-icons d-inline-flex   justify-content-center align-items-center">
+          <img src="assets/img/vfd.png" alt="">
+          <img src="assets/img/ts.png" alt="">
+          <img src="assets/img/ico-1.png" alt="">
         </div>
       </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+{{#*inline "dropdown"}}
+
+
+<div class="sr-comInfo-details bg-white shadow-lg p-4  ">
+  <div class="row">
+    <div class="col-md-4 col-lg-3 details-address">
+      <p>
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <span>Shandong, China</span>
+      </p>
+      <picture>
+        <img src="assets/img/map.png" alt="" class="img-fluid">
+      </picture>
+    </div>
+    <div class="col-md-8 col-lg-9">
+      <div class="info-fields row justify-content-between">
+        <div class="col-12   col-lg-7">
+          <ul class="list-unstyled">
+            <li>
+
+              <span class="info-label">
+                <i class="fa fa-check text-success" aria-hidden="true"></i>
+                Business Type:</span>
+              <span>Manufacturer/Factory & Trading Company</span>
+            </li>
+            <li>
+
+              <span class="info-label">
+                <i class="fa fa-check text-success" aria-hidden="true"></i>
+                Main Products:</span>
+              <a href="#">Green House</a>
+            </li>
+            <li>
+
+              <span class="info-label">
+                <i class="fa fa-check text-success" aria-hidden="true"></i>
+                Number of Employees:</span>
+              <span>56</span>
+            </li>
+            <li>
+
+              <span class="info-label">
+                <i class="fa fa-check text-success" aria-hidden="true"></i>
+                Year of Establishment:</span>
+              <span>2012-03-09</span>
+            </li>
+            <li>
+              <span class="info-label">Management System Certification:</span>
+              <span>ISO 9001</span>
+            </li>
+            <li>
+
+              <span class="info-label">
+                <i class="fa fa-check text-success" aria-hidden="true"></i>
+                Average Lead Time:</span>
+              <span>Peak season lead time: one month
+                Off season lead time: one month</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12   col-lg-auto">
+          <ul class="list-unstyled">
+            <li>
+
+              <span class="info-label">
+                <i class="fa fa-check text-success" aria-hidden="true"></i>
+                OEM/ODM Service</span>
+            </li>
+            <li>
+
+              <span class="info-label">
+                  <i class="fa fa-check text-success" aria-hidden="true"></i>
+                  Sample Available</span>
+            </li>
+            <li>
+
+              <span class="info-label">
+                <i class="fa fa-check text-success" aria-hidden="true"></i>
+                Russian / Spanish Speaker</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <p class="my-4 details-intro">
+        {{lorem}}
+      </p>
+    </div>
+  </div>
+  <div class="details-footer d-flex">
+    <a href="#">
+      <i class="fa fa-envelope"></i>
+      Contact Supplier
+    </a>
+    <a href="#">
+      <i class="fa fa-comments" aria-hidden="true"></i>
+      Chat with Supplier.
+    </a>
+    <a href="#">
+      <i class="fa fa-star-o" aria-hidden="true"></i>
+      Company Favorites
+    </a>
   </div>
 </div>
+{{/inline}}

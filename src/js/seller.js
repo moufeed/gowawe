@@ -80,3 +80,22 @@ $("#FeedbackModal").on("hidden.bs.modal", function(e) {
   var modal = $(this);
   modal.find(".modal-body").html("");
 });
+
+var q = null;
+$("#sellerName").hover(
+  function(e) {
+    q = setTimeout(function() {
+      $(".sr-comInfo-details")
+        .stop(!1, !0)
+        .slideDown(300);
+    }, 200);
+  },
+  function(e) {
+    if (q) {
+      clearTimeout(q);
+    }
+    $(".sr-comInfo-details")
+      .stop(!1, !0)
+      .slideUp(300);
+  }
+);
