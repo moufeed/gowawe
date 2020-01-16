@@ -26,6 +26,7 @@ if ($().owlCarousel) {
         freeDrag = data.freedrag ? data.freedrag : false,
         autoHeight = data.autoheight ? data.autoheight : false,
         lazyLoad = data.lazyLoad ? data.lazyLoad : false,
+        autoWidth = data.autoWidth ? data.autoWidth : false,
         hoverPause = data.hasOwnProperty("pause") ? data.pause : true,
         mouseDrag = data.hasOwnProperty("mousedrag") ? data.mousedrag : true,
         pullDrag = data.hasOwnProperty("pulldrag") ? data.pulldrag : true,
@@ -48,7 +49,8 @@ if ($().owlCarousel) {
         freeDrag: freeDrag,
         touchDrag: touchDrag,
         autoHeight: autoHeight,
-        lazyLoad: lazyLoad
+        lazyLoad: lazyLoad,
+        autoWidth: autoWidth
       };
 
       if (singleItem) {

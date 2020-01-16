@@ -1,4 +1,4 @@
-<a  href="#" class="top_picks d-flex align-items-center m-b-20">
+<a href="#" class="top_picks d-flex align-items-center m-b-20">
   <i class="fa fa-shopping-bag" aria-hidden="true"></i>
   <strong>{{local.top_picks}}</strong>
 </a>
@@ -30,6 +30,37 @@
       </ul>
     </li>
     {{/each}}
-
   </ul>
+</div>
+
+<div class="bg-white shadow  mt-5 py-md-5 px-3">
+  <div class="product-recommend-small"  data-slick='{"slidesToShow": 4, "slidesToScroll": 4 ,"arrows": false, "vertical" : true}'>
+    {{#each s.productsList}}
+    <div class="d-flex product-itm">
+      <picture  class="d-flex justify-content-center align-items-center" {{#if video}} data-video="{{video}}" data-poster="assets/img/product-{{@index}}.jpg" {{/if}} >
+        <img src="assets/img/products/{{@index}}.jpg" alt="" class="no-owl" >
+      </picture>
+      <div class="product-itm-body">
+        <h5 class="mt-0 mb-1 product-itm-title"><a href="#">{{title}}</a></h5>
+        <p class="m-0">
+          <span>{{min_price}}</span> <small>/ {{../local.piece}}</small>
+        </p>
+        <p class="m-0">
+          <span>{{min}}</span> <small>({{../local.min_order}})</small>
+        </p>
+      </div>
+
+
+
+
+    </div>
+    {{/each}}
+  </div>
+
+  <div class="btn-group mx-4 slick-buttons-group mt-3" role="group">
+    <button type="button" class="btn btn-outline-dark px-4 slick-up"> <i class="fa fa-angle-up"></i></button>
+    <button type="button" class="btn btn-outline-dark px-4 slick-down"><i class="fa fa-angle-down"></i></button>
+
+  </div>
+
 </div>

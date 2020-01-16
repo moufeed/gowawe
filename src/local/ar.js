@@ -158,7 +158,11 @@ var local = {
   all_products: "جميع المنتجات",
   customization: "التخصيص",
   ready_to_ship: "جاهز للشحن",
-  product_categories: "فئات المنتجات"
+  product_categories: "فئات المنتجات",
+  title_a_to_z: "الأسم : ا الى ي",
+  title_z_to_a: "الأسم : ي الى ا",
+  newst_first: "الأحدث أولاً",
+  oldest_first: "الأقدام أولاً"
 };
 
 var lorem =

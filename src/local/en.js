@@ -162,7 +162,11 @@ var local = {
   all_products: "All Products",
   customization: "Customization",
   ready_to_ship: "Ready to Ship",
-  product_categories: "product categories"
+  product_categories: "product categories",
+  title_a_to_z: "Title: A to Z",
+  title_z_to_a: "Title: Z to A",
+  newst_first: "Newest first",
+  oldest_first: "Oldest first"
 };
 
 var lorem =

@@ -616,12 +616,36 @@ header
   }
 }
 
-/*
-<div class="top_picks d-flex">
-  <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-  <span>{{local.top_picks}}</span>
-</div>
-*/
+.product-recommend-small{
+
+  .product-itm{
+    margin-bottom: 15px;
+    a{
+      color: $dark;
+    }
+    picture{
+      position: relative;
+      overflow: hidden;
+      @include square(70px);
+      img{
+        height: 100%;
+      }
+    }
+  }
+  .product-itm-body{
+    padding: 5px;
+    width: calc(100% - 80px);
+  }
+  .product-itm-title{
+     @include ellipse(14px, 1.4, 2);
+  }
+}
+
+.slick-buttons-group{
+    .btn{
+      border-radius: 0 !important;
+    }
+}
 
 .se-contact-header {
   h3 {

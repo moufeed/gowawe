@@ -12,6 +12,7 @@
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
   <script src="assets/js/lib.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
 </head>
 
 <body>
@@ -85,7 +86,18 @@
 <script src="assets/js/magnific.min.js"></script>
 <script src="assets/js/seller.min.js"></script>
 <script src="assets/js/scripts.min.js"></script>
+<script type="text/javascript" src="assets/js/slick.min.js"></script>
+
+<script>
+  $('.product-recommend-small').slick() ;
+
+    $('.slick-up').click(function(){
+      $('.product-recommend-small').slick('slickPrev');
+    })
+    $('.slick-down').click(function(){
+      $('.product-recommend-small').slick('slickNext');
+    })
+</script>
 
 </body>
-
 </html>
