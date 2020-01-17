@@ -1,12 +1,17 @@
 $(function() {
   $(".se-gallery").each(function() {
-    // the containers for all your galleries
     $(this).magnificPopup({
-      delegate: "a", // the selector for gallery item
+      delegate: "a",
       type: "image",
       gallery: {
         enabled: true
       }
+    });
+  });
+
+  $(".se-image").each(function() {
+    $(this).magnificPopup({
+      type: "image"
     });
   });
 });

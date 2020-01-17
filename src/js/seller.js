@@ -99,3 +99,10 @@ $("#sellerName").hover(
       .slideUp(300);
   }
 );
+
+$(".list-profile-nav").on("click", "a", function(e) {
+  e.preventDefault();
+  var $href = $(this).attr("href");
+  console.log($href);
+  $("body, html").animate({ scrollTop: $($href).offset().top }, 300);
+});

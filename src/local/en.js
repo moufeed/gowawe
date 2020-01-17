@@ -166,7 +166,15 @@ var local = {
   title_a_to_z: "Title: A to Z",
   title_z_to_a: "Title: Z to A",
   newst_first: "Newest first",
-  oldest_first: "Oldest first"
+  oldest_first: "Oldest first",
+  company_overview: "company overview",
+  main_products: "Main Products",
+  production_capacity: "Production Capacity",
+  quality_control: "Quality Control",
+  rd_capacity: "R&D Capacity",
+  trade_capacity: "Trade Capacity",
+  business_performance: "Business Performance",
+  factory_inspection_reports: "Factory inspection reports"
 };
 
 var lorem =

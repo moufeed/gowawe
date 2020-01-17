@@ -162,7 +162,15 @@ var local = {
   title_a_to_z: "الأسم : ا الى ي",
   title_z_to_a: "الأسم : ي الى ا",
   newst_first: "الأحدث أولاً",
-  oldest_first: "الأقدام أولاً"
+  oldest_first: "الأقدام أولاً",
+  company_overview: "نبذة عن الشركة",
+  main_products: "المنتجات الرئيسية",
+  production_capacity: "السعة الإنتاجية",
+  quality_control: "مراقبة الجودة",
+  rd_capacity: "قدرة البحث والتطوير",
+  trade_capacity: "القدرة التجارية",
+  business_performance: "أداء الأعمال",
+  factory_inspection_reports: "تقارير التفتيش المصنع"
 };
 
 var lorem =

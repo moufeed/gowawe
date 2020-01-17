@@ -1,0 +1,24 @@
+
+<div class="bg-white shadow-lg p-4 mb-4">
+  <h3 class="text-bold my-3">{{local.main_products}}</h3>
+  <div class="owl-carousel fsp-carousel" data-xl-items="3" data-lg-items="2" data-md-items="2" data-margin="20" data-rtl="{{isRtl dir }}">
+    {{#each s.productsList}}
+    <div class="fsp-item s-profile-item">
+      <picture>
+        <img src="assets/img/products/{{@index}}.jpg" alt="" class="no-owl">
+      </picture>
+      <div class="fsp-info">
+        <a href="#" class="h4">{{title}}</a>
+        <p class="fsp-price">
+          <b class="text-danger">{{min_price}}</b>
+          <small><s>{{price}}</s></small>
+          <span class="badge badge-danger">{{discount}}</span> <br>
+          <strong>{{../local.min_order}}</strong>: {{min}}
+        </p>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+
+
+</div>

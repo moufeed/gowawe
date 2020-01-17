@@ -1,0 +1,112 @@
+<div class="bg-white mb-4 shadow-lg  ">
+  <div class="mod-header" style="background-image: url('assets/img/13.jpg');">
+    <h3 class="title">{{local.production_capacity}}</h3>
+  </div>
+  <div class="p-4">
+    <section class="ca_p">
+
+      <h4>Production Flow</h4>
+      <div class="se-gallery  owl-carousel" data-xl-items="4" data-lg-items="3" data-md-items="2" data-rtl="{{isRtl dir }}">
+
+        {{#each s.productsList}}
+        <a href="assets/img/products/{{@index}}.jpg" class="sp--item ">
+          <picture class="d-flex flex-column align-items-center justify-content-center">
+            <img src="assets/img/products/{{@index}}.jpg" alt="" class="no-owl">
+          </picture>
+          <span class="title"> Title {{@index}}</span>
+        </a>
+        {{/each}}
+      </div>
+
+
+      <div class="table-responsive mt-4">
+        <table class="table table-hover">
+
+          <tbody>
+            <tr class="next-table-row first">
+              <td class="next-table-cell first">
+                Rubber Mixing Machine
+              </td>
+              <td>
+                No Information
+              </td>
+              <td>
+                3
+              </td>
+              <td>
+                <svg class="icbu-icon-svg" width="12" viewBox="0 0 10 10">
+                  <use xlink:href="#check">
+                </svg>
+              </td>
+            </tr>
+            <tr class="next-table-row">
+              <td class="next-table-cell first">
+                Forming Machine
+              </td>
+              <td>
+                No Information
+              </td>
+              <td>
+                8
+              </td>
+              <td>
+                <svg class="icbu-icon-svg" width="12" viewBox="0 0 10 10">
+                  <use xlink:href="#check">
+                </svg>
+              </td>
+            </tr>
+            <tr class="next-table-row">
+              <td class="next-table-cell first">
+                Calendering Machine
+              </td>
+              <td>
+                No Information
+              </td>
+              <td>
+                1
+              </td>
+              <td>
+                <svg class="icbu-icon-svg" width="12" viewBox="0 0 10 10">
+                  <use xlink:href="#check">
+                </svg>
+              </td>
+            </tr>
+            <tr class="next-table-row">
+              <td class="next-table-cell first">
+                Extruding Machine
+              </td>
+              <td>
+                No Information
+              </td>
+              <td>
+                1
+              </td>
+              <td>
+                <svg class="icbu-icon-svg" width="12" viewBox="0 0 10 10">
+                  <use xlink:href="#check">
+                </svg>
+              </td>
+            </tr>
+            <tr class="next-table-row last">
+              <td class="next-table-cell first">
+                Screen Printing Machine
+              </td>
+              <td>
+                No Information
+              </td>
+              <td>
+                2
+              </td>
+              <td>
+                <svg class="icbu-icon-svg" width="12" viewBox="0 0 10 10">
+                  <use xlink:href="#check">
+                </svg>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+  </div>
+</div>

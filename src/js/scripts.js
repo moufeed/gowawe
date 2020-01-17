@@ -56,3 +56,19 @@ $("[data-characters]").each(function(index, item) {
       .text(data.max - this.value.length)
   );
 });
+
+if ($.fn.validate) {
+  $("[validate-form]").each(function(index, form) {
+    $(form).validate({
+      errorClass: "invalid-feedback",
+      validClass: "valid-feedback",
+      ignore: ".ignore",
+      highlight: function(element) {
+        $(element).addClass("is-invalid");
+      },
+      unhighlight: function(element) {
+        $(element).removeClass("is-invalid");
+      }
+    });
+  });
+}

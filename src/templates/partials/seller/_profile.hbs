@@ -1,0 +1,106 @@
+
+{{>seller/partials/_svg}}
+
+
+<section class="seller-profile-tab py-5 px-xl-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-lg-3 col-xl-3">
+        <div id="list-profile-nav" class="list-group sticky-top list-profile-nav">
+
+
+
+          <a class="list-group-item list-group-item-action active" href="#profile-item-company_overview">
+            <svg viewBox="0 0 1117 1024">
+              <use xlink:href="#company_overview_svg"></use>
+            </svg>
+            <span class="item-text">{{local.company_overview}}</span>
+          </a>
+
+          <a class="list-group-item list-group-item-action" href="#profile-item-main_products">
+
+            <svg viewBox="0 0 1024 1024">
+              <use xlink:href="#main_products_svg"></use>
+            </svg><span class="item-text">{{local.main_products}}</span>
+
+          </a>
+
+          <a class="list-group-item list-group-item-action" href="#profile-item-production_capacity">
+            <svg viewBox="0 0 1024 1024">
+              <use xlink:href="#production_capacity_svg"></use>
+            </svg><span class="item-text">{{local.production_capacity}}</span>
+
+
+          </a>
+          <a class="list-group-item list-group-item-action" href="#profile-item-quality_control">
+            <svg viewBox="0 0 1109 1024">
+              <use xlink:href="#quality_control_svg"></use>
+            </svg><span class="item-text">{{local.quality_control}}</span>
+
+
+          </a>
+          <a class="list-group-item list-group-item-action" href="#profile-item-capacity">
+            <svg viewBox="0 0 1024 1024">
+              <use xlink:href="#capacity_svg"></use>
+            </svg><span class="item-text">{{local.rd_capacity}}</span>
+          </a>
+          <a class="list-group-item list-group-item-action" href="#profile-item-trade_capacity">
+            <svg viewBox="0 0 1066 1024">
+              <use xlink:href="#trade_capacity_svg"></use>
+            </svg><span class="item-text">{{local.trade_capacity}}</span>
+          </a>
+          <a class="list-group-item list-group-item-action" href="#profile-item-performance">
+            <svg viewBox="0 0 1024 1024">
+              <use xlink:href="#performance_svg"></use>
+            </svg><span class="item-text">{{local.business_performance}}</span>
+          </a>
+          <a class="list-group-item list-group-item-action" href="#profile-item-factory">
+            <svg viewBox="0 0 1024 1024">
+              <use xlink:href="#factory_svg"></use>
+            </svg><span class="item-text">{{local.factory_inspection_reports}}</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-8 col-lg-9 col-xl-9">
+        <div data-spy="scroll" data-target="#list-profile-nav" data-offset="0" class="profile-tab-content">
+
+            <div id="profile-item-company_overview">
+              {{>seller/tabs/_tab-overview}}
+            </div>
+            <div id="profile-item-main_products">
+                  {{>seller/tabs/_tab-main_products}}
+            </div>
+            <div id="profile-item-production_capacity">
+                  {{>seller/tabs/_tab_production_capacity}}
+            </div>
+
+    <div id="profile-item-quality_control">
+      {{>seller/tabs/_tab-quality_control}}
+    </div>
+    <div id="profile-item-capacity">
+      {{>seller/tabs/_tab_capacity}}
+    </div>
+    <div id="profile-item-trade_capacity">
+      {{>seller/tabs/_trade_capacity}}
+    </div>
+    <div id="profile-item-performance">
+      {{>seller/tabs/_tab-performance}}
+    </div>
+    <div id="profile-item-factory">
+      {{>seller/tabs/_tab-factory}}
+    </div>
+    <div id="profile-tab-message">
+    {{>seller/tabs/_tab-message}}
+    </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  $('body').scrollspy({ target: '#list-profile-nav', offset: 0 })
+</script>
