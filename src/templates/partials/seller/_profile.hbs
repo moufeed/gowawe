@@ -1,4 +1,3 @@
-
 {{>seller/partials/_svg}}
 
 
@@ -62,36 +61,51 @@
         </div>
       </div>
       <div class="col-md-8 col-lg-9 col-xl-9">
+
+          <div class="bg-white p-4 mb-4 shadow-lg">
+            <div class="se-slider owl-carousel profile-tab-slider" data-rtl="{{isRtl dir}}" data-singleItem="true" data-nav="true" data-prev="&#xf060;"
+              data-next="&#xf061;">
+              <div class="se-item">
+                <img src="assets/img/seller/1.jpg" alt="" class="no-owl">
+              </div>
+              <div class="se-item">
+                <img src="assets/img/seller/2.jpg" alt="" class="no-owl">
+              </div>
+              <div class="se-item">
+                <img src="assets/img/seller/3.jpg" alt="" class="no-owl">
+              </div>
+            </div>
+          </div>
         <div data-spy="scroll" data-target="#list-profile-nav" data-offset="0" class="profile-tab-content">
 
-            <div id="profile-item-company_overview">
-              {{>seller/tabs/_tab-overview}}
-            </div>
-            <div id="profile-item-main_products">
-                  {{>seller/tabs/_tab-main_products}}
-            </div>
-            <div id="profile-item-production_capacity">
-                  {{>seller/tabs/_tab_production_capacity}}
-            </div>
+          <div id="profile-item-company_overview">
+            {{>seller/tabs/_tab-overview}}
+          </div>
+          <div id="profile-item-main_products">
+            {{>seller/tabs/_tab-main_products}}
+          </div>
+          <div id="profile-item-production_capacity">
+            {{>seller/tabs/_tab_production_capacity}}
+          </div>
 
-    <div id="profile-item-quality_control">
-      {{>seller/tabs/_tab-quality_control}}
-    </div>
-    <div id="profile-item-capacity">
-      {{>seller/tabs/_tab_capacity}}
-    </div>
-    <div id="profile-item-trade_capacity">
-      {{>seller/tabs/_trade_capacity}}
-    </div>
-    <div id="profile-item-performance">
-      {{>seller/tabs/_tab-performance}}
-    </div>
-    <div id="profile-item-factory">
-      {{>seller/tabs/_tab-factory}}
-    </div>
-    <div id="profile-tab-message">
-    {{>seller/tabs/_tab-message}}
-    </div>
+          <div id="profile-item-quality_control">
+            {{>seller/tabs/_tab-quality_control}}
+          </div>
+          <div id="profile-item-capacity">
+            {{>seller/tabs/_tab_capacity}}
+          </div>
+          <div id="profile-item-trade_capacity">
+            {{>seller/tabs/_trade_capacity}}
+          </div>
+          <div id="profile-item-performance">
+            {{>seller/tabs/_tab-performance}}
+          </div>
+          <div id="profile-item-factory">
+            {{>seller/tabs/_tab-factory}}
+          </div>
+          <div id="profile-tab-message">
+            {{>seller/tabs/_tab-message}}
+          </div>
 
 
         </div>

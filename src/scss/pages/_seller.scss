@@ -130,6 +130,12 @@ header
 }
 
 .se-slider {
+
+  &.profile-tab-slider{
+    .se-item {
+    height : 320px
+  }
+  }
   .se-item {
     display: flex;
     align-items: center;
@@ -141,6 +147,7 @@ header
       width: 100%;
     }
   }
+
   .owl-nav {
     button {
       top: auto;
