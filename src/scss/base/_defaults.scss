@@ -38,6 +38,16 @@ body {
 }
 
 @include if-rtl {
+   .dropdown-menu{
+    left: auto;
+    right: 0;
+    text-align: right;
+  }
+  .dropdown-menu-right{
+    left: 0;
+    right: auto;
+  }
+
   select.form-control {
     padding-top: 1px;
     padding-bottom: 1px;
@@ -88,6 +98,17 @@ body {
   background-repeat: no-repeat !important;
 }
 
+.bg-black-50{
+  background: rgba(#000 , .5);
+}
+.hover-red{
+  &:hover{
+    color: $red !important;
+  }
+}
+.letter-spacing-1{
+  letter-spacing: 1px;
+}
 
 /*
 //width
