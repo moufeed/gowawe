@@ -170,7 +170,18 @@ var local = {
   rd_capacity: "قدرة البحث والتطوير",
   trade_capacity: "القدرة التجارية",
   business_performance: "أداء الأعمال",
-  factory_inspection_reports: "تقارير التفتيش المصنع"
+  factory_inspection_reports: "تقارير التفتيش المصنع",
+  credit_card: "بطاقة الائتمان",
+  credit_card_txt:
+    "التحويل الآمن للأموال باستخدام حسابك المصرفي. Visa، Maestro، Discover، American Express.",
+  paypal: "PayPal",
+  paypal_txt:
+    "سيتم توجيهك إلى موقع PayPal لإكمال عملية الشراء الخاصة بك بشكل آمن.",
+  card_number: "رقم البطاقة",
+  name_on_card: "الاسم على البطاقة",
+  expiry_date: "تاريخ الانتهاء",
+  cvv_code: "cvv code",
+  complete_order: "إكمال الطلب"
 };
 
 var lorem =

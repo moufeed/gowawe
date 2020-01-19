@@ -174,7 +174,18 @@ var local = {
   rd_capacity: "R&D Capacity",
   trade_capacity: "Trade Capacity",
   business_performance: "Business Performance",
-  factory_inspection_reports: "Factory inspection reports"
+  factory_inspection_reports: "Factory inspection reports",
+  credit_card: "Credit Card",
+  credit_card_txt:
+    "Safe money transfer using your bank account. Visa, Maestro, Discover, American Express.",
+  paypal: "PayPal",
+  paypal_txt:
+    "You will be redirected to PayPal website to complete your purchase securely.",
+  card_number: "card number",
+  name_on_card: "name on card",
+  expiry_date: "expiry date",
+  cvv_code: "cvv code",
+  complete_order: "Complete Order"
 };
 
 var lorem =
