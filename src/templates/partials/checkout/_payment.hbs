@@ -27,12 +27,12 @@
   <div class="payment-section mt-5 ">
     <h3 class="pn-title">{{local.Payment}}</h3>
 
-    <form action="">
+    <form action="" id="paymentForm">
 
       <div class="credit-area">
         <div class="d-flex justify-content-between mb-3">
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="payment-type" id="credit" value="credit" checked>
+            <input class="form-check-input" type="radio" name="payment-type" id="credit" value="credit" checked data-ignore>
             <label class="form-check-label" for="credit">
               {{local.credit_card}}
             </label>
@@ -46,39 +46,42 @@
         </div>
         <div class="pn-inputs ">
           <div class="form-group row">
-            <div class="col-lg-8 col-xl-6 pull-xl-6">
+            <div class="col-lg-12 col-xl-8 col-xl-6 pull-xl-6">
               <label for="">{{local.card_number}}</label>
-              <input type="text" pattern="[0-9]{12,16}" required name="cardNumber" class="form-control form-control-lg">
+              <input type="text" pattern="[0-9]{12,16}" required name="cardNumber" class="form-control form-control-lg" data-rule-creditcard="true" data-credit {{! data-rule-creditcardtypes="true" }}>
             </div>
           </div>
           <div class="form-group row">
-            <div class="col-lg-8 col-xl-6 pull-xl-6">
+            <div class="col-lg-12 col-xl-8 col-xl-6 pull-xl-6">
               <label for="">{{local.name_on_card}}</label>
               <input type="text" pattern="[A-Za-z]" required name="cardName" class="form-control form-control-lg">
             </div>
           </div>
 
           <div class="form-group row">
-            <div class="col-lg-8 col-xl-6 pull-xl-6">
+            <div class="col-lg-12 col-xl-8 col-xl-6 pull-xl-6">
               <label for="">{{local.expiry_date}}</label>
               <div class="d-flex">
                 {{>selectMonth}}
                 {{>selectYear}}
               </div>
+              <div id="expire-placement"></div>
             </div>
           </div>
           <div class="form-group row">
-            <div class="col-lg-8 col-xl-6 pull-xl-6">
+            <div class="col-lg-12 col-xl-8 col-xl-6 pull-xl-6">
               <label for="">{{local.cvv_code}}</label>
 
-    <div class="d-flex align-items-center">
-        <input type="number" pattern="[0-9]{3}" min="3"  max="3" required name="cvv" class="form-control form-control-lg cvv-input" required>
-        <a tabindex="0" class="btn btn-link btn-cvv" role="button" data-toggle="popover" data-trigger="hover"
-          title="cvv code" data-content="a">
-          <i class="fa fa-question-circle-o"></i>
-        </a>
-    </div>
+              <div class="d-flex align-items-center">
+                <input type="number" pattern="[0-9]{3}" min="3" max="3" required name="cvv"
+                  class="form-control form-control-lg cvv-input" required data-error-placement="#cvv-placement">
+                <a tabindex="0" class="btn btn-link btn-cvv" role="button" data-toggle="popover" data-trigger="hover"
+                      data-content='<div class="bg-white p-1 shadow-lg"><img src="assets/img/cv_card.png" width="150"></div>'>
+                  <i class="fa fa-question-circle-o"></i>
+                </a>
+              </div>
 
+              <div id="cvv-placement"></div>
             </div>
           </div>
         </div>
@@ -87,7 +90,7 @@
       <div class="paypal-area">
         <div class="d-flex justify-content-between mb-3">
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="payment-type" id="paypal" value="paypal">
+            <input class="form-check-input" type="radio" name="payment-type" id="paypal" value="paypal" data-ignore=".credit-area">
             <label class="form-check-label" for="paypal">
               {{local.paypal}}
             </label>
@@ -101,10 +104,13 @@
         </div>
       </div>
 
-      <div class="d-flex justify-content-between">
-          <a href="#" class="btn btn-link text-dark red-hover">{{local.back_to_information}}</a>
+      <div class="d-flex justify-content-between ct-footer">
+        <a href="#" class="btn btn-link text-dark red-hover">
+          <i class="fa fa-angle-left"></i>
+          <span> {{local.back_to_information}}</span>
+        </a>
 
-          <button type="submit" class="btn btn-pay btn-success btn-lg">{{local.back_to_information}}</button>
+        <button type="submit" class="btn btn-pay btn-primary btn-lg px-5 py-3">{{local.complete_order}}</button>
       </div>
     </form>
   </div>
@@ -116,7 +122,7 @@
 
 
 {{#*inline 'selectMonth'}}
-<select id="expireMonth" name="expireMonth" class="custom-select form-control-lg" required>
+<select id="expireMonth" name="expireMonth" class="custom-select form-control-lg" required data-error-placement="#expire-placement">
   <option value="" selected="selected">Month</option>
   <option value="1"> 1 </option>
   <option value="2"> 2 </option>

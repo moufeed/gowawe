@@ -36,7 +36,9 @@ body {
     margin-bottom: 0;
   }
 }
-
+/****
+/****
+/****/
 @include if-rtl {
    .dropdown-menu{
     left: auto;
@@ -63,8 +65,12 @@ body {
       right: -1.5rem;
     }
   }
-}
 
+  .custom-select{
+    background-position:7px center;
+  }
+}
+/***********************/
 .z1 {
   z-index: 1;
 }
@@ -109,6 +115,8 @@ body {
 .letter-spacing-1{
   letter-spacing: 1px;
 }
+
+
 
 /*
 //width

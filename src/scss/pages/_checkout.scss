@@ -176,7 +176,7 @@
   }
 
   .form-check-label {
-    margin-#{$left}: 10px;
+    margin-#{$left}: if-rtl(20px , 10px);
     font-size: 16px;
     text-transform: capitalize;
   }
@@ -271,4 +271,58 @@
       max-width: 100%;
     }
   }
+  .ct-footer{
+    flex-direction: column-reverse;
+    .btn:first-child{
+        margin-top: 25px;
+    }
+  }
+}
+
+
+
+
+
+/**
+ * Credit.js
+ * Version: 1.0.0
+ * Author: Ron Masas
+ */
+
+.credit {
+	display: none;
+}
+
+.credit-cell{
+	width: 24%;
+	color: #555;
+	background-color: #fff;
+	border: none;
+	outline: none;
+	text-align: center;
+	letter-spacing: 3px;
+}
+
+.credit-input {
+	display: block;
+
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+  border-radius: 4px;
+
+
+
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.c-focus {
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
 }

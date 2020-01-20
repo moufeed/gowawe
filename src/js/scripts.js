@@ -58,17 +58,29 @@ $("[data-characters]").each(function(index, item) {
 });
 
 if ($.fn.validate) {
-  $("[validate-form]").each(function(index, form) {
-    $(form).validate({
-      errorClass: "invalid-feedback",
-      validClass: "valid-feedback",
-      ignore: ".ignore",
-      highlight: function(element) {
-        $(element).addClass("is-invalid");
-      },
-      unhighlight: function(element) {
-        $(element).removeClass("is-invalid");
+  $.validator.setDefaults({
+    highlight: function(element) {
+      $(element).addClass("is-invalid");
+    },
+    unhighlight: function(element) {
+      $(element).removeClass("is-invalid");
+    },
+    errorElement: "span",
+    errorClass: "help-block",
+    errorPlacement: function(error, element) {
+      if (element.parent(".input-group").length) {
+        error.insertAfter(element.parent());
+      } else {
+        error.insertAfter(element);
       }
-    });
+    }
+  });
+
+  $("[validate-form]").each(function(index, form) {
+    $(form).validate();
   });
 }
+
+$(function() {
+  $('[data-toggle="popover"]').popover();
+});
