@@ -181,7 +181,12 @@ var local = {
   name_on_card: "الاسم على البطاقة",
   expiry_date: "تاريخ الانتهاء",
   cvv_code: "cvv code",
-  complete_order: "إكمال الطلب"
+  complete_order: "إكمال الطلب",
+  thank_you: "شكرا لك على الشراء",
+  thank_you_txt: "رقم طلبك هو: <strong>000000029</strong>",
+  thank_you_msg:
+    "سنرسل إليك رسالة تأكيد بالبريد تتضمن التفاصيل ومعلومات التتبع",
+  continue_shopping: "مواصلة التسوق"
 };
 
 var lorem =

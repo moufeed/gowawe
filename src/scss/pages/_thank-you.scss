@@ -1,0 +1,37 @@
+
+.thank-page{
+  min-height: 400px;
+}
+.thank-msg{
+  margin: 50px 0;
+  text-align: center;
+  padding: 25px;
+  .fa{
+    font-size: 75px;
+  }
+  h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 15px 0;
+    font-weight: 600;;
+  }
+  p{
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .btn{
+    margin-top: 50px;
+  }
+}
+/*
+<section class="thank-page">
+    <div class="thank-msg">
+      <i class="fa fa-check-square-o" aria-hidden="true"></i>
+    <h2>{{local.thank_you}}</h2>
+    <p>{{local.thank_you_txt}}</p>
+    <p>{{local.thank_you_msg}}</p>
+    <a href="#" class="btn btn-success btn-lg  px-7">{{local.continue_shopping}}</a>
+    </div>
+
+  </section>
+*/

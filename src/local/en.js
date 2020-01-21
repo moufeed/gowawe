@@ -185,7 +185,12 @@ var local = {
   name_on_card: "name on card",
   expiry_date: "expiry date",
   cvv_code: "cvv code",
-  complete_order: "Complete Order"
+  complete_order: "Complete Order",
+  thank_you: "thank you for your purchase",
+  thank_you_txt: "your order number is :<strong>000000029</strong>",
+  thank_you_msg:
+    "we'll email you an order confirmation with details and tracking info",
+  continue_shopping: "continue shopping"
 };
 
 var lorem =

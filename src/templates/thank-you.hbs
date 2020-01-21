@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{page_title}}</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style-{{lang}}.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/lib.min.js"></script>
+
+</head>
+
+<body>
+
+  {{>_header}}
+
+  <section class="thank-page d-flex justify-content-center align-items-center" >
+    <div class="thank-msg">
+      <i class="fa fa-check-square-o" aria-hidden="true"></i>
+    <h2>{{local.thank_you}}</h2>
+    <p>{{{local.thank_you_txt}}}</p>
+    <p>{{local.thank_you_msg}}</p>
+    <a href="#" class="btn btn-success btn-lg  px-7">{{local.continue_shopping}}</a>
+    </div>
+
+  </section>
+  {{>_footer}}
+
+  <script src="assets/js/scripts.min.js"></script>
+
+
+
+</body>
+
+</html>
